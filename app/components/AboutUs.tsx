@@ -3,6 +3,7 @@
 'use client';
 
 import Image from 'next/image';
+import ConuHacks from './ConuHacks';
 
 export default function AboutUs() {
     return (
@@ -93,44 +94,7 @@ export default function AboutUs() {
                     </div>
                 </div>
             </section>
-            <section className="relative w-screen h-screen z-10 px-8 py-16">
-                <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-
-                    {/* Left: Text Content */}
-                    <div className='mb-8'>
-                        <h3 className="text-2xl font-bold text-white mb-4">ConUHacks</h3>
-                        <p className="text-sm text-gray-300 mb-6">
-                            We believe the best way to learn is by building. ConUHacks is designed to ignite innovation through collaboration. In just one day, teams turn ideas into working prototypes, gaining hands-on experience and building meaningful connections along the way. It’s not just about winning — it’s about exploration, resilience, and growth.
-                        </p>
-                        <h3 className="text-2xl font-semibold text-white mb-2">Our Mission</h3>
-                        <p className="text-sm text-gray-300">
-                            Every January, hundreds of students gather in downtown Montreal for 24 hours of creativity, coding, and caffeine. ConUHacks is Concordia’s flagship hackathon — a student-run tech event where developers, designers, and dreamers team up to solve real-world challenges. From first-time hackers to seasoned coders, everyone is welcome.
-                        </p>
-                    </div>
-
-                    {/* Right: Image Grid */}
-                    <div className="grid grid-cols-2 grid-rows-2 gap-4">
-                        <Image
-                            src="/imgs/about_us1.jpg"
-                            width={200}
-                            height={100}
-                            alt="Hackathon 1"
-                            className="col-span-1 row-span-1 w-full h-48 object-cover rounded-lg" />
-                        <Image
-                            src="/imgs/about_us2.jpg"
-                            width={200}
-                            height={100}
-                            alt="Hackathon 2"
-                            className="col-span-1 row-span-1 w-full h-48 object-cover rounded-lg" />
-                        <Image
-                            src="/imgs/about_us3.jpg"
-                            width={300}
-                            height={200}
-                            alt="Hackathon 3"
-                            className="col-span-2 row-span-1 w-full h-48 object-cover rounded-lg" />
-                    </div>
-                </div>
-            </section>
+            <ConuHacks />
         </>
 
     );

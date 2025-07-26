@@ -1,13 +1,18 @@
 'use client';
 
 import AboutUs from './components/AboutUs';
-import Stats from './components/Stats';
+import FAQ from './components/Faq';
+import TeamMemberSection from './components/TeamMemberSection';
+import UpcomingEvents from './components/UpcomingEvents';
 
 export default function HomePage() {
   return (
     <>
       <AboutUs />
-      <Stats />
+      <UpcomingEvents />
+      <TeamMemberSection />
+      <FAQ />
+      <br/>
     </>
   );
 }
