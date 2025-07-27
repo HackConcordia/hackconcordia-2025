@@ -11,6 +11,7 @@ export default function Header() {
 
     const navLinks = [
         { href: '/', label: 'Home' },
+        { href: '/conuhacks', label: 'ConuHacks' },
         { href: '/events', label: 'Events' },
         { href: '/team', label: 'Team' },
         { href: '/faq', label: 'FAQ' },
@@ -21,8 +22,8 @@ export default function Header() {
             <div className="max-w-7xl mx-auto flex justify-between items-center py-2">
 
                 {/* Left Title */}
-                <div className="flex items-center space-x-2">
-                    <Image src="/imgs/ConuHacksLogo.png" alt="alt" width={40} height={40} />
+                <div className="flex items-center space-x-2" style={{ marginLeft: '-4px' }}>
+                    <Image src="/imgs/HC_logo.png" alt="alt" width={40} height={40} />
                     <div className="text-xl font-bold">
                     HackConcordia
                 </div>

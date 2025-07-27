@@ -223,7 +223,7 @@ export default function TeamMemberSection() {
             <div className="mb-12">
                 <h2 className="text-4xl font-bold text-yellow-400">Hive keepers</h2>
                 <p className="mt-4 text-gray-400">
-                    Meet the dedicated team behind HackConcordia, working tirelessly to bring you the best hackathon experience.
+                    Meet the dedicated team behind Conuhacks, working tirelessly to bring you the best hackathon experience.
                 </p>
             </div>
 
