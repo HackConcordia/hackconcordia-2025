@@ -185,3 +185,7 @@
     text-shadow: inherit;
   }
 }
+
+body {
+  cursor: none !important;
+}

@@ -99,22 +99,22 @@ export default function UpcomingEvents() {
                     {events.map((event) => (
                         <div
                             key={event.id}
-                            className={`rounded-md p-8 min-w-[300px] sm:min-w-[300px] border shrink-0 transition-colors duration-300 ${event.highlight
-                                    ? 'bg-yellow-400 text-black border-yellow-500'
-                                    : 'bg-zinc-900 text-white border-zinc-700'
+                            className={`rounded-md p-8 min-w-[300px] sm:min-w-[300px] border-2 shrink-0 transition-colors duration-300 ${event.highlight
+                                    ? 'backdrop-blur-xs text-white border-yellow-500'
+                                    : 'backdrop-blur-xs text-white border-zinc-900'
                                 }`}
                         >
-                            <div className="text-5xl font-extrabold leading-none">
+                            <div className="text-5xl font-extrabold leading-none text-yellow-500">
                                 {event.date}
                             </div>
                             <div className="text-lg font-semibold mt-1">
                                 {event.month}, {event.year}
                             </div>
 
-                            <div className="mt-2">
+                            <div className="mt-2 text-yellow-500">
                                 <h3 className="text-xl font-bold">{event.title}</h3>
                                 <p
-                                    className={`${event.highlight ? 'text-gray-700' : 'text-gray-400'
+                                    className={`${event.highlight ? 'text-gray-400' : 'text-gray-400'
                                         } font-medium`}
                                 >
                                     {event.type}
