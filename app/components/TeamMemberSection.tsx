@@ -219,7 +219,7 @@ export default function TeamMemberSection() {
     const displayMember = hovered && hovered.id !== selected.id ? hovered : selected;
 
     return (
-        <section className="relative z-10 w-screen h-screen flex flex-col justify-center max-w-7xl mx-auto">
+        <section className="relative z-10 w-screen h-screen flex flex-col justify-center max-w-7xl mx-auto" id="team">
             <div className="mb-12">
                 <h2 className="text-4xl font-bold text-yellow-400">Hive keepers</h2>
                 <p className="mt-4 text-gray-400">

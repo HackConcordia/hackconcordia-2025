@@ -54,10 +54,10 @@ const faqs: FAQItem[] = [
 
 export default function FAQ() {
     return (
-        <section className="relative z-10 w-screen text-white py-20 px-4 sm:px-6 lg:px-8">
+        <section className="relative z-10 w-screen text-white py-20 px-4 sm:px-6 lg:px-8" id="faq">
             <div className="max-w-7xl mx-auto">
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-12">
-                    <h2 className="text-4xl font-bold text-yellow-400 mb-4 md:mb-0">
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                    <h2 className="text-4xl font-bold text-yellow-400 md:mb-0">
                         Bee Curious?
                     </h2>
                     <a
@@ -68,7 +68,7 @@ export default function FAQ() {
                     </a>
                 </div>
 
-                <p className="text-gray-400 mb-10 max-w-2xl">
+                <p className="text-gray-400 mb-10">
                     Quick answers to questions you may have. Can’t find what you’re looking for? Check out our{' '}
                     <a href="#" className="underline hover:text-white transition">full documentation</a>.
                 </p>
@@ -91,7 +91,7 @@ export default function FAQ() {
                 <div className="mt-16 border border-zinc-700 rounded-lg p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
                     <div className="flex items-center gap-4">
                         <img
-                            src="https://randomuser.me/api/portraits/men/32.jpg"
+                            src="/imgs/HC_logo.png"
                             alt="Support"
                             className="w-10 h-10 rounded-full"
                         />
@@ -105,7 +105,7 @@ export default function FAQ() {
                     </div>
                     <a
                         href="#"
-                        className="bg-purple-600 hover:bg-purple-700 text-white px-5 py-2 rounded-md text-sm font-medium transition"
+                        className="bg-yellow-600 hover:bg-yellow-700 text-white px-5 py-2 rounded-md text-sm font-medium transition"
                     >
                         Get in touch
                     </a>

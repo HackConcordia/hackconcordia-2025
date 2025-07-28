@@ -186,6 +186,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   cursor: none !important;
 }

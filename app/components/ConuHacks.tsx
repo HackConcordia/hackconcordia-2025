@@ -413,7 +413,7 @@ export default function ConuHacks() {
     };
 
     return (
-        <section className="relative h-screen w-full overflow-hidden p-5 max-w-7xl mx-auto" style={{ maxHeight: '900px' }}>
+        <section className="relative h-screen w-full overflow-hidden p-5 max-w-7xl mx-auto" style={{ maxHeight: '900px' }}  id="conuhacks">
             {/* Background image */}
             <div className="absolute inset-0 z-0 my-20 mr-10 max-w-7xl">
                 <Image
