@@ -4,6 +4,7 @@
 
 import Lottie from "lottie-react";
 import scrollAnimation from "../../public/animations/scroll_down_animation.json";
+import Image from "next/image";
 
 export default function AboutUs() {
     return (
@@ -98,7 +99,7 @@ export default function AboutUs() {
                     <div
                         className="w-full h-[200px] rounded-md overflow-hidden shadow-lg rotate-[35deg] transition-transform duration-700 hover:scale-105"
                     >
-                        <img src="/imgs/about_us1.jpg" alt="image 1" className="object-cover w-full h-full" />
+                        <Image src="/imgs/about_us1.jpg" alt="image 1" className="object-cover w-full h-full" width={300} height={200} />
                     </div>
                 </div>
 
@@ -106,17 +107,9 @@ export default function AboutUs() {
                     <div
                         className="w-full h-[200px] rounded-md overflow-hidden shadow-lg rotate-[-45deg] transition-transform duration-700 hover:scale-105"
                     >
-                        <img src="/imgs/about_us2.jpg" alt="image 2" className="object-cover w-full h-full" />
+                        <Image src="/imgs/about_us2.jpg" alt="image 2" className="object-cover w-full h-full" width={300} height={200} />
                     </div>
                 </div>
-
-                {/* <div className="absolute bottom-5 right-1/3 space-y-4 z-10 max-w-md">
-                    <div
-                        className="w-full h-[200px] rounded-md overflow-hidden shadow-lg rotate-[20deg] transition-transform duration-700 hover:scale-105"
-                    >
-                        <img src="/imgs/about_us3.jpg" alt="image 3" className="object-cover w-full h-full" />
-                    </div>
-                </div> */}
             </section>
         </>
 

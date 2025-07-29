@@ -23,7 +23,7 @@ const teamMembers: TeamMember[] = [
         name: 'Aaron Williams',
         position: 'Head of Design Department',
         intro: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-        avatar: 'https://cloudcommercepro.com/wp-content/uploads/2022/06/dummy-customer.jpg',
+        avatar: 'https://images.pexels.com/photos/769690/pexels-photo-769690.jpeg?_gl=1*sxhp64*_ga*MTI0MTExMjY3Ny4xNzUzMzk5MzEz*_ga_8JE65Q40S6*czE3NTMzOTkzMTMkbzEkZzEkdDE3NTMzOTk0NzAkajU5JGwwJGgw',
         socials: {
             twitter: '#',
             dribbble: '#',
@@ -61,7 +61,7 @@ const teamMembers: TeamMember[] = [
         name: 'Aaron Williams',
         position: 'Head of Design Department',
         intro: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-        avatar: 'https://images.pexels.com/photos/769690/pexels-photo-769690.jpeg?_gl=1*sxhp64*_ga*MTI0MTExMjY3Ny4xNzUzMzk5MzEz*_ga_8JE65Q40S6*czE3NTMzOTkzMTMkbzEkZzEkdDE3NTMzOTk0NzAkajU5JGwwJGgw',
+        avatar: 'https://cloudcommercepro.com/wp-content/uploads/2022/06/dummy-customer.jpg',
         socials: {
             twitter: '#',
             dribbble: '#',

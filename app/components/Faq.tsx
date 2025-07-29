@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { JSX } from 'react';
 import { FaMoneyBillAlt, FaEnvelope, FaUser, FaQuestionCircle, FaClipboardList, FaReceipt, FaCogs, FaComments } from 'react-icons/fa';
 
@@ -61,7 +62,7 @@ export default function FAQ() {
                         Bee Curious?
                     </h2>
                     <a
-                        href="#"
+                        href="contact-us"
                         className="text-sm font-medium border border-white px-4 py-2 rounded-md hover:bg-white hover:text-black transition"
                     >
                         Contact Us ↗
@@ -88,12 +89,13 @@ export default function FAQ() {
                 </div>
 
                 {/* Footer */}
-                <div className="mt-16 border border-zinc-700 rounded-lg p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                <div className="mt-16 border border-zinc-700 rounded-lg p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 backdrop-blur-xs">
                     <div className="flex items-center gap-4">
-                        <img
+                        <Image
                             src="/imgs/HC_logo.png"
                             alt="Support"
-                            className="w-10 h-10 rounded-full"
+                            width={40}
+                            height={40}
                         />
                         <div>
                             <p className="font-semibold">Still have questions?</p>
@@ -104,7 +106,7 @@ export default function FAQ() {
                         </div>
                     </div>
                     <a
-                        href="#"
+                        href="contact-us"
                         className="bg-yellow-600 hover:bg-yellow-700 text-white px-5 py-2 rounded-md text-sm font-medium transition"
                     >
                         Get in touch

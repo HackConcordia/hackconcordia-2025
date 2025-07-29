@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { useEffect, useState } from 'react'
 
 export default function BeeCursor() {
@@ -15,20 +16,20 @@ export default function BeeCursor() {
 
     return (
         <>
-            <img
+            <Image
                 src="/bee-cursor.gif"
                 alt="Bee Cursor"
                 style={{
                     position: 'fixed',
                     left: mousePos.x,
                     top: mousePos.y,
-                    width: '100px',
-                    height: '100px',
                     pointerEvents: 'none',
                     zIndex: 9999,
                     userSelect: 'none',
                     transform: 'translate(-50%, -50%) rotate(-45deg)',
                 }}
+                width={100}
+                height={100}
             />
         </>
     )
