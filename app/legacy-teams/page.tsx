@@ -1,103 +1,128 @@
-import Image from "next/image";
+'use client'
 
-export default function Home() {
+import { useEffect, useRef, useState } from 'react'
+import clsx from 'clsx'
+import BeeCursor from '../components/FloatingBeeCursor'
+
+const timelineData = [
+  {
+    year: '2023',
+    title: 'HackConcordia 2023',
+    image: 'https://www.hackconcordia.io/_next/static/media/IMG_5319.507b4de7.jpg?imwidth=3840',
+  },
+  {
+    year: '2022',
+    title: 'HackConcordia 2022',
+    image: 'https://www.hackconcordia.io/_next/static/media/IMG_5319.507b4de7.jpg?imwidth=3840',
+  },
+  {
+    year: '2021',
+    title: 'HackConcordia 2021',
+    image: 'https://www.hackconcordia.io/_next/static/media/IMG_5319.507b4de7.jpg?imwidth=3840',
+  },
+]
+
+export default function TimelineTrail() {
+  const [visibleIndexes, setVisibleIndexes] = useState<number[]>([])
+  const [lineHeight, setLineHeight] = useState(0)
+  const containerRef = useRef<HTMLDivElement | null>(null)
+  const refs = useRef<(HTMLDivElement | null)[]>([])
+
+  // Set which items are in view
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const index = Number(entry.target.getAttribute('data-index'))
+          if (entry.isIntersecting) {
+            setVisibleIndexes((prev) => (prev.includes(index) ? prev : [...prev, index]))
+          }
+        })
+      },
+      { threshold: 0.4 }
+    )
+
+    refs.current.forEach((ref) => ref && observer.observe(ref))
+    return () => refs.current.forEach((ref) => ref && observer.unobserve(ref))
+  }, [])
+
+  // Update line fill height based on scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!containerRef.current) return
+      const rect = containerRef.current.getBoundingClientRect()
+      const windowHeight = window.innerHeight
+      const progress = Math.min(1, Math.max(0, (windowHeight - rect.top) / (rect.height + windowHeight)))
+      setLineHeight(progress)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    handleScroll()
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <>
+      <BeeCursor />
+      <section id="timeline" className="w-full py-20 px-4 md:px-10 bg-black text-white">
+        <div className="max-w-4xl mx-auto relative">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
+            HackConcordia Legacy Teams
+          </h2>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          <div className="relative" ref={containerRef}>
+            {/* Timeline vertical line */}
+            <div className="absolute left-3.5 top-0 w-1 bg-gray-700 h-full rounded">
+              {/* Yellow fill layer based on scroll */}
+              <div
+                className="absolute left-0 top-0 w-1 bg-yellow-400 rounded transition-all duration-300"
+                style={{ height: `${lineHeight * 100}%` }}
+              />
+            </div>
+
+            <div className="pl-12 space-y-20">
+              {timelineData.map((item, index) => {
+                const isVisible = visibleIndexes.includes(index)
+                return (
+                  <div
+                    key={item.year}
+                    ref={(el) => (refs.current[index] = el)}
+                    data-index={index}
+                    className={clsx(
+                      'relative transition-all duration-700 ease-out',
+                      isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
+                    )}
+                  >
+                    {/* Glowing dot */}
+                    {/* <div
+                      className={clsx(
+                        'absolute left-0 top-1 w-6 h-6 rounded-full border-4 z-10 transition-all duration-500',
+                        isVisible
+                          ? 'bg-yellow-400 border-black shadow-yellow-400 shadow-md scale-110'
+                          : 'bg-gray-600 border-gray-800'
+                      )}
+                    /> */}
+
+                    {/* Content box */}
+                    <div className="shadow-md backdrop-blur-md">
+                      <p className="text-sm text-gray-400">{item.title}</p>
+                      <img
+                        src={item.image}
+                        alt={`${item.year} team`}
+                        className={clsx(
+                          'w-full mt-3 rounded-md transition-all duration-700',
+                          isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
+                        )}
+                      />
+                    </div>
+                  </div>
+                )
+              })}
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+      </section>
+    </>
+
+  )
 }

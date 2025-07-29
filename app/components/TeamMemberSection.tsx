@@ -3,6 +3,9 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { TwitterIcon, DribbbleIcon, VideoIcon, LucideTwitter } from 'lucide-react'; // Replace with your icon library
+import { FaArrowRight } from 'react-icons/fa';
+import Link from 'next/link';
+import BeeCursor from './FloatingBeeCursor';
 
 type TeamMember = {
     id: number;
@@ -219,9 +222,22 @@ export default function TeamMemberSection() {
     const displayMember = hovered && hovered.id !== selected.id ? hovered : selected;
 
     return (
+        <>
+        <BeeCursor />
         <section className="relative z-10 w-screen h-screen flex flex-col justify-center max-w-7xl mx-auto" id="team">
             <div className="mb-12">
-                <h2 className="text-4xl font-bold text-yellow-400">Hive keepers</h2>
+                <div className="flex w-full justify-between items-center">
+                    <h2 className="text-4xl font-bold text-yellow-400">Hive keepers</h2>
+                    {/* Legacy teams button */}
+                    <Link
+                        href="legacy-teams"
+                        className="mt-4 px-6 py-2 bg-yellow-500 text-white rounded hover:bg-yellow-600 transition"
+                    >
+                        Legacy Teams
+                        <FaArrowRight className="inline-block ml-2 rotate-315" />
+                    </Link>
+
+                </div>
                 <p className="mt-4 text-gray-400">
                     Meet the dedicated team behind Conuhacks, working tirelessly to bring you the best hackathon experience.
                 </p>
@@ -293,5 +309,7 @@ export default function TeamMemberSection() {
                 </div>
             </div>
         </section>
+        </>
+
     );
 }
