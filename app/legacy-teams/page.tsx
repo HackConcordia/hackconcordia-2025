@@ -86,7 +86,7 @@ export default function TimelineTrail() {
                 return (
                   <div
                     key={item.year}
-                    ref={(el) => (refs.current[index] = el)}
+                    ref={(el) => { refs.current[index] = el }}
                     data-index={index}
                     className={clsx(
                       'relative transition-all duration-700 ease-out',
