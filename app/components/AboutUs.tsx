@@ -9,7 +9,7 @@ import Image from "next/image";
 export default function AboutUs() {
     return (
         <>
-            <section className="relative z-10 w-screen h-[calc(100vh-160px)] max-w-7xl mx-auto" id="home">
+            <section className="relative z-10 h-[calc(100vh-140px)] max-w-7xl mx-auto" id="home">
                 <div className="flex items-center justify-center h-full w-full">
                     {/* Container with image background */}
                     <div className="relative w-full max-w-4xl flex items-center justify-center">

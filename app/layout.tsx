@@ -32,7 +32,7 @@ export default function RootLayout({
       >
         <BackgroundOverlay />
         <Header />
-        <main className="pt-20">{children}</main>
+        <main className="pt-15">{children}</main>
         <Footer />
       </body>
     </html>
