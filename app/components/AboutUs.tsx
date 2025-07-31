@@ -36,7 +36,7 @@ export default function AboutUs() {
                                 <input
                                     type="email"
                                     placeholder="Enter your email"
-                                    className="w-full px-4 py-3 placeholder-gray-500 text-white"
+                                    className="w-full px-4 py-3 placeholder-gray-500 text-white outline-0"
                                     required
                                 />
                                 <button
@@ -55,11 +55,11 @@ export default function AboutUs() {
                 </div>
 
                 {/* Text Cards */}
-                <div className="absolute top-0 left-1/3 p-1 space-y-4 z-10 max-w-sm">
+                <div className="absolute top-0 left-1/3 p-1 mt-4 space-y-4 z-10 max-w-sm">
                     <div className="relative group overflow-hidden border-2 border-white/10 p-4 rounded-lg text-white shadow-lg rotate-[-7deg] backdrop-blur-xs bg-white/5">
 
                         {/* Glow Overlay */}
-                        <div className="absolute inset-0 pointer-events-none bg-radial-glow opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                        <div className="absolute inset-0 pointer-events-none bg-radial-glow opacity-0 group-hover:opacity-100 transition-opacity duration-300 ml-4" />
 
                         <span className="text-xs relative z-10">
                             This is your hub for all things hacking. From upcoming hackathons and events to curated learning resources, this site is your launchpad to grow your skills, meet fellow builders, and bring your ideas to life.
@@ -68,12 +68,12 @@ export default function AboutUs() {
                 </div>
 
 
-                <div className="absolute bottom-20 right-0 p-2 space-y-4 z-10 max-w-sm">
+                <div className="absolute bottom-20 right-2 p-2 space-y-4 z-10 max-w-sm">
                     {/* Mid Right Text Card */}
                     <div className="relative group overflow-hidden border-2 border-white/10 p-4 rounded-lg text-white shadow-lg rotate-[27deg] backdrop-blur-xs bg-white/5">
 
                         {/* Glow Overlay */}
-                        <div className="absolute inset-0 pointer-events-none bg-radial-glow opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                        <div className="absolute inset-0 pointer-events-none bg-radial-glow opacity-0 group-hover:opacity-100 transition-opacity duration-300 mr-4" />
 
                         <span className="text-xs relative z-10">
                             Ready to dive in? Whether you want to compete in a hackathon, attend a workshop, or just meet some like-minded tech lovers, HackConcordia has a spot for you. Come be part of the hive where learning, building, and having fun happen every day.
@@ -81,7 +81,7 @@ export default function AboutUs() {
                     </div>
                 </div>
 
-                <div className="absolute bottom-5 left-0 space-y-4 z-10 max-w-sm pb-12">
+                <div className="absolute bottom-5 left-5 space-y-4 z-10 max-w-sm pb-12">
                     {/* Bottom Left Text Card */}
                     <div className="relative group overflow-hidden border-2 border-white/10 p-4 rounded-lg text-white shadow-lg rotate-[-27deg] backdrop-blur-xs bg-white/5">
 
@@ -95,7 +95,7 @@ export default function AboutUs() {
                 </div>
 
                 {/* Images with random rotation */}
-                <div className="absolute top-15 right-0 space-y-4 z-10 max-w-md">
+                <div className="absolute top-15 right-5 space-y-4 z-10 max-w-md">
                     <div
                         className="w-full h-[200px] rounded-md overflow-hidden shadow-lg rotate-[35deg] transition-transform duration-700 hover:scale-105"
                     >
@@ -103,7 +103,7 @@ export default function AboutUs() {
                     </div>
                 </div>
 
-                <div className="absolute top-10 left-0 space-y-4 z-10 max-w-md">
+                <div className="absolute top-10 left-8 space-y-4 z-10 max-w-md">
                     <div
                         className="w-full h-[200px] rounded-md overflow-hidden shadow-lg rotate-[-45deg] transition-transform duration-700 hover:scale-105"
                     >

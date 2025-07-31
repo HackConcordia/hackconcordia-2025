@@ -51,9 +51,9 @@ export default function Header() {
 
     return (
         <header className="w-full fixed top-0 z-50 text-white backdrop-blur-xs bg-black/60">
-            <div className="max-w-7xl mx-auto flex justify-between items-center py-2 px-4">
+            <div className="max-w-7xl mx-auto flex justify-between items-center py-2">
                 {/* Left Logo */}
-                <div className="flex items-center space-x-2">
+                <div className="flex items-center space-x-2" style={{ marginLeft: "-2px" }}>
                     <Image src="/imgs/HC_logo.png" alt="Logo" width={40} height={40} />
                     <div className="text-xl font-bold">HackConcordia</div>
                 </div>
