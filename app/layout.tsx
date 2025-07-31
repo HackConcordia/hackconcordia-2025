@@ -4,6 +4,7 @@ import "./globals.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import BackgroundOverlay from "./components/BackgroundOverlay";
+import FloatingBeeCursor from "./components/FloatingBeeCursor";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,7 +33,10 @@ export default function RootLayout({
       >
         <BackgroundOverlay />
         <Header />
-        <main className="pt-15">{children}</main>
+        <main className="pt-15">
+          <FloatingBeeCursor />
+          {children}
+          </main>
         <Footer />
       </body>
     </html>

@@ -21,24 +21,9 @@ type TimelinePanel = {
 
 const timelineData: TimelinePanel[] = [
   {
-    number: 10,
-    year: 2025,
-    bgImage: 'imgs/about_us1.jpg',
-    subteams: [
-      { name: 'Co-pres', members: [{ name: 'Bertin', url: 'https://example.com/alice' }, { name: 'Elizabeth', url: 'https://example.com/alice' }] },
-      { name: 'Tech', members: [{ name: 'Bob' }, { name: 'Charlie', url: 'https://github.com/charlie' }] },
-      { name: 'Marketing', members: [{ name: 'Diana' }] },
-      { name: 'Internal', members: [{ name: 'Evan' }] },
-      { name: 'Events', members: [{ name: 'Fiona' }] },
-      { name: 'Sponsorship', members: [{ name: 'George' }] },
-      { name: 'Logistics', members: [{ name: 'Hannah' }] },
-      { name: 'Finance', members: [{ name: 'Ian' }] },
-    ],
-  },
-  {
     number: 9,
     year: 2024,
-    bgImage: 'imgs/about_us2.jpg',
+    bgImage: 'imgs/about_us3.jpg',
     subteams: [
       { name: 'Co-pres', members: [{ name: 'Alice', url: 'https://example.com/alice' }] },
       { name: 'Tech', members: [{ name: 'Bob' }, { name: 'Charlie', url: 'https://github.com/charlie' }] },
@@ -53,7 +38,7 @@ const timelineData: TimelinePanel[] = [
   {
     number: 8,
     year: 2023,
-    bgImage: 'imgs/about_us3.jpg',
+    bgImage: 'imgs/about_us2.jpg',
     subteams: [
       { name: 'Co-pres', members: [{ name: 'Alice', url: 'https://example.com/alice' }] },
       { name: 'Tech', members: [{ name: 'Bob' }, { name: 'Charlie', url: 'https://github.com/charlie' }] },
@@ -123,7 +108,7 @@ const Timeline: React.FC = () => {
         {timelineData.map(({ number, year, bgImage, subteams }) => (
           <div
             key={number}
-            className="group relative flex-shrink-0 w-[30%] min-w-[300px] h-full text-white cursor-pointer transition-all duration-500 ease-in-out hover:w-[60%] snap-start"
+            className="group relative flex-shrink-0 w-[30%] min-w-[300px] h-full text-white transition-all duration-500 ease-in-out hover:w-[70%] snap-start"
           >
             {/* Background Image */}
             <img
