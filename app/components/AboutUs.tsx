@@ -37,7 +37,7 @@ export default function AboutUs() {
         <section className="relative z-10 h-[calc(100vh-140px)] max-w-7xl mx-auto" id="home">
             <div className="flex items-center justify-center h-full w-full">
                 <div className="relative w-full h-full max-w-4xl flex items-center justify-center">
-                    <div className="inset-0 h-full flex flex-col items-center justify-center text-center text-white px-4 space-y-6 z-30">
+                    <div className="inset-0 h-full flex flex-col items-center justify-center text-center text-white px-4 space-y-6 z-30 mt-10 md:mt-0">
 
                         <h1 className="logo xl:text-8xl md:ml-2 sm:text-5xl md:text-7xl text-5xl font-ruda text-neon-yellow mb-2">
                             <b className="w-1/2">

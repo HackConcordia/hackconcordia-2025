@@ -95,7 +95,7 @@ export default function FAQ() {
           </a>
         </div>
 
-        <p className="text-gray-400 mb-10 text-sm sm:text-base text-justify">
+        <p className="text-gray-400 mb-10 text-sm sm:text-base">
           Find answers to questions about HackConcordia and ConUHacks. Need more details? Reach out to our team to know more.
         </p>
 
@@ -108,7 +108,7 @@ export default function FAQ() {
               </div>
               <div className="space-y-1">
                 <h3 className="font-semibold text-base">{faq.question}</h3>
-                <p className="text-sm text-gray-400 text-justify">{faq.answer}</p>
+                <p className="text-sm text-gray-400">{faq.answer}</p>
               </div>
             </div>
           ))}
