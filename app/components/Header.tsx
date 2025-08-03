@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import Link from 'next/link';
+import { usePathname, useRouter } from 'next/navigation';
 import clsx from 'clsx';
 import Image from 'next/image';
 import {
@@ -20,10 +20,25 @@ const navLinks = [
     { href: '#faq', label: 'FAQ' },
 ];
 
+// Optional: map routes to the section they semantically represent
+const pageToSectionMap: Record<string, string> = {
+    '/legacy-teams': 'team',
+    '/contact-us': 'faq',
+    // Add more mappings if needed
+};
+
 export default function Header() {
     const [activeSection, setActiveSection] = useState<string>('home');
+    const pathname = usePathname();
+    const router = useRouter();
 
     useEffect(() => {
+        const mappedSection = pageToSectionMap[pathname];
+        if (mappedSection) {
+            setActiveSection(mappedSection);
+            return;
+        }
+
         const observerOptions = {
             root: null,
             rootMargin: '0px',
@@ -47,13 +62,39 @@ export default function Header() {
         return () => {
             sections.forEach((section) => observer.unobserve(section));
         };
-    }, []);
+    }, [pathname]);
+
+    useEffect(() => {
+        if (activeSection && pathname === '/') {
+            history.replaceState(null, '', `#${activeSection}`);
+        }
+    }, [activeSection, pathname]);
+
+    const handleNavClick = (
+        e: React.MouseEvent<HTMLAnchorElement>,
+        href: string
+    ) => {
+        e.preventDefault();
+        const sectionId = href.replace('#', '');
+
+        if (pathname !== '/') {
+            router.push(`/${href}`);
+            return;
+        }
+
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+            history.replaceState(null, '', href);
+            setActiveSection(sectionId);
+        }
+    };
 
     return (
         <header className="w-full fixed top-0 z-50 text-white backdrop-blur-xs bg-black/60">
             <div className="max-w-7xl mx-auto flex justify-between items-center py-2">
                 {/* Left Logo */}
-                <div className="flex items-center space-x-2" style={{ marginLeft: "-2px" }}>
+                <div className="flex items-center space-x-2" style={{ marginLeft: '-2px' }}>
                     <Image src="/imgs/HC_logo.png" alt="Logo" width={40} height={40} />
                     <div className="text-xl font-bold">HackConcordia</div>
                 </div>
@@ -63,10 +104,12 @@ export default function Header() {
                     {navLinks.map(({ href, label }) => {
                         const sectionId = href.replace('#', '');
                         const isActive = activeSection === sectionId;
+
                         return (
                             <a
                                 key={href}
                                 href={href}
+                                onClick={(e) => handleNavClick(e, href)}
                                 className={clsx(
                                     'transition-colors hover:text-yellow-400',
                                     isActive && 'text-yellow-400'
