@@ -133,7 +133,7 @@ const events: Event[] = [
 export default function UpcomingEvents() {
     return (
         <section className="relative z-10 w-screen flex flex-col justify-center max-w-7xl mx-auto" id="events">
-            <h2 className="text-4xl font-bold text-yellow-400 mb-2">
+            <h2 className="text-4xl font-bold text-yellow-400 mb-2 mt-20">
                 Bee Ready
             </h2>
             <p className="text-gray-400 mb-4">
@@ -142,13 +142,14 @@ export default function UpcomingEvents() {
 
             {/* Scroll wrapper */}
             <div className="group relative w-full overflow-hidden">
-                <div className="flex gap-6 overflow-x-auto scroll-smooth transition-all duration-300 group-hover:scrollbar-thin group-hover:scrollbar-thumb-gray-600 group-hover:scrollbar-track-transparent py-4">
+                <div className="flex gap-6 overflow-x-auto scroll-smooth transition-all duration-300 group-hover:scrollbar-thin group-hover:scrollbar-thumb-gray-600 group-hover:scrollbar-track-transparent py-4 pl-2">
                     {events.map((event) => (
                         <div
                             key={event.id}
-                            className={`rounded-md p-8 min-w-[300px] w-[350px] border-2 shrink-0 transition-colors duration-300 ${event.highlight
-                                ? 'backdrop-blur-xs text-white border-yellow-500'
-                                : 'backdrop-blur-xs text-white border-zinc-900'
+                            className={`rounded-md p-8 min-w-[300px] w-[350px] border-2 shrink-0 transition-colors duration-300 relative overflow-hidden
+    ${event.highlight
+                                    ? 'backdrop-blur-xs text-white border-yellow-500 pulse-scale'
+                                    : 'backdrop-blur-xs text-white border-zinc-900'
                                 }`}
                         >
                             <div className="text-5xl font-extrabold leading-none text-yellow-500">

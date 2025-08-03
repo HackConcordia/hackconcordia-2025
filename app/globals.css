@@ -193,3 +193,21 @@ html {
 body {
   cursor: none !important;
 }
+
+@keyframes pulseScale {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.02);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pulse-scale {
+  animation: pulseScale 2s ease-in-out infinite;
+}
