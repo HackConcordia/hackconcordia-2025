@@ -392,15 +392,23 @@ export default function ConuHacks() {
     const activeSlide = slides[active];
     const thumbRefs = useRef<(HTMLDivElement | null)[]>([]);
 
+    const hasMounted = useRef(false);
+
     useEffect(() => {
-    if (thumbRefs.current[active]) {
-        thumbRefs.current[active]?.scrollIntoView({
-            behavior: 'smooth',
-            inline: 'center',
-            block: 'nearest',
-        });
-    }
-}, [active]);
+        if (!hasMounted.current) {
+            hasMounted.current = true;
+            return;
+        }
+
+        if (thumbRefs.current[active]) {
+            thumbRefs.current[active]?.scrollIntoView({
+                behavior: 'smooth',
+                inline: 'center',
+                block: 'nearest',
+            });
+        }
+    }, [active]);
+
 
 
 
@@ -413,7 +421,7 @@ export default function ConuHacks() {
     };
 
     return (
-        <section className="relative h-screen w-full overflow-hidden p-5 max-w-7xl mx-auto" style={{ maxHeight: '900px' }}  id="conuhacks">
+        <section className="relative h-screen w-full overflow-hidden p-5 max-w-7xl mx-auto" style={{ maxHeight: '900px' }} id="conuhacks">
             {/* Background image */}
             <div className="absolute inset-0 z-0 my-20 mr-10 max-w-7xl">
                 <Image
@@ -515,7 +523,7 @@ export default function ConuHacks() {
                     {slides.map((slide, index) => (
                         <div
                             key={slide.id}
-                            ref={(el) => {thumbRefs.current[index] = el; }}
+                            ref={(el) => { thumbRefs.current[index] = el; }}
                             className={clsx(
                                 'min-w-[180px] cursor-pointer rounded-lg border p-2 transition-all duration-300 bg-white/10 backdrop-blur-sm hover:bg-white/20',
                                 {
