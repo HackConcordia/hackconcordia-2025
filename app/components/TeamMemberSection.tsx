@@ -25,7 +25,7 @@ const teamMembers: TeamMember[] = [
         id: 1,
         name: 'Aaron Williams',
         position: 'Head of Design Department',
-        intro: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+        intro: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
         avatar: 'https://images.pexels.com/photos/769690/pexels-photo-769690.jpeg?_gl=1*sxhp64*_ga*MTI0MTExMjY3Ny4xNzUzMzk5MzEz*_ga_8JE65Q40S6*czE3NTMzOTkzMTMkbzEkZzEkdDE3NTMzOTk0NzAkajU5JGwwJGgw',
         socials: {
             twitter: '#',
@@ -37,14 +37,14 @@ const teamMembers: TeamMember[] = [
         id: 2,
         name: 'Jane Smith',
         position: 'Frontend Developer',
-        intro: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+        intro: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
         avatar: 'https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
     },
     {
         id: 3,
         name: 'Aaron Williams',
         position: 'Head of Design Department',
-        intro: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+        intro: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
         avatar: 'https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?_gl=1*j9xn5u*_ga*MTI0MTExMjY3Ny4xNzUzMzk5MzEz*_ga_8JE65Q40S6*czE3NTMzOTkzMTMkbzEkZzEkdDE3NTMzOTkzNjEkajEyJGwwJGgw',
         socials: {
             twitter: '#',
@@ -56,14 +56,14 @@ const teamMembers: TeamMember[] = [
         id: 4,
         name: 'Jane Smith',
         position: 'Frontend Developer',
-        intro: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+        intro: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
         avatar: 'https://images.pexels.com/photos/2613260/pexels-photo-2613260.jpeg?_gl=1*kud2u0*_ga*MTI0MTExMjY3Ny4xNzUzMzk5MzEz*_ga_8JE65Q40S6*czE3NTMzOTkzMTMkbzEkZzEkdDE3NTMzOTkzMjEkajUyJGwwJGgw',
     },
     {
         id: 5,
         name: 'Aaron Williams',
         position: 'Head of Design Department',
-        intro: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+        intro: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
         avatar: 'https://cloudcommercepro.com/wp-content/uploads/2022/06/dummy-customer.jpg',
         socials: {
             twitter: '#',
@@ -75,14 +75,14 @@ const teamMembers: TeamMember[] = [
         id: 6,
         name: 'Jane Smith',
         position: 'Frontend Developer',
-        intro: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+        intro: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
         avatar: 'https://images.pexels.com/photos/2568413/pexels-photo-2568413.jpeg?_gl=1*1mh9ce2*_ga*MTI0MTExMjY3Ny4xNzUzMzk5MzEz*_ga_8JE65Q40S6*czE3NTMzOTkzMTMkbzEkZzEkdDE3NTMzOTk1OTEkajI2JGwwJGgw',
     },
     {
         id: 7,
         name: 'Aaron Williams',
         position: 'Head of Design Department',
-        intro: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+        intro: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
         avatar: 'https://cloudcommercepro.com/wp-content/uploads/2022/06/dummy-customer.jpg',
         socials: {
             twitter: '#',
@@ -94,14 +94,14 @@ const teamMembers: TeamMember[] = [
         id: 8,
         name: 'Jane Smith',
         position: 'Frontend Developer',
-        intro: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+        intro: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
         avatar: 'https://cloudcommercepro.com/wp-content/uploads/2022/06/dummy-customer.jpg',
     },
     {
         id: 9,
         name: 'Aaron Williams',
         position: 'Head of Design Department',
-        intro: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+        intro: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
         avatar: 'https://cloudcommercepro.com/wp-content/uploads/2022/06/dummy-customer.jpg',
         socials: {
             twitter: '#',
@@ -113,14 +113,14 @@ const teamMembers: TeamMember[] = [
         id: 10,
         name: 'Jane Smith',
         position: 'Frontend Developer',
-        intro: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+        intro: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
         avatar: 'https://cloudcommercepro.com/wp-content/uploads/2022/06/dummy-customer.jpg',
     },
     {
         id: 11,
         name: 'Aaron Williams',
         position: 'Head of Design Department',
-        intro: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+        intro: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
         avatar: 'https://cloudcommercepro.com/wp-content/uploads/2022/06/dummy-customer.jpg',
         socials: {
             twitter: '#',
@@ -132,14 +132,14 @@ const teamMembers: TeamMember[] = [
         id: 12,
         name: 'Jane Smith',
         position: 'Frontend Developer',
-        intro: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+        intro: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
         avatar: 'https://cloudcommercepro.com/wp-content/uploads/2022/06/dummy-customer.jpg',
     },
     {
         id: 13,
         name: 'Aaron Williams',
         position: 'Head of Design Department',
-        intro: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+        intro: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
         avatar: 'https://cloudcommercepro.com/wp-content/uploads/2022/06/dummy-customer.jpg',
         socials: {
             twitter: '#',
@@ -151,14 +151,14 @@ const teamMembers: TeamMember[] = [
         id: 14,
         name: 'Jane Smith',
         position: 'Frontend Developer',
-        intro: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+        intro: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
         avatar: 'https://cloudcommercepro.com/wp-content/uploads/2022/06/dummy-customer.jpg',
     },
     {
         id: 15,
         name: 'Aaron Williams',
         position: 'Head of Design Department',
-        intro: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+        intro: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
         avatar: 'https://cloudcommercepro.com/wp-content/uploads/2022/06/dummy-customer.jpg',
         socials: {
             twitter: '#',
@@ -170,14 +170,14 @@ const teamMembers: TeamMember[] = [
         id: 16,
         name: 'Jane Smith',
         position: 'Frontend Developer',
-        intro: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+        intro: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
         avatar: 'https://cloudcommercepro.com/wp-content/uploads/2022/06/dummy-customer.jpg',
     },
     {
         id: 17,
         name: 'Aaron Williams',
         position: 'Head of Design Department',
-        intro: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+        intro: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
         avatar: 'https://cloudcommercepro.com/wp-content/uploads/2022/06/dummy-customer.jpg',
         socials: {
             twitter: '#',
@@ -189,14 +189,14 @@ const teamMembers: TeamMember[] = [
         id: 18,
         name: 'Jane Smith',
         position: 'Frontend Developer',
-        intro: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+        intro: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
         avatar: 'https://cloudcommercepro.com/wp-content/uploads/2022/06/dummy-customer.jpg',
     },
     {
         id: 19,
         name: 'Aaron Williams',
         position: 'Head of Design Department',
-        intro: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+        intro: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
         avatar: 'https://cloudcommercepro.com/wp-content/uploads/2022/06/dummy-customer.jpg',
         socials: {
             twitter: '#',
@@ -208,7 +208,7 @@ const teamMembers: TeamMember[] = [
         id: 20,
         name: 'Jane Smith',
         position: 'Frontend Developer',
-        intro: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+        intro: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
         avatar: 'https://cloudcommercepro.com/wp-content/uploads/2022/06/dummy-customer.jpg',
     },
     // ...add more (30+ as needed)
@@ -223,27 +223,25 @@ export default function TeamMemberSection() {
 
     return (
         <>
-        <BeeCursor />
-        <section className="relative z-10 w-screen h-screen flex flex-col justify-center max-w-7xl mx-auto" id="team">
-            <div className="mb-12">
+        <section className="relative z-10 w-screen md:h-screen flex flex-col justify-center max-w-7xl mx-auto p-4 md:p-0" id="team">
+            <div className="mb-4 md:mb-12">
                 <div className="flex w-full justify-between items-center">
-                    <h2 className="text-4xl font-bold text-yellow-400">Hive keepers</h2>
-                    {/* Legacy teams button */}
+                    <h2 className="text-3xl md:text-4xl font-bold text-yellow-400">Hive keepers</h2>
                     <Link
                         href="legacy-teams"
-                        className="mt-4 px-6 py-2 bg-yellow-500 text-white rounded hover:bg-yellow-600 transition"
+                        className="md:mt-4 px-4 md:px-6 py-2 bg-yellow-500 text-white rounded hover:bg-yellow-600 transition"
                     >
                         Legacy Teams
                         <FaArrowRight className="inline-block ml-2 rotate-315" />
                     </Link>
 
                 </div>
-                <p className="mt-4 text-gray-400">
+                <p className="mt-4 text-gray-400 text-sm">
                     Meet the dedicated team behind Conuhacks, working tirelessly to bring you the best hackathon experience.
                 </p>
             </div>
 
-            <div className="flex flex-col md:flex-row gap-12 items-start text-white">
+            <div className="flex flex-col-reverse md:flex-row gap-4 md:gap-12 items-start text-white">
                 {/* Left Panel: Displayed Member Details */}
                 <div className="flex-1 max-w-xl">
                     <h3 className="text-2xl font-bold">{displayMember.name}</h3>
@@ -271,8 +269,8 @@ export default function TeamMemberSection() {
                 </div>
 
                 {/* Right Panel: Scrollable Team Avatars */}
-                <div className="flex-1 max-w-2xl overflow-x-auto ml-auto">
-                    <div className="flex pb-4">
+                <div className="md:flex-1 max-w-[calc(100vw-2rem)] md:max-w-2xl overflow-x-auto md:ml-auto">
+                    <div className="flex w-100 pb-4">
                         {teamMembers.map((member) => {
                             const isSelected = selected.id === member.id;
 
@@ -287,6 +285,7 @@ export default function TeamMemberSection() {
                                     `}
                                     style={{
                                         minWidth: hovered?.id === member.id || isSelected ? '250px' : '150px',
+                                        maxWidth: '',
                                         height: '400px',
                                     }}
                                 >
@@ -295,13 +294,6 @@ export default function TeamMemberSection() {
                                         alt={member.name}
                                         className="w-full h-full object-cover"
                                     />
-
-                                    {/* Optional: name overlay on hover (for clarity) */}
-                                    {/* {hovered?.id === member.id && !isSelected && (
-                                        <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 p-2 text-white text-sm">
-                                            {member.name}
-                                        </div>
-                                    )} */}
                                 </div>
                             );
                         })}

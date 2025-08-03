@@ -20,11 +20,9 @@ const navLinks = [
     { href: '#faq', label: 'FAQ' },
 ];
 
-// Optional: map routes to the section they semantically represent
 const pageToSectionMap: Record<string, string> = {
     '/legacy-teams': 'team',
     '/contact-us': 'faq',
-    // Add more mappings if needed
 };
 
 export default function Header() {
@@ -92,15 +90,15 @@ export default function Header() {
 
     return (
         <header className="w-full fixed top-0 z-50 text-white backdrop-blur-xs bg-black/60">
-            <div className="max-w-7xl mx-auto flex justify-between items-center py-2">
+            <div className="max-w-7xl mx-auto flex justify-between items-center py-2 px-4">
                 {/* Left Logo */}
                 <div className="flex items-center space-x-2" style={{ marginLeft: '-2px' }}>
                     <Image src="/imgs/HC_logo.png" alt="Logo" width={40} height={40} />
                     <div className="text-xl font-bold">HackConcordia</div>
                 </div>
 
-                {/* Middle Navigation */}
-                <nav className="space-x-6 text-sm md:text-base">
+                {/* Middle Navigation (hidden on small screens) */}
+                <nav className="hidden md:flex space-x-6 text-sm md:text-base">
                     {navLinks.map(({ href, label }) => {
                         const sectionId = href.replace('#', '');
                         const isActive = activeSection === sectionId;
@@ -121,44 +119,21 @@ export default function Header() {
                     })}
                 </nav>
 
-                {/* Right Icons */}
-                <div className="flex space-x-4">
-                    <a
-                        className="hover:text-yellow-400"
-                        href="https://facebook.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
+                {/* Right Icons (hidden on small screens) */}
+                <div className="hidden md:flex space-x-4">
+                    <a className="hover:text-yellow-400" href="https://facebook.com" target="_blank" rel="noopener noreferrer">
                         <FaFacebookF size={18} />
                     </a>
-                    <a
-                        className="hover:text-yellow-400"
-                        href="https://instagram.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
+                    <a className="hover:text-yellow-400" href="https://instagram.com" target="_blank" rel="noopener noreferrer">
                         <FaInstagram size={18} />
                     </a>
-                    <a
-                        className="hover:text-yellow-400"
-                        href="https://linkedin.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
+                    <a className="hover:text-yellow-400" href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
                         <FaLinkedinIn size={18} />
                     </a>
-                    <a
-                        className="hover:text-yellow-400"
-                        href="https://x.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
+                    <a className="hover:text-yellow-400" href="https://x.com" target="_blank" rel="noopener noreferrer">
                         <FaX size={18} />
                     </a>
-                    <a
-                        className="hover:text-yellow-400"
-                        href="mailto:email@example.com"
-                    >
+                    <a className="hover:text-yellow-400" href="mailto:email@example.com">
                         <FaEnvelope size={18} />
                     </a>
                 </div>

@@ -421,24 +421,24 @@ export default function ConuHacks() {
     };
 
     return (
-        <section className="relative h-screen w-full overflow-hidden p-5 max-w-7xl mx-auto" style={{ maxHeight: '900px' }} id="conuhacks">
+        <section className="relative h-screen w-full overflow-hidden p-5 max-w-7xl mx-auto" style={{ maxHeight: '90vh' }} id="conuhacks">
             {/* Background image */}
-            <div className="absolute inset-0 z-0 my-20 mr-10 max-w-7xl">
+            <div className="absolute inset-0 z-0 my-20 md:mr-10 max-w-7xl">
                 <Image
                     src={activeSlide.image}
                     alt={activeSlide.title}
                     layout="fill"
                     objectFit="cover"
-                    className="transition-all duration-700 ease-in-out rounded-lg shadow-amber-100"
+                    className="transition-all duration-700 ease-in-out md:rounded-sm shadow-amber-100"
                 />
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-black/80" />
             </div>
 
             {/* Text Overlay */}
-            <div className="relative z-10 h-full w-full flex px-10 md:px-10 py-25 mx-auto max-w-7xl">
+            <div className="relative z-10 h-full w-full flex px-4 md:px-10 py-25 mx-auto max-w-7xl">
                 <div className="text-white">
-                    <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-1" style={{ marginLeft: '-2px' }}>
+                    <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-1" style={{ marginLeft: '-2px' }}>
                         {activeSlide.title}
                     </h1>
                     <p className="text-xs max-w-5xl mb-5" dangerouslySetInnerHTML={{ __html: activeSlide.subtitle }}></p>
@@ -488,7 +488,7 @@ export default function ConuHacks() {
                 </div>
             </div>
 
-            <div className="absolute bottom-70 right-10 z-20 flex items-center space-x-4">
+            <div className="relative bottom-10 md:absolute md:bottom-70 md:right-10 z-20 flex items-center space-x-4">
                 <div className='flex items-center space-x-1'>
                     <button
                         onClick={goToPrev}
@@ -504,7 +504,7 @@ export default function ConuHacks() {
                     </button>
                 </div>
                 {/* Progress Bar (under thumbnails) */}
-                <div className="z-20 w-[300px] h-1 bg-white/20 overflow-hidden">
+                <div className="z-20 w-[200px] md:w-[300px] h-1 bg-white/20 overflow-hidden">
                     <div
                         className="h-full bg-yellow-400 transition-all duration-300"
                         style={{ width: `${(active + 1) * (100 / slides.length)}%` }}
@@ -518,7 +518,7 @@ export default function ConuHacks() {
             </div>
 
             {/* Carousel */}
-            <div className="absolute bottom-10 right-0 z-20">
+            <div className="hidden md:block absolute bottom-10 right-0 z-20">
                 <div className="flex space-x-4 overflow-x-auto scrollbar-hide" style={{ maxWidth: '500px' }}>
                     {slides.map((slide, index) => (
                         <div

@@ -14,8 +14,6 @@ export default function Footer() {
 
                 {/* Right: Links */}
                 <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-gray-300">
-                    <Link href="/about">About</Link>
-                    <Link href="/contact">Contact</Link>
                     <Link href="/terms">Terms of Service</Link>
                     <Link href="/privacy">Privacy Policy</Link>
                     <Link href="/sponsors">Sponsors</Link>

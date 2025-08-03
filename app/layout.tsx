@@ -34,7 +34,9 @@ export default function RootLayout({
         <BackgroundOverlay />
         <Header />
         <main className="pt-15">
-          <FloatingBeeCursor />
+          <div className="hidden md:flex">
+            <FloatingBeeCursor />
+          </div>
           {children}
           </main>
         <Footer />

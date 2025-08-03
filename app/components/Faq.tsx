@@ -19,9 +19,9 @@ import {
 
 
 type FAQItem = {
-    question: string;
-    answer: string;
-    icon: JSX.Element;
+  question: string;
+  answer: string;
+  icon: JSX.Element;
 };
 
 const faqs: FAQItem[] = [
@@ -79,57 +79,61 @@ const faqs: FAQItem[] = [
 
 
 export default function FAQ() {
-    return (
-        <section className="relative z-10 w-screen text-white py-20 px-4 sm:px-6 lg:px-8" id="faq">
-            <div className="max-w-7xl mx-auto">
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
-                    <h2 className="text-4xl font-bold text-yellow-400 md:mb-0">
-                        Bee Curious?
-                    </h2>
-                    <a
-                        href="contact-us"
-                        className="text-sm font-medium border border-white px-4 py-2 rounded-md hover:bg-white hover:text-black transition"
-                    >
-                        Contact Us ↗
-                    </a>
-                </div>
+  return (
+    <section className="relative z-10 w-full text-white py-20 px-4 sm:px-6 lg:px-8" id="faq">
+      <div className="max-w-7xl mx-auto">
+        {/* Heading */}
+        <div className="flex flex-row md:items-center justify-between mb-4 gap-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-yellow-400">
+            Bee Curious?
+          </h2>
+          <a
+            href="contact-us"
+            className="text-sm font-medium border border-white px-4 py-2 rounded-sm hover:bg-white hover:text-black transition w-fit"
+          >
+            Contact Us ↗
+          </a>
+        </div>
 
-                <p className="text-gray-400 mb-8 text-sm">
-                    Find answers to questions about HackConcordia and ConUHacks. Need more details?
-                    Reach out to our team or explore the <a href="https://conuhacks.io/faq" className="underline hover:text-white transition">official FAQ page</a>.
-                </p>
+        <p className="text-gray-400 mb-10 text-sm sm:text-base text-justify">
+          Find answers to questions about HackConcordia and ConUHacks. Need more details? Reach out to our team to know more.
+        </p>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    {faqs.map((faq, idx) => (
-                        <div key={idx} className="flex items-start gap-4">
-                            <div className="p-3 rounded-full bg-white text-black shrink-0">{faq.icon}</div>
-                            <div>
-                                <h3 className="font-semibold mb-1">{faq.question}</h3>
-                                <p className="text-xs text-gray-400">{faq.answer}</p>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-
-                {/* Footer */}
-                <div className="mt-8 border border-zinc-700 rounded-lg p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 backdrop-blur-xs">
-                    <div className="flex items-center gap-4">
-                        <Image src="/imgs/HC_logo.png" alt="HackConcordia" width={40} height={40} />
-                        <div>
-                            <p className="font-semibold">Still have questions?</p>
-                            <p className="text-sm text-gray-400">
-                                Reach out via email or follow us on social media @HackConcordia.
-                            </p>
-                        </div>
-                    </div>
-                    <a
-                        href="contact-us"
-                        className="bg-yellow-600 hover:bg-yellow-700 text-white px-5 py-2 rounded-md text-sm font-medium transition"
-                    >
-                        Get in touch
-                    </a>
-                </div>
+        {/* FAQ List */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {faqs.map((faq, idx) => (
+            <div key={idx} className="flex items-start gap-4">
+              <div className="p-3 rounded-full bg-white text-black shrink-0">
+                {faq.icon}
+              </div>
+              <div className="space-y-1">
+                <h3 className="font-semibold text-base">{faq.question}</h3>
+                <p className="text-sm text-gray-400 text-justify">{faq.answer}</p>
+              </div>
             </div>
-        </section>
-    );
+          ))}
+        </div>
+
+        {/* Footer */}
+        <div className="mt-10 border border-zinc-700 rounded-lg p-3 md:p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 backdrop-blur-xs">
+          <div className="flex flex-row items-center gap-4">
+            <Image src="/imgs/HC_logo.png" alt="HackConcordia" width={40} height={40} />
+            <div>
+              <p className="font-semibold">Still have questions?</p>
+              <p className="text-sm text-gray-400">
+                Reach out via email or follow us on social media @HackConcordia.
+              </p>
+            </div>
+          </div>
+          <a
+            href="contact-us"
+            className="bg-yellow-600 hover:bg-yellow-700 text-white px-5 py-2 rounded-sm text-sm font-medium transition w-fit ml-11"
+          >
+            Get in touch
+          </a>
+        </div>
+      </div>
+    </section>
+
+  );
 }

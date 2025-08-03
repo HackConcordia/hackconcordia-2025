@@ -81,14 +81,14 @@ const events: Event[] = [
         type: '24‑Hour Hackathon',
         time: '8 AM (24th Jan) - 11 AM (25th Jan)',
         location: 'Concordia University (John Molson MB)',
-        address: '1455 Boulevard de Maisonneuve Ouest, Montreal',
+        address: '1455 Boulevard de Maisonneuve, Montreal',
     },
     {
         id: 7,
         date: '01',
         month: 'February',
         year: '2026',
-        title: 'Winter LL (Lightning Learning)',
+        title: 'Lightning Learning',
         type: 'Tech Social',
         time: 'Evening (5:30 PM–7:30 PM)',
         location: 'tbd',
@@ -132,7 +132,7 @@ const events: Event[] = [
 
 export default function UpcomingEvents() {
     return (
-        <section className="relative z-10 w-screen flex flex-col justify-center max-w-7xl mx-auto" id="events">
+        <section className="relative z-10 w-screen flex flex-col justify-center max-w-7xl mx-auto p-4 md:p-0" id="events">
             <h2 className="text-4xl font-bold text-yellow-400 mb-2 mt-20">
                 Bee Ready
             </h2>
@@ -146,8 +146,8 @@ export default function UpcomingEvents() {
                     {events.map((event) => (
                         <div
                             key={event.id}
-                            className={`rounded-md p-8 min-w-[300px] w-[350px] border-2 shrink-0 transition-colors duration-300 relative overflow-hidden
-    ${event.highlight
+                            className={`rounded-md p-8 w-[330px] border-2 shrink-0 transition-colors duration-300 relative overflow-hidden
+                                ${event.highlight
                                     ? 'backdrop-blur-xs text-white border-yellow-500 pulse-scale'
                                     : 'backdrop-blur-xs text-white border-zinc-900'
                                 }`}
