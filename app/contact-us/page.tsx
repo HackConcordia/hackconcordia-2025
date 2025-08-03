@@ -10,7 +10,9 @@ export default function ContactSection() {
       <div className="backdrop-blur-xs text-white text-center py-16 flex flex-col w-screen">
         <h2 className="text-4xl md:text-5xl font-bold mb-4 text-yellow-400">Contact Us</h2>
         <p className="max-w-2xl mx-auto text-sm md:text-sm text-gray-200">
-          Have questions about HackConcordia or ConuHacks? Want to be a judge? Reach out to us and we will get back to you.
+          Have questions about HackConcordia or ConuHacks? Want to be a sponsor? Want to be a judge?
+          <br/>
+          Reach out to us and we will get back to you.
         </p>
       </div>
 
