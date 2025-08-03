@@ -36,8 +36,8 @@ export default function AboutUs() {
     return (
         <section className="relative z-10 h-[calc(100vh-140px)] max-w-7xl mx-auto" id="home">
             <div className="flex items-center justify-center h-full w-full">
-                <div className="relative w-full max-w-4xl flex items-center justify-center">
-                    <div className="inset-0 flex flex-col items-center justify-center text-center text-white px-4 space-y-6 z-30">
+                <div className="relative w-full h-full max-w-4xl flex items-center justify-center">
+                    <div className="inset-0 h-full flex flex-col items-center justify-center text-center text-white px-4 space-y-6 z-30">
 
                         <h1 className="logo xl:text-8xl md:ml-2 sm:text-5xl md:text-7xl text-5xl font-ruda text-neon-yellow mb-2">
                             <b className="w-1/2">
@@ -54,11 +54,11 @@ export default function AboutUs() {
                         </p>
 
                         {/* Subscribe Form */}
-                        <form className="flex flex-col sm:flex-row items-center gap-3 w-full max-w-lg backdrop-blur-xs border-2 border-white/10 rounded-l-sm md:rounded-r-sm md:mb-10">
+                        <form className="flex flex-col sm:flex-row items-center gap-3 w-full max-w-lg backdrop-blur-xs md:border-2 md:border-white/10 rounded-l-sm md:rounded-r-sm md:mb-10">
                             <input
                                 type="email"
                                 placeholder="Enter your email"
-                                className="w-full px-4 py-3 placeholder-gray-500 text-white outline-0"
+                                className="w-full px-4 py-3 placeholder-gray-500 text-white outline-0 border-2 border-white/10 md:border-0"
                                 required
                             />
                             <button
@@ -70,7 +70,7 @@ export default function AboutUs() {
                         </form>
 
                         {/* Mobile Auto-scroll Text Cards */}
-                        <div className="flex flex-col gap-4 md:hidden w-full px-4 md:mt-6">
+                        <div className="flex flex-col gap-4 md:hidden w-full px-4 mt-6">
                             {cardText.map((text, idx) => (
                                 <div
                                     key={idx}
