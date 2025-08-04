@@ -1,5 +1,5 @@
 import { FaClipboardList, FaEnvelope } from "react-icons/fa";
-import BeeCursor from "../components/FloatingBeeCursor";
+import BeeCursor from "@/components/FloatingBeeCursor";
 
 export default function ContactSection() {
   return (

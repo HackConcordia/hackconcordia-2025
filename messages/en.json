@@ -1,0 +1,305 @@
+{
+  "AboutUs": {
+    "title": "About Us",
+    "subtitle1": "Bee the Change. Code the Future.",
+    "paragraph1": "Bringing Quebec’s biggest hackathon to life.",
+    "subscribeButton": "Subscribe",
+    "scrollDown": "Scroll down to know more",
+    "description": "This is your hub for all things hacking. From upcoming hackathons and events to curated learning resources, this site is your launchpad to grow your skills, meet fellow builders, and bring your ideas to life.",
+    "description2": "Ready to dive in? Whether you want to compete in a hackathon, attend a workshop, or just meet some like-minded tech lovers, HackConcordia has a spot for you. Come be part of the hive where learning, building, and having fun happen every day.",
+    "description3": "Meet the buzzing minds building Quebec’s biggest student hackathon. HackConcordia is a student-led tech community at Concordia University, where curious creators come together to learn, build, and innovate through code."
+  },
+  "ConuHacks": {
+    "slides": {
+      "1": {
+        "title": "Conuhacks - The hackathon experience",
+        "subtitle": "We believe the best way to learn is by building. ConUHacks is designed to ignite innovation through collaboration. In just one day, teams turn ideas into working prototypes, gaining hands-on experience and building meaningful connections along the way. It’s not just about winning — it’s about exploration, resilience, and growth. Every January, hundreds of students gather in downtown Montreal for 24 hours of creativity, coding, and caffeine. ConUHacks is Concordia’s flagship hackathon — a student-run tech event where developers, designers, and dreamers team up to solve real-world challenges. From first-time hackers to seasoned coders, everyone is welcome.",
+        "others": {
+          "date": "24th January 2026",
+          "location": "Concordia University, Montreal",
+          "duration": "24 hours",
+          "theme": "Innovation and Collaboration",
+          "registration": "Open Now"
+        }
+      },
+      "2": {
+        "title": "ConuHacks I - A Journey Begins",
+        "subtitle": "The first edition of ConuHacks marked the beginning of an incredible journey. With a focus on collaboration and innovation, participants were encouraged to think outside the box and push the boundaries of what was possible.",
+        "winners": {
+          "0": {
+            "position": "1st Place",
+            "description": "An innovative solution that revolutionized the way we approach problem-solving in tech."
+          },
+          "1": {
+            "position": "2nd Place",
+            "description": "A groundbreaking project that introduced new methodologies in software development."
+          },
+          "2": {
+            "position": "3rd Place",
+            "description": "A creative approach to enhancing user experience through innovative design."
+          }
+        },
+        "tag": "First Edition"
+      },
+      "3": {
+        "title": "Conuhacks II - The Next Chapter",
+        "subtitle": "Building on the success of the first edition, ConuHacks II brought together an even larger community of innovators. With more participants and projects, the event showcased the incredible talent and creativity within the tech community.",
+        "winners": {
+          "0": {
+            "position": "1st Place",
+            "description": "An innovative solution that revolutionized the way we approach problem-solving in tech."
+          },
+          "1": {
+            "position": "2nd Place",
+            "description": "A groundbreaking project that introduced new methodologies in software development."
+          },
+          "2": {
+            "position": "3rd Place",
+            "description": "A creative approach to enhancing user experience through innovative design."
+          }
+        },
+        "tag": "Second Edition"
+      },
+      "4": {
+        "title": "Conuhacks III - The Evolution Continues",
+        "subtitle": "The third edition of ConuHacks saw the event evolve into a major tech gathering. With a focus on mentorship and collaboration, participants were able to learn from industry experts and take their projects to new heights.",
+        "winners": {
+          "0": {
+            "position": "1st Place",
+            "description": "An innovative solution that revolutionized the way we approach problem-solving in tech."
+          },
+          "1": {
+            "position": "2nd Place",
+            "description": "A groundbreaking project that introduced new methodologies in software development."
+          },
+          "2": {
+            "position": "3rd Place",
+            "description": "A creative approach to enhancing user experience through innovative design."
+          }
+        },
+        "tag": "Third Edition"
+      },
+      "5": {
+        "title": "Conuhacks IV - The Future Awaits",
+        "subtitle": "Shaping the future of technology through collaboration and innovation. ConuHacks IV focused on pushing the boundaries of what was possible, encouraging participants to think big and dream even bigger.",
+        "winners": {
+          "0": {
+            "position": "1st Place",
+            "description": "An innovative solution that revolutionized the way we approach problem-solving in tech."
+          },
+          "1": {
+            "position": "2nd Place",
+            "description": "A groundbreaking project that introduced new methodologies in software development."
+          },
+          "2": {
+            "position": "3rd Place",
+            "description": "A creative approach to enhancing user experience through innovative design."
+          }
+        },
+        "tag": "Fourth Edition"
+      },
+      "6": {
+        "title": "Conuhacks V - A New Era",
+        "subtitle": "Shaping the future of technology through collaboration and innovation. ConuHacks V focused on pushing the boundaries of what was possible, encouraging participants to think big and dream even bigger.",
+        "winners": {
+          "0": {
+            "position": "1st Place",
+            "description": "An innovative solution that revolutionized the way we approach problem-solving in tech."
+          },
+          "1": {
+            "position": "2nd Place",
+            "description": "A groundbreaking project that introduced new methodologies in software development."
+          },
+          "2": {
+            "position": "3rd Place",
+            "description": "A creative approach to enhancing user experience through innovative design."
+          }
+        },
+        "tag": "Fifth Edition"
+      },
+      "7": {
+        "title": "Conuhacks VI - Innovation Unleashed",
+        "subtitle": "Celebrating the spirit of innovation and collaboration, Conuhacks VI pushes the boundaries of technology and creativity.",
+        "winners": {
+          "0": {
+            "position": "1st Place",
+            "description": "An innovative solution that revolutionized the way we approach problem-solving in tech."
+          },
+          "1": {
+            "position": "2nd Place",
+            "description": "A groundbreaking project that introduced new methodologies in software development."
+          },
+          "2": {
+            "position": "3rd Place",
+            "description": "A creative approach to enhancing user experience through innovative design."
+          }
+        },
+        "tag": "Sixth Edition"
+      },
+      "8": {
+        "title": "Conuhacks VII - Breaking Boundaries",
+        "subtitle": "Celebrating the spirit of innovation and collaboration, Conuhacks VII pushes the boundaries of technology and creativity.",
+        "winners": {
+          "0": {
+            "position": "1st Place",
+            "description": "An innovative solution that revolutionized the way we approach problem-solving in tech."
+          },
+          "1": {
+            "position": "2nd Place",
+            "description": "A groundbreaking project that introduced new methodologies in software development."
+          },
+          "2": {
+            "position": "3rd Place",
+            "description": "A creative approach to enhancing user experience through innovative design."
+          }
+        },
+        "tag": "Seventh Edition"
+      },
+      "9": {
+        "title": "Conuhacks VIII - Uncharted Territories",
+        "subtitle": "Celebrating the spirit of innovation and collaboration, Conuhacks VIII pushes the boundaries of technology and creativity.",
+        "winners": {
+          "0": {
+            "position": "1st Place",
+            "description": "An innovative solution that revolutionized the way we approach problem-solving in tech."
+          },
+          "1": {
+            "position": "2nd Place",
+            "description": "A groundbreaking project that introduced new methodologies in software development."
+          },
+          "2": {
+            "position": "3rd Place",
+            "description": "A creative approach to enhancing user experience through innovative design."
+          }
+        },
+        "tag": "Eighth Edition"
+      },
+      "10": {
+        "title": "Conuhacks IX - The Next Frontier",
+        "subtitle": "Celebrating the spirit of innovation and collaboration, Conuhacks IX pushes the boundaries of technology and creativity.",
+        "winners": {
+          "0": {
+            "position": "1st Place",
+            "description": "An innovative solution that revolutionized the way we approach problem-solving in tech."
+          },
+          "1": {
+            "position": "2nd Place",
+            "description": "A groundbreaking project that introduced new methodologies in software development."
+          },
+          "2": {
+            "position": "3rd Place",
+            "description": "A creative approach to enhancing user experience through innovative design."
+          }
+        },
+        "tag": "Ninth Edition"
+      },
+      "11": {
+        "title": "Conuhacks X - A Decade of Innovation",
+        "subtitle": "Celebrating 10 years of Conuhacks, we look back at a decade of innovation, collaboration, and community building. From humble beginnings to becoming one of the largest student hackathons in Quebec, Conuhacks has consistently pushed the boundaries of what’s possible in tech.",
+        "winners": {
+          "0": {
+            "position": "1st Place",
+            "description": "An innovative solution that revolutionized the way we approach problem-solving in tech."
+          },
+          "1": {
+            "position": "2nd Place",
+            "description": "A groundbreaking project that introduced new methodologies in software development."
+          },
+          "2": {
+            "position": "3rd Place",
+            "description": "A creative approach to enhancing user experience through innovative design."
+          }
+        },
+        "tag": "Tenth Edition"
+      }
+    }
+  },
+  "TeamMember":{
+    "team": {
+      "title": "Hive Keepers",
+      "description": "Meet the dedicated team behind Conuhacks, working tirelessly to bring you the best hackathon experience.",
+      "legacyButton": "Legacy Teams",
+      "1": {
+        "position": "Head of Design Department",
+        "intro": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      },
+      "2": {
+        "position": "Frontend Developer",
+        "intro": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      },
+      "3": {
+        "position": "Head of Design Department",
+        "intro": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      },
+      "4": {
+        "position": "Frontend Developer",
+        "intro": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      },
+      "5": {
+        "position": "Head of Design Department",
+        "intro": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      },
+      "6": {
+        "position": "Frontend Developer",
+        "intro": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      },
+      "7": {
+        "position": "Head of Design Department",
+        "intro": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      },
+      "8": {
+        "position": "Frontend Developer",
+        "intro": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      },
+      "9": {
+        "position": "Head of Design Department",
+        "intro": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      },
+      "10": {
+        "position": "Frontend Developer",
+        "intro": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      },
+      "11": {
+        "position": "Head of Design Department",
+        "intro": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      },
+      "12": {
+        "position": "Frontend Developer",
+        "intro": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      },
+      "13": {
+        "position": "Head of Design Department",
+        "intro": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      },
+      "14": {
+        "position": "Frontend Developer",
+        "intro": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      },
+      "15": {
+        "position": "Head of Design Department",
+        "intro": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      },
+      "16": {
+        "position": "Frontend Developer",
+        "intro": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      },
+      "17": {
+        "position": "Head of Design Department",
+        "intro": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      },
+      "18": {
+        "position": "Frontend Developer",
+        "intro": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      },
+      "19": {
+        "position": "Head of Design Department",
+        "intro": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      },
+      "20": {
+        "position": "Frontend Developer",
+        "intro": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      }
+    }
+    
+  }
+}
