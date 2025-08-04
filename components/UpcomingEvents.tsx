@@ -76,6 +76,7 @@ export default function UpcomingEvents() {
         location: t('location.HBuilding'),
         address: t('address.ConcordiaAddress'),
     },
+    // WINTER 2026
     {
         id: 6,
         date: '25',
@@ -90,8 +91,8 @@ export default function UpcomingEvents() {
     ];
 
     return (
-        <section className="relative z-10 w-screen flex flex-col justify-center max-w-7xl mx-auto" id="events">
-            <h2 className="text-4xl font-bold text-yellow-400 mb-2">
+        <section className="relative z-10 w-screen flex flex-col justify-center max-w-7xl mx-auto p-4 md:p-0" id="events">
+            <h2 className="text-4xl font-bold text-yellow-400 mb-2 mt-20">
                 {t("title1")}
             </h2>
             <p className="text-gray-400 mb-4">
@@ -100,12 +101,13 @@ export default function UpcomingEvents() {
 
             {/* Scroll wrapper */}
             <div className="group relative w-full overflow-hidden">
-                <div className="flex gap-6 overflow-x-auto scroll-smooth transition-all duration-300 group-hover:scrollbar-thin group-hover:scrollbar-thumb-gray-600 group-hover:scrollbar-track-transparent py-4">
+                <div className="flex gap-6 overflow-x-auto scroll-smooth transition-all duration-300 group-hover:scrollbar-thin group-hover:scrollbar-thumb-gray-600 group-hover:scrollbar-track-transparent py-4 pl-2">
                     {events.map((event) => (
                         <div
                             key={event.id}
-                            className={`rounded-md p-8 min-w-[300px] sm:min-w-[300px] border-2 shrink-0 transition-colors duration-300 ${event.highlight
-                                    ? 'backdrop-blur-xs text-white border-yellow-500'
+                            className={`rounded-md p-8 w-[330px] border-2 shrink-0 transition-colors duration-300 relative overflow-hidden
+                                ${event.highlight
+                                    ? 'backdrop-blur-xs text-white border-yellow-500 pulse-scale'
                                     : 'backdrop-blur-xs text-white border-zinc-900'
                                 }`}
                         >
@@ -120,7 +122,7 @@ export default function UpcomingEvents() {
                                 <h3 className="text-xl font-bold">{event.title}</h3>
                                 <p
                                     className={`${event.highlight ? 'text-gray-400' : 'text-gray-400'
-                                        } font-medium`}
+                                        } font-medium text-sm`}
                                 >
                                     {event.type}
                                 </p>
@@ -129,7 +131,7 @@ export default function UpcomingEvents() {
                             <div className="mt-12 text-sm leading-relaxed">
                                 <p className="font-semibold">{event.time}</p>
                                 <p>{event.location}</p>
-                                <p className="text-gray-400">{event.address}</p>
+                                <p className="text-gray-400 text-xs">{event.address}</p>
                             </div>
                         </div>
                     ))}
