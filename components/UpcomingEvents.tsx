@@ -1,4 +1,5 @@
 'use client';
+import { useTranslations } from "next-intl";
 
 type Event = {
     id: number;
@@ -13,84 +14,88 @@ type Event = {
     highlight?: boolean;
 };
 
-const events: Event[] = [
+
+
+export default function UpcomingEvents() {
+    const t = useTranslations("UpcomingEvents");
+
+    const events: Event[] = [
     {
         id: 1,
         date: '26',
-        month: 'August',
+        month: t("month.August"),
         year: '2025',
-        title: 'HackDecouverte',
-        type: 'Mini-Hackathon',
-        time: '7:30PM - 10PM',
-        location: '@H Building Concordia University',
-        address: '1455 Blvd. De Maisonneuve Ouest, Montreal',
+        title: t("title.HackDecouverte"),
+        type: t("type.MiniHackathon"),
+        time: t("time.7_30PM_10PM"),
+        location: t("location.HBuilding"),
+        address: t("address.ConcordiaAddress"),
         highlight: true,
     },
     {
         id: 2,
         date: '02',
-        month: 'September',
+        month: t('month.September'),
         year: '2025',
-        title: 'GitHub Co-pilot',
-        type: 'Workshop',
-        time: '10:30AM - 1PM',
-        location: '@H Building Concordia University',
-        address: '1455 Blvd. De Maisonneuve Ouest, Montreal',
+        title: t('title.GitHubCoPilot'),
+        type: t('type.Workshop'),
+        time: t('time.10_30AM_1PM'),
+        location: t('location.HBuilding'),
+        address: t('address.ConcordiaAddress'),
     },
     {
         id: 3,
         date: '12',
-        month: 'October',
+        month: t('month.October'),
         year: '2025',
-        title: 'Full-Stack Developer 101',
-        type: 'Workshop',
-        time: '10:30AM - 1PM',
-        location: '@H Building Concordia University',
-        address: '1455 Blvd. De Maisonneuve Ouest, Montreal',
+        title: t('title.FullStackDeveloper101'),
+        type: t('type.Workshop'),
+        time: t('time.10_30AM_1PM'),
+        location: t('location.HBuilding'),
+        address: t('address.ConcordiaAddress'),
     },
     {
         id: 4,
         date: '25',
-        month: 'November',
+        month: t('month.November'),
         year: '2025',
-        title: 'HackDecouverte',
-        type: 'Mini-Hackathon',
-        time: '7:30PM - 10PM',
-        location: '@H Building Concordia University',
-        address: '1455 Blvd. De Maisonneuve Ouest, Montreal',
+        title: t('title.HackDecouverte'),
+        type: t('type.MiniHackathon'),
+        time: t('time.7_30PM_10PM'),
+        location: t('location.HBuilding'),
+        address: t('address.ConcordiaAddress'),
     },
     {
         id: 5,
         date: '30',
-        month: 'November',
+        month: t('month.November'),
         year: '2025',
-        title: 'GitHub Co-pilot',
-        type: 'Workshop',
-        time: '10:30AM - 1PM',
-        location: '@H Building Concordia University',
-        address: '1455 Blvd. De Maisonneuve Ouest, Montreal',
+        title: t('title.GitHubCoPilot'),
+        type: t('type.Workshop'),
+        time: t('time.10_30AM_1PM'),
+        location: t('location.HBuilding'),
+        address: t('address.ConcordiaAddress'),
     },
     {
         id: 6,
         date: '25',
-        month: 'December',
+        month: t('month.December'),
         year: '2025',
-        title: 'Full-Stack Developer 101',
-        type: 'Workshop',
-        time: '10:30AM - 1PM',
-        location: '@H Building Concordia University',
-        address: '1455 Blvd. De Maisonneuve Ouest, Montreal',
+        title: t('title.FullStackDeveloper101'),
+        type: t('type.Workshop'),
+        time: t('time.10_30AM_1PM'),
+        location: t('location.HBuilding'),
+        address: t('address.ConcordiaAddress'),
     },
-];
+    ];
 
-export default function UpcomingEvents() {
     return (
         <section className="relative z-10 w-screen flex flex-col justify-center max-w-7xl mx-auto" id="events">
             <h2 className="text-4xl font-bold text-yellow-400 mb-2">
-                Bee Ready...
+                {t("title1")}
             </h2>
             <p className="text-gray-400 mb-4">
-                Below is a list of our upcoming events. Click below to register.
+                {t("subtitle1")}
             </p>
 
             {/* Scroll wrapper */}

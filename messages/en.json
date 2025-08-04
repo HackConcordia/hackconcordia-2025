@@ -301,5 +301,35 @@
       }
     }
     
+  },
+  "UpcomingEvents":{
+    "title1": "Bee Ready...",
+    "subtitle1": "Below is a list of our upcoming events. Click below to register.",
+    "month": {
+    "August": "August",
+    "September": "September",
+    "October": "October",
+    "November": "November",
+    "December": "December"
+  },
+  "title": {
+    "HackDecouverte": "HackDecouverte",
+    "GitHubCoPilot": "GitHub Co-pilot",
+    "FullStackDeveloper101": "Full-Stack Developer 101"
+  },
+  "type": {
+    "MiniHackathon": "Mini-Hackathon",
+    "Workshop": "Workshop"
+  },
+  "time": {
+    "7_30PM_10PM": "7:30PM - 10PM",
+    "10_30AM_1PM": "10:30AM - 1PM"
+  },
+  "location": {
+    "HBuilding": "@H Building Concordia University"
+  },
+  "address": {
+    "ConcordiaAddress": "1455 Blvd. De Maisonneuve Ouest, Montreal"
+  }
   }
 }
