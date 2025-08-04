@@ -1,8 +1,357 @@
 {
   "AboutUs": {
-    "title": "About Us"
+    "title": "À Propos de Nous",
+    "subtitle1": "Être le Changement. Coder l'Avenir.",
+    "paragraph1": "Donner vie au plus grand hackathon du Québec.",
+    "subscribeButton": "S'abonner",
+    "scrollDown": "Faites défiler vers le bas pour en savoir plus",
+    "description": "Voici votre centre pour tout ce qui concerne le hacking. Des hackathons et événements à venir aux ressources d'apprentissage sélectionnées, ce site est votre rampe de lancement pour développer vos compétences, rencontrer d'autres créateurs et donner vie à vos idées.",
+    "description2": "Prêt à plonger ? Que vous souhaitiez participer à un hackathon, assister à un atelier ou simplement rencontrer des passionnés de technologie partageant les mêmes idées, HackConcordia a une place pour vous. Venez faire partie de la ruche où l'apprentissage, la création et le plaisir se côtoient chaque jour.",
+    "description3": "Rencontrez les esprits bourdonnants qui construisent le plus grand hackathon étudiant du Québec. HackConcordia est une communauté technologique dirigée par des étudiants à l'Université Concordia, où des créateurs curieux se rassemblent pour apprendre, construire et innover par le code."
   },
   "ConuHacks": {
-    "test": "Hello"
+    "slides": {
+      "1": {
+        "title": "Conuhacks - L'expérience hackathon",
+        "subtitle": "Nous croyons que la meilleure façon d'apprendre est en construisant. ConUHacks est conçu pour déclencher l'innovation par la collaboration. En seulement une journée, les équipes transforment les idées en prototypes fonctionnels, acquérant une expérience pratique et établissant des connexions significatives en cours de route. Il ne s'agit pas seulement de gagner — il s'agit d'exploration, de résilience et de croissance. Chaque janvier, des centaines d'étudiants se rassemblent au centre-ville de Montréal pour 24 heures de créativité, de codage et de caféine. ConUHacks est le hackathon phare de Concordia — un événement technologique géré par des étudiants où développeurs, designers et rêveurs s'associent pour résoudre des défis du monde réel. Des hackers débutants aux codeurs expérimentés, tout le monde est le bienvenu.",
+        "others": {
+          "date": "24 janvier 2026",
+          "location": "Université Concordia, Montréal",
+          "duration": "24 heures",
+          "theme": "Innovation et Collaboration",
+          "registration": "Inscriptions Ouvertes"
+        }
+      },
+      "2": {
+        "title": "ConuHacks I - Un Voyage Commence",
+        "subtitle": "La première édition de ConuHacks a marqué le début d'un voyage incroyable. En mettant l'accent sur la collaboration et l'innovation, les participants ont été encouragés à sortir des sentiers battus et à repousser les limites du possible.",
+        "winners": {
+          "0": {
+            "position": "1ère Place",
+            "description": "Une solution innovante qui a révolutionné notre approche de la résolution de problèmes en technologie."
+          },
+          "1": {
+            "position": "2ème Place",
+            "description": "Un projet révolutionnaire qui a introduit de nouvelles méthodologies dans le développement logiciel."
+          },
+          "2": {
+            "position": "3ème Place",
+            "description": "Une approche créative pour améliorer l'expérience utilisateur grâce à un design innovant."
+          }
+        },
+        "tag": "Première Édition"
+      },
+      "3": {
+        "title": "Conuhacks II - Le Chapitre Suivant",
+        "subtitle": "S'appuyant sur le succès de la première édition, ConuHacks II a rassemblé une communauté d'innovateurs encore plus grande. Avec plus de participants et de projets, l'événement a mis en valeur l'incroyable talent et créativité au sein de la communauté technologique.",
+        "winners": {
+          "0": {
+            "position": "1ère Place",
+            "description": "Une solution innovante qui a révolutionné notre approche de la résolution de problèmes en technologie."
+          },
+          "1": {
+            "position": "2ème Place",
+            "description": "Un projet révolutionnaire qui a introduit de nouvelles méthodologies dans le développement logiciel."
+          },
+          "2": {
+            "position": "3ème Place",
+            "description": "Une approche créative pour améliorer l'expérience utilisateur grâce à un design innovant."
+          }
+        },
+        "tag": "Deuxième Édition"
+      },
+      "4": {
+        "title": "Conuhacks III - L'Évolution Continue",
+        "subtitle": "La troisième édition de ConuHacks a vu l'événement évoluer vers un rassemblement technologique majeur. En mettant l'accent sur le mentorat et la collaboration, les participants ont pu apprendre d'experts de l'industrie et porter leurs projets vers de nouveaux sommets.",
+        "winners": {
+          "0": {
+            "position": "1ère Place",
+            "description": "Une solution innovante qui a révolutionné notre approche de la résolution de problèmes en technologie."
+          },
+          "1": {
+            "position": "2ème Place",
+            "description": "Un projet révolutionnaire qui a introduit de nouvelles méthodologies dans le développement logiciel."
+          },
+          "2": {
+            "position": "3ème Place",
+            "description": "Une approche créative pour améliorer l'expérience utilisateur grâce à un design innovant."
+          }
+        },
+        "tag": "Troisième Édition"
+      },
+      "5": {
+        "title": "Conuhacks IV - L'Avenir Nous Attend",
+        "subtitle": "Façonner l'avenir de la technologie par la collaboration et l'innovation. ConuHacks IV s'est concentré sur le dépassement des limites du possible, encourageant les participants à voir grand et rêver encore plus grand.",
+        "winners": {
+          "0": {
+            "position": "1ère Place",
+            "description": "Une solution innovante qui a révolutionné notre approche de la résolution de problèmes en technologie."
+          },
+          "1": {
+            "position": "2ème Place",
+            "description": "Un projet révolutionnaire qui a introduit de nouvelles méthodologies dans le développement logiciel."
+          },
+          "2": {
+            "position": "3ème Place",
+            "description": "Une approche créative pour améliorer l'expérience utilisateur grâce à un design innovant."
+          }
+        },
+        "tag": "Quatrième Édition"
+      },
+      "6": {
+        "title": "Conuhacks V - Une Nouvelle Ère",
+        "subtitle": "Façonner l'avenir de la technologie par la collaboration et l'innovation. ConuHacks V s'est concentré sur le dépassement des limites du possible, encourageant les participants à voir grand et rêver encore plus grand.",
+        "winners": {
+          "0": {
+            "position": "1ère Place",
+            "description": "Une solution innovante qui a révolutionné notre approche de la résolution de problèmes en technologie."
+          },
+          "1": {
+            "position": "2ème Place",
+            "description": "Un projet révolutionnaire qui a introduit de nouvelles méthodologies dans le développement logiciel."
+          },
+          "2": {
+            "position": "3ème Place",
+            "description": "Une approche créative pour améliorer l'expérience utilisateur grâce à un design innovant."
+          }
+        },
+        "tag": "Cinquième Édition"
+      },
+      "7": {
+        "title": "Conuhacks VI - Innovation Libérée",
+        "subtitle": "Célébrant l'esprit d'innovation et de collaboration, Conuhacks VI repousse les limites de la technologie et de la créativité.",
+        "winners": {
+          "0": {
+            "position": "1ère Place",
+            "description": "Une solution innovante qui a révolutionné notre approche de la résolution de problèmes en technologie."
+          },
+          "1": {
+            "position": "2ème Place",
+            "description": "Un projet révolutionnaire qui a introduit de nouvelles méthodologies dans le développement logiciel."
+          },
+          "2": {
+            "position": "3ème Place",
+            "description": "Une approche créative pour améliorer l'expérience utilisateur grâce à un design innovant."
+          }
+        },
+        "tag": "Sixième Édition"
+      },
+      "8": {
+        "title": "Conuhacks VII - Briser les Barrières",
+        "subtitle": "Célébrant l'esprit d'innovation et de collaboration, Conuhacks VII repousse les limites de la technologie et de la créativité.",
+        "winners": {
+          "0": {
+            "position": "1ère Place",
+            "description": "Une solution innovante qui a révolutionné notre approche de la résolution de problèmes en technologie."
+          },
+          "1": {
+            "position": "2ème Place",
+            "description": "Un projet révolutionnaire qui a introduit de nouvelles méthodologies dans le développement logiciel."
+          },
+          "2": {
+            "position": "3ème Place",
+            "description": "Une approche créative pour améliorer l'expérience utilisateur grâce à un design innovant."
+          }
+        },
+        "tag": "Septième Édition"
+      },
+      "9": {
+        "title": "Conuhacks VIII - Territoires Inexplorés",
+        "subtitle": "Célébrant l'esprit d'innovation et de collaboration, Conuhacks VIII repousse les limites de la technologie et de la créativité.",
+        "winners": {
+          "0": {
+            "position": "1ère Place",
+            "description": "Une solution innovante qui a révolutionné notre approche de la résolution de problèmes en technologie."
+          },
+          "1": {
+            "position": "2ème Place",
+            "description": "Un projet révolutionnaire qui a introduit de nouvelles méthodologies dans le développement logiciel."
+          },
+          "2": {
+            "position": "3ème Place",
+            "description": "Une approche créative pour améliorer l'expérience utilisateur grâce à un design innovant."
+          }
+        },
+        "tag": "Huitième Édition"
+      },
+      "10": {
+        "title": "Conuhacks IX - La Prochaine Frontière",
+        "subtitle": "Célébrant l'esprit d'innovation et de collaboration, Conuhacks IX repousse les limites de la technologie et de la créativité.",
+        "winners": {
+          "0": {
+            "position": "1ère Place",
+            "description": "Une solution innovante qui a révolutionné notre approche de la résolution de problèmes en technologie."
+          },
+          "1": {
+            "position": "2ème Place",
+            "description": "Un projet révolutionnaire qui a introduit de nouvelles méthodologies dans le développement logiciel."
+          },
+          "2": {
+            "position": "3ème Place",
+            "description": "Une approche créative pour améliorer l'expérience utilisateur grâce à un design innovant."
+          }
+        },
+        "tag": "Neuvième Édition"
+      },
+      "11": {
+        "title": "Conuhacks X - Une Décennie d'Innovation",
+        "subtitle": "Célébrant 10 ans de Conuhacks, nous regardons en arrière sur une décennie d'innovation, de collaboration et de construction communautaire. D'humbles débuts à devenir l'un des plus grands hackathons étudiants du Québec, Conuhacks a constamment repoussé les limites du possible en technologie.",
+        "winners": {
+          "0": {
+            "position": "1ère Place",
+            "description": "Une solution innovante qui a révolutionné notre approche de la résolution de problèmes en technologie."
+          },
+          "1": {
+            "position": "2ème Place",
+            "description": "Un projet révolutionnaire qui a introduit de nouvelles méthodologies dans le développement logiciel."
+          },
+          "2": {
+            "position": "3ème Place",
+            "description": "Une approche créative pour améliorer l'expérience utilisateur grâce à un design innovant."
+          }
+        },
+        "tag": "Dixième Édition"
+      }
+    }
+  },
+  "TeamMember": {
+    "team": {
+      "title": "Gardiens de la Ruche",
+      "description": "Rencontrez l'équipe dévouée derrière Conuhacks, qui travaille sans relâche pour vous offrir la meilleure expérience de hackathon.",
+      "legacyButton": "Équipes Légataires",
+      "1": {
+        "position": "Chef du Département Design",
+        "intro": "Lorem Ipsum est simplement un texte factice de l'industrie de l'imprimerie et de la composition. Lorem Ipsum est le texte factice standard de l'industrie depuis les années 1500, lorsqu'un imprimeur inconnu a pris une galée de caractères et l'a mélangée pour faire un livre de spécimens de caractères. Il a survécu non seulement à cinq siècles, mais aussi au saut dans la composition électronique, restant essentiellement inchangé. Il a été popularisé dans les années 1960 avec la sortie de feuilles Letraset contenant des passages de Lorem Ipsum, et plus récemment avec des logiciels de publication assistée par ordinateur comme Aldus PageMaker incluant des versions de Lorem Ipsum."
+      },
+      "2": {
+        "position": "Développeur Frontend",
+        "intro": "Lorem Ipsum est simplement un texte factice de l'industrie de l'imprimerie et de la composition. Lorem Ipsum est le texte factice standard de l'industrie depuis les années 1500, lorsqu'un imprimeur inconnu a pris une galée de caractères et l'a mélangée pour faire un livre de spécimens de caractères. Il a survécu non seulement à cinq siècles, mais aussi au saut dans la composition électronique, restant essentiellement inchangé. Il a été popularisé dans les années 1960 avec la sortie de feuilles Letraset contenant des passages de Lorem Ipsum, et plus récemment avec des logiciels de publication assistée par ordinateur comme Aldus PageMaker incluant des versions de Lorem Ipsum."
+      },
+      "3": {
+        "position": "Chef du Département Design",
+        "intro": "Lorem Ipsum est simplement un texte factice de l'industrie de l'imprimerie et de la composition. Lorem Ipsum est le texte factice standard de l'industrie depuis les années 1500, lorsqu'un imprimeur inconnu a pris une galée de caractères et l'a mélangée pour faire un livre de spécimens de caractères. Il a survécu non seulement à cinq siècles, mais aussi au saut dans la composition électronique, restant essentiellement inchangé. Il a été popularisé dans les années 1960 avec la sortie de feuilles Letraset contenant des passages de Lorem Ipsum, et plus récemment avec des logiciels de publication assistée par ordinateur comme Aldus PageMaker incluant des versions de Lorem Ipsum."
+      },
+      "4": {
+        "position": "Développeur Frontend",
+        "intro": "Lorem Ipsum est simplement un texte factice de l'industrie de l'imprimerie et de la composition. Lorem Ipsum est le texte factice standard de l'industrie depuis les années 1500, lorsqu'un imprimeur inconnu a pris une galée de caractères et l'a mélangée pour faire un livre de spécimens de caractères. Il a survécu non seulement à cinq siècles, mais aussi au saut dans la composition électronique, restant essentiellement inchangé. Il a été popularisé dans les années 1960 avec la sortie de feuilles Letraset contenant des passages de Lorem Ipsum, et plus récemment avec des logiciels de publication assistée par ordinateur comme Aldus PageMaker incluant des versions de Lorem Ipsum."
+      },
+      "5": {
+        "position": "Chef du Département Design",
+        "intro": "Lorem Ipsum est simplement un texte factice de l'industrie de l'imprimerie et de la composition. Lorem Ipsum est le texte factice standard de l'industrie depuis les années 1500, lorsqu'un imprimeur inconnu a pris une galée de caractères et l'a mélangée pour faire un livre de spécimens de caractères. Il a survécu non seulement à cinq siècles, mais aussi au saut dans la composition électronique, restant essentiellement inchangé. Il a été popularisé dans les années 1960 avec la sortie de feuilles Letraset contenant des passages de Lorem Ipsum, et plus récemment avec des logiciels de publication assistée par ordinateur comme Aldus PageMaker incluant des versions de Lorem Ipsum."
+      },
+      "6": {
+        "position": "Développeur Frontend",
+        "intro": "Lorem Ipsum est simplement un texte factice de l'industrie de l'imprimerie et de la composition. Lorem Ipsum est le texte factice standard de l'industrie depuis les années 1500, lorsqu'un imprimeur inconnu a pris une galée de caractères et l'a mélangée pour faire un livre de spécimens de caractères. Il a survécu non seulement à cinq siècles, mais aussi au saut dans la composition électronique, restant essentiellement inchangé. Il a été popularisé dans les années 1960 avec la sortie de feuilles Letraset contenant des passages de Lorem Ipsum, et plus récemment avec des logiciels de publication assistée par ordinateur comme Aldus PageMaker incluant des versions de Lorem Ipsum."
+      },
+      "7": {
+        "position": "Chef du Département Design",
+        "intro": "Lorem Ipsum est simplement un texte factice de l'industrie de l'imprimerie et de la composition. Lorem Ipsum est le texte factice standard de l'industrie depuis les années 1500, lorsqu'un imprimeur inconnu a pris une galée de caractères et l'a mélangée pour faire un livre de spécimens de caractères. Il a survécu non seulement à cinq siècles, mais aussi au saut dans la composition électronique, restant essentiellement inchangé. Il a été popularisé dans les années 1960 avec la sortie de feuilles Letraset contenant des passages de Lorem Ipsum, et plus récemment avec des logiciels de publication assistée par ordinateur comme Aldus PageMaker incluant des versions de Lorem Ipsum."
+      },
+      "8": {
+        "position": "Développeur Frontend",
+        "intro": "Lorem Ipsum est simplement un texte factice de l'industrie de l'imprimerie et de la composition. Lorem Ipsum est le texte factice standard de l'industrie depuis les années 1500, lorsqu'un imprimeur inconnu a pris une galée de caractères et l'a mélangée pour faire un livre de spécimens de caractères. Il a survécu non seulement à cinq siècles, mais aussi au saut dans la composition électronique, restant essentiellement inchangé. Il a été popularisé dans les années 1960 avec la sortie de feuilles Letraset contenant des passages de Lorem Ipsum, et plus récemment avec des logiciels de publication assistée par ordinateur comme Aldus PageMaker incluant des versions de Lorem Ipsum."
+      },
+      "9": {
+        "position": "Chef du Département Design",
+        "intro": "Lorem Ipsum est simplement un texte factice de l'industrie de l'imprimerie et de la composition. Lorem Ipsum est le texte factice standard de l'industrie depuis les années 1500, lorsqu'un imprimeur inconnu a pris une galée de caractères et l'a mélangée pour faire un livre de spécimens de caractères. Il a survécu non seulement à cinq siècles, mais aussi au saut dans la composition électronique, restant essentiellement inchangé. Il a été popularisé dans les années 1960 avec la sortie de feuilles Letraset contenant des passages de Lorem Ipsum, et plus récemment avec des logiciels de publication assistée par ordinateur comme Aldus PageMaker incluant des versions de Lorem Ipsum."
+      },
+      "10": {
+        "position": "Développeur Frontend",
+        "intro": "Lorem Ipsum est simplement un texte factice de l'industrie de l'imprimerie et de la composition. Lorem Ipsum est le texte factice standard de l'industrie depuis les années 1500, lorsqu'un imprimeur inconnu a pris une galée de caractères et l'a mélangée pour faire un livre de spécimens de caractères. Il a survécu non seulement à cinq siècles, mais aussi au saut dans la composition électronique, restant essentiellement inchangé. Il a été popularisé dans les années 1960 avec la sortie de feuilles Letraset contenant des passages de Lorem Ipsum, et plus récemment avec des logiciels de publication assistée par ordinateur comme Aldus PageMaker incluant des versions de Lorem Ipsum."
+      },
+      "11": {
+        "position": "Chef du Département Design",
+        "intro": "Lorem Ipsum est simplement un texte factice de l'industrie de l'imprimerie et de la composition. Lorem Ipsum est le texte factice standard de l'industrie depuis les années 1500, lorsqu'un imprimeur inconnu a pris une galée de caractères et l'a mélangée pour faire un livre de spécimens de caractères. Il a survécu non seulement à cinq siècles, mais aussi au saut dans la composition électronique, restant essentiellement inchangé. Il a été popularisé dans les années 1960 avec la sortie de feuilles Letraset contenant des passages de Lorem Ipsum, et plus récemment avec des logiciels de publication assistée par ordinateur comme Aldus PageMaker incluant des versions de Lorem Ipsum."
+      },
+      "12": {
+        "position": "Développeur Frontend",
+        "intro": "Lorem Ipsum est simplement un texte factice de l'industrie de l'imprimerie et de la composition. Lorem Ipsum est le texte factice standard de l'industrie depuis les années 1500, lorsqu'un imprimeur inconnu a pris une galée de caractères et l'a mélangée pour faire un livre de spécimens de caractères. Il a survécu non seulement à cinq siècles, mais aussi au saut dans la composition électronique, restant essentiellement inchangé. Il a été popularisé dans les années 1960 avec la sortie de feuilles Letraset contenant des passages de Lorem Ipsum, et plus récemment avec des logiciels de publication assistée par ordinateur comme Aldus PageMaker incluant des versions de Lorem Ipsum."
+      },
+      "13": {
+        "position": "Chef du Département Design",
+        "intro": "Lorem Ipsum est simplement un texte factice de l'industrie de l'imprimerie et de la composition. Lorem Ipsum est le texte factice standard de l'industrie depuis les années 1500, lorsqu'un imprimeur inconnu a pris une galée de caractères et l'a mélangée pour faire un livre de spécimens de caractères. Il a survécu non seulement à cinq siècles, mais aussi au saut dans la composition électronique, restant essentiellement inchangé. Il a été popularisé dans les années 1960 avec la sortie de feuilles Letraset contenant des passages de Lorem Ipsum, et plus récemment avec des logiciels de publication assistée par ordinateur comme Aldus PageMaker incluant des versions de Lorem Ipsum."
+      },
+      "14": {
+        "position": "Développeur Frontend",
+        "intro": "Lorem Ipsum est simplement un texte factice de l'industrie de l'imprimerie et de la composition. Lorem Ipsum est le texte factice standard de l'industrie depuis les années 1500, lorsqu'un imprimeur inconnu a pris une galée de caractères et l'a mélangée pour faire un livre de spécimens de caractères. Il a survécu non seulement à cinq siècles, mais aussi au saut dans la composition électronique, restant essentiellement inchangé. Il a été popularisé dans les années 1960 avec la sortie de feuilles Letraset contenant des passages de Lorem Ipsum, et plus récemment avec des logiciels de publication assistée par ordinateur comme Aldus PageMaker incluant des versions de Lorem Ipsum."
+      },
+      "15": {
+        "position": "Chef du Département Design",
+        "intro": "Lorem Ipsum est simplement un texte factice de l'industrie de l'imprimerie et de la composition. Lorem Ipsum est le texte factice standard de l'industrie depuis les années 1500, lorsqu'un imprimeur inconnu a pris une galée de caractères et l'a mélangée pour faire un livre de spécimens de caractères. Il a survécu non seulement à cinq siècles, mais aussi au saut dans la composition électronique, restant essentiellement inchangé. Il a été popularisé dans les années 1960 avec la sortie de feuilles Letraset contenant des passages de Lorem Ipsum, et plus récemment avec des logiciels de publication assistée par ordinateur comme Aldus PageMaker incluant des versions de Lorem Ipsum."
+      },
+      "16": {
+        "position": "Développeur Frontend",
+        "intro": "Lorem Ipsum est simplement un texte factice de l'industrie de l'imprimerie et de la composition. Lorem Ipsum est le texte factice standard de l'industrie depuis les années 1500, lorsqu'un imprimeur inconnu a pris une galée de caractères et l'a mélangée pour faire un livre de spécimens de caractères. Il a survécu non seulement à cinq siècles, mais aussi au saut dans la composition électronique, restant essentiellement inchangé. Il a été popularisé dans les années 1960 avec la sortie de feuilles Letraset contenant des passages de Lorem Ipsum, et plus récemment avec des logiciels de publication assistée par ordinateur comme Aldus PageMaker incluant des versions de Lorem Ipsum."
+      },
+      "17": {
+        "position": "Chef du Département Design",
+        "intro": "Lorem Ipsum est simplement un texte factice de l'industrie de l'imprimerie et de la composition. Lorem Ipsum est le texte factice standard de l'industrie depuis les années 1500, lorsqu'un imprimeur inconnu a pris une galée de caractères et l'a mélangée pour faire un livre de spécimens de caractères. Il a survécu non seulement à cinq siècles, mais aussi au saut dans la composition électronique, restant essentiellement inchangé. Il a été popularisé dans les années 1960 avec la sortie de feuilles Letraset contenant des passages de Lorem Ipsum, et plus récemment avec des logiciels de publication assistée par ordinateur comme Aldus PageMaker incluant des versions de Lorem Ipsum."
+      },
+      "18": {
+        "position": "Développeur Frontend",
+        "intro": "Lorem Ipsum est simplement un texte factice de l'industrie de l'imprimerie et de la composition. Lorem Ipsum est le texte factice standard de l'industrie depuis les années 1500, lorsqu'un imprimeur inconnu a pris une galée de caractères et l'a mélangée pour faire un livre de spécimens de caractères. Il a survécu non seulement à cinq siècles, mais aussi au saut dans la composition électronique, restant essentiellement inchangé. Il a été popularisé dans les années 1960 avec la sortie de feuilles Letraset contenant des passages de Lorem Ipsum, et plus récemment avec des logiciels de publication assistée par ordinateur comme Aldus PageMaker incluant des versions de Lorem Ipsum."
+      },
+      "19": {
+        "position": "Chef du Département Design",
+        "intro": "Lorem Ipsum est simplement un texte factice de l'industrie de l'imprimerie et de la composition. Lorem Ipsum est le texte factice standard de l'industrie depuis les années 1500, lorsqu'un imprimeur inconnu a pris une galée de caractères et l'a mélangée pour faire un livre de spécimens de caractères. Il a survécu non seulement à cinq siècles, mais aussi au saut dans la composition électronique, restant essentiellement inchangé. Il a été popularisé dans les années 1960 avec la sortie de feuilles Letraset contenant des passages de Lorem Ipsum, et plus récemment avec des logiciels de publication assistée par ordinateur comme Aldus PageMaker incluant des versions de Lorem Ipsum."
+      },
+      "20": {
+        "position": "Développeur Frontend",
+        "intro": "Lorem Ipsum est simplement un texte factice de l'industrie de l'imprimerie et de la composition. Lorem Ipsum est le texte factice standard de l'industrie depuis les années 1500, lorsqu'un imprimeur inconnu a pris une galée de caractères et l'a mélangée pour faire un livre de spécimens de caractères. Il a survécu non seulement à cinq siècles, mais aussi au saut dans la composition électronique, restant essentiellement inchangé. Il a été popularisé dans les années 1960 avec la sortie de feuilles Letraset contenant des passages de Lorem Ipsum, et plus récemment avec des logiciels de publication assistée par ordinateur comme Aldus PageMaker incluant des versions de Lorem Ipsum."
+      }
+    }
+  },
+  "UpcomingEvents": {
+    "title1": "Soyez Prêts...",
+    "subtitle1": "Voici une liste de nos événements à venir. Cliquez ci-dessous pour vous inscrire.",
+    "month": {
+      "August": "Août",
+      "September": "Septembre",
+      "October": "Octobre",
+      "November": "Novembre",
+      "December": "Décembre"
+    },
+    "title": {
+      "HackDecouverte": "HackDécouverte",
+      "GitHubCoPilot": "GitHub Co-pilot",
+      "FullStackDeveloper101": "Développeur Full-Stack 101"
+    },
+    "type": {
+      "MiniHackathon": "Mini-Hackathon",
+      "Workshop": "Atelier"
+    },
+    "time": {
+      "7_30PM_10PM": "19h30 - 22h00",
+      "10_30AM_1PM": "10h30 - 13h00"
+    },
+    "location": {
+      "HBuilding": "@Pavillon H Université Concordia"
+    },
+    "address": {
+      "ConcordiaAddress": "1455 Boul. De Maisonneuve Ouest, Montréal"
+    }
+  },
+  "Faq": {
+    "title1": "Soyez Curieux ?",
+    "question": {
+      "freeTrial": "Y a-t-il un essai gratuit disponible ?",
+      "cancellationPolicy": "Quelle est votre politique d'annulation ?",
+      "billing": "Comment fonctionne la facturation ?",
+      "support": "Comment fonctionne le support ?",
+      "changePlan": "Puis-je changer mon plan plus tard ?",
+      "invoiceInfo": "D'autres informations peuvent-elles être ajoutées à une facture ?",
+      "changeEmail": "Comment puis-je changer l'adresse courriel de mon compte ?",
+      "tutorials": "Fournissez-vous des tutoriels ?"
+    },
+    "answer": {
+      "freeTrial": "Oui, vous pouvez nous essayer gratuitement pendant 30 jours. Si vous le souhaitez, nous vous fournirons un appel d'intégration gratuit de 30 minutes pour vous aider à démarrer.",
+      "cancellationPolicy": "Nous comprenons que les choses changent. Vous pouvez annuler votre plan à tout moment et nous vous rembourserons la différence déjà payée.",
+      "billing": "Les plans sont par espace de travail, pas par compte. Vous pouvez mettre à niveau un espace de travail et avoir encore un nombre illimité d'espaces de travail gratuits.",
+      "support": "Si vous avez des difficultés avec Untitled UI, nous sommes là pour essayer d'aider via hello@untitledui.com. Nous sommes une petite équipe, mais nous vous répondrons bientôt.",
+      "changePlan": "Bien sûr que vous pouvez ! Notre tarification évolue avec votre entreprise. Discutez avec notre équipe sympathique pour trouver une solution qui fonctionne pour vous à mesure que vous grandissez.",
+      "invoiceInfo": "Pour le moment, la seule façon d'ajouter des informations supplémentaires aux factures est d'ajouter manuellement les informations au nom de l'espace de travail.",
+      "changeEmail": "Vous pouvez changer l'adresse courriel associée à votre compte en allant sur untitledui.com/account depuis un ordinateur portable ou de bureau.",
+      "tutorials": "Pas encore, mais nous y travaillons ! En attendant, nous avons fait de notre mieux pour le rendre intuitif et nous construisons notre page de documentation."
+    }
   }
 }
