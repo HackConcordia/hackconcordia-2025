@@ -1,4 +1,5 @@
 'use client';
+import { useTranslations } from "next-intl";
 
 type Event = {
     id: number;
@@ -13,131 +14,89 @@ type Event = {
     highlight?: boolean;
 };
 
-const events: Event[] = [
-    // FALL 2025
+
+
+export default function UpcomingEvents() {
+    const t = useTranslations("UpcomingEvents");
+
+    const events: Event[] = [
     {
         id: 1,
-        date: '12',
-        month: 'September',
+        date: '26',
+        month: t("month.August"),
         year: '2025',
-        title: 'HackDécouverte',
-        type: 'Mini‑Hackathon',
-        time: 'Full Day',
-        location: 'Concordia University',
-        address: 'SGW Campus, Montreal',
+        title: t("title.HackDecouverte"),
+        type: t("type.MiniHackathon"),
+        time: t("time.7_30PM_10PM"),
+        location: t("location.HBuilding"),
+        address: t("address.ConcordiaAddress"),
         highlight: true,
     },
     {
         id: 2,
-        date: '30',
-        month: 'September',
+        date: '02',
+        month: t('month.September'),
         year: '2025',
-        title: 'Lizard Lounge Social',
-        type: 'Mixer',
-        time: 'Evening',
-        location: 'Reggie’s Bar (SGW Campus)',
-        address: 'Concordia University, Montreal',
+        title: t('title.GitHubCoPilot'),
+        type: t('type.Workshop'),
+        time: t('time.10_30AM_1PM'),
+        location: t('location.HBuilding'),
+        address: t('address.ConcordiaAddress'),
     },
     {
         id: 3,
-        date: '15',
-        month: 'November',
+        date: '12',
+        month: t('month.October'),
         year: '2025',
-        title: 'ConUHacks X Launch Party',
-        type: 'Registration Launch Event',
-        time: 'Evening (5:30 PM–7:30 PM)',
-        location: 'Reggie’s Bar / Terrace (SGW Campus)',
-        address: 'Concordia University, Montreal',
+        title: t('title.FullStackDeveloper101'),
+        type: t('type.Workshop'),
+        time: t('time.10_30AM_1PM'),
+        location: t('location.HBuilding'),
+        address: t('address.ConcordiaAddress'),
     },
     {
         id: 4,
-        date: '22',
-        month: 'November',
+        date: '25',
+        month: t('month.November'),
         year: '2025',
-        title: 'Workshop 1',
-        type: 'Workshop',
-        time: 'Evening (5:30 PM–7:30 PM)',
-        location: 'H-1011 (Hall Building, SGW Campus)',
-        address: 'Concordia University, Montreal',
+        title: t('title.HackDecouverte'),
+        type: t('type.MiniHackathon'),
+        time: t('time.7_30PM_10PM'),
+        location: t('location.HBuilding'),
+        address: t('address.ConcordiaAddress'),
     },
     {
         id: 5,
         date: '30',
-        month: 'November',
+        month: t('month.November'),
         year: '2025',
-        title: 'Workshop 2',
-        type: 'Workshop',
-        time: 'Evening (5:30 PM–7:30 PM)',
-        location: 'H-1011 (Hall Building, SGW Campus)',
-        address: 'Concordia University, Montreal',
+        title: t('title.GitHubCoPilot'),
+        type: t('type.Workshop'),
+        time: t('time.10_30AM_1PM'),
+        location: t('location.HBuilding'),
+        address: t('address.ConcordiaAddress'),
     },
     // WINTER 2026
     {
         id: 6,
-        date: '24',
-        month: 'January',
-        year: '2026',
-        title: 'ConUHacks X',
-        type: '24‑Hour Hackathon',
-        time: '8 AM (24th Jan) - 11 AM (25th Jan)',
-        location: 'Concordia University (John Molson MB)',
-        address: '1455 Boulevard de Maisonneuve, Montreal',
+        date: '25',
+        month: t('month.December'),
+        year: '2025',
+        title: t('title.FullStackDeveloper101'),
+        type: t('type.Workshop'),
+        time: t('time.10_30AM_1PM'),
+        location: t('location.HBuilding'),
+        address: t('address.ConcordiaAddress'),
     },
-    {
-        id: 7,
-        date: '01',
-        month: 'February',
-        year: '2026',
-        title: 'Lightning Learning',
-        type: 'Tech Social',
-        time: 'Evening (5:30 PM–7:30 PM)',
-        location: 'tbd',
-        address: 'Concordia University, Montreal',
-    },
-    {
-        id: 8,
-        date: '07',
-        month: 'February',
-        year: '2026',
-        title: 'Wine & Cheese Mixer',
-        type: 'Social Mixer',
-        time: 'Evening (5:30 PM–7:30 PM)',
-        location: 'tbd',
-        address: 'Concordia University, Montreal',
-    },
-    {
-        id: 9,
-        date: '22',
-        month: 'March',
-        year: '2026',
-        title: 'Workshop 1 (Winter)',
-        type: 'Workshop',
-        time: 'Evening (5:30 PM–7:30 PM)',
-        location: 'H-1011 (Hall Building, SGW Campus)',
-        address: 'Concordia University, Montreal',
-    },
-    {
-        id: 10,
-        date: '05',
-        month: 'April',
-        year: '2026',
-        title: 'Workshop 2 (Winter)',
-        type: 'Workshop',
-        time: 'Evening (5:30 PM–7:30 PM)',
-        location: 'H-1011 (Hall Building, SGW Campus)',
-        address: 'Concordia University, Montreal',
-    },
-];
+    ];
 
-
-export default function UpcomingEvents() {
     return (
         <section className="relative z-10 w-screen flex flex-col justify-center max-w-7xl mx-auto p-4 md:p-0" id="events">
             <h2 className="text-4xl font-bold text-yellow-400 mb-2 mt-20">
-                Bee Ready
+                {t("title1")}
             </h2>
             <p className="text-gray-400 mb-4">
-                Below is a list of our upcoming events. Mark your calendars!
+                {t("subtitle1")}
             </p>
 
             {/* Scroll wrapper */}
