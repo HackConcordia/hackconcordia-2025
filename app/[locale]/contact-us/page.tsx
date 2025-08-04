@@ -1,10 +1,5 @@
-<<<<<<< HEAD:app/[locale]/contact-us/page.tsx
-import { FaClipboardList, FaEnvelope } from "react-icons/fa";
-import BeeCursor from "@/components/FloatingBeeCursor";
-=======
 import { FaClipboardList, FaEnvelope, FaHandshake } from "react-icons/fa";
-import BeeCursor from "../components/FloatingBeeCursor";
->>>>>>> origin:app/contact-us/page.tsx
+import BeeCursor from "@/components/FloatingBeeCursor";
 
 export default function ContactSection() {
   return (
