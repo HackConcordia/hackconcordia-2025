@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { JSX } from 'react';
 import { FaMoneyBillAlt, FaEnvelope, FaUser, FaQuestionCircle, FaClipboardList, FaReceipt, FaCogs, FaComments } from 'react-icons/fa';
+import { useTranslations } from "next-intl";
 
 type FAQItem = {
     question: string;
@@ -10,56 +11,61 @@ type FAQItem = {
     icon: JSX.Element;
 };
 
-const faqs: FAQItem[] = [
-    {
-        question: 'Is there a free trial available?',
-        answer: 'Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free 30-minute onboarding call to get you up and running.',
-        icon: <FaQuestionCircle className="text-xl" />,
-    },
-    {
-        question: 'What is your cancellation policy?',
-        answer: 'We understand that things change. You can cancel your plan at any time and we’ll refund you the difference already paid.',
-        icon: <FaClipboardList className="text-xl" />,
-    },
-    {
-        question: 'How does billing work?',
-        answer: 'Plans are per workspace, not per account. You can upgrade one workspace, and still have any number of free workspaces.',
-        icon: <FaMoneyBillAlt className="text-xl" />,
-    },
-    {
-        question: 'How does support work?',
-        answer: 'If you’re having trouble with Untitled UI, we’re here to try and help via hello@untitledui.com. We’re a small team, but will get back to you soon.',
-        icon: <FaComments className="text-xl" />,
-    },
-    {
-        question: 'Can I change my plan later?',
-        answer: 'Of course you can! Our pricing scales with your company. Chat to our friendly team to find a solution that works for you as you grow.',
-        icon: <FaCogs className="text-xl" />,
-    },
-    {
-        question: 'Can other info be added to an invoice?',
-        answer: 'At the moment, the only way to add additional information to invoices is to add the information to the workspace’s name manually.',
-        icon: <FaReceipt className="text-xl" />,
-    },
-    {
-        question: 'How do I change my account email?',
-        answer: 'You can change the email address associated with your account by going to untitledui.com/account from a laptop or desktop.',
-        icon: <FaEnvelope className="text-xl" />,
-    },
-    {
-        question: 'Do you provide tutorials?',
-        answer: 'Not yet, but we’re working on it! In the meantime, we’ve done our best to make it intuitive and we’re building our documentation page.',
-        icon: <FaUser className="text-xl" />,
-    },
-];
+
 
 export default function FAQ() {
+    const t = useTranslations("Faq");
+
+    const faqs: FAQItem[] = [
+    {
+      question: t('question.freeTrial'),
+      answer: t('answer.freeTrial'),
+      icon: <FaQuestionCircle className="text-xl" />,
+    },
+    {
+      question: t('question.cancellationPolicy'),
+      answer: t('answer.cancellationPolicy'),
+      icon: <FaClipboardList className="text-xl" />,
+    },
+    {
+      question: t('question.billing'),
+      answer: t('answer.billing'),
+      icon: <FaMoneyBillAlt className="text-xl" />,
+    },
+    {
+      question: t('question.support'),
+      answer: t('answer.support'),
+      icon: <FaComments className="text-xl" />,
+    },
+    {
+      question: t('question.changePlan'),
+      answer: t('answer.changePlan'),
+      icon: <FaCogs className="text-xl" />,
+    },
+    {
+      question: t('question.invoiceInfo'),
+      answer: t('answer.invoiceInfo'),
+      icon: <FaReceipt className="text-xl" />,
+    },
+    {
+      question: t('question.changeEmail'),
+      answer: t('answer.changeEmail'),
+      icon: <FaEnvelope className="text-xl" />,
+    },
+    {
+      question: t('question.tutorials'),
+      answer: t('answer.tutorials'),
+      icon: <FaUser className="text-xl" />,
+    },
+  ];
+
+
     return (
         <section className="relative z-10 w-screen text-white py-20 px-4 sm:px-6 lg:px-8" id="faq">
             <div className="max-w-7xl mx-auto">
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                     <h2 className="text-4xl font-bold text-yellow-400 md:mb-0">
-                        Bee Curious?
+                        {t("title1")}
                     </h2>
                     <a
                         href="contact-us"
