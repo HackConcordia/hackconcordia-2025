@@ -34,7 +34,7 @@ export default function AboutUs() {
     ];
 
     return (
-        <section className="relative z-10 h-[calc(100vh-140px)] max-w-7xl mx-auto" id="home">
+        <section className="relative z-10 md:h-[calc(100vh-140px)] max-w-7xl mx-auto mb-20 md:mb-0" id="home">
             <div className="flex items-center justify-center h-full w-full">
                 <div className="relative w-full h-full max-w-4xl flex items-center justify-center">
                     <div className="inset-0 h-full flex flex-col items-center justify-center text-center text-white px-4 space-y-6 z-30 mt-16 md:mt-0">
@@ -70,7 +70,7 @@ export default function AboutUs() {
                         </form>
 
                         {/* Mobile Auto-scroll Text Cards */}
-                        <div className="flex flex-col gap-4 md:hidden w-full px-4 mt-6">
+                        <div className="flex flex-col gap-4 md:hidden w-full md:px-4 mt-6">
                             {cardText.map((text, idx) => (
                                 <div
                                     key={idx}

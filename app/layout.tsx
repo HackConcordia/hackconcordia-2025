@@ -31,14 +31,16 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <BackgroundOverlay />
+        <div className="hidden md:flex">
+          <BackgroundOverlay />
+        </div>
         <Header />
         <main className="pt-15">
           <div className="hidden md:flex">
             <FloatingBeeCursor />
           </div>
           {children}
-          </main>
+        </main>
         <Footer />
       </body>
     </html>

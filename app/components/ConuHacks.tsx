@@ -421,9 +421,9 @@ export default function ConuHacks() {
     };
 
     return (
-        <section className="relative h-screen w-full overflow-hidden p-5 max-w-7xl mx-auto" style={{ maxHeight: '100vh' }} id="conuhacks">
+        <section className="relative md:h-screen w-full overflow-hidden p-5 max-w-7xl mx-auto" id="conuhacks">
             {/* Background image */}
-            <div className="absolute inset-0 z-0 my-20 md:mr-10 max-w-7xl">
+            <div className="absolute inset-0 z-0 md:my-20 md:mr-10 max-w-7xl">
                 <Image
                     src={activeSlide.image}
                     alt={activeSlide.title}
@@ -436,9 +436,9 @@ export default function ConuHacks() {
             </div>
 
             {/* Text Overlay */}
-            <div className="relative z-10 h-full w-full flex px-4 md:px-10 py-25 mx-auto max-w-7xl">
+            <div className="relative z-10 md:h-full w-full flex md:px-4 lg:px-10 md:py-25 mx-auto max-w-7xl">
                 <div className="text-white">
-                    <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-1" style={{ marginLeft: '-2px' }}>
+                    <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold leading-tight mb-1" style={{ marginLeft: '-2px' }}>
                         {activeSlide.title}
                     </h1>
                     <p className="text-xs max-w-5xl mb-5" dangerouslySetInnerHTML={{ __html: activeSlide.subtitle }}></p>
@@ -447,7 +447,7 @@ export default function ConuHacks() {
                             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm max-w-sm" style={{ marginTop: '15px' }}>
                                 {Object.entries(activeSlide.stats).map(([key, value]) => (
                                     <div key={key} className="flex flex-col">
-                                        <span className="text-2xl font-semibold">{value}</span>
+                                        <span className="text-lg md:text-2xl font-semibold">{value}</span>
                                         <span className="text-xs opacity-70">{key}</span>
                                     </div>
                                 ))}
@@ -460,7 +460,7 @@ export default function ConuHacks() {
                                 <h2 className="text-lg font-semibold">Winners:</h2>
                                 <ul className="list-none space-y-2">
                                     {activeSlide.winners.map((winner, index) => (
-                                        <li key={index} className="text-sm mt-3 mb-5">
+                                        <li key={index} className="text-xs md:text-sm mt-3 mb-5">
                                             <strong>{winner.position}</strong>
                                             <a href={winner.devpostlink} target="_blank" rel="noopener noreferrer">
                                                 <p className='hover:text-yellow-400'>{winner.team}: {winner.project}</p>
@@ -477,7 +477,7 @@ export default function ConuHacks() {
                             <div className="mt-6">
                                 <ul className="list-none">
                                     {Object.entries(activeSlide.others).map(([key, value]) => (
-                                        <li key={key} className="text-sm my-2">
+                                        <li key={key} className="text-xs md:text-sm my-2">
                                             <span className='text-yellow-400'>{key}</span>: {value}
                                         </li>
                                     ))}
@@ -488,7 +488,7 @@ export default function ConuHacks() {
                 </div>
             </div>
 
-            <div className="relative bottom-10 md:absolute md:bottom-70 md:right-10 z-20 flex items-center space-x-4">
+            <div className="relative bottom-0 md:absolute md:bottom-70 md:right-10 z-20 flex items-center space-x-4 mt-4">
                 <div className='flex items-center space-x-1'>
                     <button
                         onClick={goToPrev}
@@ -504,15 +504,15 @@ export default function ConuHacks() {
                     </button>
                 </div>
                 {/* Progress Bar (under thumbnails) */}
-                <div className="z-20 w-[200px] md:w-[300px] h-1 bg-white/20 overflow-hidden">
+                <div className="z-20 w-[200px] md:w-[320px] h-1 bg-white/20 overflow-hidden">
                     <div
-                        className="h-full bg-yellow-400 transition-all duration-300"
+                        className="md:h-full bg-yellow-400 transition-all duration-300"
                         style={{ width: `${(active + 1) * (100 / slides.length)}%` }}
                     />
                 </div>
                 <div className='pr-3'>
-                    <span className="text-white text-sm">
-                        {active + 1} / {slides.length}
+                    <span className="text-white text-sm flex">
+                        {active + 1 < 10 && <span>0</span> } {active + 1}
                     </span>
                 </div>
             </div>
