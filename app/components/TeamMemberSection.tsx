@@ -1,10 +1,11 @@
 'use client';
 
 import { useState } from 'react';
-import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaInstagram, FaGlobe } from "react-icons/fa";
 import { FaArrowRight } from 'react-icons/fa';
 import Link from 'next/link';
 import Image from 'next/image';
+import { FaWebAwesome } from 'react-icons/fa6';
 
 type TeamMember = {
     id: number;
@@ -16,6 +17,7 @@ type TeamMember = {
         linkedin?: string;
         github?: string;
         instagram?: string;
+        website?: string;
     };
 };
 
@@ -29,7 +31,8 @@ const teamMembers: TeamMember[] = [
         socials: {
             linkedin: "https://www.linkedin.com/in/huzaifa-anjum/",
             github: "https://github.com/mhuzaifa",
-            instagram: "https://www.instagram.com/_huzaifaanjum_/"
+            instagram: "https://www.instagram.com/_huzaifaanjum_/",
+            website: "https://huzaifaanjumportfolio.web.app/"
         }
     },
     {
@@ -217,18 +220,23 @@ export default function TeamMemberSection() {
 
                         <div className="flex space-x-4 mb-6">
                             {displayMember.socials?.linkedin && (
-                                <a href={displayMember.socials.linkedin} target="_blank" rel="noreferrer">
+                                <a href={displayMember.socials.linkedin} target="_blank" rel="noreferrer" title="LinkedIn">
                                     <FaLinkedin className="w-5 h-5 hover:text-yellow-400" />
                                 </a>
                             )}
                             {displayMember.socials?.github && (
-                                <a href={displayMember.socials.github} target="_blank" rel="noreferrer">
+                                <a href={displayMember.socials.github} target="_blank" rel="noreferrer" title="Github">
                                     <FaGithub className="w-5 h-5 hover:text-yellow-400" />
                                 </a>
                             )}
                             {displayMember.socials?.instagram && (
-                                <a href={displayMember.socials.instagram} target="_blank" rel="noreferrer">
+                                <a href={displayMember.socials.instagram} target="_blank" rel="noreferrer" title="Instagram">
                                     <FaInstagram className="w-5 h-5 hover:text-yellow-400" />
+                                </a>
+                            )}
+                            {displayMember.socials?.website && (
+                                <a href={displayMember.socials.website} target="_blank" rel="noreferrer" title="Portfolio">
+                                    <FaGlobe className="w-5 h-5 hover:text-yellow-400" />
                                 </a>
                             )}
                         </div>
