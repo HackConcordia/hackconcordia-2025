@@ -22,8 +22,8 @@ type TimelinePanel = {
 const timelineData: TimelinePanel[] = [
   {
     number: 9,
-    year: 2024,
-    bgImage: 'imgs/about_us3.jpg',
+    year: 2025,
+    bgImage: 'imgs/legacy-teams/conu9.jpg',
     subteams: [
       { name: 'Co-pres', members: [{ name: 'Alice', url: 'https://example.com/alice' }] },
       { name: 'Tech', members: [{ name: 'Bob' }, { name: 'Charlie', url: 'https://github.com/charlie' }] },
@@ -37,23 +37,8 @@ const timelineData: TimelinePanel[] = [
   },
   {
     number: 8,
-    year: 2023,
-    bgImage: 'imgs/about_us2.jpg',
-    subteams: [
-      { name: 'Co-pres', members: [{ name: 'Alice', url: 'https://example.com/alice' }] },
-      { name: 'Tech', members: [{ name: 'Bob' }, { name: 'Charlie', url: 'https://github.com/charlie' }] },
-      { name: 'Marketing', members: [{ name: 'Diana' }] },
-      { name: 'Internal', members: [{ name: 'Evan' }] },
-      { name: 'Events', members: [{ name: 'Fiona' }] },
-      { name: 'Sponsorship', members: [{ name: 'George' }] },
-      { name: 'Logistics', members: [{ name: 'Hannah' }] },
-      { name: 'Finance', members: [{ name: 'Ian' }] },
-    ],
-  },
-  {
-    number: 7,
-    year: 2022,
-    bgImage: 'imgs/about_us1.jpg',
+    year: 2024,
+    bgImage: 'imgs/legacy-teams/conu8.jpg',
     subteams: [
       { name: 'Co-pres', members: [{ name: 'Bertin', url: 'https://example.com/alice' }, { name: 'Elizabeth', url: 'https://example.com/alice' }] },
       { name: 'Tech', members: [{ name: 'Bob' }, { name: 'Charlie', url: 'https://github.com/charlie' }] },
@@ -66,9 +51,9 @@ const timelineData: TimelinePanel[] = [
     ],
   },
   {
-    number: 6,
-    year: 2021,
-    bgImage: 'imgs/about_us2.jpg',
+    number: 7,
+    year: 2023,
+    bgImage: 'imgs/legacy-teams/conu7.jpg',
     subteams: [
       { name: 'Co-pres', members: [{ name: 'Alice', url: 'https://example.com/alice' }] },
       { name: 'Tech', members: [{ name: 'Bob' }, { name: 'Charlie', url: 'https://github.com/charlie' }] },
@@ -81,9 +66,9 @@ const timelineData: TimelinePanel[] = [
     ],
   },
   {
-    number: 5,
-    year: 2020,
-    bgImage: 'imgs/about_us3.jpg',
+    number: 4,
+    year: 2019,
+    bgImage: 'imgs/legacy-teams/conu4.jpg',
     subteams: [
       { name: 'Co-pres', members: [{ name: 'Alice', url: 'https://example.com/alice' }] },
       { name: 'Tech', members: [{ name: 'Bob' }, { name: 'Charlie', url: 'https://github.com/charlie' }] },
@@ -95,7 +80,6 @@ const timelineData: TimelinePanel[] = [
       { name: 'Finance', members: [{ name: 'Ian' }] },
     ],
   },
-  // Add other years similarly...
 ];
 
 const Timeline: React.FC = () => {
@@ -123,12 +107,14 @@ const Timeline: React.FC = () => {
             {/* Fullscreen Hover Content (Bottom Left Aligned) */}
             <div className="absolute inset-0 z-10 opacity-0 group-hover:opacity-100 flex items-end">
               <div className="w-full p-6 overflow-y-auto max-h-full text-left backdrop-blur-sm">
-                <h2 className="text-2xl font-bold uppercase text-yellow-400">
+                <div className="flex items-center justify-center gap-2">
+                  <h2 className="text-2xl font-bold uppercase text-yellow-400">
                   Conuhacks {number}
                 </h2>
-                <p className="text-lg font-semibold mb-4">{year} - {year - 1}</p>
+                <p className="text-lg font-semibold">({year} - {year - 1})</p>
+                </div>
 
-                <div className="grid grid-cols-4 gap-x-6 gap-y-4">
+                {/* <div className="grid grid-cols-4 gap-x-6 gap-y-4">
                   {subteams.map((team) => (
                     <div key={team.name}>
                       <h3 className="font-semibold text-white">{team.name}</h3>
@@ -152,7 +138,7 @@ const Timeline: React.FC = () => {
                       </ul>
                     </div>
                   ))}
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

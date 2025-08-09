@@ -21,8 +21,8 @@ export default function BeeCursor() {
                 alt="Bee Cursor"
                 style={{
                     position: 'fixed',
-                    left: mousePos.x,
-                    top: mousePos.y,
+                    left: mousePos.x + 10,
+                    top: mousePos.y + 10,
                     pointerEvents: 'none',
                     zIndex: 9999,
                     userSelect: 'none',
