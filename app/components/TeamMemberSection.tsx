@@ -23,6 +23,17 @@ type TeamMember = {
 const teamMembers: TeamMember[] = [
     {
         id: 1,
+        name: "Bertin Mihigo Sano",
+        position: "Co-President",
+        intro: "COEN student and co-president of HackConcordia.",
+        imageSrc: "/imgs/team/Bertin.jpg",
+        socials: {
+            linkedin: "https://www.linkedin.com/in/sanobertin/",
+            github: "https://github.com/sanobertin",
+        }
+    },
+    {
+        id: 3,
         name: "Mohammed Huzaifa",
         position: "Vice President of Technology",
         intro: "Master of Applied Computer Science student passionate about full-stack development and building impactful tech solutions.",
@@ -35,7 +46,7 @@ const teamMembers: TeamMember[] = [
         }
     },
     {
-        id: 2,
+        id: 4,
         name: "Masoumeh Farokhpour (Maryam)",
         position: "Director of Technology",
         intro: "MACS student with a strong interest in innovative software development and collaborative tech projects.",
@@ -47,7 +58,7 @@ const teamMembers: TeamMember[] = [
         }
     },
     {
-        id: 3,
+        id: 5,
         name: "Sabine Hleiss",
         position: "Director of Sponsorship",
         intro: "COEN student committed to fostering strong partnerships and sponsor relationships for impactful events.",
@@ -57,7 +68,7 @@ const teamMembers: TeamMember[] = [
         }
     },
     {
-        id: 4,
+        id: 6,
         name: "Matthew Lucas Santiago",
         position: "Director of Marketing",
         intro: "SOEN student with a drive for impactful communication and outreach.",
@@ -67,7 +78,7 @@ const teamMembers: TeamMember[] = [
         }
     },
     {
-        id: 5,
+        id: 7,
         name: "Elba Lucia Jimenez",
         position: "Vice President of Marketing",
         intro: "CompSci student dedicated to promoting events and creating vibrant community connections.",
@@ -77,7 +88,7 @@ const teamMembers: TeamMember[] = [
         }
     },
     {
-        id: 6,
+        id: 8,
         name: "Johnny Dang",
         position: "Director of Technology",
         intro: "SOEN student with an interest in cutting-edge technologies and efficient problem-solving.",
@@ -87,7 +98,7 @@ const teamMembers: TeamMember[] = [
         }
     },
     {
-        id: 7,
+        id: 9,
         name: "Christina Alexandrakis",
         position: "Director of Marketing",
         intro: "SOEN student passionate about creative marketing campaigns and community engagement.",
@@ -97,7 +108,7 @@ const teamMembers: TeamMember[] = [
         }
     },
     {
-        id: 8,
+        id: 10,
         name: "Valeria Rosca",
         position: "Director of Sponsorship",
         intro: "SOEN student with a passion for connecting with partners and creating mutually beneficial collaborations.",
@@ -107,7 +118,7 @@ const teamMembers: TeamMember[] = [
         }
     },
     {
-        id: 9,
+        id: 11,
         name: "Mohamad Addasi",
         position: "Director of Technology",
         intro: "SOEN student focused on scalable, efficient software engineering and emerging technologies.",
@@ -118,7 +129,7 @@ const teamMembers: TeamMember[] = [
         }
     },
     {
-        id: 10,
+        id: 12,
         name: "Tiffany Andriamiharimanana",
         position: "Director of Technology",
         intro: "SOEN student passionate about software development and inclusive tech communities.",
@@ -128,7 +139,7 @@ const teamMembers: TeamMember[] = [
         }
     },
     {
-        id: 11,
+        id: 13,
         name: "Mridani Kashyap (Dani)",
         position: "Director of Marketing",
         intro: "Marketing student passionate about creative storytelling and audience engagement.",
@@ -138,7 +149,7 @@ const teamMembers: TeamMember[] = [
         }
     },
     {
-        id: 12,
+        id: 14,
         name: "Alisa Ignatina",
         position: "Director of Events",
         intro: "Data Science student passionate about designing engaging, memorable experiences for participants.",
@@ -150,7 +161,7 @@ const teamMembers: TeamMember[] = [
         }
     },
     {
-        id: 13,
+        id: 15,
         name: "Huseyin Pilavci",
         position: "Director of Logistics",
         intro: "BCompSc student dedicated to seamless event planning and operational efficiency.",
@@ -160,7 +171,7 @@ const teamMembers: TeamMember[] = [
         }
     },
     {
-        id: 14,
+        id: 16,
         name: "Janani Thiyagarajah",
         position: "Director of Marketing",
         intro: "Industrial Engineering student focused on impactful brand strategies and outreach.",
@@ -170,7 +181,18 @@ const teamMembers: TeamMember[] = [
         }
     },
     {
-        id: 15,
+        id: 17,
+        name: "Mijan Ullah",
+        position: "Director of Technology",
+        intro: "SOEN student focused on backend development.",
+        imageSrc: "/imgs/team/mijan.jpg",
+        socials: {
+            linkedin: "https://www.linkedin.com/in/mijan-ullah-4b99b3298/",
+            github: "https://github.com/mijanullah12",
+        }
+    },
+    {
+        id: 18,
         name: "Subaanky Krishnapillai",
         position: "Director of Sponsorship",
         intro: "SOEN student working to strengthen corporate relationships and ensure event success.",
