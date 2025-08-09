@@ -34,7 +34,7 @@ export default function ContactSection() {
             </div>
             <div>
               <p className="font-semibold text-white">Email</p>
-              <p className="text-sm text-gray-500">technology.hackconcordia@ecaconcordia.ca</p>
+              <a href="mailto:technology.hackconcordia@ecaconcordia.ca"><p className="text-sm text-gray-500">technology.hackconcordia@ecaconcordia.ca</p></a>
             </div>
           </div>
 

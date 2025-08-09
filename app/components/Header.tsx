@@ -5,10 +5,10 @@ import { usePathname, useRouter } from 'next/navigation';
 import clsx from 'clsx';
 import Image from 'next/image';
 import {
-    FaEnvelope,
     FaFacebookF,
     FaInstagram,
     FaLinkedinIn,
+    FaRegEnvelope,
 } from 'react-icons/fa';
 import { FaX } from 'react-icons/fa6';
 
@@ -120,21 +120,21 @@ export default function Header() {
                 </nav>
 
                 {/* Right Icons (hidden on small screens) */}
-                <div className="hidden md:flex space-x-4">
-                    <a className="hover:text-yellow-400" href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                <div className="hidden md:flex space-x-4 items-center">
+                    <a className="hover:text-yellow-400" href="https://www.facebook.com/HackConcordia/" target="_blank" rel="noopener noreferrer">
                         <FaFacebookF size={18} />
                     </a>
-                    <a className="hover:text-yellow-400" href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                    <a className="hover:text-yellow-400" href="https://www.instagram.com/hackconcordia" target="_blank" rel="noopener noreferrer">
                         <FaInstagram size={18} />
                     </a>
-                    <a className="hover:text-yellow-400" href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                    <a className="hover:text-yellow-400" href="https://www.linkedin.com/company/hackconcordia" target="_blank" rel="noopener noreferrer">
                         <FaLinkedinIn size={18} />
                     </a>
-                    <a className="hover:text-yellow-400" href="https://x.com" target="_blank" rel="noopener noreferrer">
+                    <a className="hover:text-yellow-400" href="https://x.com/HackConcordia" target="_blank" rel="noopener noreferrer">
                         <FaX size={18} />
                     </a>
-                    <a className="hover:text-yellow-400" href="mailto:email@example.com">
-                        <FaEnvelope size={18} />
+                    <a className="hover:text-yellow-400" href="mailto:technology.hackconcordia@ecaconcordia.ca">
+                        <FaRegEnvelope size={18} />
                     </a>
                 </div>
             </div>
