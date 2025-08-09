@@ -161,7 +161,7 @@ const slides: Slide[] = [
         subtitle:
             '2022 leaned into rapid prototyping and experimentation: teams embraced ML/AI and maker-hardware, reinforcing the hackathon’s reputation as a space for shipping bold MVPs quickly.',
         stats: { Participants: '750+', Projects: '300+', Mentors: '70+', Sponsors: '30+' },
-         winners: [
+        winners: [
             {
                 position: '1',
                 team: 'RevYou',
@@ -446,8 +446,8 @@ export default function ConuHacks() {
                                                     <p className='hover:text-yellow-500'>{winner.project}</p>
                                                 </a>
                                             </div>
-                                            {winner.description && <span className="block text-xs text-white max-w-lg mt-1">{winner.description}</span>}
-                                            {winner.youtube && <a href={winner.youtube} target="_blank" rel="noreferrer" className='flex gap-1 items-center text-xs mt-2 text-gray-200'> <FaYoutube className='w-4 h-4 text-red-500'/> <span className="hover:text-red-400 font-semibold">Watch demo</span> </a>}
+                                            {winner.description && <span className="block text-xs text-white max-w-xl mt-1" style={{ lineHeight: "18px" }}>{winner.description}</span>}
+                                            {winner.youtube && <a href={winner.youtube} target="_blank" rel="noreferrer" className='flex gap-1 items-center text-xs mt-2 text-gray-200'> <FaYoutube className='w-4 h-4 text-red-500' /> <span className="hover:text-red-400 font-semibold">Watch demo</span> </a>}
                                         </li>
                                     ))}
                                 </ul>
@@ -523,7 +523,7 @@ export default function ConuHacks() {
                             />
                             <div className="text-white mt-2">
                                 <div className="text-sm font-semibold text-ellipsis overflow-hidden whitespace-nowrap">{slide.title}</div>
-                                <div className="text-xs opacity-70 text-ellipsis overflow-hidden whitespace-nowrap">{slide.subtitle}</div>
+                                <div className="text-xs text-gray-300 text-ellipsis overflow-hidden whitespace-nowrap">{slide.subtitle}</div>
                             </div>
                         </div>
                     ))}
