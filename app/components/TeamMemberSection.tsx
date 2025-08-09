@@ -24,7 +24,7 @@ const teamMembers: TeamMember[] = [
     {
         id: 1,
         name: "Mohammed Huzaifa",
-        position: "VP Technology",
+        position: "Vice President of Technology",
         intro: "Master of Applied Computer Science student passionate about full-stack development and building impactful tech solutions.",
         imageSrc: "/imgs/team/mohammed_huzaifa.jpg",
         socials: {
@@ -69,7 +69,7 @@ const teamMembers: TeamMember[] = [
     {
         id: 5,
         name: "Elba Lucia Jimenez",
-        position: "VP Marketing",
+        position: "Vice President of Marketing",
         intro: "CompSci student dedicated to promoting events and creating vibrant community connections.",
         imageSrc: "/imgs/team/elba_lucia_jimenez.jpg",
         socials: {
@@ -215,7 +215,7 @@ export default function TeamMemberSection() {
                     {/* Left Panel: Displayed Member Details */}
                     <div className="flex-1 max-w-xl">
                         <h3 className="text-2xl font-bold">{displayMember.name}</h3>
-                        <p className="text-gray-400 mb-4 font-semibold">{displayMember.position}</p>
+                        <p className="text-gray-400 mb-6 text-sm">{displayMember.position}</p>
 
                         <div className="flex space-x-4 mb-6">
                             {displayMember.socials?.linkedin && (
