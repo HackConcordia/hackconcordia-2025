@@ -5,7 +5,6 @@ import { FaLinkedin, FaGithub, FaInstagram, FaGlobe } from "react-icons/fa";
 import { FaArrowRight } from 'react-icons/fa';
 import Link from 'next/link';
 import Image from 'next/image';
-import { FaWebAwesome } from 'react-icons/fa6';
 
 type TeamMember = {
     id: number;
@@ -25,7 +24,7 @@ const teamMembers: TeamMember[] = [
     {
         id: 1,
         name: "Mohammed Huzaifa",
-        position: "VP Tech",
+        position: "VP Technology",
         intro: "Master of Applied Computer Science student passionate about full-stack development and building impactful tech solutions.",
         imageSrc: "/imgs/team/mohammed_huzaifa.jpg",
         socials: {
@@ -38,7 +37,7 @@ const teamMembers: TeamMember[] = [
     {
         id: 2,
         name: "Masoumeh Farokhpour (Maryam)",
-        position: "Director Tech",
+        position: "Director of Technology",
         intro: "MACS student with a strong interest in innovative software development and collaborative tech projects.",
         imageSrc: "/imgs/team/masoumeh_farokhpour.jpg",
         socials: {
@@ -80,7 +79,7 @@ const teamMembers: TeamMember[] = [
     {
         id: 6,
         name: "Johnny Dang",
-        position: "Director Tech",
+        position: "Director of Technology",
         intro: "SOEN student with an interest in cutting-edge technologies and efficient problem-solving.",
         imageSrc: "/imgs/team/johnny_dang.jpg",
         socials: {
@@ -110,7 +109,7 @@ const teamMembers: TeamMember[] = [
     {
         id: 9,
         name: "Mohamad Addasi",
-        position: "Director Tech",
+        position: "Director of Technology",
         intro: "SOEN student focused on scalable, efficient software engineering and emerging technologies.",
         imageSrc: "/imgs/team/mohamad_addasi.jpg",
         socials: {
@@ -121,7 +120,7 @@ const teamMembers: TeamMember[] = [
     {
         id: 10,
         name: "Tiffany Andriamiharimanana",
-        position: "Director Tech",
+        position: "Director of Technology",
         intro: "SOEN student passionate about software development and inclusive tech communities.",
         imageSrc: "/imgs/team/tiffany_andriamiharimanana.jpg",
         socials: {
@@ -216,7 +215,7 @@ export default function TeamMemberSection() {
                     {/* Left Panel: Displayed Member Details */}
                     <div className="flex-1 max-w-xl">
                         <h3 className="text-2xl font-bold">{displayMember.name}</h3>
-                        <p className="text-gray-400 mb-4">{displayMember.position}</p>
+                        <p className="text-gray-400 mb-4 font-semibold">{displayMember.position}</p>
 
                         <div className="flex space-x-4 mb-6">
                             {displayMember.socials?.linkedin && (
