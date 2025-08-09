@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import React from 'react';
 
 type SubteamMember = {
@@ -23,7 +24,7 @@ const timelineData: TimelinePanel[] = [
   {
     number: 9,
     year: 2025,
-    bgImage: 'imgs/legacy-teams/conu9.jpg',
+    bgImage: '/imgs/legacy-teams/conu9.jpg',
     subteams: [
       { name: 'Co-pres', members: [{ name: 'Alice', url: 'https://example.com/alice' }] },
       { name: 'Tech', members: [{ name: 'Bob' }, { name: 'Charlie', url: 'https://github.com/charlie' }] },
@@ -38,7 +39,7 @@ const timelineData: TimelinePanel[] = [
   {
     number: 8,
     year: 2024,
-    bgImage: 'imgs/legacy-teams/conu8.jpg',
+    bgImage: '/imgs/legacy-teams/conu8.jpg',
     subteams: [
       { name: 'Co-pres', members: [{ name: 'Bertin', url: 'https://example.com/alice' }, { name: 'Elizabeth', url: 'https://example.com/alice' }] },
       { name: 'Tech', members: [{ name: 'Bob' }, { name: 'Charlie', url: 'https://github.com/charlie' }] },
@@ -53,7 +54,7 @@ const timelineData: TimelinePanel[] = [
   {
     number: 7,
     year: 2023,
-    bgImage: 'imgs/legacy-teams/conu7.jpg',
+    bgImage: '/imgs/legacy-teams/conu7.jpg',
     subteams: [
       { name: 'Co-pres', members: [{ name: 'Alice', url: 'https://example.com/alice' }] },
       { name: 'Tech', members: [{ name: 'Bob' }, { name: 'Charlie', url: 'https://github.com/charlie' }] },
@@ -68,7 +69,7 @@ const timelineData: TimelinePanel[] = [
   {
     number: 4,
     year: 2019,
-    bgImage: 'imgs/legacy-teams/conu4.jpg',
+    bgImage: '/imgs/legacy-teams/conu4.jpg',
     subteams: [
       { name: 'Co-pres', members: [{ name: 'Alice', url: 'https://example.com/alice' }] },
       { name: 'Tech', members: [{ name: 'Bob' }, { name: 'Charlie', url: 'https://github.com/charlie' }] },
@@ -89,16 +90,18 @@ const Timeline: React.FC = () => {
         id="timeline"
         className="flex h-[calc(87vh-5px)] snap-x snap-mandatory"
       >
-        {timelineData.map(({ number, year, bgImage, subteams }) => (
+        {timelineData.map(({ number, year, bgImage }) => (
           <div
             key={number}
             className="group relative flex-shrink-0 w-[30%] min-w-[300px] h-full text-white transition-all duration-500 ease-in-out hover:w-[70%] snap-start"
           >
             {/* Background Image */}
-            <img
+            <Image
               className="absolute inset-0 w-full h-full object-cover transition duration-500 ease-in-out filter grayscale group-hover:grayscale-0"
               src={bgImage}
               alt={`Conuhacks ${number} Background`}
+              width={1000}
+              height={1000}
             />
 
             {/* Overlay gradient */}

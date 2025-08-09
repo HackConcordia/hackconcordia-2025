@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 import { FaArrowRight } from 'react-icons/fa';
 import Link from 'next/link';
+import Image from 'next/image';
 
 type TeamMember = {
     id: number;
@@ -257,10 +258,12 @@ export default function TeamMemberSection() {
                                             height: '400px',
                                         }}
                                     >
-                                        <img
+                                        <Image
                                             src={member.imageSrc}
                                             alt={member.name}
                                             className="w-full h-full object-cover"
+                                            width={500}
+                                            height={500}
                                         />
                                     </div>
                                 );
