@@ -8,5 +8,273 @@
     "card1": "This is your hub for all things hacking. From upcoming hackathons and events to curated learning resources, this site is your launchpad to grow your skills, meet fellow builders, and bring your ideas to life.",
     "card2": "Meet the buzzing minds building Quebec’s biggest student hackathon. HackConcordia is a student-led tech community at Concordia University.",
     "card3": "Ready to dive in? Whether you want to compete in a hackathon, attend a workshop, or just meet some like-minded tech lovers, HackConcordia has a spot for you."
+  },
+  "ConuHacks": {
+    "slide1": {
+      "title": "ConUHacks - The hackathon experience",
+      "subtitle": "A student-run, 24-hour hackathon that champions learning-by-building. ConUHacks brings together developers, designers, and curious minds to prototype, learn from mentors, and launch ideas — growing each year in scale, community, and ambition.",
+      "tag": "Hackathon",
+      "others": {
+        "date": "24th January 2026",
+        "location": "Concordia University, Montreal",
+        "duration": "24 hours",
+        "theme": "Innovation and Collaboration",
+        "registration": "Opening soon"
+      }
+    },
+    "slide10": {
+      "title": "ConUHacks IX - The Next Frontier (2025)",
+      "subtitle": "The ninth edition (Feb 1–2, 2025) attracted ~800 participants—the largest yet—and boasted 143 project submissions, heightened mentorship, and dedicated hands-on hardware spaces to elevate innovation.",
+      "stats": {
+        "participants": "850+",
+        "projects": "143+",
+        "mentors": "100+",
+        "sponsors": "50+"
+      },
+      "winners": {
+        "1": {
+          "team": "PrezPal",
+          "project": "PrezPal",
+          "description": "A voice controlled custom slides editor, powered by generative AI. Create your presentation deck hands-free, with our in-house slides editor."
+        },
+        "2": {
+          "team": "LeetWrite",
+          "project": "LeetWrite",
+          "description": "LeetCode, but you explain code instead of writing code."
+        },
+        "3": {
+          "team": "404 Lost & Found",
+          "project": "404 Lost & Found",
+          "description": "Ever lost something precious and wished you had a digital detective on your side? Meet 404 Lost&Found – your AI-powered personal item finder and data visualization tool."
+        }
+      },
+      "tag": "Ninth Edition"
+    },
+    "slide9": {
+      "title": "ConUHacks VIII - Uncharted Territories (2024)",
+      "subtitle": "2024 celebrated exploration into areas like civic tech, sustainability, and hardware-first prototypes, with stronger community buzz and interdisciplinary collaboration.",
+      "stats": {
+        "participants": "800+",
+        "projects": "400+",
+        "mentors": "90+",
+        "sponsors": "40+"
+      },
+      "winners": {
+        "1": {
+          "team": "Spartan",
+          "project": "Spartan",
+          "description": "Do you have trouble waking up in the morning? Do you press snooze one too many times? If so, this productivity tool is for you, it will eliminate all laziness and lost time in your morning routine."
+        },
+        "2": {
+          "team": "MotiSpectra",
+          "project": "MotiSpectra",
+          "description": "Measure Emotion, Power Connections."
+        },
+        "3": {
+          "team": "Avada Kedavra",
+          "project": "Avada Kedavra",
+          "description": "Avada Kedavra! Join our hand-controlled wizard in his fight against endless enemies!"
+        }
+      },
+      "tag": "Eighth Edition"
+    },
+    "slide8": {
+      "title": "ConUHacks VII - Breaking Boundaries (2023)",
+      "subtitle": "After virtual editions during the pandemic, ConUHacks returned in-person Jan 21–22 2023 with 523 participants on Devpost but ~800 attendees overall—reigniting energy through workshops, mentors, tours, and connection.",
+      "stats": {
+        "participants": "750+",
+        "projects": "350+",
+        "mentors": "80+",
+        "sponsors": "35+"
+      },
+      "winners": {
+        "1": {
+          "team": "NearbyNow",
+          "project": "NearbyNow",
+          "description": "NearbyNow is a service that detects storefronts and provides useful information such as opening hours, website, menu, reviews, etc. using a live camera feed."
+        },
+        "2": {
+          "team": "Jane",
+          "project": "Jane",
+          "description": "Revolutionize your job interview prep with our app. Simulate real-life behavioral & technical interviews in natural conversation for personalized practice. Land your dream job."
+        },
+        "3": {
+          "team": "MeLody",
+          "project": "MeLody",
+          "description": "An elegant AI that generates a chord progression/bassline based on a user-input melody."
+        }
+      },
+      "tag": "Seventh Edition"
+    },
+    "slide7": {
+      "title": "ConUHacks VI - Innovation Unleashed (2022)",
+      "subtitle": "2022 leaned into rapid prototyping and experimentation: teams embraced ML/AI and maker-hardware, reinforcing the hackathon’s reputation as a space for shipping bold MVPs quickly.",
+      "stats": {
+        "participants": "750+",
+        "projects": "300+",
+        "mentors": "70+",
+        "sponsors": "30+"
+      },
+      "winners": {
+        "1": {
+          "team": "RevYou",
+          "project": "RevYou",
+          "description": "Are you tired of written online reviews? Introducing RevYou, an application that allows you to not only post entertaining videos attached to locations, but also post video reviews."
+        },
+        "2": {
+          "team": "Four O' Four",
+          "project": "Four O' Four",
+          "description": "Access the web via SMS - even without internet!"
+        },
+        "3": {
+          "team": "Furnishare",
+          "project": "Furnishare",
+          "description": "Decreasing furniture, clothing, and electronic waste one item at a time."
+        }
+      },
+      "tag": "Sixth Edition"
+    },
+    "slide6": {
+      "title": "ConUHacks V - A New Era (2020)",
+      "subtitle": "2020 drew 700+ participants, massive application numbers, and 49 sponsors, signaling a shift toward startup thinking—helping teams envision projects beyond the 24-hour sprint.",
+      "stats": {
+        "participants": "700+",
+        "projects": "250+",
+        "mentors": "60+",
+        "sponsors": "49+"
+      },
+      "winners": {
+        "1": {
+          "team": "BookLens",
+          "project": "BookLens",
+          "description": "The new gen LeapFrog: An interactive learning tool designed for reading texts aloud and translation."
+        },
+        "2": {
+          "team": "LIFEtrainer",
+          "project": "LIFEtrainer",
+          "description": "Home of the Heart Hero! This is an online education platform for a modern work environment leveraging IoT, hardware, AI and gamification."
+        },
+        "3": {
+          "team": "TowAR",
+          "project": "TowAR",
+          "description": "AR tower defence game using the ARcore framework and Unity Engine."
+        }
+      },
+      "tag": "Fifth Edition"
+    },
+    "slide5": {
+      "title": "ConUHacks IV - The Future Awaits (2019)",
+      "subtitle": "The 2019 edition welcomed ~700 students and over $20K–$25K in prizes. Projects tackled real-world needs—including accessibility-focused hacks—marking maturation in mentoring and project impact.",
+      "stats": {
+        "participants": "700+",
+        "projects": "180+",
+        "mentors": "45+",
+        "sponsors": "18+"
+      },
+      "winners": {
+        "1": {
+          "team": "HEAR",
+          "project": "HEAR",
+          "description": "Generating Subtitles for Life."
+        },
+        "2": {
+          "team": "Sustainable IOT Fridge",
+          "project": "Sustainable IOT Fridge",
+          "description": "Keep track of your food items and receive recipe recommendations to reduce food waste based on expiration dates."
+        },
+        "3": {
+          "team": "SmarTrash",
+          "project": "SmarTrash",
+          "description": "What if your waste bin sorts it out for you?"
+        }
+      },
+      "tag": "Fourth Edition"
+    },
+    "slide4": {
+      "title": "ConUHacks III - The Evolution Continues (2018)",
+      "subtitle": "2018 brought higher participation, increased sponsor involvement, and a growing prize pool—marking a refinement phase where polished presentations and improved mentorship became more common.",
+      "stats": {
+        "participants": "600+",
+        "projects": "150+",
+        "mentors": "40+",
+        "sponsors": "15+"
+      },
+      "winners": {
+        "1": {
+          "team": "Alice",
+          "project": "Alice",
+          "description": "Alice aims to empower elderly people that currently suffer dementia and wish to utilize online banking."
+        },
+        "2": {
+          "team": "Senior Sensor",
+          "project": "Senior Sensor",
+          "description": "Letting you know your loved ones are safe, wherever you are."
+        },
+        "3": {
+          "team": "Chaperone",
+          "project": "Chaperone",
+          "description": "A web app dashboard helping elders with their reminders on the Amazon Echo."
+        }
+      },
+      "tag": "Third Edition"
+    },
+    "slide3": {
+      "title": "ConUHacks II - The Next Chapter (2017)",
+      "subtitle": "With ConUHacks II, the community expanded—more teams, broader institutional support, and a growing diversity of participants signaled the hackathon finding its stride.",
+      "stats": {
+        "participants": "400+",
+        "projects": "120+",
+        "mentors": "35+",
+        "sponsors": "14+"
+      },
+      "winners": {
+        "1": {
+          "team": "InstantPi",
+          "project": "InstantPi",
+          "description": "Watchdog - Concordia University Hackathon."
+        },
+        "2": {
+          "team": "Foody",
+          "project": "Foody",
+          "description": "Foody food finder <3"
+        },
+        "3": {
+          "team": "L2Talk",
+          "project": "L2Talk",
+          "description": "Improve your speech with this app."
+        }
+      },
+      "tag": "Second Edition"
+    },
+    "slide2": {
+      "title": "ConUHacks I - A Journey Begins (2016)",
+      "subtitle": "The inaugural MLH-affiliated ConUHacks in Jan 2016 brought 250+ students together for a 24-hour buildathon—planting the community roots and traditions that fueled the hackathon’s growth over the next decade.",
+      "stats": {
+        "participants": "250+",
+        "projects": "100+",
+        "mentors": "30+",
+        "sponsors": "10+"
+      },
+      "winners": {
+        "1": {
+          "team": "DOUBLEVISION",
+          "project": "DOUBLEVISION",
+          "description": "Accompaniyig your videos with smart context so you can further research topics mentioned in your video."
+        },
+        "2": {
+          "team": "SignSpeaks",
+          "project": "SignSpeaks",
+          "description": "A wireless and cost effective solution using an Android app and a Myo for ASL to speech translation (bilingual)."
+        },
+        "3": {
+          "team": "ProViralPictures.net",
+          "project": "ProViralPictures.net",
+          "description": "Instantly add filters to your Facebook profile picture to support charities and local events."
+        }
+      },
+      "tag": "First Edition"
+    },
+    "winnersTitle": "Winners:",
+    "watchDemo": "Watch demo"
   }
 }
