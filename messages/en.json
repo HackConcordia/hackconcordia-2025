@@ -315,5 +315,80 @@
     "more_questions": "Still have questions?",
     "reach_out": "Reach out via email or follow us on social media @HackConcordia.",
     "get_intouch_button": "Get in touch"
+  },
+  "TeamMember": {
+    "legacyButton":"Legacy Teams",
+    "title": "Hive Keepers",
+    "description": "Meet the dedicated team behind Conuhacks, working tirelessly to bring you the best hackathon experience.",
+    "team": {
+      "1": {
+        "position": "Co-President",
+        "intro": "COEN student and co-president of HackConcordia."
+      },
+      "3": {
+        "position": "Vice President of Technology",
+        "intro": "Master of Applied Computer Science student passionate about full-stack development and building impactful tech solutions."
+      },
+      "4": {
+        "position": "Director of Technology",
+        "intro": "MACS student with a strong interest in innovative software development and collaborative tech projects."
+      },
+      "5": {
+        "position": "Director of Sponsorship",
+        "intro": "COEN student committed to fostering strong partnerships and sponsor relationships for impactful events."
+      },
+      "6": {
+        "position": "Director of Marketing",
+        "intro": "SOEN student with a drive for impactful communication and outreach."
+      },
+      "7": {
+        "position": "Vice President of Marketing",
+        "intro": "CompSci student dedicated to promoting events and creating vibrant community connections."
+      },
+      "8": {
+        "position": "Director of Technology",
+        "intro": "SOEN student with an interest in cutting-edge technologies and efficient problem-solving."
+      },
+      "9": {
+        "position": "Director of Marketing",
+        "intro": "SOEN student passionate about creative marketing campaigns and community engagement."
+      },
+      "10": {
+        "position": "Director of Sponsorship",
+        "intro": "SOEN student with a passion for connecting with partners and creating mutually beneficial collaborations."
+      },
+      "11": {
+        "position": "Director of Technology",
+        "intro": "SOEN student focused on scalable, efficient software engineering and emerging technologies."
+      },
+      "12": {
+        "position": "Director of Technology",
+        "intro": "SOEN student passionate about software development and inclusive tech communities."
+      },
+      "13": {
+        "position": "Director of Marketing",
+        "intro": "Marketing student passionate about creative storytelling and audience engagement."
+      },
+      "14": {
+        "position": "Director of Events",
+        "intro": "Data Science student passionate about designing engaging, memorable experiences for participants."
+      },
+      "15": {
+        "position": "Director of Logistics",
+        "intro": "BCompSc student dedicated to seamless event planning and operational efficiency."
+      },
+      "16": {
+        "position": "Director of Marketing",
+        "intro": "Industrial Engineering student focused on impactful brand strategies and outreach."
+      },
+      "17": {
+        "position": "Director of Technology",
+        "intro": "SOEN student focused on backend development."
+      },
+      "18": {
+        "position": "Director of Sponsorship",
+        "intro": "SOEN student working to strengthen corporate relationships and ensure event success."
+      }
+    }
   }
 }
