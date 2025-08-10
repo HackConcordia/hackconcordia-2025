@@ -81,6 +81,21 @@ const timelineData: TimelinePanel[] = [
       { name: 'Finance', members: [{ name: 'Ian' }] },
     ],
   },
+  {
+    number: 2,
+    year: 2017,
+    bgImage: '/imgs/legacy-teams/conu2.jpg',
+    subteams: [
+      { name: 'Co-pres', members: [{ name: 'Alice', url: 'https://example.com/alice' }] },
+      { name: 'Tech', members: [{ name: 'Bob' }, { name: 'Charlie', url: 'https://github.com/charlie' }] },
+      { name: 'Marketing', members: [{ name: 'Diana' }] },
+      { name: 'Internal', members: [{ name: 'Evan' }] },
+      { name: 'Events', members: [{ name: 'Fiona' }] },
+      { name: 'Sponsorship', members: [{ name: 'George' }] },
+      { name: 'Logistics', members: [{ name: 'Hannah' }] },
+      { name: 'Finance', members: [{ name: 'Ian' }] },
+    ],
+  },
 ];
 
 const Timeline: React.FC = () => {

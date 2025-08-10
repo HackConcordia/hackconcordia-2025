@@ -29,7 +29,7 @@ const slides: Slide[] = [
     // 1) ConUHacks overview
     {
         id: 1,
-        image: '/imgs/about_us2.jpg',
+        image: '/imgs/conuhacks/conu.jpg',
         title: 'ConUHacks - The hackathon experience',
         subtitle:
             'A student-run, 24-hour hackathon that champions learning-by-building. ConUHacks brings together developers, designers, and curious minds to prototype, learn from mentors, and launch ideas — growing each year in scale, community, and ambition.',
@@ -48,7 +48,7 @@ const slides: Slide[] = [
     // ConUHacks IX – The Next Frontier (2025)
     {
         id: 10,
-        image: '/imgs/about_us3.jpg',
+        image: '/imgs/conuhacks/conu9.jpg',
         title: 'ConUHacks IX - The Next Frontier (2025)',
         subtitle:
             'The ninth edition (Feb 1–2, 2025) attracted ~800 participants—the largest yet—and boasted 143 project submissions, heightened mentorship, and dedicated hands-on hardware spaces to elevate innovation.',
@@ -86,7 +86,7 @@ const slides: Slide[] = [
     // ConUHacks VIII – Uncharted Territories (2024)
     {
         id: 9,
-        image: '/imgs/about_us3.jpg',
+        image: '/imgs/conuhacks/conu8.jpg',
         title: 'ConUHacks VIII - Uncharted Territories (2024)',
         subtitle:
             '2024 celebrated exploration into areas like civic tech, sustainability, and hardware-first prototypes, with stronger community buzz and interdisciplinary collaboration.',
@@ -122,7 +122,7 @@ const slides: Slide[] = [
     // ConUHacks VII – Breaking Boundaries (2023)
     {
         id: 8,
-        image: '/imgs/about_us3.jpg',
+        image: '/imgs/conuhacks/conu7.jpg',
         title: 'ConUHacks VII - Breaking Boundaries (2023)',
         subtitle:
             'After virtual editions during the pandemic, ConUHacks returned in-person Jan 21–22 2023 with 523 participants on Devpost but ~800 attendees overall—reigniting energy through workshops, mentors, tours, and connection.',
@@ -156,7 +156,7 @@ const slides: Slide[] = [
     // ConUHacks VI – Innovation Unleashed (2022)
     {
         id: 7,
-        image: '/imgs/about_us3.jpg',
+        image: '/imgs/conuhacks/conu6.jpg',
         title: 'ConUHacks VI - Innovation Unleashed (2022)',
         subtitle:
             '2022 leaned into rapid prototyping and experimentation: teams embraced ML/AI and maker-hardware, reinforcing the hackathon’s reputation as a space for shipping bold MVPs quickly.',
@@ -192,7 +192,7 @@ const slides: Slide[] = [
     // ConUHacks V – A New Era (2020)
     {
         id: 6,
-        image: '/imgs/about_us3.jpg',
+        image: '/imgs/conuhacks/conu5.jpg',
         title: 'ConUHacks V - A New Era (2020)',
         subtitle:
             '2020 drew 700+ participants, massive application numbers, and 49 sponsors, signaling a shift toward startup thinking—helping teams envision projects beyond the 24-hour sprint.',
@@ -226,7 +226,7 @@ const slides: Slide[] = [
     // ConUHacks IV – The Future Awaits (2019)
     {
         id: 5,
-        image: '/imgs/about_us3.jpg',
+        image: '/imgs/conuhacks/conu4.jpg',
         title: 'ConUHacks IV - The Future Awaits (2019)',
         subtitle:
             'The 2019 edition welcomed ~700 students and over $20K–$25K in prizes. Projects tackled real-world needs—including accessibility-focused hacks—marking maturation in mentoring and project impact.',
@@ -261,7 +261,7 @@ const slides: Slide[] = [
     // ConUHacks III – The Evolution Continues (2018)
     {
         id: 4,
-        image: '/imgs/about_us3.jpg',
+        image: '/imgs/conuhacks/conu3.jpg',
         title: 'ConUHacks III - The Evolution Continues (2018)',
         subtitle:
             '2018 brought higher participation, increased sponsor involvement, and a growing prize pool—marking a refinement phase where polished presentations and improved mentorship became more common.',
@@ -296,7 +296,7 @@ const slides: Slide[] = [
     // ConUHacks II – The Next Chapter (2017)
     {
         id: 3,
-        image: '/imgs/about_us3.jpg',
+        image: '/imgs/conuhacks/conu2.jpg',
         title: 'ConUHacks II - The Next Chapter (2017)',
         subtitle:
             'With ConUHacks II, the community expanded—more teams, broader institutional support, and a growing diversity of participants signaled the hackathon finding its stride.',
@@ -330,7 +330,7 @@ const slides: Slide[] = [
     // ConUHacks I – A Journey Begins (2016)
     {
         id: 2,
-        image: '/imgs/about_us1.jpg',
+        image: '/imgs/conuhacks/conu1.jpg',
         title: 'ConUHacks I - A Journey Begins (2016)',
         subtitle:
             'The inaugural MLH-affiliated ConUHacks in Jan 2016 brought 250+ students together for a 24-hour buildathon—planting the community roots and traditions that fueled the hackathon’s growth over the next decade.',
