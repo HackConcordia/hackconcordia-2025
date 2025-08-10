@@ -317,7 +317,7 @@
     "get_intouch_button": "Get in touch"
   },
   "TeamMember": {
-    "legacyButton":"Legacy Teams",
+    "legacyButton": "Legacy Teams",
     "title": "Hive Keepers",
     "description": "Meet the dedicated team behind Conuhacks, working tirelessly to bring you the best hackathon experience.",
     "team": {
@@ -389,6 +389,57 @@
         "position": "Director of Sponsorship",
         "intro": "SOEN student working to strengthen corporate relationships and ensure event success."
       }
+    }
+  },
+  "UpcomingEvents": {
+    "title1": "Bee Ready...",
+    "subtitle1": "Below is a list of our upcoming events. Click below to register.",
+    "month": {
+      "February": "February",
+      "April": "April",
+      "January": "January",
+      "August": "August",
+      "September": "September",
+      "October": "October",
+      "March": "March",
+      "November": "November",
+      "December": "December"
+    },
+    "title": {
+      "Wine_Cheese_Mixer": "Wine & Cheese Mixer",
+      "Lightning_Learning": "Lightning Learning",
+      "HackDecouverte": "HackDécouverte",
+      "ConUHacks_X_Launch_Party": "ConUHacks X Launch Party",
+      "Lizard_Lounge": "Lizard Lounge Social",
+      "GitHubCoPilot": "GitHub Co-pilot",
+      "Workshop2_Winter": "Workshop 2 (Winter)",
+      "FullStackDeveloper101": "Full-Stack Developer 101"
+    },
+    "type": {
+      "Tech_Social": "Tech Social",
+      "MiniHackathon": "Mini-Hackathon",
+      "Workshop": "Workshop",
+      "Hackathon": "24‑Hour Hackathon",
+      "Registration_Launch_Event": "Registration Launch Event",
+      "Mixer": "Mixer",
+      "Social_Mixer": "Social Mixer"
+    },
+    "time": {
+      "evening": "Evening",
+      "conuhacks": "8 AM (24th Jan) - 11 AM (25th Jan)",
+      "full_day": "Full Day",
+      "5_30pm_7_30_pm": "Evening (5:30 PM–7:30 PM)"
+    },
+    "location": {
+      "jmsb": "Concordia University (John Molson MB)",
+      "Conco": "Concordia University",
+      "Reggies": "Reggie's Bar (SGW Campus)",
+      "hall_1011": "H-1011 (Hall Building, SGW Campus)"
+    },
+    "address": {
+      "jmsb": "1455 Boulevard de Maisonneuve, Montreal",
+      "ConcordiaAddress": "SGW Campus, Montreal",
+      "Conco": "Concordia Uninversity, Montreal"
     }
   }
 }
