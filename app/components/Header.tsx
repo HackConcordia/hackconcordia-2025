@@ -89,7 +89,7 @@ export default function Header() {
     };
 
     return (
-        <header className="w-full fixed top-0 z-50 text-white backdrop-blur-xs bg-black/60">
+        <header className="w-full fixed top-0 z-50 text-white backdrop-blur-xs bg-black/60 px-4 md:px-0">
             <div className="max-w-7xl mx-auto flex justify-between items-center py-2">
                 {/* Left Logo */}
                 <div className="flex items-center space-x-2" style={{ marginLeft: '-2px' }}>
@@ -120,7 +120,7 @@ export default function Header() {
                 </nav>
 
                 {/* Right Icons (hidden on small screens) */}
-                <div className="hidden md:flex space-x-4 items-center">
+                <div className="flex space-x-2 md:space-x-4 items-center">
                     <a className="hover:text-yellow-400" href="https://www.facebook.com/HackConcordia/" target="_blank" rel="noopener noreferrer">
                         <FaFacebookF size={18} />
                     </a>

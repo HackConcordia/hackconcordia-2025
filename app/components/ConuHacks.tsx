@@ -407,14 +407,14 @@ export default function ConuHacks() {
                     alt={activeSlide.title}
                     layout="fill"
                     objectFit="cover"
-                    className="transition-all duration-700 ease-in-out md:rounded-sm shadow-amber-100"
+                    className="transition-all duration-700 ease-in-out md:rounded-sm shadow-amber-100 min-h-[70vh]"
                 />
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-black/80" />
             </div>
 
             {/* Text Overlay */}
-            <div className="relative z-10 md:h-full w-full flex md:px-4 lg:px-10 md:py-25 mx-auto max-w-7xl">
+            <div className="relative z-10 md:h-full w-full flex md:px-4 lg:px-10 md:py-25 mx-auto max-w-7xl min-h-[70vh]">
                 <div className="text-white">
                     <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold leading-tight mb-1" style={{ marginLeft: '-2px' }}>
                         {activeSlide.title}
@@ -470,7 +470,7 @@ export default function ConuHacks() {
                 </div>
             </div>
 
-            <div className="relative bottom-0 md:absolute md:bottom-70 md:right-10 z-20 flex items-center space-x-4 mt-4">
+            <div className="relative bottom-0 md:absolute md:bottom-70 md:right-10 z-20 flex items-center space-x-4 mt-4 justify-center">
                 <div className='flex items-center space-x-1'>
                     <button
                         onClick={goToPrev}
@@ -493,7 +493,7 @@ export default function ConuHacks() {
                     />
                 </div>
                 <div className='pr-3'>
-                    <span className="text-white text-sm flex">
+                    <span className="text-white text-sm flex font-semibold">
                         {active + 1 < 10 && <span>0</span>} {active + 1}
                     </span>
                 </div>
