@@ -47,7 +47,7 @@ const slides: Slide[] = [
 
     // ConUHacks IX – The Next Frontier (2025)
     {
-        id: 10,
+        id: 2,
         image: '/imgs/conuhacks/conu9.jpg',
         title: 'ConUHacks IX - The Next Frontier (2025)',
         subtitle:
@@ -85,7 +85,7 @@ const slides: Slide[] = [
 
     // ConUHacks VIII – Uncharted Territories (2024)
     {
-        id: 9,
+        id: 3,
         image: '/imgs/conuhacks/conu8.jpg',
         title: 'ConUHacks VIII - Uncharted Territories (2024)',
         subtitle:
@@ -121,7 +121,7 @@ const slides: Slide[] = [
 
     // ConUHacks VII – Breaking Boundaries (2023)
     {
-        id: 8,
+        id: 4,
         image: '/imgs/conuhacks/conu7.jpg',
         title: 'ConUHacks VII - Breaking Boundaries (2023)',
         subtitle:
@@ -155,7 +155,7 @@ const slides: Slide[] = [
 
     // ConUHacks VI – Innovation Unleashed (2022)
     {
-        id: 7,
+        id: 5,
         image: '/imgs/conuhacks/conu6.jpg',
         title: 'ConUHacks VI - Innovation Unleashed (2022)',
         subtitle:
@@ -225,7 +225,7 @@ const slides: Slide[] = [
 
     // ConUHacks IV – The Future Awaits (2019)
     {
-        id: 5,
+        id: 7,
         image: '/imgs/conuhacks/conu4.jpg',
         title: 'ConUHacks IV - The Future Awaits (2019)',
         subtitle:
@@ -260,7 +260,7 @@ const slides: Slide[] = [
 
     // ConUHacks III – The Evolution Continues (2018)
     {
-        id: 4,
+        id: 8,
         image: '/imgs/conuhacks/conu3.jpg',
         title: 'ConUHacks III - The Evolution Continues (2018)',
         subtitle:
@@ -295,7 +295,7 @@ const slides: Slide[] = [
 
     // ConUHacks II – The Next Chapter (2017)
     {
-        id: 3,
+        id: 9,
         image: '/imgs/conuhacks/conu2.jpg',
         title: 'ConUHacks II - The Next Chapter (2017)',
         subtitle:
@@ -329,7 +329,7 @@ const slides: Slide[] = [
 
     // ConUHacks I – A Journey Begins (2016)
     {
-        id: 2,
+        id: 10,
         image: '/imgs/conuhacks/conu1.jpg',
         title: 'ConUHacks I - A Journey Begins (2016)',
         subtitle:
