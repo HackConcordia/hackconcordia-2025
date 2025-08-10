@@ -450,5 +450,11 @@
     "termsOfService": "Terms of Service",
     "privacyPolicy": "Privacy Policy",
     "sponsors": "Sponsors"
+  },
+  "Header": {
+    "home": "Home",
+    "events": "Events",
+    "team": "Team",
+    "faq": "FAQ"
   }
 }
