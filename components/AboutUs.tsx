@@ -1,7 +1,7 @@
 'use client';
 
 import Lottie from "lottie-react";
-import scrollAnimation from "../../public/animations/scroll_down_animation.json";
+import scrollAnimation from "../public/animations/scroll_down_animation.json";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
 

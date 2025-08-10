@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import BackgroundOverlay from "./components/BackgroundOverlay";
-import FloatingBeeCursor from "./components/FloatingBeeCursor";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import BackgroundOverlay from "@/components/BackgroundOverlay";
+import FloatingBeeCursor from "@/components/FloatingBeeCursor";
+import { NextIntlClientProvider, hasLocale } from "next-intl";
+import { notFound } from "next/navigation";
+import { routing } from "@/i18n/routing";
+import { getMessages } from "next-intl/server";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -21,17 +25,19 @@ export const metadata: Metadata = {
   description: "HackConcordia is a club at Concordia University that organizes ConuHacks and other hackathons.",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+   const messages = await getMessages();
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="hidden md:flex">
+        <NextIntlClientProvider messages={messages}>
+          <div className="hidden md:flex">
           <BackgroundOverlay />
         </div>
         <Header />
@@ -42,6 +48,8 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        </NextIntlClientProvider>
+        
       </body>
     </html>
   );
