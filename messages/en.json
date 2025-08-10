@@ -276,5 +276,44 @@
     },
     "winnersTitle": "Winners:",
     "watchDemo": "Watch demo"
+  },
+  "faqs": {
+    "heading": "Bee Curious?",
+    "contactUs": "Contact Us",
+    "description": "Find answers to questions about HackConcordia and ConUHacks. Need more details? Reach out to our team to know more.",
+    "questions": {
+      "question1": "What is ConUHacks & who organizes it?",
+      "answer1": "ConUHacks (hosted by HackConcordia at Concordia University) is Quebec’s largest 24‑hour student hackathon. Teams build software or hardware projects using emerging tech like AI and IoT, and demo them live to judges.",
+
+      "question2": "Who can participate (eligibility)?",
+      "answer2": "Anyone above the legal age of majority—high school senior to university student is welcome. Recent graduates and international students can participate too; proof of enrollment may be required.",
+
+      "question3": "Do I need a team?",
+      "answer3": "Yes—each team can have up to 4 members. If you register solo, you’ll be listed as “Looking for Teammates”, and organizers’ll help you join a team.",
+
+      "question4": "I’m not a coder—can I still hack?",
+      "answer4": "Absolutely! ConUHacks welcomes newcomers—electricians, artists, designers, business majors—you name it. Our mentor teams help turn ideas into demos.",
+
+      "question5": "Is there a registration fee?",
+      "answer5": "No - ConUHacks is completely free, with food, swag, and workshops included.",
+
+      "question6": "Are meals, hardware, or Wi‑Fi provided?",
+      "answer6": "Yes! Free catered meals, snacks, and drinks are provided. There’s also a fully-equipped hardware lab with equipment and tools, plus on-site Wi‑Fi.",
+
+      "question7": "What prizes can we win?",
+      "answer7": "ConUHacks typically offers prizes worth over $6 000‑$17 000 CAD—including PS5s, VR gear, Oculus headsets, gaming monitors, Amazon gift cards, plus MLH winner ribbons and interview fast‑track interviews.",
+
+      "question8": "How do I submit my project and what are judging criteria?",
+      "answer8": "Submit via Devpost before the deadline. Judges score based on working demo, presentation, UI/UX, creativity, and impact.",
+
+      "question9": "Is there a code of conduct?",
+      "answer9": "Yes—ConUHacks uses Major League Hacking’s code of conduct: inclusive and respectful community only, zero tolerance for harassment.",
+
+      "question10": "How can I get help if I have questions or concerns?",
+      "answer10": "During the event, visit the info booth or raise issues via Discord. For post‑event inquiries or concerns, email the hackathon manager (listed on Devpost)."
+    },
+    "more_questions": "Still have questions?",
+    "reach_out": "Reach out via email or follow us on social media @HackConcordia.",
+    "get_intouch_button": "Get in touch"
   }
 }
