@@ -1,0 +1,475 @@
+{
+  "AboutUs": {
+    "subtitle": "Soyez le changement. Codez l'avenir.",
+    "tagline": "Donner vie au plus grand hackathon du Québec.",
+    "emailPlaceholder": "Entrez votre courriel",
+    "subscribeButton": "S'abonner",
+    "scrollDown": "Faites défiler vers le bas pour en savoir plus",
+    "card1": "C’est votre centre pour tout ce qui touche au hacking. Des hackathons et événements à venir aux ressources d’apprentissage sélectionnées, ce site est votre tremplin pour développer vos compétences, rencontrer d’autres créateurs et concrétiser vos idées.",
+    "card2": "Rencontrez les esprits bourdonnants qui bâtissent le plus grand hackathon étudiant du Québec. HackConcordia est une communauté technologique étudiante de l’Université Concordia.",
+    "card3": "Prêt à plonger ? Que vous vouliez participer à un hackathon, assister à un atelier, ou simplement rencontrer des passionnés de technologie, HackConcordia a une place pour vous."
+  },
+  "ConuHacks": {
+    "slide1": {
+      "title": "ConUHacks - L'expérience hackathon",
+      "subtitle": "Un hackathon étudiant de 24 heures qui valorise l'apprentissage par la pratique. ConUHacks réunit développeurs, designers et esprits curieux pour prototyper, apprendre auprès de mentors et lancer des idées — grandissant chaque année en ampleur, communauté et ambition.",
+      "tag": "Hackathon",
+      "others": {
+        "date": "24 janvier 2026",
+        "location": "Université Concordia, Montréal",
+        "duration": "24 heures",
+        "theme": "Innovation et Collaboration",
+        "registration": "Ouverture bientôt"
+      }
+    },
+    "slide10": {
+      "title": "ConUHacks IX - La prochaine frontière (2025)",
+      "subtitle": "La neuvième édition (1–2 février 2025) a attiré environ 800 participants — la plus grande à ce jour — avec 143 projets soumis, un mentorat renforcé, et des espaces dédiés au hardware pour stimuler l'innovation.",
+      "stats": {
+        "participants": "850+",
+        "projects": "143+",
+        "mentors": "100+",
+        "sponsors": "50+"
+      },
+      "winners": {
+        "1": {
+          "team": "PrezPal",
+          "project": "PrezPal",
+          "description": "Un éditeur de diapositives personnalisé contrôlé par la voix, propulsé par l'IA générative. Créez votre présentation sans les mains, avec notre éditeur intégré."
+        },
+        "2": {
+          "team": "LeetWrite",
+          "project": "LeetWrite",
+          "description": "LeetCode, mais vous expliquez le code au lieu de l’écrire."
+        },
+        "3": {
+          "team": "404 Lost & Found",
+          "project": "404 Lost & Found",
+          "description": "Vous avez déjà perdu quelque chose de précieux et souhaité avoir un détective numérique ? Découvrez 404 Lost&Found – votre assistant personnel AI pour retrouver vos objets et visualiser les données."
+        }
+      },
+      "tag": "Neuvième édition"
+    },
+    "slide9": {
+      "title": "ConUHacks VIII - Territoires inexplorés (2024)",
+      "subtitle": "2024 a célébré l'exploration de domaines comme la tech civique, la durabilité, et les prototypes hardware, avec une communauté plus dynamique et une collaboration interdisciplinaire accrue.",
+      "stats": {
+        "participants": "800+",
+        "projects": "400+",
+        "mentors": "90+",
+        "sponsors": "40+"
+      },
+      "winners": {
+        "1": {
+          "team": "Spartan",
+          "project": "Spartan",
+          "description": "Vous avez du mal à vous lever le matin ? Vous appuyez trop souvent sur le bouton snooze ? Cet outil de productivité est fait pour vous, éliminant paresse et perte de temps au réveil."
+        },
+        "2": {
+          "team": "MotiSpectra",
+          "project": "MotiSpectra",
+          "description": "Mesurez les émotions, créez des connexions puissantes."
+        },
+        "3": {
+          "team": "Avada Kedavra",
+          "project": "Avada Kedavra",
+          "description": "Avada Kedavra ! Rejoignez notre magicien contrôlé à la main dans sa lutte contre des ennemis sans fin !"
+        }
+      },
+      "tag": "Huitième édition"
+    },
+    "slide8": {
+      "title": "ConUHacks VII - Briser les barrières (2023)",
+      "subtitle": "Après des éditions virtuelles durant la pandémie, ConUHacks est revenu en présentiel les 21–22 janvier 2023 avec 523 participants sur Devpost et environ 800 au total — ravivant l'énergie grâce à des ateliers, mentors, visites et connexions.",
+      "stats": {
+        "participants": "750+",
+        "projects": "350+",
+        "mentors": "80+",
+        "sponsors": "35+"
+      },
+      "winners": {
+        "1": {
+          "team": "NearbyNow",
+          "project": "NearbyNow",
+          "description": "NearbyNow détecte les vitrines et fournit des infos utiles comme les horaires, site web, menu, avis, etc. via un flux caméra en direct."
+        },
+        "2": {
+          "team": "Jane",
+          "project": "Jane",
+          "description": "Révolutionnez votre préparation aux entretiens avec notre application. Simulez des entretiens techniques et comportementaux en conversation naturelle pour un entraînement personnalisé. décrochez le job de vos rêves."
+        },
+        "3": {
+          "team": "MeLody",
+          "project": "MeLody",
+          "description": "Une IA élégante qui génère une progression d'accords/basse basée sur une mélodie saisie par l’utilisateur."
+        }
+      },
+      "tag": "Septième édition"
+    },
+    "slide7": {
+      "title": "ConUHacks VI - Innovation déchaînée (2022)",
+      "subtitle": "2022 a mis l'accent sur le prototypage rapide et l'expérimentation : les équipes ont adopté ML/IA et matériel maker, renforçant la réputation du hackathon comme espace d’MVP audacieux livrés vite.",
+      "stats": {
+        "participants": "750+",
+        "projects": "300+",
+        "mentors": "70+",
+        "sponsors": "30+"
+      },
+      "winners": {
+        "1": {
+          "team": "RevYou",
+          "project": "RevYou",
+          "description": "Vous en avez assez des avis écrits ? Voici RevYou, une appli qui permet de poster des vidéos amusantes attachées à des lieux, ainsi que des critiques vidéo."
+        },
+        "2": {
+          "team": "Four O' Four",
+          "project": "Four O' Four",
+          "description": "Accédez au web via SMS — même sans internet !"
+        },
+        "3": {
+          "team": "Furnishare",
+          "project": "Furnishare",
+          "description": "Réduire les déchets de meubles, vêtements et électroniques un objet à la fois."
+        }
+      },
+      "tag": "Sixième édition"
+    },
+    "slide6": {
+      "title": "ConUHacks V - Une nouvelle ère (2020)",
+      "subtitle": "2020 a attiré plus de 700 participants, un grand nombre de candidatures, et 49 sponsors, signalant un virage vers la pensée startup—aidant les équipes à envisager leurs projets au-delà du sprint de 24 heures.",
+      "stats": {
+        "participants": "700+",
+        "projects": "250+",
+        "mentors": "60+",
+        "sponsors": "49+"
+      },
+      "winners": {
+        "1": {
+          "team": "BookLens",
+          "project": "BookLens",
+          "description": "Le nouveau LeapFrog : un outil d’apprentissage interactif conçu pour la lecture à voix haute et la traduction."
+        },
+        "2": {
+          "team": "LIFEtrainer",
+          "project": "LIFEtrainer",
+          "description": "Home of the Heart Hero ! Plateforme d’éducation en ligne pour un environnement de travail moderne intégrant IoT, matériel, IA et gamification."
+        },
+        "3": {
+          "team": "TowAR",
+          "project": "TowAR",
+          "description": "Jeu de défense de tour en AR utilisant ARcore et Unity Engine."
+        }
+      },
+      "tag": "Cinquième édition"
+    },
+    "slide5": {
+      "title": "ConUHacks IV - Le futur vous attend (2019)",
+      "subtitle": "L’édition 2019 a accueilli environ 700 étudiants et plus de 20 000–25 000 $ en prix. Les projets répondaient à de vrais besoins — y compris des hacks axés sur l’accessibilité — marquant une maturité en mentorat et impact.",
+      "stats": {
+        "participants": "700+",
+        "projects": "180+",
+        "mentors": "45+",
+        "sponsors": "18+"
+      },
+      "winners": {
+        "1": {
+          "team": "HEAR",
+          "project": "HEAR",
+          "description": "Générer des sous-titres pour la vie."
+        },
+        "2": {
+          "team": "Sustainable IOT Fridge",
+          "project": "Frigo IoT Durable",
+          "description": "Suivez vos aliments et recevez des recettes pour réduire le gaspillage selon les dates de péremption."
+        },
+        "3": {
+          "team": "SmarTrash",
+          "project": "SmarTrash",
+          "description": "Et si votre poubelle triait vos déchets pour vous ?"
+        }
+      },
+      "tag": "Quatrième édition"
+    },
+    "slide4": {
+      "title": "ConUHacks III - L'évolution continue (2018)",
+      "subtitle": "2018 a vu une participation accrue, un engagement sponsor renforcé et une cagnotte grandissante — marquant une phase de raffinement où présentations soignées et mentorat amélioré devenaient la norme.",
+      "stats": {
+        "participants": "600+",
+        "projects": "150+",
+        "mentors": "40+",
+        "sponsors": "15+"
+      },
+      "winners": {
+        "1": {
+          "team": "Alice",
+          "project": "Alice",
+          "description": "Alice vise à autonomiser les personnes âgées atteintes de démence souhaitant utiliser la banque en ligne."
+        },
+        "2": {
+          "team": "Senior Sensor",
+          "project": "Senior Sensor",
+          "description": "Pour vous assurer que vos proches sont en sécurité, où que vous soyez."
+        },
+        "3": {
+          "team": "Chaperone",
+          "project": "Chaperone",
+          "description": "Un tableau de bord web aidant les aînés à gérer leurs rappels via Amazon Echo."
+        }
+      },
+      "tag": "Troisième édition"
+    },
+    "slide3": {
+      "title": "ConUHacks II - Le chapitre suivant (2017)",
+      "subtitle": "Avec ConUHacks II, la communauté s’est élargie — plus d’équipes, plus de soutien institutionnel, et une diversité croissante de participants, montrant que le hackathon trouve son rythme.",
+      "stats": {
+        "participants": "400+",
+        "projects": "120+",
+        "mentors": "35+",
+        "sponsors": "14+"
+      },
+      "winners": {
+        "1": {
+          "team": "InstantPi",
+          "project": "InstantPi",
+          "description": "Watchdog - Hackathon de l’Université Concordia."
+        },
+        "2": {
+          "team": "Foody",
+          "project": "Foody",
+          "description": "Foody, votre chercheur de nourriture <3"
+        },
+        "3": {
+          "team": "L2Talk",
+          "project": "L2Talk",
+          "description": "Améliorez votre discours avec cette application."
+        }
+      },
+      "tag": "Deuxième édition"
+    },
+    "slide2": {
+      "title": "ConUHacks I - Le début d’un voyage (2016)",
+      "subtitle": "Le premier ConUHacks affilié MLH en janvier 2016 a réuni plus de 250 étudiants pour un buildathon de 24 heures — posant les bases communautaires et les traditions qui ont nourri la croissance du hackathon la décennie suivante.",
+      "stats": {
+        "participants": "250+",
+        "projects": "100+",
+        "mentors": "30+",
+        "sponsors": "10+"
+      },
+      "winners": {
+        "1": {
+          "team": "DOUBLEVISION",
+          "project": "DOUBLEVISION",
+          "description": "Accompagner vos vidéos avec un contexte intelligent pour approfondir les sujets mentionnés."
+        },
+        "2": {
+          "team": "SignSpeaks",
+          "project": "SignSpeaks",
+          "description": "Solution sans fil et abordable utilisant une appli Android et un Myo pour la traduction ASL vers la parole (bilingue)."
+        },
+        "3": {
+          "team": "ProViralPictures.net",
+          "project": "ProViralPictures.net",
+          "description": "Ajoutez instantanément des filtres à votre photo de profil Facebook pour soutenir des associations et événements locaux."
+        }
+      },
+      "tag": "Première édition"
+    },
+    "winnersTitle": "Lauréats :",
+    "watchDemo": "Voir la démo"
+  },
+  "faqs": {
+    "heading": "Soyez curieux·se !",
+    "contactUs": "Contactez-nous",
+    "description": "Trouvez des réponses aux questions sur HackConcordia et ConUHacks. Besoin de plus d'infos ? Contactez notre équipe pour en savoir plus.",
+    "questions": {
+      "question1": "Qu'est-ce que ConUHacks et qui l'organise ?",
+      "answer1": "ConUHacks (organisé par HackConcordia à l'Université Concordia) est le plus grand hackathon étudiant de 24 heures au Québec. Les équipes développent des projets logiciels ou matériels utilisant des technologies émergentes comme l’IA et l’IoT, et les présentent en direct aux juges.",
+
+      "question2": "Qui peut participer (conditions) ?",
+      "answer2": "Toute personne majeure légalement — du lycéen à l’étudiant universitaire — est la bienvenue. Les récents diplômés et étudiants internationaux peuvent aussi participer ; une preuve d’inscription peut être requise.",
+
+      "question3": "Ai-je besoin d’une équipe ?",
+      "answer3": "Oui — chaque équipe peut avoir jusqu’à 4 membres. Si vous vous inscrivez seul·e, vous serez listé·e comme “Cherchant des coéquipiers”, et les organisateurs vous aideront à rejoindre une équipe.",
+
+      "question4": "Je ne code pas — puis-je quand même hacker ?",
+      "answer4": "Absolument ! ConUHacks accueille les débutants — électriciens, artistes, designers, étudiants en commerce, et plus. Nos mentors aident à transformer les idées en démonstrations.",
+
+      "question5": "Y a-t-il des frais d’inscription ?",
+      "answer5": "Non — ConUHacks est entièrement gratuit, avec nourriture, goodies et ateliers inclus.",
+
+      "question6": "Les repas, le matériel ou le Wi‑Fi sont-ils fournis ?",
+      "answer6": "Oui ! Des repas gratuits, snacks et boissons sont fournis. Il y a aussi un laboratoire de matériel équipé, plus le Wi‑Fi sur place.",
+
+      "question7": "Quels prix peut-on gagner ?",
+      "answer7": "ConUHacks offre généralement des prix d’une valeur de plus de 6 000 à 17 000 $ CAD — PS5, équipements VR, casques Oculus, moniteurs gaming, cartes cadeaux Amazon, ainsi que des rubans MLH et des entretiens accélérés.",
+
+      "question8": "Comment soumettre mon projet et quels sont les critères de jugement ?",
+      "answer8": "Soumettez via Devpost avant la date limite. Les juges notent selon le fonctionnement, la présentation, l’interface, la créativité et l’impact.",
+
+      "question9": "Y a-t-il un code de conduite ?",
+      "answer9": "Oui — ConUHacks suit le code de conduite de Major League Hacking : communauté inclusive et respectueuse seulement, tolérance zéro pour le harcèlement.",
+
+      "question10": "Comment obtenir de l’aide en cas de questions ou problèmes ?",
+      "answer10": "Pendant l’événement, visitez le kiosque info ou signalez via Discord. Pour les questions post-événement, envoyez un courriel au responsable du hackathon (indiqué sur Devpost)."
+    },
+    "more_questions": "Vous avez encore des questions ?",
+    "reach_out": "Contactez-nous par courriel ou suivez-nous sur les réseaux sociaux @HackConcordia.",
+    "get_intouch_button": "Entrer en contact"
+  },
+  "TeamMember": {
+    "legacyButton": "Équipes précédentes",
+    "title": "Gardiens de la Ruche",
+    "description": "Découvrez l’équipe dévouée derrière Conuhacks, travaillant sans relâche pour vous offrir la meilleure expérience hackathon.",
+    "team": {
+      "1": {
+        "position": "Co-Président",
+        "intro": "Étudiant en COEN et co-président de HackConcordia."
+      },
+      "3": {
+        "position": "Vice-président Technologie",
+        "intro": "Étudiant en maîtrise en informatique appliquée passionné par le développement full-stack et la création de solutions technologiques impactantes."
+      },
+      "4": {
+        "position": "Directeur Technologie",
+        "intro": "Étudiant MACS avec un fort intérêt pour le développement logiciel innovant et les projets collaboratifs."
+      },
+      "5": {
+        "position": "Directeur Sponsoring",
+        "intro": "Étudiant COEN engagé à renforcer les partenariats et relations avec les sponsors pour des événements réussis."
+      },
+      "6": {
+        "position": "Directeur Marketing",
+        "intro": "Étudiant SOEN motivé par la communication impactante et la sensibilisation."
+      },
+      "7": {
+        "position": "Vice-président Marketing",
+        "intro": "Étudiant en informatique dédié à la promotion d’événements et à la création de liens communautaires dynamiques."
+      },
+      "8": {
+        "position": "Directeur Technologie",
+        "intro": "Étudiant SOEN intéressé par les technologies de pointe et la résolution efficace de problèmes."
+      },
+      "9": {
+        "position": "Directeur Marketing",
+        "intro": "Étudiant SOEN passionné par les campagnes marketing créatives et l’engagement communautaire."
+      },
+      "10": {
+        "position": "Directeur Sponsoring",
+        "intro": "Étudiant SOEN passionné par la connexion avec les partenaires et la création de collaborations mutuellement bénéfiques."
+      },
+      "11": {
+        "position": "Directeur Technologie",
+        "intro": "Étudiant SOEN concentré sur le génie logiciel évolutif et efficace ainsi que sur les technologies émergentes."
+      },
+      "12": {
+        "position": "Directeur Technologie",
+        "intro": "Étudiant SOEN passionné par le développement logiciel et les communautés technologiques inclusives."
+      },
+      "13": {
+        "position": "Directeur Marketing",
+        "intro": "Étudiant en marketing passionné par la narration créative et l’engagement du public."
+      },
+      "14": {
+        "position": "Directeur Événements",
+        "intro": "Étudiant en science des données passionné par la conception d’expériences mémorables et engageantes pour les participants."
+      },
+      "15": {
+        "position": "Directeur Logistique",
+        "intro": "Étudiant en informatique dévoué à la planification sans faille des événements et à l’efficacité opérationnelle."
+      },
+      "16": {
+        "position": "Directeur Marketing",
+        "intro": "Étudiant en génie industriel focalisé sur des stratégies de marque impactantes et la sensibilisation."
+      },
+      "17": {
+        "position": "Directeur Technologie",
+        "intro": "Étudiant SOEN focalisé sur le développement backend."
+      },
+      "18": {
+        "position": "Directeur Sponsoring",
+        "intro": "Étudiant SOEN travaillant à renforcer les relations d’entreprise et assurer le succès de l’événement."
+      }
+    }
+  },
+  "UpcomingEvents": {
+    "title1": "Soyez prêt·e...",
+    "subtitle1": "Voici la liste de nos événements à venir. Cliquez ci-dessous pour vous inscrire.",
+    "month": {
+      "February": "Février",
+      "April": "Avril",
+      "January": "Janvier",
+      "August": "Août",
+      "September": "Septembre",
+      "October": "Octobre",
+      "March": "Mars",
+      "November": "Novembre",
+      "December": "Décembre"
+    },
+    "title": {
+      "Workshop_1": "Atelier 1",
+      "Workshop_2": "Atelier 2",
+      "Wine_Cheese_Mixer": "Apéro Vin & Fromage",
+      "Lightning_Learning": "Apprentissage éclair",
+      "HackDecouverte": "HackDécouverte",
+      "ConUHacks_X_Launch_Party": "Fête de lancement ConUHacks X",
+      "Lizard_Lounge": "Soirée Lizard Lounge",
+      "GitHubCoPilot": "GitHub Co-pilot",
+      "Workshop1_Winter": "Atelier 1 (Hiver)",
+      "Workshop2_Winter": "Atelier 2 (Hiver)",
+      "FullStackDeveloper101": "Développeur Full-Stack 101"
+    },
+    "type": {
+      "Tech_Social": "Rencontre Tech",
+      "MiniHackathon": "Mini-Hackathon",
+      "Workshop": "Atelier",
+      "Hackathon": "Hackathon 24h",
+      "Registration_Launch_Event": "Événement de lancement des inscriptions",
+      "Mixer": "Apéro",
+      "Social_Mixer": "Apéro Social"
+    },
+    "time": {
+      "evening": "Soirée",
+      "conuhacks": "8h (24 jan) - 11h (25 jan)",
+      "full_day": "Toute la journée",
+      "5_30pm_7_30_pm": "Soirée (17h30–19h30)"
+    },
+    "location": {
+      "jmsb": "Université Concordia (John Molson MB)",
+      "Conco": "Université Concordia",
+      "Reggies": "Bar Reggie's (campus SGW)",
+      "hall_1011": "H-1011 (Hall Building, campus SGW)"
+    },
+    "address": {
+      "jmsb": "1455 Boulevard de Maisonneuve, Montréal",
+      "ConcordiaAddress": "Campus SGW, Montréal",
+      "Conco": "Université Concordia, Montréal"
+    }
+  },
+  "Footer": {
+    "allRightsReserved": "Tous droits réservés.",
+    "termsOfService": "Conditions d'utilisation",
+    "privacyPolicy": "Politique de confidentialité",
+    "sponsors": "Sponsors"
+  },
+  "Header": {
+    "home": "Accueil",
+    "events": "Événements",
+    "team": "Équipe",
+    "faq": "FAQ"
+  },
+  "ContactUs": {
+    "title": "Contactez-nous",
+    "subtitle": "Des questions sur HackConcordia ou ConuHacks ? Vous voulez devenir sponsor ? Vous voulez être juge ?",
+    "subtitle2": "Contactez-nous et nous vous répondrons.",
+    "getInTouchTitle": "Entrer en contact",
+    "getInTouchDescription": "Nous serions ravis d’avoir de vos nouvelles ! Que vous ayez des questions sur le hackathon, que vous souhaitiez être sponsor ou juge, ou toute autre demande, n’hésitez pas à nous contacter.",
+    "sponsorLabel": "Intéressé·e par le sponsoring ?",
+    "sponsorText": "Nous cherchons des sponsors pour faire de Conuhacks un succès. Si vous souhaitez sponsoriser, envoyez-nous un courriel avec",
+    "sponsorText2": "Intérêt pour le sponsoring",
+    "sponsorText3": "dans l’objet du message.",
+    "judgeLabel": "Intéressé·e par le jugement ?",
+    "judgeText2": "Intérêt pour le jugement",
+    "judgeText3": "dans l’objet du message.",
+    "judgeText": "Nous cherchons des professionnels de l'industrie et des éducateurs pour juger les projets du hackathon. Veuillez nous écrire avec "
+  }
+}

@@ -11,14 +11,9 @@ import {
     FaRegEnvelope,
 } from 'react-icons/fa';
 import { FaX } from 'react-icons/fa6';
+import { useTranslations } from "next-intl";
 
-const navLinks = [
-    { href: '#home', label: 'Home' },
-    { href: '#conuhacks', label: 'ConuHacks' },
-    { href: '#events', label: 'Events' },
-    { href: '#team', label: 'Team' },
-    { href: '#faq', label: 'FAQ' },
-];
+
 
 const pageToSectionMap: Record<string, string> = {
     '/legacy-teams': 'team',
@@ -26,9 +21,18 @@ const pageToSectionMap: Record<string, string> = {
 };
 
 export default function Header() {
+    const t = useTranslations("Header");
     const [activeSection, setActiveSection] = useState<string>('home');
     const pathname = usePathname();
     const router = useRouter();
+
+    const navLinks = [
+      { href: "#home", label: t("home") },
+      { href: "#conuhacks", label: "ConuHacks" },
+      { href: "#events", label: t("events") },
+      { href: "#team", label: t("team") },
+      { href: "#faq", label: t("faq") },
+    ];
 
     useEffect(() => {
         const mappedSection = pageToSectionMap[pathname];
