@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import BackgroundOverlay from "./components/BackgroundOverlay";
 import FloatingBeeCursor from "./components/FloatingBeeCursor";
+import { CustomToaster } from "./components/CustomToast";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,7 +19,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "HackConcordia",
-  description: "HackConcordia is a club at Concordia University that organizes ConuHacks and other hackathons.",
+  description:
+    "HackConcordia is a club at Concordia University that organizes ConuHacks and other hackathons.",
 };
 
 export default function RootLayout({
@@ -40,6 +42,7 @@ export default function RootLayout({
             <FloatingBeeCursor />
           </div>
           {children}
+          <CustomToaster />
         </main>
         <Footer />
       </body>
