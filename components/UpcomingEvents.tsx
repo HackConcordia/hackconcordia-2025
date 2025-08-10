@@ -84,7 +84,7 @@ export default function UpcomingEvents() {
       type: t("type.Hackathon"),
       time: t("time.conuhacks"),
       location: t("location.jmsb"),
-      address: t("address.jsmb"),
+      address: t("address.jmsb"),
     },
     {
       id: 7,

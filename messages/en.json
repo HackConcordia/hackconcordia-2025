@@ -406,12 +406,15 @@
       "December": "December"
     },
     "title": {
+      "Workshop_1": "Workshop 1",
+      "Workshop_2": "Workshop 2",
       "Wine_Cheese_Mixer": "Wine & Cheese Mixer",
       "Lightning_Learning": "Lightning Learning",
       "HackDecouverte": "HackDécouverte",
       "ConUHacks_X_Launch_Party": "ConUHacks X Launch Party",
       "Lizard_Lounge": "Lizard Lounge Social",
       "GitHubCoPilot": "GitHub Co-pilot",
+      "Workshop1_Winter": "Workshop 1 (Winter)",
       "Workshop2_Winter": "Workshop 2 (Winter)",
       "FullStackDeveloper101": "Full-Stack Developer 101"
     },
@@ -441,5 +444,11 @@
       "ConcordiaAddress": "SGW Campus, Montreal",
       "Conco": "Concordia Uninversity, Montreal"
     }
+  },
+  "Footer": {
+    "allRightsReserved": "All rights reserved.",
+    "termsOfService": "Terms of Service",
+    "privacyPolicy": "Privacy Policy",
+    "sponsors": "Sponsors"
   }
 }
