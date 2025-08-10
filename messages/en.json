@@ -1,3 +1,12 @@
 {
-    
+  "AboutUs": {
+    "subtitle": "Bee the Change. Code the Future.",
+    "tagline": "Bringing Quebec’s biggest hackathon to life.",
+    "emailPlaceholder": "Enter your email",
+    "subscribeButton": "Subscribe",
+    "scrollDown": "Scroll down to know more",
+    "card1": "This is your hub for all things hacking. From upcoming hackathons and events to curated learning resources, this site is your launchpad to grow your skills, meet fellow builders, and bring your ideas to life.",
+    "card2": "Meet the buzzing minds building Quebec’s biggest student hackathon. HackConcordia is a student-led tech community at Concordia University.",
+    "card3": "Ready to dive in? Whether you want to compete in a hackathon, attend a workshop, or just meet some like-minded tech lovers, HackConcordia has a spot for you."
+  }
 }
