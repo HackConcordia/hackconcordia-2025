@@ -3,17 +3,14 @@
 import Image from 'next/image';
 import { JSX } from 'react';
 import {
-  FaQuestionCircle,
   FaClipboardList,
   FaMoneyBillAlt,
-  FaComments,
   FaCogs,
   FaReceipt,
   FaUser,
   FaLaptopCode,
   FaUsers,
   FaUtensils,
-  FaMapMarkerAlt,
   FaEnvelope
 } from 'react-icons/fa';
 
@@ -117,7 +114,7 @@ export default function FAQ() {
         {/* Footer */}
         <div className="mt-10 border border-zinc-700 rounded-lg p-3 md:p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 backdrop-blur-xs">
           <div className="flex flex-row items-center gap-4">
-            <Image src="/imgs/HC_logo.png" alt="HackConcordia" width={40} height={40} />
+            <Image src="/imgs/HC_logo.png" alt="HackConcordia" style={{ objectFit: 'cover' }} width={40} height={40} />
             <div>
               <p className="text-sm md:text-base font-semibold">Still have questions?</p>
               <p className="text-xs md:text-sm text-gray-400">

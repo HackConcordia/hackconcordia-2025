@@ -405,8 +405,8 @@ export default function ConuHacks() {
                 <Image
                     src={activeSlide.image}
                     alt={activeSlide.title}
-                    layout="fill"
-                    objectFit="cover"
+                    fill
+                    style={{ objectFit: 'cover' }}
                     className="transition-all duration-700 ease-in-out md:rounded-sm shadow-amber-100 min-h-[70vh]"
                 />
                 {/* Overlay */}
@@ -474,13 +474,13 @@ export default function ConuHacks() {
                 <div className='flex items-center space-x-1'>
                     <button
                         onClick={goToPrev}
-                        className="text-white hover:text-yellow-400 p-2 rounded-full bg-white/10 backdrop-blur-sm cursor-pointer"
+                        className="text-white hover:text-yellow-400 p-2 rounded-full bg-white/10 backdrop-blur-sm"
                     >
                         <CircleChevronLeftIcon className="w-6 h-6" />
                     </button>
                     <button
                         onClick={goToNext}
-                        className="text-white hover:text-yellow-400 p-2 rounded-full bg-white/10 backdrop-blur-sm cursor-pointer"
+                        className="text-white hover:text-yellow-400 p-2 rounded-full bg-white/10 backdrop-blur-sm"
                     >
                         <CircleChevronRightIcon className="w-6 h-6" />
                     </button>
@@ -507,7 +507,7 @@ export default function ConuHacks() {
                             key={slide.id}
                             ref={(el) => { thumbRefs.current[index] = el; }}
                             className={clsx(
-                                'min-w-[180px] cursor-pointer rounded-lg border p-2 transition-all duration-300 bg-white/10 backdrop-blur-sm hover:bg-white/20',
+                                'min-w-[180px] rounded-lg border p-2 transition-all duration-300 bg-white/10 backdrop-blur-sm hover:bg-white/20',
                                 {
                                     'border-yellow-400': index === active,
                                 }
@@ -519,7 +519,8 @@ export default function ConuHacks() {
                                 alt={slide.title}
                                 width={160}
                                 height={100}
-                                className="rounded-md object-cover h-[160px]"
+                                style={{ objectFit: 'cover' }}
+                                className="rounded-md h-[160px]"
                             />
                             <div className="text-white mt-2">
                                 <div className="text-sm font-semibold text-ellipsis overflow-hidden whitespace-nowrap">{slide.title}</div>

@@ -118,7 +118,7 @@ const Timeline: React.FC = () => {
             <div
               key={number}
               onClick={() => handleCardClick(number)}
-              className={`group relative flex-shrink-0 min-w-[300px] h-full text-white transition-all duration-500 ease-in-out snap-start cursor-pointer
+              className={`group relative flex-shrink-0 min-w-[300px] h-full text-white transition-all duration-500 ease-in-out snap-start
                 ${isActive ? 'w-auto md:w-[70%]' : 'w-[30%]'} 
                 md:hover:w-[70%]`}
             >

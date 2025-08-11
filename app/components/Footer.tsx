@@ -1,5 +1,3 @@
-'use client';
-
 import Link from 'next/link';
 
 export default function Footer() {
@@ -9,7 +7,7 @@ export default function Footer() {
 
                 {/* Left: Copyright */}
                 <div className="text-sm text-gray-400">
-                    © {new Date().getFullYear()} Hackcordia. All rights reserved.
+                    &copy; {new Date().getFullYear()} Hackcordia. All rights reserved.
                 </div>
 
                 {/* Right: Links */}

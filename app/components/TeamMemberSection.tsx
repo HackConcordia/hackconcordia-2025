@@ -299,7 +299,7 @@ export default function TeamMemberSection() {
                                         onClick={() => setSelected(member)}
                                         onMouseEnter={() => setHovered(member)}
                                         onMouseLeave={() => setHovered(null)}
-                                        className={`relative cursor-pointer transition-all duration-300 ease-in-out
+                                        className={`relative transition-all duration-300 ease-in-out
                                         ${isSelected ? 'border-2 border-yellow-600' : 'border-transparent'}
                                     `}
                                         style={{

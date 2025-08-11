@@ -11,6 +11,7 @@ import {
     FaRegEnvelope,
 } from 'react-icons/fa';
 import { FaX } from 'react-icons/fa6';
+import Link from 'next/link';
 
 const navLinks = [
     { href: '#home', label: 'Home' },
@@ -23,6 +24,9 @@ const navLinks = [
 const pageToSectionMap: Record<string, string> = {
     '/legacy-teams': 'team',
     '/contact-us': 'faq',
+    '/privacy': 'faq',
+    '/sponsors': 'faq',
+    '/terms': 'faq',
 };
 
 export default function Header() {
@@ -94,7 +98,7 @@ export default function Header() {
                 {/* Left Logo */}
                 <div className="flex items-center space-x-2" style={{ marginLeft: '-2px' }}>
                     <Image src="/imgs/HC_logo.png" alt="Logo" width={40} height={40} />
-                    <div className="text-xl font-bold">HackConcordia</div>
+                    <Link href="/#home"><div className="text-xl font-bold hover:text-yellow-400">HackConcordia</div></Link>
                 </div>
 
                 {/* Middle Navigation (hidden on small screens) */}

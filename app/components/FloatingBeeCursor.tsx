@@ -27,9 +27,11 @@ export default function BeeCursor() {
                     zIndex: 9999,
                     userSelect: 'none',
                     transform: 'translate(-50%, -50%) rotate(-45deg)',
+                    objectFit: 'cover'
                 }}
                 width={100}
                 height={100}
+                priority={true}
             />
         </>
     )

@@ -125,7 +125,7 @@ export default function AboutUs() {
       <div className="flex items-center justify-center h-full w-full">
         <div className="relative w-full h-full max-w-4xl flex items-center justify-center">
           <div className="inset-0 h-full flex flex-col items-center justify-center text-center text-white px-4 space-y-6 z-30 mt-16 md:mt-0">
-            <h1 className="logo xl:text-8xl md:ml-2 sm:text-5xl md:text-7xl text-5xl font-ruda text-neon-yellow mb-2">
+            <h1 className="logo xl:text-8xl lg:mt-4 md:ml-2 sm:text-5xl md:text-7xl text-5xl font-ruda text-neon-yellow mb-2">
               <b className="w-1/2">
                 Hack<span>C</span>onc<span>ordi</span>a
               </b>
@@ -142,7 +142,7 @@ export default function AboutUs() {
             {/* Subscribe Form */}
             <form
               onSubmit={handleSubmit}
-              className="flex flex-col items-center gap-3 w-full max-w-lg"
+              className="flex flex-col items-center gap-3 w-full max-w-md"
             >
               <div className="flex flex-col sm:flex-row items-center gap-3 w-full backdrop-blur-xs md:border-2 md:border-white/10 rounded-l-sm md:rounded-r-sm">
                 <input
@@ -157,7 +157,7 @@ export default function AboutUs() {
                 <button
                   type="submit"
                   disabled={pending}
-                  className={`group flex flex-row justify-center items-center gap-2 font-semibold px-6 py-3 transition w-full sm:w-auto cursor-pointer md:rounded-r-sm ${
+                  className={`group flex flex-row justify-center items-center gap-2 font-semibold px-6 py-3 transition w-full sm:w-auto md:rounded-r-sm ${
                     pending
                       ? "bg-gray-400 cursor-not-allowed text-gray-700"
                       : "bg-yellow-400 hover:bg-yellow-300 text-black hover:scale-105 active:scale-95"
@@ -175,7 +175,7 @@ export default function AboutUs() {
               </div>
 
               {/* MLH Code of Conduct Checkbox */}
-              <div className="w-full flex justify-start">
+              <div className="">
                 <label className="flex items-center gap-2 mt-2">
                   <input
                     type="checkbox"
@@ -254,7 +254,7 @@ export default function AboutUs() {
           <Image
             src="/imgs/about_us1.jpg"
             alt="image 1"
-            className="object-cover w-full h-full"
+            style={{ objectFit: 'cover' }}
             width={300}
             height={200}
           />
@@ -266,7 +266,7 @@ export default function AboutUs() {
           <Image
             src="/imgs/about_us2.jpg"
             alt="image 2"
-            className="object-cover w-full h-full"
+            style={{ objectFit: 'cover' }}
             width={300}
             height={200}
           />
