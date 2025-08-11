@@ -41,6 +41,18 @@ export default function TeamMemberSection() {
         },
       },
       {
+        id: 2,
+        name: "Elizabeth Wong",
+        position: "Co-President",
+        intro:
+          "Bachelor Computer Science Student with a Joint Major in Data Science student and co-president of HackConcordia.",
+        imageSrc: "/imgs/team/liz.jpg",
+        socials: {
+          linkedin: "https://www.linkedin.com/in/e-lizabethwong/",
+          github: "https://github.com/e-lizabethwong",
+        },
+      },
+      {
         id: 3,
         name: "Mohammed Huzaifa",
         position: t("team.3.position"),
@@ -212,6 +224,17 @@ export default function TeamMemberSection() {
         socials: {
           linkedin: "https://www.linkedin.com/in/subaankykrishnapillai",
           github: "http://github.com/Subaanky",
+        },
+      },
+      {
+        id: 19,
+        name: "Louay Helou",
+        position: "Director of Technology",
+        intro: "BCompSc student passionate about Coding.",
+        imageSrc: "/imgs/team/Louay.jpg",
+        socials: {
+          linkedin:
+            "https://www.linkedin.com/in/christina-alexandrakis-2590b2338",
         },
       },
     ];

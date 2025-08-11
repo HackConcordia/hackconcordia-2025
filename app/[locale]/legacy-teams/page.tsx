@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import React from 'react';
+import React, { useState } from 'react';
 
 type SubteamMember = {
   name: string;
@@ -99,68 +99,91 @@ const timelineData: TimelinePanel[] = [
 ];
 
 const Timeline: React.FC = () => {
+  const [activeCard, setActiveCard] = useState<number | null>(9);
+
+  const handleCardClick = (number: number) => {
+    setActiveCard((prev: number | null) => (prev === number ? null : number));
+  };
+
   return (
     <div className="w-full overflow-x-auto overflow-y-hidden">
       <section
         id="timeline"
-        className="flex h-[calc(87vh-5px)] snap-x snap-mandatory"
+        className="flex h-[calc(87vh-60px)] w-full md:h-[calc(87vh-5px)] snap-x snap-mandatory"
       >
-        {timelineData.map(({ number, year, bgImage }) => (
-          <div
-            key={number}
-            className="group relative flex-shrink-0 w-[30%] min-w-[300px] h-full text-white transition-all duration-500 ease-in-out hover:w-[70%] snap-start"
-          >
-            {/* Background Image */}
-            <Image
-              className="absolute inset-0 w-full h-full object-cover transition duration-500 ease-in-out filter grayscale group-hover:grayscale-0"
-              src={bgImage}
-              alt={`Conuhacks ${number} Background`}
-              width={1000}
-              height={1000}
-            />
+        {timelineData.map(({ number, year, bgImage, subteams }) => {
+          const isActive = activeCard === number;
 
-            {/* Overlay gradient */}
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-70 pointer-events-none"></div>
+          return (
+            <div
+              key={number}
+              onClick={() => handleCardClick(number)}
+              className={`group relative flex-shrink-0 min-w-[300px] h-full text-white transition-all duration-500 ease-in-out snap-start cursor-pointer
+                ${isActive ? 'w-auto md:w-[70%]' : 'w-[30%]'} 
+                md:hover:w-[70%]`}
+            >
+              {/* Background Image */}
+              <Image
+                src={bgImage}
+                alt={`Conuhacks ${number} Background`}
+                fill
+                className={`absolute inset-0 object-cover transition duration-500 ease-in-out filter 
+                  ${isActive ? 'grayscale-0' : 'grayscale'} 
+                  md:group-hover:grayscale-0`}
+                priority={number === 9}
+              />
 
-            {/* Fullscreen Hover Content (Bottom Left Aligned) */}
-            <div className="absolute inset-0 z-10 opacity-0 group-hover:opacity-100 flex items-end">
-              <div className="w-full p-6 overflow-y-auto max-h-full text-left backdrop-blur-sm">
-                <div className="flex items-center justify-center gap-2">
-                  <h2 className="text-2xl font-bold uppercase text-yellow-400">
-                  Conuhacks {number}
-                </h2>
-                <p className="text-lg font-semibold">({year} - {year - 1})</p>
+
+              {/* Overlay gradient */}
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-70 pointer-events-none"></div>
+
+              {/* Content */}
+              <div
+                className={`absolute inset-0 z-10 flex items-end transition-opacity duration-300
+                  ${isActive ? 'opacity-100' : 'opacity-0'} 
+                  md:group-hover:opacity-100`}
+              >
+                <div className="w-full p-6 overflow-y-auto max-h-full text-left backdrop-blur-sm">
+                  <div className="flex items-center justify-center gap-2">
+                    <h2 className="text-lg md:text-2xl font-bold uppercase text-yellow-400">
+                      Conuhacks {number}
+                    </h2>
+                    <p className="text-sm md:text-lg font-semibold">
+                      ({year - 1} - {year})
+                    </p>
+                  </div>
+
+                  {/* Subteams */}
+                  {/* <div className="grid grid-cols-4 gap-x-6 gap-y-4 mt-4">
+                    {subteams.map((team) => (
+                      <div key={team.name}>
+                        <h3 className="font-semibold text-white">{team.name}</h3>
+                        <ul className="list-disc list-inside text-sm">
+                          {team.members.map((member) => (
+                            <li key={member.name}>
+                              {member.url ? (
+                                <a
+                                  href={member.url}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="underline hover:text-blue-400 transition-colors"
+                                >
+                                  {member.name}
+                                </a>
+                              ) : (
+                                member.name
+                              )}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
+                  </div> */}
                 </div>
-
-                {/* <div className="grid grid-cols-4 gap-x-6 gap-y-4">
-                  {subteams.map((team) => (
-                    <div key={team.name}>
-                      <h3 className="font-semibold text-white">{team.name}</h3>
-                      <ul className="list-disc list-inside text-sm">
-                        {team.members.map((member) => (
-                          <li key={member.name}>
-                            {member.url ? (
-                              <a
-                                href={member.url}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="underline hover:text-blue-400 transition-colors"
-                              >
-                                {member.name}
-                              </a>
-                            ) : (
-                              member.name
-                            )}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  ))}
-                </div> */}
               </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </section>
     </div>
   );

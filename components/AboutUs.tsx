@@ -4,7 +4,9 @@ import Lottie from "lottie-react";
 import scrollAnimation from "../public/animations/scroll_down_animation.json";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
+import { customToast } from "./CustomToast";
 import { useTranslations } from "next-intl";
+
 
 export default function AboutUs() {
   // Auto-scroll ref

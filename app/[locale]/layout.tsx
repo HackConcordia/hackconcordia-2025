@@ -9,6 +9,7 @@ import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { getMessages } from "next-intl/server";
+import { CustomToaster } from "@/components/CustomToast";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,7 +23,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "HackConcordia",
-  description: "HackConcordia is a club at Concordia University that organizes ConuHacks and other hackathons.",
+  description:
+    "HackConcordia is a club at Concordia University that organizes ConuHacks and other hackathons.",
 };
 
 export default async function RootLayout({
@@ -46,6 +48,7 @@ export default async function RootLayout({
             <FloatingBeeCursor />
           </div>
           {children}
+          <CustomToaster />
         </main>
         <Footer />
         </NextIntlClientProvider>
