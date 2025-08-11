@@ -408,6 +408,7 @@ export default function ConuHacks() {
                     fill
                     style={{ objectFit: 'cover' }}
                     className="transition-all duration-700 ease-in-out md:rounded-sm shadow-amber-100 min-h-[70vh]"
+                    unoptimized
                 />
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-black/80" />
