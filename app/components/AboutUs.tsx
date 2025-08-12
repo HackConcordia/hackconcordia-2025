@@ -57,24 +57,6 @@ export default function AboutUs() {
     }
   };
 
-  useEffect(() => {
-    const container = scrollRef.current;
-    if (!container) return;
-
-    let scrollAmount = 0;
-    const scrollSpeed = 1;
-
-    const scrollLoop = () => {
-      if (!container) return;
-      scrollAmount += scrollSpeed;
-      if (scrollAmount >= container.scrollWidth / 2) scrollAmount = 0;
-      container.scrollLeft = scrollAmount;
-      requestAnimationFrame(scrollLoop);
-    };
-
-    requestAnimationFrame(scrollLoop);
-  }, []);
-
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -129,13 +111,13 @@ export default function AboutUs() {
 
   return (
     <section
-      className="relative z-10 md:h-[calc(100vh-140px)] max-w-7xl mx-auto mb-20 md:mb-0"
+      className="relative z-10 md:h-[calc(100vh-140px)] max-w-7xl mx-auto mb-20 mt-16 md:mt-2"
       id="home"
     >
       <div className="flex items-center justify-center h-full w-full">
         <div className="relative w-full h-full max-w-4xl flex items-center justify-center">
           <motion.div
-            className="inset-0 h-full flex flex-col items-center justify-center text-center text-white px-4 space-y-6 z-30 mt-16 md:mt-0"
+            className="inset-0 h-full flex flex-col items-center justify-center text-center text-white px-4 space-y-6 z-30"
             initial="hidden"
             animate="visible"
             variants={growFadeIn}
