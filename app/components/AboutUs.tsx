@@ -6,6 +6,7 @@ import Image from "next/image";
 import { ChangeEvent, FormEvent, useEffect, useRef, useState } from "react";
 import { customToast } from "./CustomToast";
 import { FaPaperPlane } from "react-icons/fa";
+import { cardText, desktopTextBoxes, formText, images } from "../data/about.data";
 
 type FormData = {
   email: string;
@@ -111,12 +112,6 @@ export default function AboutUs() {
     }
   };
 
-  const cardText = [
-    `This is your hub for all things hacking. From upcoming hackathons and events to curated learning resources, this site is your launchpad to grow your skills, meet fellow builders, and bring your ideas to life.`,
-    `Meet the buzzing minds building Quebec’s biggest student hackathon. HackConcordia is a student-led tech community at Concordia University.`,
-    `Ready to dive in? Whether you want to compete in a hackathon, attend a workshop, or just meet some like-minded tech lovers, HackConcordia has a spot for you.`,
-  ];
-
   return (
     <section
       className="relative z-10 md:h-[calc(100vh-140px)] max-w-7xl mx-auto mb-20 md:mb-0"
@@ -132,11 +127,11 @@ export default function AboutUs() {
             </h1>
 
             <h2 className="text-xl sm:text-2xl font-semibold mb-1">
-              Bee the Change. Code the Future.
+              {formText.tagline}
             </h2>
 
             <p className="text-sm text-white/80 max-w-xl">
-              Bringing Quebec’s biggest hackathon to life.
+              {formText.subtitle}
             </p>
 
             {/* Subscribe Form */}
@@ -150,7 +145,7 @@ export default function AboutUs() {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  placeholder="Enter your email"
+                  placeholder={formText.emailPlaceholder}
                   className="w-full px-4 py-3 placeholder-gray-500 text-white outline-0 border-2 border-white/10 md:border-0 bg-transparent"
                   required
                 />
@@ -167,7 +162,7 @@ export default function AboutUs() {
                     <div className="h-5 w-5 animate-spin rounded-full border-b-2 border-gray-700"></div>
                   ) : (
                     <>
-                      <span className="tracking-wide">Subscribe</span>
+                      <span className="tracking-wide">{formText.buttonIdleText}</span>
                       <FaPaperPlane className="text-sm opacity-80 transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />
                     </>
                   )}
@@ -185,14 +180,14 @@ export default function AboutUs() {
                     required
                   />
                   <span className="text-xs text-white/90">
-                    I agree to{" "}
+                    {formText.checkboxLabelPrefix}
                     <a
-                      href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+                      href={formText.checkboxLinkHref}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="underline underline-offset-1 hover:text-yellow-400 transition-colors"
                     >
-                      MLH&apos;s Code of Conduct
+                      {formText.checkboxLinkText}
                     </a>
                   </span>
                 </label>
@@ -220,58 +215,38 @@ export default function AboutUs() {
                 animationData={scrollAnimation}
                 className="w-15 md:w-16"
               />
-              <span className="text-xs">Scroll down to know more</span>
+              <span className="text-xs">{formText.scrollDownText}</span>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Desktop Only Elements */}
-      <div className="hidden md:block absolute top-0 left-1/3 p-1 mt-4 space-y-4 z-10 max-w-sm">
-        <div className="relative group overflow-hidden border-2 border-white/10 p-4 rounded-lg text-white shadow-lg rotate-[-7deg] backdrop-blur-xs bg-white/5">
-          <div className="absolute inset-0 pointer-events-none bg-radial-glow opacity-0 group-hover:opacity-100 transition-opacity duration-300 ml-4" />
-          <span className="text-xs relative z-10">{cardText[0]}</span>
+      {/* Desktop Only Text Boxes */}
+      {desktopTextBoxes.map(({ text, positionClasses, rotation, glowPosition }, idx) => (
+        <div key={idx} className={positionClasses}>
+          <div
+            className="relative overflow-hidden border-2 border-white/10 p-4 rounded-lg text-white shadow-lg backdrop-blur-xs bg-white/5"
+            style={{ transform: `rotate(${rotation}deg)` }}
+          >
+            <div
+              className={`absolute inset-0 pointer-events-none bg-radial-glow opacity-0 transition-opacity duration-300 ${glowPosition}`}
+            />
+            <span className="text-xs relative z-10">{text}</span>
+          </div>
         </div>
-      </div>
+      ))}
 
-      <div className="hidden md:block absolute bottom-20 right-2 p-2 space-y-4 z-10 max-w-sm">
-        <div className="relative group overflow-hidden border-2 border-white/10 p-4 rounded-lg text-white shadow-lg rotate-[27deg] backdrop-blur-xs bg-white/5">
-          <div className="absolute inset-0 pointer-events-none bg-radial-glow opacity-0 group-hover:opacity-100 transition-opacity duration-300 mr-4" />
-          <span className="text-xs relative z-10">{cardText[1]}</span>
+      {/* Rotated Images */}
+      {images.map(({ src, alt, width, height, rotation, positionClasses }, idx) => (
+        <div key={idx} className={positionClasses}>
+          <div
+            className="w-full h-[200px] rounded-md overflow-hidden shadow-lg transition-transform duration-700"
+            style={{ transform: `rotate(${rotation}deg)` }}
+          >
+            <Image src={src} alt={alt} width={width} height={height} style={{ objectFit: "cover" }} />
+          </div>
         </div>
-      </div>
-
-      <div className="hidden md:block absolute bottom-5 left-5 space-y-4 z-10 max-w-sm pb-12">
-        <div className="relative group overflow-hidden border-2 border-white/10 p-4 rounded-lg text-white shadow-lg rotate-[-27deg] backdrop-blur-xs bg-white/5">
-          <div className="absolute inset-0 pointer-events-none bg-radial-glow opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-          <span className="text-xs relative z-10">{cardText[2]}</span>
-        </div>
-      </div>
-
-      {/* Rotated images (desktop only) */}
-      <div className="hidden md:block absolute top-15 right-5 space-y-4 z-10 max-w-md">
-        <div className="w-full h-[200px] rounded-md overflow-hidden shadow-lg rotate-[35deg] transition-transform duration-700 hover:scale-105">
-          <Image
-            src="/imgs/about_us1.jpg"
-            alt="image 1"
-            style={{ objectFit: 'cover' }}
-            width={300}
-            height={200}
-          />
-        </div>
-      </div>
-
-      <div className="hidden md:block absolute top-10 left-8 space-y-4 z-10 max-w-md">
-        <div className="w-full h-[200px] rounded-md overflow-hidden shadow-lg rotate-[-45deg] transition-transform duration-700 hover:scale-105">
-          <Image
-            src="/imgs/about_us2.jpg"
-            alt="image 2"
-            style={{ objectFit: 'cover' }}
-            width={300}
-            height={200}
-          />
-        </div>
-      </div>
+      ))}
     </section>
   );
 }
