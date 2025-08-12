@@ -6,7 +6,7 @@ import { faqs } from '../data/faqs.data';
 
 export default function FAQ() {
   return (
-    <section className="relative z-10 w-full text-white py-20 px-4 sm:px-6 lg:px-8" id="faq">
+    <section className="relative z-10 w-full text-white py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <div className="flex flex-row md:items-center justify-between mb-4 gap-4">

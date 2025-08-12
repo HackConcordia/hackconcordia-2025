@@ -132,7 +132,7 @@ const events: Event[] = [
 
 export default function UpcomingEvents() {
     return (
-        <section className="relative z-10 w-screen flex flex-col justify-center max-w-7xl mx-auto p-4 md:p-0" id="events">
+        <section className="relative z-10 w-screen flex flex-col justify-center max-w-7xl mx-auto p-4 md:p-0 mt-16">
             <h2 className="text-2xl md:text-4xl font-bold text-yellow-400 mb-2 md:mt-20">
                 Bee Ready
             </h2>

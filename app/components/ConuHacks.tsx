@@ -69,8 +69,7 @@ export default function ConuHacks() {
 
     return (
         <section
-            className="relative md:h-screen w-full overflow-hidden p-5 max-w-7xl mx-auto"
-            id="conuhacks"
+            className="relative md:h-screen w-full overflow-hidden p-5 max-w-7xl mx-auto mt-16"
         >
             {/* Background image with slide animation */}
             <div className="absolute inset-0 z-0 md:my-20 md:mr-10 max-w-7xl overflow-hidden rounded-sm shadow-amber-100 min-h-[70vh]">

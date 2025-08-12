@@ -32,8 +32,9 @@ export default function HomePage() {
     }
   }, []);
 
-  const Section = ({ children }: { children: React.ReactNode }) => (
+  const Section = ({ children, id }: { children: React.ReactNode, id: string }) => (
     <motion.div
+      id={id}
       variants={fadeUp}
       initial="hidden"
       whileInView="visible"
@@ -45,11 +46,11 @@ export default function HomePage() {
 
   return (
     <>
-      <Section><AboutUs /></Section>
-      <Section><ConuHacks /></Section>
-      <Section><UpcomingEvents /></Section>
-      <Section><TeamMemberSection /></Section>
-      <Section><FAQ /></Section>
+      <Section id={'home'}><AboutUs /></Section>
+      <Section id={'conuhacks'}><ConuHacks /></Section>
+      <Section id={'events'}><UpcomingEvents /></Section>
+      <Section id={'team'}><TeamMemberSection /></Section>
+      <Section id={'faq'}><FAQ /></Section>
       <br />
     </>
   );

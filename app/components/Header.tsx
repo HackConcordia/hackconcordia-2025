@@ -84,6 +84,13 @@ export default function Header() {
             return;
         }
 
+        if (sectionId === 'home') {
+            scrollTo(0,0);
+            history.replaceState(null, '', href);
+            setActiveSection(sectionId);
+            return;
+        }
+
         const section = document.getElementById(sectionId);
         if (section) {
             section.scrollIntoView({ behavior: 'smooth' });
