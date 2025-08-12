@@ -20,7 +20,30 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "HackConcordia",
   description:
-    "HackConcordia is a club at Concordia University that organizes ConuHacks and other hackathons.",
+    "HackConcordia is a student-run tech community at Concordia University, organizing ConUHacks, Quebec's largest 24-hour hackathon.",
+  openGraph: {
+    title: "HackConcordia",
+    description:
+      "HackConcordia is a student-run tech community at Concordia University, organizing ConUHacks, Quebec's largest 24-hour hackathon.",
+    url: "https://www.hackconcordia.io",
+    siteName: "HackConcordia",
+    images: [
+      {
+        url: "https://www.hackconcordia.io/imgs/HC_logo.png",
+        width: 800,
+        height: 600,
+        alt: "HackConcordia Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "HackConcordia",
+    description:
+      "HackConcordia is a student-run tech community at Concordia University, organizing ConUHacks, Quebec's largest 24-hour hackathon.",
+    images: ["https://www.hackconcordia.io/imgs/HC_logo.png"],
+    creator: "@HackConcordia",
+  },
 };
 
 export default function RootLayout({
