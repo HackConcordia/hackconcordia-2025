@@ -109,7 +109,7 @@ const Timeline: React.FC = () => {
     <div className="w-full overflow-x-auto overflow-y-hidden">
       <section
         id="timeline"
-        className="flex h-[calc(87vh-60px)] w-full md:h-[calc(87vh-5px)] snap-x snap-mandatory"
+        className="flex h-[calc(87vh-60px)] w-fit md:h-[calc(87vh-5px)] snap-x snap-mandatory"
       >
         {timelineData.map(({ number, year, bgImage, subteams }) => {
           const isActive = activeCard === number;
@@ -119,7 +119,7 @@ const Timeline: React.FC = () => {
               key={number}
               onClick={() => handleCardClick(number)}
               className={`group relative flex-shrink-0 min-w-[300px] h-full text-white transition-all duration-500 ease-in-out snap-start
-                ${isActive ? 'w-auto md:w-[70%]' : 'w-[30%]'} 
+                ${isActive ? 'w-full md:w-[70%]' : 'w-[30%]'} 
                 md:hover:w-[70%]`}
             >
               {/* Background Image */}
