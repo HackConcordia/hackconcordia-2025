@@ -191,7 +191,7 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
+* {
   cursor: none !important;
 }
 
@@ -211,4 +211,12 @@ body {
 
 .pulse-scale {
   animation: pulseScale 2s ease-in-out infinite;
+}
+
+input[type="checkbox"]:not(:checked) {
+  appearance: none;
+}
+
+input[type="checkbox"]:checked {
+  accent-color: var(--color-yellow-400);
 }
