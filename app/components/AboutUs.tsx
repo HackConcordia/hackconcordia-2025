@@ -111,7 +111,7 @@ export default function AboutUs() {
 
   return (
     <section
-      className="relative z-10 md:h-[calc(100vh-140px)] max-w-7xl mx-auto mt-16"
+      className="relative z-10 md:h-[calc(100vh-140px)] max-w-7xl mx-auto mt-16 md:mt-4"
     >
       <div className="flex items-center justify-center h-full w-full">
         <div className="relative w-full h-full max-w-4xl flex items-center justify-center">
