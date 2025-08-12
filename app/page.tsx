@@ -6,43 +6,42 @@ import ConuHacks from './components/ConuHacks';
 import FAQ from './components/Faq';
 import TeamMemberSection from './components/TeamMemberSection';
 import UpcomingEvents from './components/UpcomingEvents';
+import { useEffect } from 'react';
 
 export default function HomePage() {
   const fadeUp: Variants = {
     hidden: { opacity: 0, y: 50, scale: 0.95 },
-    visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.6, ease: 'easeOut' } },
+    visible: {
+      opacity: 1,
+      y: 0,
+      scale: 1,
+      transition: { duration: 0.6, ease: 'easeOut' },
+    },
+    exit: { opacity: 0, y: 50, scale: 0.95, transition: { duration: 0.4 } },
   };
 
-  const fadeRightToLeft: Variants = {
-    hidden: { opacity: 0, x: 80 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.9, ease: 'easeOut' } },
-  };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
+
+  const Section = ({ children }: { children: React.ReactNode }) => (
+    <motion.div
+      variants={fadeUp}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: false, amount: 0.2 }}
+    >
+      {children}
+    </motion.div>
+  );
 
   return (
     <>
-      {/* Fade Up Sections */}
-      <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.2 }}>
-        <AboutUs />
-      </motion.div>
-
-      <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.2 }}>
-        <ConuHacks />
-      </motion.div>
-
-      {/* Fade Right-to-Left Section */}
-      <motion.div variants={fadeRightToLeft} initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.2 }}>
-        <UpcomingEvents />
-      </motion.div>
-
-      {/* Fade Right-to-Left for Team Section */}
-      <motion.div variants={fadeRightToLeft} initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.2 }}>
-        <TeamMemberSection />
-      </motion.div>
-
-      <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.2 }}>
-        <FAQ />
-      </motion.div>
-
+      <Section><AboutUs /></Section>
+      <Section><ConuHacks /></Section>
+      <Section><UpcomingEvents /></Section>
+      <Section><TeamMemberSection /></Section>
+      <Section><FAQ /></Section>
       <br />
     </>
   );
