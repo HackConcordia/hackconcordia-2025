@@ -12,9 +12,9 @@ export default function Footer() {
 
                 {/* Right: Links */}
                 <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-gray-300">
-                    <Link href="/terms">Terms of Service</Link>
-                    <Link href="/privacy">Privacy Policy</Link>
-                    <Link href="/sponsors">Sponsors</Link>
+                    <Link href="/terms" className="text-xs hover:text-yellow-400">Terms of Service</Link>
+                    <Link href="/privacy" className="text-xs hover:text-yellow-400">Privacy Policy</Link>
+                    {/* <Link href="/sponsors" className="hover:text-yellow-400">Sponsors</Link> */}
                 </div>
             </div>
         </footer>
