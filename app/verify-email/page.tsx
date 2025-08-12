@@ -1,17 +1,21 @@
-"use client";
+'use client';
 
 import { useEffect, useRef, useState } from "react";
-import { useSearchParams } from "next/navigation";
 import EmailVerificationMessage from "./EmailVerified";
 import Verifying from "./Verifying";
 
 const EmailVerification = () => {
-    const searchParams = useSearchParams();
-    const token = searchParams.get("token");
-
-    const [loading, setLoading] = useState(true); // start loading immediately
+    const [token, setToken] = useState<string | null>(null);
+    const [loading, setLoading] = useState(true);
     const [verificationError, setVerificationError] = useState<string | null>(null);
     const hasRun = useRef(false);
+
+    useEffect(() => {
+        // Extract token from URL search params (client-side only)
+        const params = new URLSearchParams(window.location.search);
+        const urlToken = params.get("token");
+        setToken(urlToken);
+    }, []);
 
     useEffect(() => {
         const verifyEmail = async () => {
@@ -33,17 +37,16 @@ const EmailVerification = () => {
             }
         };
 
+        if (token === null) return; // wait until token is set
+
         if (!token) {
-            setVerificationError(
-                "No email verification token found. Please verify your email."
-            );
+            setVerificationError("No email verification token found. Please verify your email.");
             setLoading(false);
             return;
         }
 
         if (!hasRun.current) {
             hasRun.current = true;
-            // delay to show animation/loading state
             setTimeout(() => {
                 verifyEmail();
             }, 4000);
@@ -51,9 +54,7 @@ const EmailVerification = () => {
     }, [token]);
 
     const getState = () => {
-        if (loading) {
-            return <Verifying />;
-        }
+        if (loading) return <Verifying />;
 
         if (verificationError) {
             return (
