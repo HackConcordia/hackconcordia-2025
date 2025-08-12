@@ -6,7 +6,7 @@ import ConuHacks from './components/ConuHacks';
 import FAQ from './components/Faq';
 import TeamMemberSection from './components/TeamMemberSection';
 import UpcomingEvents from './components/UpcomingEvents';
-import { useEffect } from 'react';
+import { useLayoutEffect, useEffect } from 'react';
 
 export default function HomePage() {
   const fadeUp: Variants = {
@@ -20,9 +20,17 @@ export default function HomePage() {
     exit: { opacity: 0, y: 50, scale: 0.95, transition: { duration: 0.4 } },
   };
 
-  useEffect(() => {
+  // Scroll to top before browser paints
+  useLayoutEffect(() => {
     window.scrollTo(0, 0);
-  }, [])
+  }, []);
+
+  // Disable browser automatic scroll restoration
+  useEffect(() => {
+    if ('scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual';
+    }
+  }, []);
 
   const Section = ({ children }: { children: React.ReactNode }) => (
     <motion.div
