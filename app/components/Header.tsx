@@ -34,6 +34,8 @@ export default function Header() {
     const pathname = usePathname();
     const router = useRouter();
 
+    const hideLinks = pathname?.startsWith('/verify-email');
+
     useEffect(() => {
         const mappedSection = pageToSectionMap[pathname];
         if (mappedSection) {
@@ -85,7 +87,7 @@ export default function Header() {
         }
 
         if (sectionId === 'home') {
-            scrollTo(0,0);
+            scrollTo(0, 0);
             history.replaceState(null, '', href);
             setActiveSection(sectionId);
             return;
@@ -108,46 +110,48 @@ export default function Header() {
                     <Link href="/#home"><div className="text-xl font-bold hover:text-yellow-400">HackConcordia</div></Link>
                 </div>
 
-                {/* Middle Navigation (hidden on small screens) */}
-                <nav className="hidden md:flex space-x-6 text-sm md:text-base">
-                    {navLinks.map(({ href, label }) => {
-                        const sectionId = href.replace('#', '');
-                        const isActive = activeSection === sectionId;
+                {/* Middle Navigation */}
+                {!hideLinks && (
+                    <nav className="hidden md:flex space-x-6 text-sm md:text-base">
+                        {navLinks.map(({ href, label }) => {
+                            const sectionId = href.replace('#', '');
+                            const isActive = activeSection === sectionId;
 
-                        return (
-                            <a
-                                key={href}
-                                href={href}
-                                onClick={(e) => handleNavClick(e, href)}
-                                className={clsx(
-                                    'transition-colors hover:text-yellow-400',
-                                    isActive && 'text-yellow-400'
-                                )}
-                            >
-                                {label}
-                            </a>
-                        );
-                    })}
-                </nav>
+                            return (
+                                <a
+                                    key={href}
+                                    href={href}
+                                    onClick={(e) => handleNavClick(e, href)}
+                                    className={clsx(
+                                        'transition-colors hover:text-yellow-400',
+                                        isActive && 'text-yellow-400'
+                                    )}
+                                >
+                                    {label}
+                                </a>
+                            );
+                        })}
+                    </nav>
+                )}
 
                 {/* Right Icons (hidden on small screens) */}
-                <div className="flex space-x-2 md:space-x-4 items-center">
-                    <a className="hover:text-yellow-400" href="https://www.facebook.com/HackConcordia/" target="_blank" rel="noopener noreferrer">
-                        <FaFacebookF size={18} />
-                    </a>
-                    <a className="hover:text-yellow-400" href="https://www.instagram.com/hackconcordia" target="_blank" rel="noopener noreferrer">
-                        <FaInstagram size={18} />
-                    </a>
-                    <a className="hover:text-yellow-400" href="https://www.linkedin.com/company/hackconcordia" target="_blank" rel="noopener noreferrer">
-                        <FaLinkedinIn size={18} />
-                    </a>
-                    <a className="hover:text-yellow-400" href="https://x.com/HackConcordia" target="_blank" rel="noopener noreferrer">
-                        <FaX size={18} />
-                    </a>
-                    <a className="hover:text-yellow-400" href="mailto:technology.hackconcordia@ecaconcordia.ca">
-                        <FaRegEnvelope size={18} />
-                    </a>
-                </div>
+                    <div className="flex space-x-2 md:space-x-4 items-center">
+                        <a className="hover:text-yellow-400" href="https://www.facebook.com/HackConcordia/" target="_blank" rel="noopener noreferrer">
+                            <FaFacebookF size={18} />
+                        </a>
+                        <a className="hover:text-yellow-400" href="https://www.instagram.com/hackconcordia" target="_blank" rel="noopener noreferrer">
+                            <FaInstagram size={18} />
+                        </a>
+                        <a className="hover:text-yellow-400" href="https://www.linkedin.com/company/hackconcordia" target="_blank" rel="noopener noreferrer">
+                            <FaLinkedinIn size={18} />
+                        </a>
+                        <a className="hover:text-yellow-400" href="https://x.com/HackConcordia" target="_blank" rel="noopener noreferrer">
+                            <FaX size={18} />
+                        </a>
+                        <a className="hover:text-yellow-400" href="mailto:technology.hackconcordia@ecaconcordia.ca">
+                            <FaRegEnvelope size={18} />
+                        </a>
+                    </div>
             </div>
         </header>
     );

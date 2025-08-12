@@ -71,6 +71,8 @@ export default function AboutUs() {
       return;
     }
 
+    console.log(formData)
+
     setPending(true);
     const res = await fetch("/api/send-email", {
       method: "POST",

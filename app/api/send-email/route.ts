@@ -7,6 +7,7 @@ import VerifiedUserEmail from "@/lib/models/verifiedEmails";
 
 export const POST = async (req: Request) => {
   try {
+    console.log("registering email")
     await connectMongoDB();
 
     const body = await req.json();
