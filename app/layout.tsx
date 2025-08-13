@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import BackgroundOverlay from "./components/BackgroundOverlay";
 import FloatingBeeCursor from "./components/FloatingBeeCursor";
 import { CustomToaster } from "./components/CustomToast";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -53,6 +54,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-GZXDTT2CFT"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-GZXDTT2CFT', {
+              page_path: window.location.pathname,
+            });
+          `}
+        </Script>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
