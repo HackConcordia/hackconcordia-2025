@@ -4,30 +4,13 @@ import { useEffect, useState } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
 import clsx from 'clsx';
 import Image from 'next/image';
-import {
-    FaFacebookF,
-    FaInstagram,
-    FaLinkedinIn,
-    FaRegEnvelope,
-} from 'react-icons/fa';
-import { FaX } from 'react-icons/fa6';
 import Link from 'next/link';
-
-const navLinks = [
-    { href: '#home', label: 'Home' },
-    { href: '#conuhacks', label: 'ConuHacks' },
-    { href: '#events', label: 'Events' },
-    { href: '#team', label: 'Team' },
-    { href: '#faq', label: 'FAQ' },
-];
-
-const pageToSectionMap: Record<string, string> = {
-    '/legacy-teams': 'team',
-    '/contact-us': 'faq',
-    '/privacy': 'faq',
-    '/sponsors': 'faq',
-    '/terms': 'faq',
-};
+import {
+    navLinks,
+    pageToSectionMap,
+    socialLinks,
+    logo,
+} from '../data/header.data';
 
 export default function Header() {
     const [activeSection, setActiveSection] = useState<string>('home');
@@ -36,26 +19,22 @@ export default function Header() {
 
     const hideLinks = pathname?.startsWith('/verify-email');
 
+    // Observe sections for active link highlighting
     useEffect(() => {
+        if (!pathname) return;
+
         const mappedSection = pageToSectionMap[pathname];
         if (mappedSection) {
             setActiveSection(mappedSection);
             return;
         }
 
-        const observerOptions = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.6,
-        };
-
+        const observerOptions = { root: null, rootMargin: '0px', threshold: 0.6 };
         const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
                     const sectionId = entry.target.getAttribute('id');
-                    if (sectionId) {
-                        setActiveSection(sectionId);
-                    }
+                    if (sectionId) setActiveSection(sectionId);
                 }
             });
         }, observerOptions);
@@ -63,21 +42,17 @@ export default function Header() {
         const sections = document.querySelectorAll('section');
         sections.forEach((section) => observer.observe(section));
 
-        return () => {
-            sections.forEach((section) => observer.unobserve(section));
-        };
+        return () => sections.forEach((section) => observer.unobserve(section));
     }, [pathname]);
 
+    // Update URL hash on scroll
     useEffect(() => {
         if (activeSection && pathname === '/') {
             history.replaceState(null, '', `#${activeSection}`);
         }
     }, [activeSection, pathname]);
 
-    const handleNavClick = (
-        e: React.MouseEvent<HTMLAnchorElement>,
-        href: string
-    ) => {
+    const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
         e.preventDefault();
         const sectionId = href.replace('#', '');
 
@@ -104,28 +79,25 @@ export default function Header() {
     return (
         <header className="w-full fixed top-0 z-50 text-white backdrop-blur-xs bg-black/60 px-4 md:px-0">
             <div className="max-w-7xl mx-auto flex justify-between items-center py-2">
-                {/* Left Logo */}
+                {/* Logo */}
                 <div className="flex items-center space-x-2" style={{ marginLeft: '-2px' }}>
-                    <Image src="/imgs/HC_logo.png" alt="Logo" width={40} height={40} />
-                    <Link href="/#home"><div className="text-xl font-bold hover:text-yellow-400">HackConcordia</div></Link>
+                    <Image src={logo.src} alt={logo.alt} width={logo.width} height={logo.height} />
+                    <Link href="/#home">
+                        <div className={clsx('text-xl font-bold', logo.hoverColor)}>{logo.text}</div>
+                    </Link>
                 </div>
 
-                {/* Middle Navigation */}
+                {/* Navigation Links */}
                 {!hideLinks && (
                     <nav className="hidden md:flex space-x-6 text-sm md:text-base">
                         {navLinks.map(({ href, label }) => {
-                            const sectionId = href.replace('#', '');
-                            const isActive = activeSection === sectionId;
-
+                            const isActive = activeSection === href.replace('#', '');
                             return (
                                 <a
                                     key={href}
                                     href={href}
                                     onClick={(e) => handleNavClick(e, href)}
-                                    className={clsx(
-                                        'transition-colors hover:text-yellow-400',
-                                        isActive && 'text-yellow-400'
-                                    )}
+                                    className={clsx('transition-colors hover:text-yellow-400', isActive && 'text-yellow-400')}
                                 >
                                     {label}
                                 </a>
@@ -134,24 +106,20 @@ export default function Header() {
                     </nav>
                 )}
 
-                {/* Right Icons (hidden on small screens) */}
-                    <div className="flex space-x-2 md:space-x-4 items-center">
-                        <a className="hover:text-yellow-400" href="https://www.facebook.com/HackConcordia/" target="_blank" rel="noopener noreferrer">
-                            <FaFacebookF size={18} />
+                {/* Social Icons */}
+                <div className="flex space-x-2 md:space-x-4 items-center">
+                    {socialLinks.map(({ href, icon: Icon }) => (
+                        <a
+                            key={href}
+                            href={href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="hover:text-yellow-400"
+                        >
+                            <Icon size={18} />
                         </a>
-                        <a className="hover:text-yellow-400" href="https://www.instagram.com/hackconcordia" target="_blank" rel="noopener noreferrer">
-                            <FaInstagram size={18} />
-                        </a>
-                        <a className="hover:text-yellow-400" href="https://www.linkedin.com/company/hackconcordia" target="_blank" rel="noopener noreferrer">
-                            <FaLinkedinIn size={18} />
-                        </a>
-                        <a className="hover:text-yellow-400" href="https://x.com/HackConcordia" target="_blank" rel="noopener noreferrer">
-                            <FaX size={18} />
-                        </a>
-                        <a className="hover:text-yellow-400" href="mailto:technology.hackconcordia@ecaconcordia.ca">
-                            <FaRegEnvelope size={18} />
-                        </a>
-                    </div>
+                    ))}
+                </div>
             </div>
         </header>
     );

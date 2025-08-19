@@ -4,6 +4,21 @@ export const cardText = [
     `Ready to dive in? Whether you want to compete in a hackathon, attend a workshop, or just meet some like-minded tech lovers, HackConcordia has a spot for you.`,
 ];
 
+// Static text for form labels, button text, etc (optional)
+export const formText = {
+    title: "Subscribe",
+    emailPlaceholder: "Enter your email",
+    checkboxLabelPrefix: "I agree to ",
+    checkboxLinkText: "MLH's Code of Conduct",
+    checkboxLinkHref: "https://static.mlh.io/docs/mlh-code-of-conduct.pdf",
+    buttonLoadingText: "Subscribing...",
+    buttonIdleText: "Subscribe",
+    subtitle: "Bringing Quebec’s biggest hackathon to life.",
+    tagline: "Bee the Change. Code the Future.",
+    scrollDownText: "Scroll down to know more",
+    subscriptionText: "Subscribe to get the latest updates",
+};
+
 export const desktopTextBoxes = [
     {
         text: cardText[0],
@@ -46,17 +61,3 @@ export const images = [
         positionClasses: "hidden md:block absolute top-10 left-8 space-y-4 z-10 max-w-md",
     },
 ];
-
-// Static text for form labels, button text, etc (optional)
-export const formText = {
-    title: "Subscribe",
-    emailPlaceholder: "Enter your email",
-    checkboxLabelPrefix: "I agree to ",
-    checkboxLinkText: "MLH's Code of Conduct",
-    checkboxLinkHref: "https://static.mlh.io/docs/mlh-code-of-conduct.pdf",
-    buttonLoadingText: "Subscribing...",
-    buttonIdleText: "Subscribe",
-    subtitle: "Bringing Quebec’s biggest hackathon to life.",
-    tagline: "Bee the Change. Code the Future.",
-    scrollDownText: "Scroll down to know more",
-};

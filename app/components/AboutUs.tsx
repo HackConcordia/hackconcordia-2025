@@ -3,7 +3,7 @@
 import Lottie from "lottie-react";
 import scrollAnimation from "../../public/animations/scroll_down_animation.json";
 import Image from "next/image";
-import { ChangeEvent, FormEvent, useEffect, useRef, useState } from "react";
+import { ChangeEvent, FormEvent, useRef, useState } from "react";
 import { customToast } from "./CustomToast";
 import { FaPaperPlane } from "react-icons/fa";
 import { motion, Variants } from "framer-motion";
@@ -133,7 +133,7 @@ export default function AboutUs() {
 
             <p className="text-sm text-gray-300 max-w-xl mb-1">{formText.subtitle}</p>
 
-            <span className="text-gray-500 text-xs">Subscribe to get the latest updates</span>
+            <span className="text-gray-500 text-xs">{formText.subscriptionText}</span>
 
             <form
               onSubmit={handleSubmit}

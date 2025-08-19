@@ -5,7 +5,7 @@ import { FaLinkedin, FaGithub, FaInstagram, FaGlobe } from "react-icons/fa";
 import { FaArrowRight } from 'react-icons/fa';
 import Link from 'next/link';
 import Image from 'next/image';
-import { TeamMember, teamMembers } from '../data/team.data';
+import { TeamMember, teamMembers, teamsSectionText } from '../data/team.data';
 
 export default function TeamMemberSection() {
     const [selected, setSelected] = useState<TeamMember>(teamMembers[0]);
@@ -19,18 +19,18 @@ export default function TeamMemberSection() {
             <section className="relative z-10 w-screen md:h-screen flex flex-col justify-center max-w-7xl mx-auto p-4 md:p-0">
                 <div className="mb-4 md:mb-12">
                     <div className="flex w-full justify-between items-center">
-                        <h2 className="text-2xl md:text-4xl font-bold text-yellow-400">Hive keepers</h2>
+                        <h2 className="text-2xl md:text-4xl font-bold text-yellow-400">{teamsSectionText.title}</h2>
                         <Link
                             href="legacy-teams"
                             className="md:mt-4 px-4 md:px-6 py-2 bg-yellow-500 text-white rounded hover:bg-yellow-600 transition text-xs font-semibold"
                         >
-                            Legacy Teams
+                            {teamsSectionText.legacyTeams}
                             <FaArrowRight className="inline-block ml-2 rotate-315" />
                         </Link>
 
                     </div>
                     <p className="mt-4 text-gray-400 text-sm">
-                        Meet the dedicated team behind Conuhacks, working tirelessly to bring you the best hackathon experience.
+                        {teamsSectionText.description}
                     </p>
                 </div>
 

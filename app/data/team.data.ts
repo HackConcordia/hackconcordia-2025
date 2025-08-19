@@ -1,3 +1,10 @@
+export const teamsSectionText = {
+    title: "Hive keepers",
+    description: "Meet the dedicated team behind Conuhacks, working tirelessly to bring you the best hackathon experience.",
+    legacyTeams: "Legacy Teams",
+
+}
+
 export type TeamMember = {
     id: number;
     name: string;
