@@ -221,5 +221,46 @@ export const teamMembers: TeamMember[] = [
             linkedin: "https://www.linkedin.com/in/subaankykrishnapillai",
             github: "http://github.com/Subaanky"
         }
+    }, 
+    {
+         id: 20,
+        name: "Steven Lam",
+        position: "Director of Sponsorship",
+        intro: "BCompSc student with a passion for building partnerships and fostering community engagement.",
+        imageSrc: "/imgs/team/Steven.jpeg",
+        socials: {
+            linkedin: "https://www.linkedin.com/in/steven-lam12/"
+        }
+    },
+    {
+        id: 21,
+        name: "Marilyne Nguyen",
+        position: "Director of Technology",
+        intro: "BCompSc student passionate about new technologies and efficient problem-solving.",
+        imageSrc: "/imgs/team/Marilyne.jpeg",
+        socials: {
+            linkedin: "https://www.linkedin.com/in/marilyne-nguyen1515/",
+            github: "https://github.com/marilynenguyen"
+        }
+    }, 
+    {
+        id: 22,
+        name: "Hajar Blahmam",
+        position: "Director of Events",
+        intro: "BCompSc student",
+        imageSrc: "/imgs/team/Hajar.jpg",
+        socials: {
+            linkedin: "https://www.linkedin.com/in/hblahmam721/"
+        }
+    }, 
+    {
+        id: 23,
+        name: "Toby Fischer",
+        position: "Director of Logistics",
+        intro: "BCompSc student",
+        imageSrc: "/imgs/team/Toby.jpg",
+        socials: {
+            linkedin: ""
+        }
     }
 ];
