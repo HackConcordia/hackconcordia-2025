@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import { motion, Variants } from 'framer-motion';
-import AboutUs from './components/AboutUs';
-import ConuHacks from './components/ConuHacks';
-import FAQ from './components/Faq';
-import TeamMemberSection from './components/TeamMemberSection';
-import UpcomingEvents from './components/UpcomingEvents';
-import { useLayoutEffect, useEffect } from 'react';
+import { motion, Variants } from "framer-motion";
+import AboutUs from "./components/AboutUs";
+import ConuHacks from "./components/ConuHacks";
+import FAQ from "./components/Faq";
+import TeamMemberSection from "./components/TeamMemberSection";
+import UpcomingEvents from "./components/UpcomingEvents";
+import { useLayoutEffect, useEffect } from "react";
 
 export default function HomePage() {
   const fadeUp: Variants = {
@@ -15,7 +15,7 @@ export default function HomePage() {
       opacity: 1,
       y: 0,
       scale: 1,
-      transition: { duration: 0.6, ease: 'easeOut' },
+      transition: { duration: 0.6, ease: "easeOut" },
     },
     exit: { opacity: 0, y: 50, scale: 0.95, transition: { duration: 0.4 } },
   };
@@ -27,12 +27,18 @@ export default function HomePage() {
 
   // Disable browser automatic scroll restoration
   useEffect(() => {
-    if ('scrollRestoration' in window.history) {
-      window.history.scrollRestoration = 'manual';
+    if ("scrollRestoration" in window.history) {
+      window.history.scrollRestoration = "manual";
     }
   }, []);
 
-  const Section = ({ children, id }: { children: React.ReactNode, id: string }) => (
+  const Section = ({
+    children,
+    id,
+  }: {
+    children: React.ReactNode;
+    id: string;
+  }) => (
     <motion.div
       id={id}
       variants={fadeUp}
@@ -46,11 +52,21 @@ export default function HomePage() {
 
   return (
     <>
-      <Section id={'home'}><AboutUs /></Section>
-      <Section id={'conuhacks'}><ConuHacks /></Section>
-      <Section id={'events'}><UpcomingEvents /></Section>
-      <Section id={'team'}><TeamMemberSection /></Section>
-      <Section id={'faq'}><FAQ /></Section>
+      <Section id={"home"}>
+        <AboutUs />
+      </Section>
+      <Section id={"conuhacks"}>
+        <ConuHacks />
+      </Section>
+      <Section id={"events"}>
+        <UpcomingEvents />
+      </Section>
+      <Section id={"team"}>
+        <TeamMemberSection />
+      </Section>
+      <Section id={"faq"}>
+        <FAQ />
+      </Section>
       <br />
     </>
   );
