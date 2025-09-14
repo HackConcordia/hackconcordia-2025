@@ -1,4 +1,5 @@
 import { JSX } from 'react';
+import { TranslationObject } from './translationObject.data';
 import {
     FaClipboardList,
     FaMoneyBillAlt,

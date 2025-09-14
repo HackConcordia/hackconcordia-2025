@@ -2,20 +2,29 @@
 
 import { useEffect, useState } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
+import { useTranslation } from "../i18n/TranslationContext";
+import { Language } from "../i18n/type";
 import clsx from 'clsx';
 import Image from 'next/image';
 import Link from 'next/link';
 import {
-    navLinks,
+    getNavLinks,
     pageToSectionMap,
     socialLinks,
     logo,
 } from '../data/header.data';
+import en from "../locales/en";
+import fr from "../locales/fr";
 
 export default function Header() {
     const [activeSection, setActiveSection] = useState<string>('home');
     const pathname = usePathname();
     const router = useRouter();
+    const { setLanguage, language } = useTranslation();
+
+    // Get navigation links based on current language
+    const currentLanguage = language === 'en' ? en : fr;
+    const navLinks = getNavLinks(currentLanguage);
 
     const hideLinks = pathname?.startsWith('/verify-email');
 
@@ -108,6 +117,27 @@ export default function Header() {
 
                 {/* Social Icons */}
                 <div className="flex space-x-2 md:space-x-4 items-center">
+                    {/* Language Switcher */}
+                    <div>
+                        {
+                            language === Language.en ?
+                                <button 
+                                    onClick={() => setLanguage(Language.fr)} 
+                                    className="hover:text-yellow-400 text-sm font-medium transition-colors"
+                                    style={{ cursor: "pointer" }}
+                                >
+                                    FR
+                                </button> :
+                                <button 
+                                    onClick={() => setLanguage(Language.en)} 
+                                    className="hover:text-yellow-400 text-sm font-medium transition-colors"
+                                    style={{ cursor: "pointer" }}
+                                >
+                                    EN
+                                </button>
+                        }
+                    </div>
+                    
                     {socialLinks.map(({ href, icon: Icon }) => (
                         <a
                             key={href}

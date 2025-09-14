@@ -7,6 +7,7 @@ import BackgroundOverlay from "./components/BackgroundOverlay";
 import FloatingBeeCursor from "./components/FloatingBeeCursor";
 import { CustomToaster } from "./components/CustomToast";
 import Script from "next/script";
+import { TranslationProvider } from './i18n/TranslationContext';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,6 +37,8 @@ export const metadata: Metadata = {
         alt: "HackConcordia Logo",
       },
     ],
+    locale: 'en_CA',
+    type: 'website',
   },
   twitter: {
     card: "summary_large_image",
@@ -47,13 +50,10 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode; }>) {
+  const lang = "en"; //default is english
   return (
-    <html lang="en">
+    <html lang={lang}>
       <head>
         {/* Google Analytics */}
         <Script
@@ -73,7 +73,7 @@ export default function RootLayout({
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      > <TranslationProvider> 
         <div className="hidden md:flex">
           <BackgroundOverlay />
         </div>
@@ -86,6 +86,7 @@ export default function RootLayout({
           <CustomToaster />
         </main>
         <Footer />
+      </TranslationProvider>
       </body>
     </html>
   );

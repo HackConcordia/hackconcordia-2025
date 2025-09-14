@@ -7,7 +7,10 @@ import { ChangeEvent, FormEvent, useRef, useState } from "react";
 import { customToast } from "./CustomToast";
 import { FaPaperPlane } from "react-icons/fa";
 import { motion, Variants } from "framer-motion";
-import { cardText, desktopTextBoxes, formText, images } from "../data/about.data";
+import { getCardText, getFormText, getDesktopTextBoxes, images } from "../data/about.data";
+import { useTranslation } from "../i18n/TranslationContext";
+import en from "../locales/en";
+import fr from "../locales/fr";
 
 type FormData = {
   email: string;
@@ -43,6 +46,15 @@ export default function AboutUs() {
   const [pending, setPending] = useState(false);
   const [checked, setChecked] = useState(false);
   const [isEmailValid, setIsEmailValid] = useState(false);
+  const { language } = useTranslation();
+
+  // Get the current translation object based on language
+  const currentTranslations = language === 'en' ? en : fr;
+
+  // Get translated content
+  const formText = getFormText(currentTranslations);
+  const cardText = getCardText(currentTranslations);
+  const desktopTextBoxes = getDesktopTextBoxes(currentTranslations);
 
   const emailRegex = /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/;
 
@@ -129,9 +141,9 @@ export default function AboutUs() {
               </b>
             </h1>
 
-            <h2 className="text-xl sm:text-2xl font-semibold mb-1">{formText.tagline}</h2>
+            <h2 className="text-xl sm:text-2xl font-semibold mb-1">{formText.subtitle}</h2>
 
-            <p className="text-sm text-gray-300 max-w-xl mb-1">{formText.subtitle}</p>
+            <p className="text-sm text-gray-300 max-w-xl mb-1">{formText.paragraph}</p>
 
             <span className="text-gray-500 text-xs">{formText.subscriptionText}</span>
 
@@ -161,7 +173,7 @@ export default function AboutUs() {
                     <div className="h-5 w-5 animate-spin rounded-full border-b-2 border-gray-700"></div>
                   ) : (
                     <>
-                      <span className="tracking-wide">{formText.buttonIdleText}</span>
+                      <span className="tracking-wide">{formText.subscribeButtonText}</span>
                       <FaPaperPlane className="text-sm opacity-80 transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />
                     </>
                   )}

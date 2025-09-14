@@ -2,27 +2,30 @@
 
 import Image from 'next/image';
 import { faqs } from '../data/faqs.data';
-
+import { useTranslation } from "../i18n/TranslationContext";
+import en from "../locales/en";
+import fr from "../locales/fr";
 
 export default function FAQ() {
+  const { t } = useTranslation();
   return (
     <section className="relative z-10 w-full text-white py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <div className="flex flex-row md:items-center justify-between mb-4 gap-4">
           <h2 className="text-2xl md:text-3xl font-bold text-yellow-400">
-            Bee Curious?
+            {t('Faq.title')}
           </h2>
           <a
             href="contact-us"
             className="text-xs md:text-sm font-medium border border-white px-4 py-2 rounded-sm hover:bg-white hover:text-black transition w-fit"
           >
-            Contact Us ↗
+            {t('Faq.contactUs')} ↗
           </a>
         </div>
 
         <p className="text-gray-400 mb-10 text-xs sm:text-base">
-          Find answers to questions about HackConcordia and ConUHacks. Need more details? Reach out to our team to know more.
+          {t('Faq.description')}
         </p>
 
         {/* FAQ List */}
@@ -45,9 +48,9 @@ export default function FAQ() {
           <div className="flex flex-row items-center gap-4">
             <Image src="/imgs/HC_logo.png" alt="HackConcordia" style={{ objectFit: 'cover' }} width={40} height={40} />
             <div>
-              <p className="text-sm md:text-base font-semibold">Still have questions?</p>
+              <p className="text-sm md:text-base font-semibold">{t('Footer.stillHaveQuestions')}</p>
               <p className="text-xs md:text-sm text-gray-400">
-                Reach out via email or follow us on social media @HackConcordia.
+                {t('Footer.reachOut')}
               </p>
             </div>
           </div>
@@ -55,7 +58,7 @@ export default function FAQ() {
             href="contact-us"
             className="bg-yellow-600 hover:bg-yellow-700 text-white px-5 py-2 rounded-sm text-xs md:text-sm font-medium transition w-fit ml-11"
           >
-            Get in touch
+            {t('Footer.getInTouch')}
           </a>
         </div>
       </div>
