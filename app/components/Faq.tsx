@@ -1,13 +1,18 @@
 'use client';
 
 import Image from 'next/image';
-import { faqs } from '../data/faqs.data';
+import { getFAQs } from '../data/faqs.data';
 import { useTranslation } from "../i18n/TranslationContext";
 import en from "../locales/en";
 import fr from "../locales/fr";
 
 export default function FAQ() {
-  const { t } = useTranslation();
+  const { t, language } = useTranslation();
+
+  // Get the questions and answers based on current language
+  const currentTranslations = language === 'en' ? en : fr;  
+  const faqs = getFAQs(currentTranslations);
+
   return (
     <section className="relative z-10 w-full text-white py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
@@ -48,7 +53,7 @@ export default function FAQ() {
           <div className="flex flex-row items-center gap-4">
             <Image src="/imgs/HC_logo.png" alt="HackConcordia" style={{ objectFit: 'cover' }} width={40} height={40} />
             <div>
-              <p className="text-sm md:text-base font-semibold">{t('Footer.stillHaveQuestions')}</p>
+              <p className="text-sm md:text-base font-semibold">{t('Footer.stillHaveQuestion')}</p>
               <p className="text-xs md:text-sm text-gray-400">
                 {t('Footer.reachOut')}
               </p>

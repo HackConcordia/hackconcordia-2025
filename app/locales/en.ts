@@ -356,8 +356,8 @@ export const en = {
         }
     },
     UpcomingEvents: {
-        title1: "Bee Ready...",
-        subtitle1: "Below is a list of our upcoming events. Mark your calendars!.",
+        title: "Bee Ready",
+        subtitle: "Below is a list of our upcoming events. Mark your calendars!.",
         time: {
             fullDay: "Full Day",
             evening: "Evening",
@@ -365,24 +365,26 @@ export const en = {
             conuhacksDays: "8 AM (24th Jan) - 11 AM (25th Jan)"
         },
         months: {
-        August: "August",
-        September: "September",
-        October: "October",
-        November: "November",
-        December: "December",
-        January: "January",
-        February: "February",
-        March: "March",
-        April: "April"
+            January: "January",
+            February: "February",
+            March: "March",
+            April: "April",
+            August: "August",
+            September: "September",
+            October: "October",
+            November: "November",
+            December: "December",
         },
         address:{
             sgw: "SGW Campus, Montreal",
-            concordia: "Concordia University, Montreal",
+            concordia: "Concordia University",
+            concordia_address: "Concordia University, Montreal",
             jmsb: "Concordia University (John Molson MB)",
             jmsb_address: "1455 Boulevard de Maisonneuve, Montreal",
             hall: "H-1011 (Hall Building, SGW Campus)",
             reggies: "Reggie's Bar (SGW Campus)",
-            terrace: "Reggie's Bar / Terrace (SGW Campus)"
+            terrace: "Reggie's Bar / Terrace (SGW Campus)", 
+            tbd: "To be Determined"
         },
         events: {
             // FALL 2025
@@ -435,7 +437,7 @@ export const en = {
         description: "Find answers to questions about HackConcordia and ConUHacks. Need more details? Reach out to our team to know more.",
         question: {
             conuhacks: "What is ConUHacks & who organizes it?",
-            elligibility: "Who can participate (elligibility)?",
+            eligibility: "Who can participate (elligibility)?",
             team: "Do I need a team?",
             coderCan:"I'm not a coder, can I still hack?",
             registrationFee: "Is there a registration fee?",
@@ -447,7 +449,7 @@ export const en = {
         },
         answer: {
             conuhacks: "ConUHacks (hosted by HackConcordia at Concordia University) is Quebec’s largest 24‑hour student hackathon. Teams build software or hardware projects using emerging tech like AI and IoT, and demo them live to judges.",
-            elligibility: "Anyone above the legal age of majority—high school senior to university student is welcome. Recent graduates and international students can participate too; proof of enrollment may be required.",
+            eligibility: "Anyone above the legal age of majority—high school senior to university student is welcome. Recent graduates and international students can participate too; proof of enrollment may be required.",
             team: "Yes—each team can have up to 4 members. If you register solo, you’ll be listed as “Looking for Teammates”, and organizers’ll help you join a team.",
             coderCan:"'Absolutely! ConUHacks welcomes newcomers—electricians, artists, designers, business majors—you name it. Our mentor teams help turn ideas into demos.",
             registrationFee: "No - ConUHacks is completely free, with food, swag, and workshops included.",

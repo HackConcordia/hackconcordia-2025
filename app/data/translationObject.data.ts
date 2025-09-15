@@ -49,13 +49,65 @@ export type TranslationObject = {
         };
     };
 
+    TeamMember: {
+        title: string;
+        description: string;
+        legacyButton: string;
+        members: {
+            [key: number]: {
+                name: string;
+                position: string;
+                intro: string;
+            };
+        };
+    };
+
+    UpcomingEvents: {
+        title: string;
+        subtitle: string;
+        time: {
+            fullDay: string;
+            evening: string;
+            eveningTime: string;
+            conuhacksDays: string;
+        };
+        months:{
+            January: string;
+            February: string;
+            March: string; 
+            April: string;
+            August: string;
+            September: string;
+            October: string;
+            November: string;
+            December: string;
+        }; 
+        address: {
+            sgw: string;
+            concordia: string;
+            concordia_address: string;
+            jmsb: string;
+            jmsb_address: string;
+            hall: string;
+            reggies: string;
+            terrace: string;
+            tbd: string;
+        }; 
+        events: {
+            [key: number]: {
+                title: string;
+                type: string;
+            };
+        };
+    };
+
     Faq: {
         contactUs: string;
         description: string;
         title: string;
         question: {
             conuhacks: string;
-            elligibility: string;
+            eligibility: string;
             team: string;
             coderCan: string;
             registrationFee: string;
@@ -67,7 +119,7 @@ export type TranslationObject = {
         };
         answer:{
             conuhacks: string;
-            elligibility: string;
+            eligibility: string;
             team: string;
             coderCan: string;
             registrationFee: string;

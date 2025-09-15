@@ -1,5 +1,3 @@
-import { watch } from "fs";
-
 export const fr = {
     Header: {
         home: "Accueil",
@@ -15,7 +13,7 @@ export const fr = {
         subscribe: "Abonnez-vous pour recevoir les dernières mises à jour",
         emailPlaceholder: "Entrez votre email",
         subscribeButton: "S'abonner",
-        checkboxLabelPrefix: "J'accepte le",
+        checkboxLabelPrefix: "J'accepte le ",
         codeOfConduct: "Code de conduite de MLH",
         buttonLoadingText: "En cours d'abonnement...",
         scrollDown: "Défilez vers le bas pour en savoir plus",
@@ -234,7 +232,6 @@ export const fr = {
             }
         },
     },
-
     TeamMember: {
         title: "Les Gardiens de la Ruche",
         description: "Découvrez l’équipe dévouée derrière ConUHacks, qui travaille sans relâche pour vous offrir la meilleure expérience de hackathon.",
@@ -358,33 +355,35 @@ export const fr = {
         },
     },
     UpcomingEvents: {
-        title1: "Soyez prêts...",
-        subtitle1: "Voici la liste de nos prochains événements. Réservez vos dates !",
+        title: "Soyez prêts",
+        subtitle: "Voici la liste de nos prochains événements. Réservez vos dates !",
         time: {
-            fullDay: "Journée complète",
+            fullDay: "Journée Entière",
             evening: "Soirée",
-            eveningTime: "Soirée (17 h 30 – 19 h 30)", 
-            conuhacksDays: "8 h (24 janv.) – 11 h (25 janv.)"
+            eveningTime: "Soirée (5:30 PM–7:30 PM)", 
+            conuhacksDays: "8AM (24 janv.) – 11AM (25 janv.)"
         },
         months: {
+            January: "Janvier",
+            February: "Février",
+            March: "Mars",
+            April: "Avril",
             August: "Août",
             September: "Septembre",
             October: "Octobre",
             November: "Novembre",
-            December: "Décembre", 
-            January: "Janvier",
-            February: "Février",
-            March: "Mars",
-            April: "Avril"
+            December: "écembre",
         },
         address: {
             sgw: "Campus SGW, Montréal",
-            concordia: "Université Concordia, Montréal",
+            concordia: "Université Concordia",
+            concordia_address: "Université Concordia, Montréal",
             jmsb: "Université Concordia (John Molson MB)",
-            jmsb_address: "1455, boulevard de Maisonneuve, Montréal",
+            jmsb_address: "1455 boulevard de Maisonneuve, Montréal",
             hall: "H-1011 (Pavillon Hall, campus SGW)",
             reggies: "Reggie's Bar (Campus SGW)",
-            terrace: "Reggie's Bar / Terrasse (Campus SGW)"
+            terrace: "Reggie's Bar / Terrasse (Campus SGW)", 
+            tbd: "À déterminer"
         },
         events: {
             // AUTOMNE 2025
@@ -398,7 +397,7 @@ export const fr = {
             },
             3: {
                 title: "ConUHacks X Launch Party",
-                type: "Événement de lancement des inscriptions"
+                type: "Lancement officiel des inscriptions"
             }, 
             4: {
                 title: "Atelier 1",
@@ -434,10 +433,10 @@ export const fr = {
     Faq: {
         contactUs: "Contactez-nous",
         description: "Trouvez des réponses aux questions sur HackConcordia et ConUHacks. Besoin de plus de détails ? Contactez notre équipe pour en savoir plus.",
-        title: "Bee Curious?",
+        title: "Soyez curieux?",
         question: {
             conuhacks: "Qu’est-ce que ConUHacks et qui l’organise ?",
-            elligibility: "Qui peut participer (conditions d’éligibilité) ?",
+            eligibility: "Qui peut participer (conditions d’éligibilité) ?",
             team: "Ai-je besoin d’une équipe ?",
             coderCan: "Je ne suis pas programmeur, puis-je quand même participer ?",
             registrationFee: "Y a-t-il des frais d’inscription ?",
@@ -449,7 +448,7 @@ export const fr = {
         },
         answer: {
             conuhacks: "ConUHacks (organisé par HackConcordia à l’Université Concordia) est le plus grand hackathon étudiant de 24 heures au Québec. Les équipes y créent des projets logiciels ou matériels en utilisant des technologies émergentes comme l’IA et l’IoT, puis les présentent en direct devant un jury.",
-            elligibility: "Toute personne majeure peut participer — de la fin du secondaire jusqu’à l’université. Les nouveaux diplômés et les étudiants internationaux sont également les bienvenus (une preuve d’inscription peut être demandée).",
+            eligibility: "Toute personne majeure peut participer — de la fin du secondaire jusqu’à l’université. Les nouveaux diplômés et les étudiants internationaux sont également les bienvenus (une preuve d’inscription peut être demandée).",
             team: "Oui — chaque équipe peut compter jusqu’à 4 membres. Si tu t’inscris seul, tu seras marqué comme « À la recherche de coéquipiers », et les organisateurs t’aideront à trouver une équipe.",
             coderCan: "Bien sûr ! ConUHacks accueille aussi les débutants — électriciens, artistes, designers, étudiants en commerce… peu importe ton profil. Nos mentors t’accompagnent pour transformer ton idée en démo.",
             registrationFee: "Non — ConUHacks est entièrement gratuit, avec nourriture, cadeaux et ateliers inclus.",
@@ -461,7 +460,7 @@ export const fr = {
         }
     }, 
     Footer: {
-        stillHaveQuestion: "Avez-vous encore des questions ?",
+        stillHaveQuestion: "Avez-vous encore des questions?",
         reachOut: "Contactez-nous par courriel ou suivez-nous sur les réseaux sociaux @HackConcordia.",
         getInTouch: "Venez nous parler",
         rights: "Tous droits réservés.",

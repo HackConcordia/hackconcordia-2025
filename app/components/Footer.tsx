@@ -5,9 +5,13 @@ import { getFooterLinks, getCopyrightText } from '../data/footer.data';
 import { useTranslation } from '../i18n/TranslationContext';
 import en from "../locales/en";
 import fr from "../locales/fr";
+import { useEffect, useState } from 'react';
 
 export default function Footer() {
-    const year = new Date().getFullYear();
+    const [year, setYear] = useState(2025);
+    useEffect(() => {
+      setYear(new Date().getFullYear());
+    }, []);
     const { language } = useTranslation();
 
     // Get the footer links and copyright text based on current language
