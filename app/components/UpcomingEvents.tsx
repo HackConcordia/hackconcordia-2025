@@ -18,7 +18,7 @@ export default function UpcomingEvents() {
                 {t('UpcomingEvents.title')}
             </h2>
             <p className="text-gray-400 mb-4">
-                {t('UpcomingEvents.description')}
+                {t('UpcomingEvents.subtitle')}
             </p>
 
             <div className="group relative w-full overflow-hidden">
