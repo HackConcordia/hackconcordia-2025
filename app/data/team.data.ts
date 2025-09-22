@@ -1,9 +1,4 @@
-export const teamsSectionText = {
-    title: "Hive keepers",
-    description: "Meet the dedicated team behind Conuhacks, working tirelessly to bring you the best hackathon experience.",
-    legacyTeams: "Legacy Teams",
-
-}
+import { TranslationObject } from "./translationObject.data";
 
 export type TeamMember = {
     id: number;
@@ -19,12 +14,12 @@ export type TeamMember = {
     };
 };
 
-export const teamMembers: TeamMember[] = [
+export const getTeamMembers = (t: TranslationObject): TeamMember[] => [
     {
         id: 1,
         name: "Bertin Mihigo Sano",
-        position: "Co-President",
-        intro: "COEN student and co-president of HackConcordia.",
+        position: t.TeamMember.members[1].position,
+        intro: t.TeamMember.members[1].intro,
         imageSrc: "/imgs/team/Bertin.jpg",
         socials: {
             linkedin: "https://www.linkedin.com/in/sanobertin/",
@@ -34,8 +29,8 @@ export const teamMembers: TeamMember[] = [
     {
         id: 2,
         name: "Elizabeth Wong",
-        position: "Co-President",
-        intro: "Bachelor Computer Science Student with a Joint Major in Data Science student and co-president of HackConcordia.",
+        position: t.TeamMember.members[2].position,
+        intro: t.TeamMember.members[2].intro,
         imageSrc: "/imgs/team/liz.jpg",
         socials: {
             linkedin: "https://www.linkedin.com/in/e-lizabethwong/",
@@ -45,8 +40,8 @@ export const teamMembers: TeamMember[] = [
     {
         id: 3,
         name: "Mohammed Huzaifa",
-        position: "Vice President of Technology",
-        intro: "Master of Applied Computer Science student passionate about full-stack development and building impactful tech solutions.",
+        position: t.TeamMember.members[3].position,
+        intro: t.TeamMember.members[3].intro,
         imageSrc: "/imgs/team/mohammed_huzaifa.jpg",
         socials: {
             linkedin: "https://www.linkedin.com/in/huzaifa-anjum/",
@@ -58,8 +53,8 @@ export const teamMembers: TeamMember[] = [
     {
         id: 4,
         name: "Masoumeh Farokhpour (Maryam)",
-        position: "Director of Technology",
-        intro: "MACS student with a strong interest in innovative software development and collaborative tech projects.",
+        position: t.TeamMember.members[4].position,
+        intro: t.TeamMember.members[4].intro,
         imageSrc: "/imgs/team/masoumeh_farokhpour.jpg",
         socials: {
             linkedin: "https://linkedin.com/in/masoumeh-farokhpour",
@@ -70,8 +65,8 @@ export const teamMembers: TeamMember[] = [
     {
         id: 5,
         name: "Sabine Hleiss",
-        position: "Director of Sponsorship",
-        intro: "COEN student committed to fostering strong partnerships and sponsor relationships for impactful events.",
+        position: t.TeamMember.members[5].position,
+        intro: t.TeamMember.members[5].intro,
         imageSrc: "/imgs/team/sabine_hleiss.jpg",
         socials: {
             linkedin: "https://www.linkedin.com/in/sabinehleiss/"
@@ -80,8 +75,8 @@ export const teamMembers: TeamMember[] = [
     {
         id: 6,
         name: "Matthew Lucas Santiago",
-        position: "Director of Marketing",
-        intro: "SOEN student with a drive for impactful communication and outreach.",
+        position: t.TeamMember.members[6].position,
+        intro: t.TeamMember.members[6].intro,
         imageSrc: "/imgs/team/matthew_lucas_santiago.jpg",
         socials: {
             linkedin: "https://www.linkedin.com/in/matthew-lucas-santiago"
@@ -90,8 +85,8 @@ export const teamMembers: TeamMember[] = [
     {
         id: 7,
         name: "Elba Lucia Jimenez",
-        position: "Vice President of Marketing",
-        intro: "CompSci student dedicated to promoting events and creating vibrant community connections.",
+        position: t.TeamMember.members[7].position,
+        intro: t.TeamMember.members[7].intro,
         imageSrc: "/imgs/team/elba_lucia_jimenez.jpg",
         socials: {
             linkedin: "https://www.linkedin.com/in/elba-lucia-jimenez-296b0b152/"
@@ -100,8 +95,8 @@ export const teamMembers: TeamMember[] = [
     {
         id: 8,
         name: "Johnny Dang",
-        position: "Director of Technology",
-        intro: "SOEN student with an interest in cutting-edge technologies and efficient problem-solving.",
+        position: t.TeamMember.members[8].position,
+        intro: t.TeamMember.members[8].intro,
         imageSrc: "/imgs/team/johnny_dang.jpg",
         socials: {
             linkedin: "https://www.linkedin.com/in/johnnydang22/"
@@ -110,8 +105,8 @@ export const teamMembers: TeamMember[] = [
     {
         id: 9,
         name: "Christina Alexandrakis",
-        position: "Director of Marketing",
-        intro: "SOEN student passionate about creative marketing campaigns and community engagement.",
+        position: t.TeamMember.members[9].position,
+        intro: t.TeamMember.members[9].intro,
         imageSrc: "/imgs/team/christina_alexandrakis.jpg",
         socials: {
             linkedin: "https://www.linkedin.com/in/christina-alexandrakis-2590b2338"
@@ -120,18 +115,19 @@ export const teamMembers: TeamMember[] = [
     {
         id: 10,
         name: "Louay Helou",
-        position: "Director of Technology",
-        intro: "BCompSc student passionate about Coding.",
+        position: t.TeamMember.members[10].position,
+        intro: t.TeamMember.members[10].intro,
         imageSrc: "/imgs/team/Louay.jpg",
         socials: {
-            linkedin: "https://www.linkedin.com/in/christina-alexandrakis-2590b2338"
+            linkedin: "https://www.linkedin.com/in/louayhelou/",
+            github: "https://github.com/LH52",
         }
     },
     {
         id: 11,
         name: "Valeria Rosca",
-        position: "Director of Sponsorship",
-        intro: "SOEN student with a passion for connecting with partners and creating mutually beneficial collaborations.",
+        position: t.TeamMember.members[11].position,
+        intro: t.TeamMember.members[11].intro,
         imageSrc: "/imgs/team/valeria_rosca.jpg",
         socials: {
             linkedin: "https://www.linkedin.com/in/valeria-rosca"
@@ -140,8 +136,8 @@ export const teamMembers: TeamMember[] = [
     {
         id: 12,
         name: "Mohamad Addasi",
-        position: "Director of Technology",
-        intro: "SOEN student focused on scalable, efficient software engineering and emerging technologies.",
+        position: t.TeamMember.members[12].position,
+        intro: t.TeamMember.members[12].intro,
         imageSrc: "/imgs/team/mohamad_addasi.jpg",
         socials: {
             linkedin: "https://linkedin.com/in/mohamad-addasi",
@@ -151,8 +147,8 @@ export const teamMembers: TeamMember[] = [
     {
         id: 13,
         name: "Tiffany Andriamiharimanana",
-        position: "Director of Technology",
-        intro: "SOEN student passionate about software development and inclusive tech communities.",
+        position: t.TeamMember.members[13].position,
+        intro: t.TeamMember.members[13].intro,
         imageSrc: "/imgs/team/tiffany_andriamiharimanana.jpg",
         socials: {
             linkedin: "https://www.linkedin.com/in/tiffany-soa-andriamiharimanana/"
@@ -161,8 +157,8 @@ export const teamMembers: TeamMember[] = [
     {
         id: 14,
         name: "Mridani Kashyap (Dani)",
-        position: "Director of Marketing",
-        intro: "Marketing student passionate about creative storytelling and audience engagement.",
+        position: t.TeamMember.members[14].position,
+        intro: t.TeamMember.members[14].intro,
         imageSrc: "/imgs/team/mridani_kashyap.jpg",
         socials: {
             linkedin: "https://www.linkedin.com/in/mridani-kashyap"
@@ -171,8 +167,8 @@ export const teamMembers: TeamMember[] = [
     {
         id: 15,
         name: "Alisa Ignatina",
-        position: "Director of Events",
-        intro: "Data Science student passionate about designing engaging, memorable experiences for participants.",
+        position: t.TeamMember.members[15].position,
+        intro: t.TeamMember.members[15].intro,
         imageSrc: "/imgs/team/alisa_ignatina.jpg",
         socials: {
             linkedin: "https://www.linkedin.com/in/alisa-ignatina",
@@ -183,8 +179,8 @@ export const teamMembers: TeamMember[] = [
     {
         id: 16,
         name: "Huseyin Pilavci",
-        position: "Director of Logistics",
-        intro: "BCompSc student dedicated to seamless event planning and operational efficiency.",
+        position: t.TeamMember.members[16].position,
+        intro: t.TeamMember.members[16].intro,
         imageSrc: "/imgs/team/huseyin_pilavci.jpg",
         socials: {
             linkedin: "https://www.linkedin.com/in/huseyin-pilavci"
@@ -193,8 +189,8 @@ export const teamMembers: TeamMember[] = [
     {
         id: 17,
         name: "Janani Thiyagarajah",
-        position: "Director of Marketing",
-        intro: "Industrial Engineering student focused on impactful brand strategies and outreach.",
+        position: t.TeamMember.members[17].position,
+        intro: t.TeamMember.members[17].intro,
         imageSrc: "/imgs/team/janani_thiyagarajah.jpg",
         socials: {
             linkedin: "https://www.linkedin.com/in/janani-thiyagarajah"
@@ -203,8 +199,8 @@ export const teamMembers: TeamMember[] = [
     {
         id: 18,
         name: "Mijan Ullah",
-        position: "Director of Technology",
-        intro: "SOEN student focused on backend development.",
+        position: t.TeamMember.members[18].position,
+        intro: t.TeamMember.members[18].intro,
         imageSrc: "/imgs/team/mijan.jpg",
         socials: {
             linkedin: "https://www.linkedin.com/in/mijan-ullah-4b99b3298/",
@@ -214,8 +210,8 @@ export const teamMembers: TeamMember[] = [
     {
         id: 19,
         name: "Subaanky Krishnapillai",
-        position: "Director of Sponsorship",
-        intro: "SOEN student working to strengthen corporate relationships and ensure event success.",
+        position: t.TeamMember.members[19].position,
+        intro: t.TeamMember.members[19].intro,
         imageSrc: "/imgs/team/subaanky_krishnapillai.jpg",
         socials: {
             linkedin: "https://www.linkedin.com/in/subaankykrishnapillai",
@@ -225,8 +221,8 @@ export const teamMembers: TeamMember[] = [
     {
          id: 20,
         name: "Steven Lam",
-        position: "Director of Sponsorship",
-        intro: "BCompSc student with a passion for building partnerships and fostering community engagement.",
+        position: t.TeamMember.members[20].position,
+        intro: t.TeamMember.members[20].intro,
         imageSrc: "/imgs/team/Steven.jpeg",
         socials: {
             linkedin: "https://www.linkedin.com/in/steven-lam12/"
@@ -235,8 +231,8 @@ export const teamMembers: TeamMember[] = [
     {
         id: 21,
         name: "Marilyne Nguyen",
-        position: "Director of Technology",
-        intro: "BCompSc student passionate about new technologies and efficient problem-solving.",
+        position: t.TeamMember.members[21].position,
+        intro: t.TeamMember.members[21].intro,
         imageSrc: "/imgs/team/Marilyne.jpeg",
         socials: {
             linkedin: "https://www.linkedin.com/in/marilyne-nguyen1515/",
@@ -246,8 +242,8 @@ export const teamMembers: TeamMember[] = [
     {
         id: 22,
         name: "Hajar Blahmam",
-        position: "Director of Events",
-        intro: "BCompSc student",
+        position: t.TeamMember.members[22].position,
+        intro: t.TeamMember.members[22].intro,
         imageSrc: "/imgs/team/Hajar.jpg",
         socials: {
             linkedin: "https://www.linkedin.com/in/hblahmam721/"
@@ -256,8 +252,8 @@ export const teamMembers: TeamMember[] = [
     {
         id: 23,
         name: "Toby Fischer",
-        position: "Director of Logistics",
-        intro: "BCompSc student",
+        position: t.TeamMember.members[23].position,
+        intro: t.TeamMember.members[23].intro,
         imageSrc: "/imgs/team/Toby.jpg",
         socials: {
             linkedin: ""

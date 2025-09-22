@@ -5,11 +5,23 @@ import { FaLinkedin, FaGithub, FaInstagram, FaGlobe } from "react-icons/fa";
 import { FaArrowRight } from 'react-icons/fa';
 import Link from 'next/link';
 import Image from 'next/image';
-import { TeamMember, teamMembers, teamsSectionText } from '../data/team.data';
+import { TeamMember, getTeamMembers } from '../data/team.data';
+import { useTranslation } from "../i18n/TranslationContext";
+import en from "../locales/en";
+import fr from "../locales/fr";
 
 export default function TeamMemberSection() {
-    const [selected, setSelected] = useState<TeamMember>(teamMembers[0]);
+    // Get the section text based on current language
+    const { t, language } = useTranslation();
+    const currentTranslations = language === 'en' ? en : fr;  
+    const teamMembers = getTeamMembers(currentTranslations);
+
+    const [selectedId, setSelectedId] = useState<number>(1); // Store just the ID
     const [hovered, setHovered] = useState<TeamMember | null>(null);
+
+    // Find the selected member from current teamMembers (always up-to-date)
+    const selected = teamMembers.find(member => member.id === selectedId) || teamMembers[0];
+
 
     // Show hovered member if it's not the selected one
     const displayMember = hovered && hovered.id !== selected.id ? hovered : selected;
@@ -19,18 +31,18 @@ export default function TeamMemberSection() {
             <section className="relative z-10 w-screen md:h-screen flex flex-col justify-center max-w-7xl mx-auto p-4 md:p-0">
                 <div className="mb-4 md:mb-12">
                     <div className="flex w-full justify-between items-center">
-                        <h2 className="text-2xl md:text-4xl font-bold text-yellow-400">{teamsSectionText.title}</h2>
+                        <h2 className="text-2xl md:text-4xl font-bold text-yellow-400">{t('TeamMember.title')}</h2>
                         <Link
                             href="legacy-teams"
                             className="md:mt-4 px-4 md:px-6 py-2 bg-yellow-500 text-white rounded hover:bg-yellow-600 transition text-xs font-semibold"
                         >
-                            {teamsSectionText.legacyTeams}
+                            {t('TeamMember.legacyButton')}
                             <FaArrowRight className="inline-block ml-2 rotate-315" />
                         </Link>
 
                     </div>
                     <p className="mt-4 text-gray-400 text-sm">
-                        {teamsSectionText.description}
+                        {t('TeamMember.description')}
                     </p>
                 </div>
 
@@ -76,7 +88,7 @@ export default function TeamMemberSection() {
                                 return (
                                     <div
                                         key={member.id}
-                                        onClick={() => setSelected(member)}
+                                        onClick={() => setSelectedId(member.id)}
                                         onMouseEnter={() => setHovered(member)}
                                         onMouseLeave={() => setHovered(null)}
                                         className={`relative transition-all duration-300 ease-in-out

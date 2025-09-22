@@ -1,3 +1,5 @@
+import { TranslationObject } from "./translationObject.data";
+
 type Slide = {
     id: number;
     image: string;
@@ -17,22 +19,21 @@ type Slide = {
     devpost?: string;
 };
 
-export const slides: Slide[] = [
+export const getSlides = (t: TranslationObject): Slide[] => [
     // 1) ConUHacks overview
     {
         id: 1,
         image: '/imgs/conuhacks/conu.jpg',
-        title: 'ConUHacks - The hackathon experience',
-        subtitle:
-            'A student-run, 24-hour hackathon that champions learning-by-building. ConUHacks brings together developers, designers, and curious minds to prototype, learn from mentors, and launch ideas — growing each year in scale, community, and ambition.',
+        title: t.ConuHacks.slides[1].title,
+        subtitle: t.ConuHacks.slides[1].subtitle,
         stats: undefined,
         tag: 'Hackathon',
         others: {
-            Date: '24th January 2026',
-            Location: 'Concordia University, Montreal',
-            Duration: '24 hours',
-            Theme: 'Innovation and Collaboration',
-            Registration: 'Opening soon',
+            Date: t.ConuHacks.slides[1].others?.date ?? '',
+            Location: t.ConuHacks.slides[1].others?.location ?? '',
+            Duration: t.ConuHacks.slides[1].others?.duration ?? '',
+            Theme: t.ConuHacks.slides[1].others?.theme ?? '',
+            Registration: t.ConuHacks.slides[1].others?.registration ?? '',
             Website: 'https://conuhacks.io',
         },
     },
@@ -41,16 +42,16 @@ export const slides: Slide[] = [
     {
         id: 2,
         image: '/imgs/conuhacks/conu9.jpg',
-        title: 'ConUHacks IX - The Next Frontier (2025)',
+        title: t.ConuHacks.slides[10].title,
         subtitle:
-            'The ninth edition (Feb 1–2, 2025) attracted ~800 participants—the largest yet—and boasted 143 project submissions, heightened mentorship, and dedicated hands-on hardware spaces to elevate innovation.',
-        stats: { Participants: '850+', Projects: '143+', Mentors: '100+', Sponsors: '50+' },
+            t.ConuHacks.slides[10].subtitle,
+        stats: { [t.ConuHacks.participants]: '850+', [t.ConuHacks.projects]: '143+', [t.ConuHacks.mentors]: '100+', [t.ConuHacks.sponsors]: '50+' },
         winners: [
             {
                 position: '1',
                 team: 'PrezPal',
                 project: 'PrezPal',
-                description: 'A voice controlled custom slides editor, powered by generative AI. Create your presentation deck hands-free, with our in-house slides editor.',
+                description: t.ConuHacks.slides[10].winners?.[0]?.description || '',
                 devpostlink: 'https://devpost.com/software/prezpal-36079w',
                 youtube: "https://youtu.be/yamqvno6T1g"
             },
@@ -58,7 +59,7 @@ export const slides: Slide[] = [
                 position: '2',
                 team: 'LeetWrite',
                 project: 'LeetWrite',
-                description: 'LeetCode, but you explain code instead of writing code.',
+                description: t.ConuHacks.slides[10].winners?.[1]?.description || '',
                 devpostlink: 'https://devpost.com/software/leetwrite',
                 youtube: "https://youtu.be/CKVScKptAec"
             },
@@ -66,12 +67,12 @@ export const slides: Slide[] = [
                 position: '3',
                 team: '404 Lost & Found',
                 project: '404 Lost & Found',
-                description: 'Ever lost something precious and wished you had a digital detective on your side? Meet 404 Lost&Found – your AI-powered personal item finder and data visualization tool.',
+                description: t.ConuHacks.slides[10].winners?.[2]?.description || '',
                 devpostlink: 'https://devpost.com/software/404-lost-found',
                 youtube: "https://youtu.be/BHq4QkTe6PE"
             }
         ],
-        tag: 'Ninth Edition',
+        tag: t.ConuHacks.slides[10].tag || 'Ninth Edition',
         devpost: "https://conuhacks-ix.devpost.com/"
     },
 
@@ -79,16 +80,15 @@ export const slides: Slide[] = [
     {
         id: 3,
         image: '/imgs/conuhacks/conu8.jpg',
-        title: 'ConUHacks VIII - Uncharted Territories (2024)',
-        subtitle:
-            '2024 celebrated exploration into areas like civic tech, sustainability, and hardware-first prototypes, with stronger community buzz and interdisciplinary collaboration.',
-        stats: { Participants: '800+', Projects: '400+', Mentors: '90+', Sponsors: '40+' },
+        title: t.ConuHacks.slides[9].title,
+        subtitle: t.ConuHacks.slides[9].subtitle,
+        stats: { [t.ConuHacks.participants]: '800+', [t.ConuHacks.projects]: '400+', [t.ConuHacks.mentors]: '90+', [t.ConuHacks.sponsors]: '40+' },
         winners: [
             {
                 position: '1',
                 team: 'Spartan',
                 project: 'Spartan',
-                description: 'Do you have trouble waking up in the morning? Do you press snooze one too many times?If so, this productivity tool is for you, it will eliminate all laziness and lost time in your morning routine.',
+                description: t.ConuHacks.slides[9].winners?.[0]?.description || '',
                 devpostlink: 'https://devpost.com/software/spartan',
                 youtube: "https://youtu.be/nfhIwxx5KrE"
             },
@@ -96,7 +96,7 @@ export const slides: Slide[] = [
                 position: '2',
                 team: 'MotiSpectra',
                 project: 'MotiSpectra',
-                description: 'Measure Emotion, Power Connections.',
+                description: t.ConuHacks.slides[9].winners?.[1]?.description || '',
                 devpostlink: 'https://devpost.com/software/motispectra',
                 youtube: "https://youtu.be/yr4MhT2WnGA"
             },
@@ -104,68 +104,66 @@ export const slides: Slide[] = [
                 position: '3',
                 team: 'Avada Kedavra',
                 project: 'Avada Kedavra',
-                description: 'Avada Kedavra! Join our hand-controlled wizard in his fight against endless enemies!',
+                description: t.ConuHacks.slides[9].winners?.[2]?.description || '',
                 devpostlink: 'https://devpost.com/software/avada-kedavra',
             }
         ],
-        tag: 'Eighth Edition',
+        tag: t.ConuHacks.slides[9].tag || 'Eighth Edition',
     },
 
     // ConUHacks VII – Breaking Boundaries (2023)
     {
         id: 4,
         image: '/imgs/conuhacks/conu7.jpg',
-        title: 'ConUHacks VII - Breaking Boundaries (2023)',
-        subtitle:
-            'After virtual editions during the pandemic, ConUHacks returned in-person Jan 21–22 2023 with 523 participants on Devpost but ~800 attendees overall—reigniting energy through workshops, mentors, tours, and connection.',
-        stats: { Participants: '750+', Projects: '350+', Mentors: '80+', Sponsors: '35+' },
+        title: t.ConuHacks.slides[8].title,
+        subtitle: t.ConuHacks.slides[8].subtitle,
+        stats: { [t.ConuHacks.participants]: '750+', [t.ConuHacks.projects]: '350+', [t.ConuHacks.mentors]: '80+', [t.ConuHacks.sponsors]: '35+' },
         winners: [
             {
                 position: '1',
                 team: 'NearbyNow',
                 project: 'NearbyNow',
-                description: 'NearbyNow is a service that detects storefronts and provides useful information such as opening hours, website, menu, reviews, etc. using a live camera feed.',
+                description: t.ConuHacks.slides[8].winners?.[0]?.description || '',
                 devpostlink: 'https://devpost.com/software/nearbynow',
             },
             {
                 position: '2',
                 team: 'Jane',
                 project: 'Jane',
-                description: 'Revolutionize your job interview prep with our app. Simulate real-life behavioral & technical interviews in natural conversation for personalized practice. Land your dream job.',
+                description: t.ConuHacks.slides[8].winners?.[1]?.description || '',
                 devpostlink: 'https://devpost.com/software/jane-9jka4i',
             },
             {
                 position: '3',
                 team: 'MeLody',
                 project: 'MeLody',
-                description: 'An elegant AI that generates a chord progression/bassline based on a user-input melody.',
+                description: t.ConuHacks.slides[8].winners?.[2]?.description || '',
                 devpostlink: 'https://devpost.com/software/mlody',
             }
         ],
-        tag: 'Seventh Edition',
+        tag: t.ConuHacks.slides[8].tag || 'Seventh Edition',
     },
 
     // ConUHacks VI – Innovation Unleashed (2022)
     {
         id: 5,
         image: '/imgs/conuhacks/conu6.jpg',
-        title: 'ConUHacks VI - Innovation Unleashed (2022)',
-        subtitle:
-            '2022 leaned into rapid prototyping and experimentation: teams embraced ML/AI and maker-hardware, reinforcing the hackathon’s reputation as a space for shipping bold MVPs quickly.',
-        stats: { Participants: '750+', Projects: '300+', Mentors: '70+', Sponsors: '30+' },
+        title: t.ConuHacks.slides[7].title,
+        subtitle: t.ConuHacks.slides[7].subtitle,
+        stats: { [t.ConuHacks.participants]: '750+', [t.ConuHacks.projects]: '300+', [t.ConuHacks.mentors]: '70+', [t.ConuHacks.sponsors]: '30+' },
         winners: [
             {
                 position: '1',
                 team: 'RevYou',
                 project: 'RevYou',
-                description: 'Are you tired of written online reviews? Introducing RevYou, an application that allows you to not only post entertaining videos attached to locations, but also post video reviews.',
+                description: t.ConuHacks.slides[7].winners?.[0]?.description || '',
                 devpostlink: 'https://devpost.com/software/revyou',
             },
             {
                 position: '2',
                 team: "Four O' Four",
                 project: "Four O' Four",
-                description: 'Access the web via SMS - even without internet!',
+                description: t.ConuHacks.slides[7].winners?.[1]?.description || '',
                 devpostlink: 'https://devpost.com/software/four-o-four',
                 youtube: "https://youtu.be/UrS1tbuyW8Y"
             },
@@ -173,62 +171,60 @@ export const slides: Slide[] = [
                 position: '3',
                 team: 'Furnishare',
                 project: 'Furnishare',
-                description: 'Decreasing furniture, clothing, and electronic waste one item at a time.',
+                description: t.ConuHacks.slides[7].winners?.[2]?.description || '',
                 devpostlink: 'https://devpost.com/software/furnishare',
                 youtube: "https://youtu.be/nycW-l9_gDg"
             }
         ],
-        tag: 'Sixth Edition',
+        tag: t.ConuHacks.slides[7].tag || 'Sixth Edition',
     },
 
     // ConUHacks V – A New Era (2020)
     {
         id: 6,
         image: '/imgs/conuhacks/conu5.jpg',
-        title: 'ConUHacks V - A New Era (2020)',
-        subtitle:
-            '2020 drew 700+ participants, massive application numbers, and 49 sponsors, signaling a shift toward startup thinking—helping teams envision projects beyond the 24-hour sprint.',
-        stats: { Participants: '700+', Projects: '250+', Mentors: '60+', Sponsors: '49+' },
+        title: t.ConuHacks.slides[6].title,
+        subtitle: t.ConuHacks.slides[6].subtitle,
+        stats: { [t.ConuHacks.participants]: '700+', [t.ConuHacks.projects]: '250+', [t.ConuHacks.mentors]: '60+', [t.ConuHacks.sponsors]: '49+' },
         winners: [
             {
                 position: '1',
                 team: 'BookLens',
                 project: 'BookLens',
-                description: 'The new gen LeapFrog: An interactive learning tool designed for reading texts aloud and translation.',
+                description: t.ConuHacks.slides[6].winners?.[0]?.description || '',
                 devpostlink: 'https://devpost.com/software/booklens',
             },
             {
                 position: '2',
                 team: "LIFEtrainer",
                 project: "LIFEtrainer",
-                description: 'Home of the Heart Hero! This is an online education platform for a modern work environment leveraging IoT, hardware, AI and gamification.',
+                description: t.ConuHacks.slides[6].winners?.[1]?.description || '',
                 devpostlink: 'https://devpost.com/software/lifetrainer'
             },
             {
                 position: '3',
                 team: 'TowAR',
                 project: 'TowAR',
-                description: 'AR tower defence game using the ARcore framework and Unity Engine.',
+                description: t.ConuHacks.slides[6].winners?.[2]?.description || '',
                 devpostlink: 'https://devpost.com/software/bit-wizards-7u1sl4'
             }
         ],
-        tag: 'Fifth Edition',
+        tag: t.ConuHacks.slides[6].tag || 'Fifth Edition',
     },
 
     // ConUHacks IV – The Future Awaits (2019)
     {
         id: 7,
         image: '/imgs/conuhacks/conu4.jpg',
-        title: 'ConUHacks IV - The Future Awaits (2019)',
-        subtitle:
-            'The 2019 edition welcomed ~700 students and over $20K–$25K in prizes. Projects tackled real-world needs—including accessibility-focused hacks—marking maturation in mentoring and project impact.',
-        stats: { Participants: '700+', Projects: '180+', Mentors: '45+', Sponsors: '18+' },
+        title: t.ConuHacks.slides[5].title,
+        subtitle: t.ConuHacks.slides[5].subtitle,
+        stats: { [t.ConuHacks.participants]: '700+', [t.ConuHacks.projects]: '180+', [t.ConuHacks.mentors]: '45+', [t.ConuHacks.sponsors]: '18+' },
         winners: [
             {
                 position: '1',
                 team: 'HEAR',
                 project: 'HEAR',
-                description: 'Generating Subtitles for Life.',
+                description: t.ConuHacks.slides[5].winners?.[0]?.description || '',
                 devpostlink: 'https://devpost.com/software/hear-generating-subtitles-for-life',
                 youtube: "https://youtu.be/vE7q2J6y1Fg"
             },
@@ -236,41 +232,40 @@ export const slides: Slide[] = [
                 position: '2',
                 team: "Sustainable IOT Fridge",
                 project: "Sustainable IOT Fridge",
-                description: 'Keep track of your food items and receive recipe recommendations to reduce food waste based on expiration dates.',
+                description: t.ConuHacks.slides[5].winners?.[1]?.description || '',
                 devpostlink: 'https://devpost.com/software/virtual-fridge-yt7gc4'
             },
             {
                 position: '3',
                 team: 'SmarTrash',
                 project: 'SmarTrash',
-                description: 'What if your waste bin sorts it out for you?',
+                description: t.ConuHacks.slides[5].winners?.[2]?.description || '',
                 devpostlink: 'https://devpost.com/software/smartrash'
             }
         ],
-        tag: 'Fourth Edition',
+        tag: t.ConuHacks.slides[5].tag || 'Fourth Edition',
     },
 
     // ConUHacks III – The Evolution Continues (2018)
     {
         id: 8,
         image: '/imgs/conuhacks/conu3.jpg',
-        title: 'ConUHacks III - The Evolution Continues (2018)',
-        subtitle:
-            '2018 brought higher participation, increased sponsor involvement, and a growing prize pool—marking a refinement phase where polished presentations and improved mentorship became more common.',
-        stats: { Participants: '600+', Projects: '150+', Mentors: '40+', Sponsors: '15+' },
+        title: t.ConuHacks.slides[4].title,
+        subtitle: t.ConuHacks.slides[4].subtitle,
+        stats: { [t.ConuHacks.participants]: '600+', [t.ConuHacks.projects]: '150+', [t.ConuHacks.mentors]: '40+', [t.ConuHacks.sponsors]: '15+' },
         winners: [
             {
                 position: '1',
                 team: 'Alice',
                 project: 'Alice',
-                description: 'Alice aims to empower elderly people that currently suffer dementia and wish to utilize online banking.',
+                description: t.ConuHacks.slides[4].winners?.[0]?.description || 'Alice aims to empower elderly people that currently suffer dementia and wish to utilize online banking.',
                 devpostlink: 'https://devpost.com/software/alice-8kyna4',
             },
             {
                 position: '2',
                 team: "Senior Sensor",
                 project: "Senior Sensor",
-                description: 'Letting you know your loved ones are safe, wherever you are.',
+                description: t.ConuHacks.slides[4].winners?.[1]?.description || 'Letting you know your loved ones are safe, wherever you are.',
                 devpostlink: 'https://devpost.com/software/elderly-notifications',
                 youtube: "https://youtu.be/E5A0DZAkQT0"
             },
@@ -278,61 +273,59 @@ export const slides: Slide[] = [
                 position: '3',
                 team: 'Chaperone',
                 project: 'Chaperone',
-                description: 'A web app dashboard helping elders with their reminders on the Amazon Echo.',
+                description: t.ConuHacks.slides[4].winners?.[2]?.description || 'A web app dashboard helping elders with their reminders on the Amazon Echo.',
                 devpostlink: 'https://devpost.com/software/chaperone'
             }
         ],
-        tag: 'Third Edition',
+        tag: t.ConuHacks.slides[4].tag || 'Third Edition',
     },
 
     // ConUHacks II – The Next Chapter (2017)
     {
         id: 9,
         image: '/imgs/conuhacks/conu2.jpg',
-        title: 'ConUHacks II - The Next Chapter (2017)',
-        subtitle:
-            'With ConUHacks II, the community expanded—more teams, broader institutional support, and a growing diversity of participants signaled the hackathon finding its stride.',
-        stats: { Participants: '400+', Projects: '120+', Mentors: '35+', Sponsors: '14+' },
+        title: t.ConuHacks.slides[3].title,
+        subtitle: t.ConuHacks.slides[3].subtitle,
+        stats: { [t.ConuHacks.participants]: '400+', [t.ConuHacks.projects]: '120+', [t.ConuHacks.mentors]: '35+', [t.ConuHacks.sponsors]: '14+' },
         winners: [
             {
                 position: '1',
                 team: 'InstantPi',
                 project: 'InstantPi',
-                description: 'Watchdog - Concordia University Hackathon.',
+                description: t.ConuHacks.slides[3].winners?.[0]?.description || '',
                 devpostlink: 'https://devpost.com/software/conuhacks',
             },
             {
                 position: '2',
                 team: "Foody",
                 project: "Foody",
-                description: 'Foody food finder <3',
+                description: t.ConuHacks.slides[3].winners?.[1]?.description || '',
                 devpostlink: 'https://devpost.com/software/foody-lfbvrn'
             },
             {
                 position: '3',
                 team: 'L2Talk',
                 project: 'L2Talk',
-                description: 'Improve your speech with this app.',
+                description: t.ConuHacks.slides[3].winners?.[2]?.description || '',
                 devpostlink: 'https://devpost.com/software/l2talk'
             }
         ],
-        tag: 'Second Edition',
+        tag: t.ConuHacks.slides[3].tag || 'Second Edition',
     },
 
     // ConUHacks I – A Journey Begins (2016)
     {
         id: 10,
         image: '/imgs/conuhacks/conu1.jpg',
-        title: 'ConUHacks I - A Journey Begins (2016)',
-        subtitle:
-            'The inaugural MLH-affiliated ConUHacks in Jan 2016 brought 250+ students together for a 24-hour buildathon—planting the community roots and traditions that fueled the hackathon’s growth over the next decade.',
-        stats: { Participants: '250+', Projects: '100+', Mentors: '30+', Sponsors: '10+' },
+        title: t.ConuHacks.slides[2].title,
+        subtitle: t.ConuHacks.slides[2].subtitle,
+        stats: { [t.ConuHacks.participants]: '250+', [t.ConuHacks.projects]: '100+', [t.ConuHacks.mentors]: '30+', [t.ConuHacks.sponsors]: '10+' },
         winners: [
             {
                 position: '1',
                 team: 'DOUBLEVISION',
                 project: 'DOUBLEVISION',
-                description: 'Accompaniyig your videos with smart context so you can further research topics mentioned in your video.',
+                description: t.ConuHacks.slides[2].winners?.[0]?.description || '',
                 devpostlink: 'https://devpost.com/software/doublevision',
                 youtube: "https://youtu.be/kKdxBxN9THQ"
             },
@@ -340,17 +333,17 @@ export const slides: Slide[] = [
                 position: '2',
                 team: "SignSpeaks",
                 project: "SignSpeaks",
-                description: 'A wireless and cost effective solution using an Android app and a Myo for ASL to speech translation (bilingual).',
+                description: t.ConuHacks.slides[2].winners?.[1]?.description || '',
                 devpostlink: 'https://devpost.com/software/signspeaks'
             },
             {
                 position: '3',
                 team: 'ProViralPictures.net',
                 project: 'ProViralPictures.net',
-                description: 'Instantly add filters to your Facebook profile picture to support charities and local events.',
+                description: t.ConuHacks.slides[2].winners?.[2]?.description || '',
                 devpostlink: 'https://devpost.com/software/proviralpictures-net'
             }
         ],
-        tag: 'First Edition',
+        tag: t.ConuHacks.slides[2].tag || 'First Edition',
     },
 ];

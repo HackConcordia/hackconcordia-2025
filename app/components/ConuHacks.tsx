@@ -6,16 +6,23 @@ import clsx from 'clsx';
 import { CircleChevronLeftIcon, CircleChevronRightIcon } from 'lucide-react';
 import { motion, AnimatePresence } from "framer-motion";
 import { FaYoutube } from 'react-icons/fa';
-import { slides } from '../data/conuhacks.data';
+import { getSlides } from '../data/conuhacks.data';
+import { useTranslation } from '../i18n/TranslationContext';
+import en from "../locales/en";
+import fr from "../locales/fr";
 
 export default function ConuHacks() {
     const [active, setActive] = useState(0);
     const [direction, setDirection] = useState(0); // -1 for left, 1 for right
-
-    const activeSlide = slides[active];
     const thumbRefs = useRef<(HTMLDivElement | null)[]>([]);
 
     const hasMounted = useRef(false);
+
+    const { t, language } = useTranslation();
+    const currentLanguage = language === 'en' ? en : fr;
+    const slides = getSlides(currentLanguage);
+
+    const activeSlide = slides[active];
 
     useEffect(() => {
         if (!hasMounted.current) {
@@ -128,7 +135,7 @@ export default function ConuHacks() {
                     )}
                     {activeSlide.winners && activeSlide.winners.length > 0 && (
                         <div className="mt-4">
-                            <h2 className="text-lg font-semibold">Winners:</h2>
+                            <h2 className="text-lg font-semibold">{t('ConuHacks.winners')} :</h2>
                             <ul className="list-none space-y-1">
                                 {activeSlide.winners.map((winner, index) => (
                                     <li key={index} className="text-xs md:text-sm mt-1 mb-5">
@@ -159,7 +166,7 @@ export default function ConuHacks() {
                                             >
                                                 <FaYoutube className="w-4 h-4 text-red-500" />
                                                 <span className="hover:text-red-400 font-semibold">
-                                                    Watch demo
+                                                    {t('ConuHacks.watch')}
                                                 </span>
                                             </a>
                                         )}
