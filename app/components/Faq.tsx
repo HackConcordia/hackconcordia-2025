@@ -36,7 +36,7 @@ export default function FAQ() {
         {/* FAQ List */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {faqs.map((faq, idx) => (
-            <div key={idx} className="flex items-start gap-4">
+            <div key={idx} className="flex items-start gap-4 w-full border-2 border-white/10 text-white text-xs p-4 rounded-lg backdrop-blur-xs bg-white/5 shadow-md whitespace-normal break-words">
               <div className="p-2 md:p-3 rounded-full bg-white text-black shrink-0">
                 {faq.icon}
               </div>
