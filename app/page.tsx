@@ -48,7 +48,7 @@ export default function HomePage() {
     <>
       <Section id={'home'}><AboutUs /></Section>
       <Section id={'conuhacks'}><ConuHacks /></Section>
-      <Section id={'events'}><UpcomingEvents /></Section>
+      {/* <Section id={'events'}><UpcomingEvents /></Section> */}
       <Section id={'team'}><TeamMemberSection /></Section>
       <Section id={'faq'}><FAQ /></Section>
       <br />
