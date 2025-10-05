@@ -48,7 +48,7 @@ export default function Header() {
             });
         }, observerOptions);
 
-        const sections = document.querySelectorAll('section');
+        const sections = document.querySelectorAll('[id="home"], [id="conuhacks"], [id="team"], [id="faq"], [id="events"]');
         sections.forEach((section) => observer.observe(section));
 
         return () => sections.forEach((section) => observer.unobserve(section));
