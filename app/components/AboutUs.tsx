@@ -3,7 +3,7 @@
 import Lottie from "lottie-react";
 import scrollAnimation from "../../public/animations/scroll_down_animation.json";
 import Image from "next/image";
-import { ChangeEvent, FormEvent, useRef, useState } from "react";
+import { ChangeEvent, FormEvent, useState } from "react";
 import { customToast } from "./CustomToast";
 import { FaPaperPlane } from "react-icons/fa";
 import { motion, Variants } from "framer-motion";
@@ -41,7 +41,6 @@ const slideInRight: Variants = {
 };
 
 export default function AboutUs() {
-  const scrollRef = useRef<HTMLDivElement>(null);
   const [formData, setFormData] = useState<FormData>({ email: "" });
   const [pending, setPending] = useState(false);
   const [checked, setChecked] = useState(false);

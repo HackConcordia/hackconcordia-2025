@@ -48,7 +48,7 @@ export default function Header() {
             });
         }, observerOptions);
 
-        const sections = document.querySelectorAll('section');
+        const sections = document.querySelectorAll('[id="home"], [id="conuhacks"], [id="team"], [id="faq"], [id="events"]');
         sections.forEach((section) => observer.observe(section));
 
         return () => sections.forEach((section) => observer.unobserve(section));
@@ -117,6 +117,26 @@ export default function Header() {
 
                 {/* Social Icons */}
                 <div className="flex space-x-2 md:space-x-4 items-center">
+                    {/* Language Switcher */}
+                    <div>
+                        {
+                            language === Language.en ?
+                                <button 
+                                    onClick={() => setLanguage(Language.fr)} 
+                                    className="hover:text-yellow-400 text-sm font-medium transition-colors"
+                                    style={{ cursor: "pointer" }}
+                                >
+                                    FR
+                                </button> :
+                                <button 
+                                    onClick={() => setLanguage(Language.en)} 
+                                    className="hover:text-yellow-400 text-sm font-medium transition-colors"
+                                    style={{ cursor: "pointer" }}
+                                >
+                                    EN
+                                </button>
+                        }
+                    </div>
                     
                     {socialLinks.map(({ href, icon: Icon }) => (
                         <a
@@ -129,27 +149,6 @@ export default function Header() {
                             <Icon size={18} />
                         </a>
                     ))}
-                    
-                     {/* Language Switcher */}
-                     <div>
-                        {
-                            language === Language.en ?
-                                <button 
-                                    onClick={() => setLanguage(Language.fr)} 
-                                    className="hover:text-yellow-400 text-lg font-medium transition-colors"
-                                    style={{ cursor: "pointer" }}
-                                >
-                                    FR
-                                </button> :
-                                <button 
-                                    onClick={() => setLanguage(Language.en)} 
-                                    className="hover:text-yellow-400 text-lg font-medium transition-colors"
-                                    style={{ cursor: "pointer" }}
-                                >
-                                    EN
-                                </button>
-                        }
-                    </div>
                 </div>
             </div>
         </header>
