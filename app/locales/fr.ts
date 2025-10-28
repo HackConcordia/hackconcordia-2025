@@ -297,11 +297,6 @@ export const fr = {
               position: "Directeur de la Technologie",
               intro: "Étudiant en SOEN concentré sur l'ingénierie logicielle évolutive, efficace et les technologies émergentes.",
             },
-            13: {
-              name: "Tiffany Andriamiharimanana",
-              position: "Directrice de la Technologie",
-              intro: "Étudiante en SOEN passionnée par le développement logiciel et les communautés technologiques inclusives.",
-            },
             14: {
               name: "Mridani Kashyap (Dani)",
               position: "Directrice Marketing",

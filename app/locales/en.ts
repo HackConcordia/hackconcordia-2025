@@ -297,11 +297,6 @@ export const en = {
                 position: "Director of Technology",
                 intro: "SOEN student focused on scalable, efficient software engineering and emerging technologies."
             },
-            13: {
-                name: "Tiffany Andriamiharimanana",
-                position: "Director of Technology",
-                intro: "SOEN student passionate about software development and inclusive tech communities."
-            },
             14: {
                 name: "Mridani Kashyap (Dani)",
                 position: "Director of Marketing",

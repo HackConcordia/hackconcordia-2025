@@ -145,16 +145,6 @@ export const getTeamMembers = (t: TranslationObject): TeamMember[] => [
         }
     },
     {
-        id: 13,
-        name: "Tiffany Andriamiharimanana",
-        position: t.TeamMember.members[13].position,
-        intro: t.TeamMember.members[13].intro,
-        imageSrc: "/imgs/team/tiffany_andriamiharimanana.jpg",
-        socials: {
-            linkedin: "https://www.linkedin.com/in/tiffany-soa-andriamiharimanana/"
-        }
-    },
-    {
         id: 14,
         name: "Mridani Kashyap (Dani)",
         position: t.TeamMember.members[14].position,
