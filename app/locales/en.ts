@@ -357,7 +357,7 @@ export const en = {
             fullDay: "Full Day",
             evening: "Evening",
             eveningTime: "Evening (5 PM – 7 PM)", 
-            conuhacksDays: "8 AM (24th Jan) - 11 AM (25th Jan)"
+            conuhacksDays: "8 AM (24th Jan) - 6 PM (25th Jan)"
         },
         months: {
             January: "January",
