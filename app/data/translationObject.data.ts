@@ -91,6 +91,8 @@ export type TranslationObject = {
             hall: string;
             reggies: string;
             terrace: string;
+            threeB: string;
+            threeB_address: string;
             tbd: string;
         }; 
         events: {

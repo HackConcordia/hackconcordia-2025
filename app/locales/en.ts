@@ -361,7 +361,7 @@ export const en = {
         time: {
             fullDay: "Full Day",
             evening: "Evening",
-            eveningTime: "Evening (5:30 PM–7:30 PM)", 
+            eveningTime: "Evening (5 PM – 7 PM)", 
             conuhacksDays: "8 AM (24th Jan) - 11 AM (25th Jan)"
         },
         months: {
@@ -384,6 +384,8 @@ export const en = {
             hall: "H-1011 (Hall Building, SGW Campus)",
             reggies: "Reggie's Bar (SGW Campus)",
             terrace: "Reggie's Bar / Terrace (SGW Campus)", 
+            threeB: "3 Brasseurs - Crescent",
+            threeB_address: "1356 Saint-Catherine St W, Montreal, Quebec H3G 1P6",
             tbd: "To be Determined"
         },
         events: {

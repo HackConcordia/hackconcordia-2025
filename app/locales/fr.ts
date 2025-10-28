@@ -360,7 +360,7 @@ export const fr = {
         time: {
             fullDay: "Journée Entière",
             evening: "Soirée",
-            eveningTime: "Soirée (5:30 PM–7:30 PM)", 
+            eveningTime: "Soirée (5 PM – 7 PM)", 
             conuhacksDays: "8AM (24 janv.) – 11AM (25 janv.)"
         },
         months: {
@@ -382,7 +382,9 @@ export const fr = {
             jmsb_address: "1455 boulevard de Maisonneuve, Montréal",
             hall: "H-1011 (Pavillon Hall, campus SGW)",
             reggies: "Reggie's Bar (Campus SGW)",
-            terrace: "Reggie's Bar / Terrasse (Campus SGW)", 
+            terrace: "Reggie's Bar / Terrasse (Campus SGW)",
+            threeB: "3 Brasseurs - Crescent",
+            threeB_address: "1356 Saint-Catherine St W, Montreal, Quebec H3G 1P6",
             tbd: "À déterminer"
         },
         events: {
