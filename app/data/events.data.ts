@@ -29,7 +29,7 @@ export const getUpcomingEvents = (t: TranslationObject): Event[] => [
     },
     {
         id: 1,
-        date: '15',
+        date: '29',
         month: t.UpcomingEvents.months.November,
         year: '2025',
         title: 'HackDécouverte',
