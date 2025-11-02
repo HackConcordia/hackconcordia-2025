@@ -16,7 +16,7 @@ export type Event = {
 export const getUpcomingEvents = (t: TranslationObject): Event[] => [
     // FALL 2025
     {
-        id: 3,
+        id: 1,
         date: '07',
         month: t.UpcomingEvents.months.November,
         year: '2025',
@@ -28,7 +28,7 @@ export const getUpcomingEvents = (t: TranslationObject): Event[] => [
         highlight: true,
     },
     {
-        id: 1,
+        id: 2,
         date: '29',
         month: t.UpcomingEvents.months.November,
         year: '2025',
@@ -62,7 +62,18 @@ export const getUpcomingEvents = (t: TranslationObject): Event[] => [
     // },
     // // WINTER 2026
     {
-        id: 6,
+        id: 3,
+        date: '19',
+        month: t.UpcomingEvents.months.January,
+        year: '2026',
+        title: t.UpcomingEvents.events[11].title,
+        type: t.UpcomingEvents.events[11].type,
+        time: t.UpcomingEvents.time.hackWeekDays,
+        location: t.UpcomingEvents.address.jmsb,
+        address: t.UpcomingEvents.address.jmsb_address,
+    },
+    {
+        id: 4,
         date: '24',
         month: t.UpcomingEvents.months.January,
         year: '2026',

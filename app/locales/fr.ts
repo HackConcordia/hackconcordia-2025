@@ -356,6 +356,7 @@ export const fr = {
             fullDay: "Journée Entière",
             evening: "Soirée",
             eveningTime: "Soirée (5 PM – 7 PM)", 
+            hackWeekDays: "Du 19 au 23 janvier (toute la journée)",
             conuhacksDays: "8 AM (24 janv.) – 6 PM (25 janv.)"
         },
         months: {
@@ -423,6 +424,10 @@ export const fr = {
             }, 
             10: {
                 title: "Atelier 2 (Hiver)",
+                type: "Atelier"
+            }, 
+            11: {
+                title: "HackWeek",
                 type: "Atelier"
             }
         }

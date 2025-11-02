@@ -69,6 +69,7 @@ export type TranslationObject = {
             fullDay: string;
             evening: string;
             eveningTime: string;
+            hackWeekDays: string;
             conuhacksDays: string;
         };
         months:{

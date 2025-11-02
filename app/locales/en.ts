@@ -356,7 +356,8 @@ export const en = {
         time: {
             fullDay: "Full Day",
             evening: "Evening",
-            eveningTime: "Evening (5 PM – 7 PM)", 
+            eveningTime: "Evening (5 PM – 7 PM)",
+            hackWeekDays: "19th Jan - 23th Jan (All day)",
             conuhacksDays: "8 AM (24th Jan) - 6 PM (25th Jan)"
         },
         months: {
@@ -425,7 +426,11 @@ export const en = {
             10:{
                 title: "Workshop 2 (Winter)",
                 type: "Workshop"
-            }
+            },
+            11:{
+                title: "HackWeek",
+                type: "Workshops"
+            },
         }
     },
     Faq: {
