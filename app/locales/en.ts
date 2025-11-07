@@ -295,7 +295,7 @@ export const en = {
             12: {
                 name: "Mohamad Addasi",
                 position: "Director of Technology",
-                intro: "SOEN student driven by emerging tech and data science. Gained hands-on experience at Intact and launched a mini-startup: <a href='https://manifast-ai.com' target='_blank' rel='noopener noreferrer' class='text-yellow-400 hover:text-yellow-300 underline'>ManiFast AI</a>."
+                intro: "SOEN student driven by emerging tech and data science. Gained hands-on experience at Intact and launched a mini-startup: <a href='https://www.manifast-ai.io/' target='_blank' rel='noopener noreferrer' class='text-yellow-400 hover:text-yellow-300 underline'>ManiFast AI</a>."
             },
             14: {
                 name: "Mridani Kashyap (Dani)",
