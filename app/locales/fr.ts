@@ -290,12 +290,12 @@ export const fr = {
             11: {
               name: "Valeria Rosca",
               position: "Directrice des Partenariats",
-              intro: "Étudiante en SOEN passionnée par la connexion avec les partenaires et la création de collaborations mutuellement bénéfiques.",
+              intro: "Étudiante en SOEN passionnée par la création d'opportunités collaboratives.",
             },
             12: {
               name: "Mohamad Addasi",
               position: "Directeur de la Technologie",
-              intro: "Étudiant en SOEN concentré sur l'ingénierie logicielle évolutive, efficace et les technologies émergentes.",
+              intro: "Étudiant en génie logiciel passionné par les technologies émergentes et la science des données, avec une expérience chez Intact et fondateur de sa mini-startup:<a href='https://manifast-ai.com' target='_blank' rel='noopener noreferrer' class='text-yellow-400 hover:text-yellow-300 underline'> ManiFast AI</a>.",
             },
             14: {
               name: "Mridani Kashyap (Dani)",

@@ -76,7 +76,7 @@ export default function TeamMemberSection() {
                         </div>
 
 
-                        <p className="text-gray-300">{displayMember.intro}</p>
+                        <p className="text-gray-300" dangerouslySetInnerHTML={{ __html: displayMember.intro }}></p>
                     </div>
 
                     {/* Right Panel: Scrollable Team Avatars */}
