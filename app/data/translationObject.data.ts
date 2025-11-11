@@ -90,6 +90,8 @@ export type TranslationObject = {
             jmsb: string;
             jmsb_address: string;
             hall: string;
+            hallBuilding: string;
+            floor: string;
             reggies: string;
             terrace: string;
             threeB: string;

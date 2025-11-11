@@ -307,12 +307,6 @@ export const en = {
                 position: "Director of Events",
                 intro: "Data Science student passionate about designing engaging, memorable experiences for participants."
             },
-            16: {
-                name: "Huseyin Pilavci",
-                position: "Director of Logistics",
-                intro: "BCompSc student dedicated to seamless event planning and operational efficiency.",
-
-            },
             17: {
                 name: "Janani Thiyagarajah",
                 position: "Director of Marketing",
@@ -378,6 +372,8 @@ export const en = {
             jmsb: "Concordia University (John Molson MB)",
             jmsb_address: "1455 Boulevard de Maisonneuve, Montreal",
             hall: "H-1011 (Hall Building, SGW Campus)",
+            hallBuilding: "Hall Building, SGW Campus",
+            floor: "H-1032 (10th floor)",
             reggies: "Reggie's Bar (SGW Campus)",
             terrace: "Reggie's Bar / Terrace (SGW Campus)", 
             threeB: "3 Brasseurs - Crescent",
@@ -403,7 +399,7 @@ export const en = {
                 type: "Workshop"
             },
             5: {
-                title: "Workshop 2",
+                title: "Resume 101",
                 type: "Workshop"
             },
             // WINTER 2026

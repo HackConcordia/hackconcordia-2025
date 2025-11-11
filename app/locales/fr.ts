@@ -307,11 +307,6 @@ export const fr = {
               position: "Directrice des Événements",
               intro: "Étudiante en science des données passionnée par la conception d'expériences engageantes et mémorables pour les participants.",
             },
-            16: {
-              name: "Huseyin Pilavci",
-              position: "Directeur de la Logistique",
-              intro: "Étudiant en informatique passionné par l'optimisation des opérations logistiques et la gestion des événements.",
-            },
             17: {
               name: "Janani Thiyagarajah",
               position: "Directrice Marketing",
@@ -376,7 +371,9 @@ export const fr = {
             concordia_address: "Université Concordia, Montréal",
             jmsb: "Université Concordia (John Molson MB)",
             jmsb_address: "1455 boulevard de Maisonneuve, Montréal",
-            hall: "H-1011 (Pavillon Hall, campus SGW)",
+            hall: "H-1011 (Pavillon Hall, Campus SGW)",
+            hallBuilding: "Pavillon Hall, Campus SGW",
+            floor: "H-1032 (10e étage)",
             reggies: "Reggie's Bar (Campus SGW)",
             terrace: "Reggie's Bar / Terrasse (Campus SGW)",
             threeB: "3 Brasseurs - Crescent",
@@ -402,7 +399,7 @@ export const fr = {
                 type: "Atelier"
             },
             5: {
-                title: "Atelier 2",
+                title: "CV 101",
                 type: "Atelier"
             },
             // HIVER 2026

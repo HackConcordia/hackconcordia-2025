@@ -167,16 +167,6 @@ export const getTeamMembers = (t: TranslationObject): TeamMember[] => [
         }
     },
     {
-        id: 16,
-        name: "Huseyin Pilavci",
-        position: t.TeamMember.members[16].position,
-        intro: t.TeamMember.members[16].intro,
-        imageSrc: "/imgs/team/huseyin_pilavci.jpg",
-        socials: {
-            linkedin: "https://www.linkedin.com/in/huseyin-pilavci"
-        }
-    },
-    {
         id: 17,
         name: "Janani Thiyagarajah",
         position: t.TeamMember.members[17].position,
