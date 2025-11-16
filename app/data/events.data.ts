@@ -11,6 +11,7 @@ export type Event = {
     location: string;
     address: string;
     highlight?: boolean;
+    link?: string;
 };
 
 export const getUpcomingEvents = (t: TranslationObject): Event[] => [
@@ -25,6 +26,8 @@ export const getUpcomingEvents = (t: TranslationObject): Event[] => [
         time: t.UpcomingEvents.time.evening + " (4PM - 7PM)",
         location: t.UpcomingEvents.address.floor,
         address: t.UpcomingEvents.address.hallBuilding,
+        highlight: true,
+        link: "https://docs.google.com/forms/d/e/1FAIpQLSfnnr7LN7wHafxCDVz_6W5TiBhbtWlpEGRQwEEmi-V7TrzVwQ/viewform",
     },
     {
         id: 2,
@@ -36,6 +39,7 @@ export const getUpcomingEvents = (t: TranslationObject): Event[] => [
         time: t.UpcomingEvents.time.fullDay,
         location: t.UpcomingEvents.address.concordia,
         address: t.UpcomingEvents.address.sgw,
+        link: "https://www.hackdecouverte.io/",
     },
     // {
     //     id: 4,
@@ -70,6 +74,7 @@ export const getUpcomingEvents = (t: TranslationObject): Event[] => [
         time: t.UpcomingEvents.time.conuhacksDays,
         location: t.UpcomingEvents.address.jmsb,
         address: t.UpcomingEvents.address.jmsb_address,
+        link: "http://conuhacks.io/",
     },
     // {
     //     id: 7,

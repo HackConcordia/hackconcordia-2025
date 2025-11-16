@@ -19,6 +19,7 @@ export default function BeeCursor() {
             <Image
                 src="/bee-cursor.gif"
                 alt="Bee Cursor"
+                unoptimized
                 style={{
                     position: 'fixed',
                     left: mousePos.x + 10,
