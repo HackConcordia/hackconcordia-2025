@@ -283,9 +283,9 @@ export const fr = {
               intro: "Étudiante en SOEN passionnée par les campagnes marketing créatives et l'engagement communautaire.",
             },
             10: {
-              name: "Louay Helou",
-              position: "Directeur de la Technologie",
-              intro: "Étudiant en informatique passionné par le codage.",
+              name: "Talar Mustafa",
+              position: "Vice-présidente de la Logistique",
+              intro: "Étudiant en SOEN, transformant de grandes idées de hackathon en réalité et veillant au bon déroulement des événements (salles réservées, fournitures prêtes et oui, ta commande de Poulet Rouge est en route. Arrête de demander!).",
             },
             11: {
               name: "Valeria Rosca",

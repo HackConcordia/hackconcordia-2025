@@ -114,13 +114,12 @@ export const getTeamMembers = (t: TranslationObject): TeamMember[] => [
     },
     {
         id: 10,
-        name: "Louay Helou",
+        name: "Talar Mustafa",
         position: t.TeamMember.members[10].position,
         intro: t.TeamMember.members[10].intro,
-        imageSrc: "/imgs/team/Louay.jpg",
+        imageSrc: "/imgs/team/Talar.jpg",
         socials: {
-            linkedin: "https://www.linkedin.com/in/louayhelou/",
-            github: "https://github.com/LH52",
+            linkedin: "https://www.linkedin.com/in/talar-mustafa/"
         }
     },
     {
@@ -238,5 +237,5 @@ export const getTeamMembers = (t: TranslationObject): TeamMember[] => [
         socials: {
             linkedin: ""
         }
-    }
+    },
 ];

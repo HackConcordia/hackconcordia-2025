@@ -283,9 +283,9 @@ export const en = {
                 intro: "SOEN student passionate about creative marketing campaigns and community engagement."
             },
             10: {
-                name: "Louay Helou",
-                position: "Director of Technology",
-                intro: "BCompSc student passionate about Coding."
+                name: "Talar Mustafa",
+                position: "Vice President of Logistics",
+                intro: "SOEN student, turning big hackathon ideas into reality and ensuring events run smoothly (rooms booked, supplies ready, and yes, your Poulet Rouge order is on the way. Stop asking!)"
             },
             11: {
                 name: "Valeria Rosca",
@@ -341,7 +341,7 @@ export const en = {
                 name: "Toby Fischer",
                 position: "Director of Logistics",
                 intro: "BCompSc student"
-            }
+            },
         }
     },
     UpcomingEvents: {
