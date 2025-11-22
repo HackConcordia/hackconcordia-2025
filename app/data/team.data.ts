@@ -17,17 +17,6 @@ export type TeamMember = {
 export const getTeamMembers = (t: TranslationObject): TeamMember[] => [
     {
         id: 1,
-        name: "Bertin Mihigo Sano",
-        position: t.TeamMember.members[1].position,
-        intro: t.TeamMember.members[1].intro,
-        imageSrc: "/imgs/team/Bertin.jpg",
-        socials: {
-            linkedin: "https://www.linkedin.com/in/sanobertin/",
-            github: "https://github.com/sanobertin",
-        }
-    },
-    {
-        id: 2,
         name: "Elizabeth Wong",
         position: t.TeamMember.members[2].position,
         intro: t.TeamMember.members[2].intro,
@@ -35,6 +24,17 @@ export const getTeamMembers = (t: TranslationObject): TeamMember[] => [
         socials: {
             linkedin: "https://www.linkedin.com/in/e-lizabethwong/",
             github: "https://github.com/e-lizabethwong",
+        }
+    },
+    {
+        id: 2,
+        name: "Bertin Mihigo Sano",
+        position: t.TeamMember.members[1].position,
+        intro: t.TeamMember.members[1].intro,
+        imageSrc: "/imgs/team/Bertin.jpg",
+        socials: {
+            linkedin: "https://www.linkedin.com/in/sanobertin/",
+            github: "https://github.com/sanobertin",
         }
     },
     {
