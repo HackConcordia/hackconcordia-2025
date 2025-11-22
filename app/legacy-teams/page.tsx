@@ -15,6 +15,7 @@ type Subteam = {
 
 type TimelinePanel = {
   number: number;
+  displayNumber?: string;
   year: number;
   bgImage: string;
   subteams: Subteam[];
@@ -23,6 +24,7 @@ type TimelinePanel = {
 const timelineData: TimelinePanel[] = [
   {
     number: 9,
+    displayNumber: 'IX',
     year: 2025,
     bgImage: '/imgs/legacy-teams/conu9.jpg',
     subteams: [
@@ -38,6 +40,7 @@ const timelineData: TimelinePanel[] = [
   },
   {
     number: 8,
+    displayNumber: 'VIII',
     year: 2024,
     bgImage: '/imgs/legacy-teams/conu8.jpg',
     subteams: [
@@ -53,6 +56,7 @@ const timelineData: TimelinePanel[] = [
   },
   {
     number: 7,
+    displayNumber: 'VII',
     year: 2023,
     bgImage: '/imgs/legacy-teams/conu7.jpg',
     subteams: [
@@ -68,6 +72,7 @@ const timelineData: TimelinePanel[] = [
   },
   {
     number: 4,
+    displayNumber: 'IV',
     year: 2019,
     bgImage: '/imgs/legacy-teams/conu4.jpg',
     subteams: [
@@ -83,6 +88,7 @@ const timelineData: TimelinePanel[] = [
   },
   {
     number: 2,
+    displayNumber: 'II',
     year: 2017,
     bgImage: '/imgs/legacy-teams/conu2.jpg',
     subteams: [
@@ -106,26 +112,36 @@ const Timeline: React.FC = () => {
   };
 
   return (
-    <div className="w-full overflow-x-auto overflow-y-hidden">
+    <div className="w-full overflow-y-auto md:overflow-x-auto md:overflow-y-hidden">
       <section
         id="timeline"
-        className="flex h-[calc(87vh-60px)] w-fit md:h-[calc(87vh-5px)] snap-x snap-mandatory"
+        className="
+      flex 
+      flex-col md:flex-row 
+      h-auto md:h-[calc(87vh-5px)]
+      w-full md:w-fit 
+      snap-y md:snap-x 
+      snap-mandatory pb-20 md:pb-2
+    "
       >
-        {timelineData.map(({ number, year, bgImage, subteams }) => {
+        {timelineData.map(({ number, displayNumber, year, bgImage }) => {
           const isActive = activeCard === number;
 
           return (
             <div
               key={number}
               onClick={() => handleCardClick(number)}
-              className={`group relative flex-shrink-0 min-w-[300px] h-full text-white transition-all duration-500 ease-in-out snap-start
-                ${isActive ? 'w-full md:w-[70%]' : 'w-[30%]'} 
-                md:hover:w-[70%]`}
+              className={`group relative flex-shrink-0 
+  w-full h-[30vh] md:min-w-[300px] md:h-full
+  text-white transition-all duration-500 ease-in-out snap-start
+  ${isActive ? 'md:w-[70%]' : 'md:w-[30%]'} 
+  md:hover:w-[70%]`}
+
             >
               {/* Background Image */}
               <Image
                 src={bgImage}
-                alt={`Conuhacks ${number} Background`}
+                alt={`Conuhacks ${displayNumber} Team Photo`}
                 fill
                 className={`absolute inset-0 object-cover transition duration-500 ease-in-out filter 
                   ${isActive ? 'grayscale-0' : 'grayscale'} 
@@ -142,10 +158,10 @@ const Timeline: React.FC = () => {
                   ${isActive ? 'opacity-100' : 'opacity-0'} 
                   md:group-hover:opacity-100`}
               >
-                <div className="w-full p-6 overflow-y-auto max-h-full text-left backdrop-blur-sm">
+                <div className="w-full p-2 md:p-4 overflow-y-auto max-h-full text-left backdrop-blur-sm">
                   <div className="flex items-center justify-center gap-2">
-                    <h2 className="text-lg md:text-2xl font-bold uppercase text-yellow-400">
-                      Conuhacks {number}
+                    <h2 className="text-sm md:text-2xl font-bold uppercase text-yellow-400">
+                      Conuhacks {displayNumber}
                     </h2>
                     <p className="text-sm md:text-lg font-semibold">
                       ({year - 1} - {year})

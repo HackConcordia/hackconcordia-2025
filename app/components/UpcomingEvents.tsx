@@ -1,6 +1,5 @@
 'use client';
 
-import Link from 'next/link';
 import { getUpcomingEvents, Event } from '../data/events.data';
 import { useTranslation } from '../i18n/TranslationContext';
 import en from "../locales/en";
@@ -11,9 +10,18 @@ export default function UpcomingEvents() {
 
     // Get the upcoming events based on current language
     const currentTranslations = language === 'en' ? en : fr;
-    const events: Event[] = getUpcomingEvents(currentTranslations);
+    const events: Event[] = getUpcomingEvents(currentTranslations).filter(event => {
+        // Filter out past events (simple date comparison)
+        const eventDate = new Date(`${event.month} ${event.date}, ${event.year}`);
+        const today = new Date();
+        return eventDate >= today;
+    });
+    if (events.length > 0) { 
+        events[0].highlight = true;
+    } 
 
     const eventCard = (event: Event) => (<div
+        key={event.id}
         className={`rounded-md p-8 w-[330px] border-2 shrink-0 transition-colors duration-300 relative overflow-hidden
 ${event.highlight
                 ? 'backdrop-blur-xs text-white border-yellow-500 pulse-scale'

@@ -117,7 +117,7 @@ export const getTeamMembers = (t: TranslationObject): TeamMember[] => [
         name: "Talar Mustafa",
         position: t.TeamMember.members[10].position,
         intro: t.TeamMember.members[10].intro,
-        imageSrc: "/imgs/team/Talar.jpg",
+        imageSrc: "/imgs/team/talar.jpg",
         socials: {
             linkedin: "https://www.linkedin.com/in/talar-mustafa/"
         }
