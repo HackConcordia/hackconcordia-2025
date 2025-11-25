@@ -240,7 +240,7 @@ export const fr = {
             1: {
               name: "Bertin Mihigo Sano",
               position: "Co-Président",
-              intro: "Étudiant en COEN et co-président de HackConcordia.",
+              intro: "Étudiant au baccalauréat en génie informatique et co-président de HackConcordia.",
             },
             2: {
               name: "Elizabeth Wong",

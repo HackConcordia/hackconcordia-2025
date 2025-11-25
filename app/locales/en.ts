@@ -240,7 +240,7 @@ export const en = {
             1: {
             name: "Bertin Mihigo Sano",
             position: "Co-President",
-            intro: "COEN student and co-president of HackConcordia."
+            intro: "B.Eng, Computer Engineering Student and Co-President of HackConcordia."
             },
             2: {
             name: "Elizabeth Wong",    
