@@ -87,9 +87,9 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <p className="font-semibold text-white">Email</p>
-                  <a href="mailto:technology.hackconcordia@ecaconcordia.ca">
+                  <a href="mailto:team.hackconcordia@ecaconcordia.ca">
                     <p className="text-sm text-gray-500">
-                      technology.hackconcordia@ecaconcordia.ca
+                      team.hackconcordia@ecaconcordia.ca
                     </p>
                   </a>
                 </div>

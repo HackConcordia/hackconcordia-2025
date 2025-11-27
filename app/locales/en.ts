@@ -243,7 +243,7 @@ export const en = {
             intro: "B.Eng, Computer Engineering Student and Co-President of HackConcordia."
             },
             2: {
-            name: "Elizabeth Wong",    
+            name: "Elizabeth Wong",
             position: "Co-President",
             intro: "Bachelor Computer Science Student with a Joint Major in Data Science and co-president of HackConcordia."
             },
