@@ -37,7 +37,7 @@ export const en = {
             location: "Concordia University, Montreal",
             duration: "24 hours",
             theme: "Innovation and Collaboration",
-            registration: "Opening soon"
+            registration: "Opening Now"
             }
         },
         2: {
