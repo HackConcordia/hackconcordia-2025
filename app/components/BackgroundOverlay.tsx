@@ -4,8 +4,6 @@ import { useEffect, useRef } from 'react';
 
 export default function BackgroundOverlay() {
     const rafRef = useRef<number | null>(null);
-    const lastUpdateRef = useRef<number>(0);
-    const throttleDelay = 16; // ~60fps
 
     useEffect(() => {
         const overlay = document.getElementById('overlay');
@@ -21,7 +19,6 @@ export default function BackgroundOverlay() {
         };
 
         const handleMouseMove = (e: MouseEvent) => {
-            const now = Date.now();
             mouseX = e.clientX;
             mouseY = e.clientY;
 

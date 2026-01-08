@@ -50,7 +50,7 @@ export default function AboutUs() {
   const [pending, setPending] = useState(false);
   const [checked, setChecked] = useState(false);
   const [isEmailValid, setIsEmailValid] = useState(false);
-  const [scrollAnimation, setScrollAnimation] = useState<any>(null);
+  const [scrollAnimation, setScrollAnimation] = useState<Record<string, unknown> | null>(null);
   const { language } = useTranslation();
 
   // Lazy load animation data

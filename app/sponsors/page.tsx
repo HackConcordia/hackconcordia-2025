@@ -1,5 +1,7 @@
 'use client';
 
+import Image from 'next/image';
+
 export default function SponsorsPage() {
     return (
         <section className="relative z-10 md:h-[calc(100vh-140px)] max-w-7xl mx-auto mb-20 md:mb-0 px-4 sm:px-6 lg:px-8 overflow-y-auto text-white">
@@ -14,7 +16,7 @@ export default function SponsorsPage() {
                 <div className="text-left">
                     <h2 className="text-xl font-semibold mb-4">Presenting Sponsor</h2>
                     <a href="https://example.com" target="_blank" rel="noopener noreferrer">
-                        <img src="/images/sponsors/presenting-sponsor-logo.png" alt="Presenting Sponsor" className="mx-auto h-24" />
+                        <Image src="/images/sponsors/presenting-sponsor-logo.png" alt="Presenting Sponsor" width={200} height={96} className="mx-auto h-24" />
                     </a>
                     <p className="mt-2 text-sm">Proudly supporting HackConcordia as our Presenting Sponsor.</p>
                 </div>
@@ -26,7 +28,7 @@ export default function SponsorsPage() {
                         {/* Repeat for each Gold Sponsor */}
                         <div>
                             <a href="https://example.com" target="_blank" rel="noopener noreferrer">
-                                <img src="/images/sponsors/gold-sponsor-logo.png" alt="Gold Sponsor" className="mx-auto h-20" />
+                                <Image src="/images/sponsors/gold-sponsor-logo.png" alt="Gold Sponsor" width={160} height={80} className="mx-auto h-20" />
                             </a>
                         </div>
                     </div>
@@ -39,7 +41,7 @@ export default function SponsorsPage() {
                         {/* Repeat for each Silver Sponsor */}
                         <div>
                             <a href="https://example.com" target="_blank" rel="noopener noreferrer">
-                                <img src="/images/sponsors/silver-sponsor-logo.png" alt="Silver Sponsor" className="mx-auto h-20" />
+                                <Image src="/images/sponsors/silver-sponsor-logo.png" alt="Silver Sponsor" width={160} height={80} className="mx-auto h-20" />
                             </a>
                         </div>
                     </div>
@@ -52,7 +54,7 @@ export default function SponsorsPage() {
                         {/* Repeat for each Bronze Sponsor */}
                         <div>
                             <a href="https://example.com" target="_blank" rel="noopener noreferrer">
-                                <img src="/images/sponsors/bronze-sponsor-logo.png" alt="Bronze Sponsor" className="mx-auto h-20" />
+                                <Image src="/images/sponsors/bronze-sponsor-logo.png" alt="Bronze Sponsor" width={160} height={80} className="mx-auto h-20" />
                             </a>
                         </div>
                     </div>
@@ -65,7 +67,7 @@ export default function SponsorsPage() {
                         {/* Repeat for each Community Partner */}
                         <div>
                             <a href="https://example.com" target="_blank" rel="noopener noreferrer">
-                                <img src="/images/sponsors/community-partner-logo.png" alt="Community Partner" className="mx-auto h-20" />
+                                <Image src="/images/sponsors/community-partner-logo.png" alt="Community Partner" width={160} height={80} className="mx-auto h-20" />
                             </a>
                         </div>
                     </div>
