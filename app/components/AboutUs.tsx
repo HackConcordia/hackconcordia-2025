@@ -2,7 +2,7 @@
 
 import dynamic from "next/dynamic";
 import Image from "next/image";
-import { ChangeEvent, FormEvent, useState, useEffect } from "react";
+import { ChangeEvent, FormEvent, useState } from "react";
 import { customToast } from "./CustomToast";
 import { FaPaperPlane } from "react-icons/fa";
 import { motion, Variants } from "framer-motion";
@@ -50,15 +50,7 @@ export default function AboutUs() {
   const [pending, setPending] = useState(false);
   const [checked, setChecked] = useState(false);
   const [isEmailValid, setIsEmailValid] = useState(false);
-  const [scrollAnimation, setScrollAnimation] = useState<Record<string, unknown> | null>(null);
   const { language } = useTranslation();
-
-  // Lazy load animation data
-  useEffect(() => {
-    import("../../public/animations/scroll_down_animation.json").then((mod) => {
-      setScrollAnimation(mod.default);
-    });
-  }, []);
 
   // Get the current translation object based on language
   const currentTranslations = language === 'en' ? en : fr;
@@ -236,18 +228,16 @@ export default function AboutUs() {
             </div>
 
             {/* Scroll Down Lottie */}
-            {scrollAnimation && (
-              <motion.div
-                className="absolute hidden md:flex flex-col text-white items-center space-y-2 z-10"
-                style={{ marginBottom: "-600px" }}
-                initial={{ opacity: 0, y: 40 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.5, duration: 1 }}
-              >
-                <Lottie animationData={scrollAnimation} className="w-15 md:w-16" />
-                <span className="text-xs">{formText.scrollDownText}</span>
-              </motion.div>
-            )}
+            <motion.div
+              className="absolute hidden md:flex flex-col text-white items-center space-y-2 z-10"
+              style={{ marginBottom: "-600px" }}
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5, duration: 1 }}
+            >
+              <Lottie path="/animations/scroll_down_animation.json" className="w-15 md:w-16" />
+              <span className="text-xs">{formText.scrollDownText}</span>
+            </motion.div>
           </motion.div>
         </div>
       </div>

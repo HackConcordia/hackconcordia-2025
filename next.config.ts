@@ -18,9 +18,6 @@ const nextConfig: NextConfig = {
   // Optimize production builds
   swcMinify: true,
   
-  // Enable static page generation optimizations
-  output: 'standalone',
-  
   // Optimize fonts
   optimizeFonts: true,
   
