@@ -1,17 +1,18 @@
 'use client';
 
+import { memo, useMemo } from 'react';
 import Image from 'next/image';
 import { getFAQs } from '../data/faqs.data';
 import { useTranslation } from "../i18n/TranslationContext";
 import en from "../locales/en";
 import fr from "../locales/fr";
 
-export default function FAQ() {
+function FAQ() {
   const { t, language } = useTranslation();
 
   // Get the questions and answers based on current language
-  const currentTranslations = language === 'en' ? en : fr;  
-  const faqs = getFAQs(currentTranslations);
+  const currentTranslations = useMemo(() => language === 'en' ? en : fr, [language]);
+  const faqs = useMemo(() => getFAQs(currentTranslations), [currentTranslations]);
 
   return (
     <section className="relative z-10 w-full text-white py-20 px-4 sm:px-6 lg:px-8">
@@ -36,7 +37,7 @@ export default function FAQ() {
         {/* FAQ List */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {faqs.map((faq, idx) => (
-            <div key={idx} className="flex items-start gap-4 w-full border-2 border-white/10 text-white text-xs p-4 rounded-lg backdrop-blur-xs bg-white/5 shadow-md whitespace-normal break-words">
+            <div key={idx} className="flex items-start gap-4 w-full border-2 border-white/10 text-white text-xs p-4 rounded-lg bg-black/40 shadow-md whitespace-normal break-words" style={{ contain: 'layout style paint' }}>
               <div className="p-2 md:p-3 rounded-full bg-white text-black shrink-0">
                 {faq.icon}
               </div>
@@ -49,7 +50,7 @@ export default function FAQ() {
         </div>
 
         {/* Footer */}
-        <div className="mt-10 border border-zinc-700 rounded-lg p-3 md:p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 backdrop-blur-xs">
+        <div className="mt-10 border border-zinc-700 rounded-lg p-3 md:p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 bg-black/40">
           <div className="flex flex-row items-center gap-4">
             <Image src="/imgs/HC_logo.png" alt="HackConcordia" style={{ objectFit: 'cover' }} width={40} height={40} />
             <div>
@@ -71,3 +72,5 @@ export default function FAQ() {
 
   );
 }
+
+export default memo(FAQ);

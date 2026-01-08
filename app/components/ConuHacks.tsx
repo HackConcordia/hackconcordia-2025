@@ -98,6 +98,7 @@ export default function ConuHacks() {
                             style={{ objectFit: "cover" }}
                             className="md:rounded-sm"
                             priority={active === 0}
+                            quality={95}
                             sizes="(max-width: 768px) 100vw, 1280px"
                         />
                         {/* Overlay */}
@@ -243,6 +244,7 @@ export default function ConuHacks() {
                                 style={{ objectFit: 'cover' }}
                                 className="rounded-md h-[160px]"
                                 loading="lazy"
+                                quality={85}
                                 sizes="160px"
                             />
                             <div className="text-white mt-2">

@@ -71,19 +71,19 @@ export default function BackgroundOverlay() {
     }), []);
 
     return (
-        <div className="fixed inset-0 z-0 w-screen h-screen overflow-hidden">
+        <div className="fixed inset-0 z-0 w-screen h-screen overflow-hidden" style={{ contain: 'layout style paint', willChange: 'contents' }}>
             {/* Color Background */}
             <div
                 className="absolute inset-0 bg-cover bg-center"
-                style={backgroundStyle}
+                style={{ ...backgroundStyle, willChange: 'auto' }}
             />
 
             {/* Grayscale Overlay */}
             <div
                 ref={overlayRef}
                 id="overlay"
-                className="absolute inset-0 bg-cover bg-center pointer-events-none transition-all duration-100"
-                style={overlayStyle}
+                className="absolute inset-0 bg-cover bg-center pointer-events-none"
+                style={{ ...overlayStyle, willChange: 'mask-image, -webkit-mask-image' }}
             />
         </div>
     );

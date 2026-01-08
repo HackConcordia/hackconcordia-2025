@@ -112,6 +112,7 @@ export default function TeamMemberSection() {
                                             width={500}
                                             height={500}
                                             loading="lazy"
+                                            quality={90}
                                             sizes="(max-width: 768px) 150px, 250px"
                                         />
                                     </div>

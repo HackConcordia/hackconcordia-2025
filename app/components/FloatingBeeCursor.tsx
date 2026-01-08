@@ -92,7 +92,8 @@ export default function BeeCursor() {
                 zIndex: 9999,
                 userSelect: 'none',
                 transform: 'translate3d(-9999px, -9999px, 0) translate(-50%, -50%) rotate(-45deg)',
-                willChange: 'transform'
+                willChange: 'transform',
+                contain: 'layout style paint'
             }}
             width={100}
             height={100}

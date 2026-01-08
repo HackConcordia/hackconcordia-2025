@@ -54,6 +54,7 @@ export default function HomePage() {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.1 }}
+      style={{ contain: 'layout style paint' }}
     >
       {children}
     </motion.div>

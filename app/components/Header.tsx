@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useMemo, useCallback, useRef } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
 import { useTranslation } from "../i18n/TranslationContext";
 import { Language } from "../i18n/type";
@@ -21,12 +21,22 @@ export default function Header() {
     const pathname = usePathname();
     const router = useRouter();
     const { setLanguage, language } = useTranslation();
+    const observerRef = useRef<IntersectionObserver | null>(null);
+    const lastUpdateRef = useRef(0);
 
     // Get navigation links based on current language
-    const currentLanguage = language === 'en' ? en : fr;
-    const navLinks = getNavLinks(currentLanguage);
+    const currentLanguage = useMemo(() => language === 'en' ? en : fr, [language]);
+    const navLinks = useMemo(() => getNavLinks(currentLanguage), [currentLanguage]);
 
     const hideLinks = pathname?.startsWith('/verify-email');
+
+    // Throttled section update
+    const updateActiveSection = useCallback((sectionId: string) => {
+        const now = Date.now();
+        if (now - lastUpdateRef.current < 100) return; // Throttle to 100ms
+        lastUpdateRef.current = now;
+        setActiveSection(sectionId);
+    }, []);
 
     // Observe sections for active link highlighting
     useEffect(() => {
@@ -38,21 +48,32 @@ export default function Header() {
             return;
         }
 
-        const observerOptions = { root: null, rootMargin: '0px', threshold: 0.6 };
+        // Cleanup previous observer
+        if (observerRef.current) {
+            observerRef.current.disconnect();
+        }
+
+        const observerOptions = { root: null, rootMargin: '-20% 0px -60% 0px', threshold: 0 };
         const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
                     const sectionId = entry.target.getAttribute('id');
-                    if (sectionId) setActiveSection(sectionId);
+                    if (sectionId) updateActiveSection(sectionId);
                 }
             });
         }, observerOptions);
 
+        observerRef.current = observer;
+
         const sections = document.querySelectorAll('[id="home"], [id="conuhacks"], [id="team"], [id="faq"], [id="events"]');
         sections.forEach((section) => observer.observe(section));
 
-        return () => sections.forEach((section) => observer.unobserve(section));
-    }, [pathname]);
+        return () => {
+            if (observerRef.current) {
+                observerRef.current.disconnect();
+            }
+        };
+    }, [pathname, updateActiveSection]);
 
     // Update URL hash on scroll
     useEffect(() => {
@@ -86,7 +107,7 @@ export default function Header() {
     };
 
     return (
-        <header className="w-full fixed top-0 z-50 text-white backdrop-blur-xs bg-black/60 px-4 md:px-0">
+        <header className="w-full fixed top-0 z-50 text-white bg-black/80 px-4 md:px-0" style={{ willChange: 'transform' }}>
             <div className="max-w-7xl mx-auto flex justify-between items-center py-2">
                 {/* Logo */}
                 <div className="flex items-center space-x-2" style={{ marginLeft: '-2px' }}>
