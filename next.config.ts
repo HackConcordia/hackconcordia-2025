@@ -41,8 +41,8 @@ const nextConfig: NextConfig = {
     ],
     // Enable server components optimization
     serverComponentsExternalPackages: ['mongoose'],
-    // Optimize CSS
-    optimizeCss: true,
+    // Optimize CSS (disabled - requires critters package)
+    // optimizeCss: true, // Uncomment after installing: npm install critters
     // Enable partial prerendering (if available)
     ppr: false, // Set to true when stable
   },

@@ -47,7 +47,7 @@ export default function ConuHacks() {
     const goToNext = useCallback(() => {
         setDirection(1);
         setActive((prev) => (prev + 1) % slides.length);
-    }, []);
+    }, [slides.length]);
 
     // Animation variants for sliding
     const variants = {
