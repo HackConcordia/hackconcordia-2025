@@ -4,6 +4,10 @@ import { sendErrorResponse, sendSuccessResponse } from "@/lib/response";
 import { NextRequest } from "next/server";
 import VerifiedUserEmail from "@/lib/models/verifiedEmails";
 
+// Disable caching for API routes
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 export const GET = async (req: NextRequest) => {
   const token = req.nextUrl.searchParams.get("token");
   console.log("Token", token);

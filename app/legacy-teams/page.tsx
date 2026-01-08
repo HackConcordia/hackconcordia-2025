@@ -146,6 +146,8 @@ const Timeline: React.FC = () => {
                 className={`absolute inset-0 object-cover transition duration-500 ease-in-out filter 
                   ${isActive ? 'grayscale-0' : 'grayscale'} 
                   md:group-hover:grayscale-0`}
+                loading="lazy"
+                sizes="(max-width: 768px) 100vw, 300px"
               />
 
 

@@ -1,32 +1,54 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 
 export default function BackgroundOverlay() {
+    const rafRef = useRef<number | null>(null);
+    const lastUpdateRef = useRef<number>(0);
+    const throttleDelay = 16; // ~60fps
+
     useEffect(() => {
         const overlay = document.getElementById('overlay');
+        let mouseX = 0;
+        let mouseY = 0;
+
+        const updateOverlay = () => {
+            if (overlay) {
+                overlay.style.maskImage = `radial-gradient(circle 100px at ${mouseX}px ${mouseY}px, transparent 0%, black 120px)`;
+                overlay.style.webkitMaskImage = `radial-gradient(circle 100px at ${mouseX}px ${mouseY}px, transparent 0%, black 120px)`;
+            }
+            rafRef.current = null;
+        };
 
         const handleMouseMove = (e: MouseEvent) => {
-            const x = e.clientX;
-            const y = e.clientY;
+            const now = Date.now();
+            mouseX = e.clientX;
+            mouseY = e.clientY;
 
-            if (overlay) {
-                overlay.style.maskImage = `radial-gradient(circle 100px at ${x}px ${y}px, transparent 0%, black 120px)`;
-                overlay.style.webkitMaskImage = `radial-gradient(circle 100px at ${x}px ${y}px, transparent 0%, black 120px)`;
+            // Throttle updates using requestAnimationFrame
+            if (!rafRef.current) {
+                rafRef.current = requestAnimationFrame(updateOverlay);
             }
         };
 
         const handleMouseLeave = () => {
+            if (rafRef.current) {
+                cancelAnimationFrame(rafRef.current);
+                rafRef.current = null;
+            }
             if (overlay) {
                 overlay.style.maskImage = `radial-gradient(circle 0px at -200px -200px, transparent 0%, black 1px)`;
                 overlay.style.webkitMaskImage = `radial-gradient(circle 0px at -200px -200px, transparent 0%, black 1px)`;
             }
         };
 
-        document.addEventListener('mousemove', handleMouseMove);
-        document.addEventListener('mouseleave', handleMouseLeave);
+        document.addEventListener('mousemove', handleMouseMove, { passive: true });
+        document.addEventListener('mouseleave', handleMouseLeave, { passive: true });
 
         return () => {
+            if (rafRef.current) {
+                cancelAnimationFrame(rafRef.current);
+            }
             document.removeEventListener('mousemove', handleMouseMove);
             document.removeEventListener('mouseleave', handleMouseLeave);
         };

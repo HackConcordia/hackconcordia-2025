@@ -97,7 +97,8 @@ export default function ConuHacks() {
                             fill
                             style={{ objectFit: "cover" }}
                             className="md:rounded-sm"
-                            priority
+                            priority={active === 0}
+                            sizes="(max-width: 768px) 100vw, 1280px"
                         />
                         {/* Overlay */}
                         <div className="absolute inset-0 bg-black/80" />
@@ -241,6 +242,8 @@ export default function ConuHacks() {
                                 height={100}
                                 style={{ objectFit: 'cover' }}
                                 className="rounded-md h-[160px]"
+                                loading="lazy"
+                                sizes="160px"
                             />
                             <div className="text-white mt-2">
                                 <div className="text-sm font-semibold text-ellipsis overflow-hidden whitespace-nowrap">{slide.title}</div>

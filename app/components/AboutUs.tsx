@@ -1,9 +1,8 @@
 "use client";
 
-import Lottie from "lottie-react";
-import scrollAnimation from "../../public/animations/scroll_down_animation.json";
+import dynamic from "next/dynamic";
 import Image from "next/image";
-import { ChangeEvent, FormEvent, useState } from "react";
+import { ChangeEvent, FormEvent, useState, useEffect } from "react";
 import { customToast } from "./CustomToast";
 import { FaPaperPlane } from "react-icons/fa";
 import { motion, Variants } from "framer-motion";
@@ -11,6 +10,12 @@ import { getCardText, getFormText, getDesktopTextBoxes, images } from "../data/a
 import { useTranslation } from "../i18n/TranslationContext";
 import en from "../locales/en";
 import fr from "../locales/fr";
+
+// Lazy load Lottie animation component
+const Lottie = dynamic(() => import("lottie-react"), { 
+  ssr: false,
+  loading: () => <div className="w-15 md:w-16 h-15 md:h-16" />
+});
 
 type FormData = {
   email: string;
@@ -45,7 +50,15 @@ export default function AboutUs() {
   const [pending, setPending] = useState(false);
   const [checked, setChecked] = useState(false);
   const [isEmailValid, setIsEmailValid] = useState(false);
+  const [scrollAnimation, setScrollAnimation] = useState<any>(null);
   const { language } = useTranslation();
+
+  // Lazy load animation data
+  useEffect(() => {
+    import("../../public/animations/scroll_down_animation.json").then((mod) => {
+      setScrollAnimation(mod.default);
+    });
+  }, []);
 
   // Get the current translation object based on language
   const currentTranslations = language === 'en' ? en : fr;
@@ -223,16 +236,18 @@ export default function AboutUs() {
             </div>
 
             {/* Scroll Down Lottie */}
-            <motion.div
-              className="absolute hidden md:flex flex-col text-white items-center space-y-2 z-10"
-              style={{ marginBottom: "-600px" }}
-              initial={{ opacity: 0, y: 40 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5, duration: 1 }}
-            >
-              <Lottie animationData={scrollAnimation} className="w-15 md:w-16" />
-              <span className="text-xs">{formText.scrollDownText}</span>
-            </motion.div>
+            {scrollAnimation && (
+              <motion.div
+                className="absolute hidden md:flex flex-col text-white items-center space-y-2 z-10"
+                style={{ marginBottom: "-600px" }}
+                initial={{ opacity: 0, y: 40 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.5, duration: 1 }}
+              >
+                <Lottie animationData={scrollAnimation} className="w-15 md:w-16" />
+                <span className="text-xs">{formText.scrollDownText}</span>
+              </motion.div>
+            )}
           </motion.div>
         </div>
       </div>
@@ -273,7 +288,15 @@ export default function AboutUs() {
             className="w-full h-[200px] rounded-md overflow-hidden shadow-lg transition-transform duration-700"
             style={{ transform: `rotate(${rotation}deg)` }}
           >
-            <Image src={src} alt={alt} width={width} height={height} style={{ objectFit: "cover" }} />
+            <Image 
+              src={src} 
+              alt={alt} 
+              width={width} 
+              height={height} 
+              style={{ objectFit: "cover" }}
+              loading="lazy"
+              sizes="(max-width: 768px) 100vw, 300px"
+            />
           </div>
         </motion.div>
       ))}

@@ -5,6 +5,10 @@ import generateToken from "@/lib/utils/generateToken";
 import { sendConfirmationEmail } from "@/lib/utils/emailServiceConfig";
 import VerifiedUserEmail from "@/lib/models/verifiedEmails";
 
+// Disable caching for API routes
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 export const POST = async (req: Request) => {
   try {
     console.log("registering email")

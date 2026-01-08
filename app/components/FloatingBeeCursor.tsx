@@ -59,6 +59,9 @@ export default function BeeCursor() {
             }}
             width={100}
             height={100}
+            loading="eager"
+            priority
+            unoptimized
         />
     )
 }

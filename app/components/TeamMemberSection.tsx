@@ -106,6 +106,8 @@ export default function TeamMemberSection() {
                                             className="w-full h-full object-cover"
                                             width={500}
                                             height={500}
+                                            loading="lazy"
+                                            sizes="(max-width: 768px) 150px, 250px"
                                         />
                                     </div>
                                 );
