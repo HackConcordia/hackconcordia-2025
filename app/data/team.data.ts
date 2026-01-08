@@ -47,7 +47,7 @@ export const getTeamMembers = (t: TranslationObject): TeamMember[] => [
             linkedin: "https://www.linkedin.com/in/huzaifa-anjum/",
             github: "https://github.com/mhuzaifa",
             instagram: "https://www.instagram.com/_huzaifaanjum_/",
-            website: "https://huzaifaanjumportfolio.web.app/"
+            website: "http://mohammedhuzaifa.vercel.app/"
         }
     },
     {
