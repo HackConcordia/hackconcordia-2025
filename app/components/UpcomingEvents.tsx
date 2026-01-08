@@ -21,7 +21,6 @@ export default function UpcomingEvents() {
     } 
 
     const eventCard = (event: Event) => (<div
-        key={event.id}
         className={`rounded-md p-8 w-[330px] border-2 shrink-0 transition-colors duration-300 relative overflow-hidden
 ${event.highlight
                 ? 'backdrop-blur-xs text-white border-yellow-500 pulse-scale'
@@ -64,7 +63,7 @@ ${event.highlight
                             {eventCard(event)}
                         </a>
                         :
-                        <>{eventCard(event)}</>
+                        <div key={event.id}>{eventCard(event)}</div>
                     ))}
                 </div>
             </div>
