@@ -3,8 +3,8 @@ import mongoose from "mongoose";
 // Extend the global type to include mongoose cache
 declare global {
   var mongoose: {
-    conn: typeof mongoose | null;
-    promise: Promise<typeof mongoose> | null;
+    conn: typeof import("mongoose") | null;
+    promise: Promise<typeof import("mongoose")> | null;
   };
 }
 
@@ -25,7 +25,8 @@ const connectMongoDB = async () => {
   
   // If connection is in progress, wait for it
   if (connectionStatus === 2 && cached.promise) {
-    return cached.promise;
+    cached.conn = await cached.promise;
+    return cached.conn;
   }
 
   // If no connection exists, create a new one

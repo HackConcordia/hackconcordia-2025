@@ -10,6 +10,7 @@ import { getCardText, getFormText, getDesktopTextBoxes, images } from "../data/a
 import { useTranslation } from "../i18n/TranslationContext";
 import en from "../locales/en";
 import fr from "../locales/fr";
+import scrollDownAnimation from "@/public/animations/scroll_down_animation.json";
 
 // Lazy load Lottie animation component
 const Lottie = dynamic(() => import("lottie-react"), { 
@@ -235,7 +236,7 @@ export default function AboutUs() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 1 }}
             >
-              <Lottie path="/animations/scroll_down_animation.json" className="w-15 md:w-16" />
+              <Lottie animationData={scrollDownAnimation} className="w-15 md:w-16" />
               <span className="text-xs">{formText.scrollDownText}</span>
             </motion.div>
           </motion.div>
