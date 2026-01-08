@@ -37,7 +37,7 @@ function FAQ() {
         {/* FAQ List */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {faqs.map((faq, idx) => (
-            <div key={idx} className="flex items-start gap-4 w-full border-2 border-white/10 text-white text-xs p-4 rounded-lg bg-black/40 shadow-md whitespace-normal break-words" style={{ contain: 'layout style paint' }}>
+            <div key={idx} className="flex items-start gap-4 w-full border-2 border-white/10 text-white text-xs p-4 rounded-lg backdrop-blur-xs bg-black/40 shadow-md whitespace-normal break-words" style={{ contain: 'layout style paint' }}>
               <div className="p-2 md:p-3 rounded-full bg-white text-black shrink-0">
                 {faq.icon}
               </div>
@@ -50,7 +50,7 @@ function FAQ() {
         </div>
 
         {/* Footer */}
-        <div className="mt-10 border border-zinc-700 rounded-lg p-3 md:p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 bg-black/40">
+        <div className="mt-10 border border-zinc-700 rounded-lg p-3 md:p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 backdrop-blur-xs bg-black/40">
           <div className="flex flex-row items-center gap-4">
             <Image src="/imgs/HC_logo.png" alt="HackConcordia" style={{ objectFit: 'cover' }} width={40} height={40} />
             <div>

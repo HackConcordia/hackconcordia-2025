@@ -25,7 +25,7 @@ function UpcomingEvents() {
     }, [currentTranslations]); 
 
     const eventCard = (event: Event) => (<div
-        className={`rounded-md p-8 w-[330px] border-2 shrink-0 transition-colors duration-300 relative overflow-hidden bg-black/40
+        className={`rounded-md p-8 w-[330px] border-2 shrink-0 transition-colors duration-300 relative overflow-hidden backdrop-blur-xs bg-black/40
 ${event.highlight
                 ? 'text-white border-yellow-500 pulse-scale'
                 : 'text-white border-zinc-900'

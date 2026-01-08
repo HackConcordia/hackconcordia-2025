@@ -156,7 +156,7 @@ export default function AboutUs() {
               onSubmit={handleSubmit}
               className="flex flex-col items-center gap-3 w-full max-w-md"
             >
-              <div className="flex flex-col sm:flex-row items-center gap-3 w-full bg-black/40 md:border-2 md:border-white/10 rounded-l-sm md:rounded-r-sm">
+              <div className="flex flex-col sm:flex-row items-center gap-3 w-full backdrop-blur-xs bg-black/40 md:border-2 md:border-white/10 rounded-l-sm md:rounded-r-sm">
                 <input
                   type="email"
                   name="email"
@@ -217,7 +217,7 @@ export default function AboutUs() {
               {cardText.map((text, idx) => (
                 <motion.div
                   key={idx}
-                  className="w-full border-2 border-white/10 text-white text-xs p-4 rounded-lg bg-black/40 shadow-md whitespace-normal break-words"
+                  className="w-full border-2 border-white/10 text-white text-xs p-4 rounded-lg backdrop-blur-xs bg-black/40 shadow-md whitespace-normal break-words"
                   style={{ contain: 'layout style paint' }}
                   initial="hidden"
                   animate="visible"
@@ -255,7 +255,7 @@ export default function AboutUs() {
           transition={{ delay: 0.5 + idx * 0.3 }}
         >
             <div
-              className="relative overflow-hidden border-2 border-white/10 p-4 rounded-lg text-white shadow-lg bg-black/40"
+              className="relative overflow-hidden border-2 border-white/10 p-4 rounded-lg text-white shadow-lg backdrop-blur-xs bg-black/40"
               style={{ transform: `rotate(${rotation}deg)`, contain: 'layout style paint', willChange: 'transform' }}
             >
             <div
