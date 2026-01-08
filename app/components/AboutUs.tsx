@@ -2,7 +2,7 @@
 
 import dynamic from "next/dynamic";
 import Image from "next/image";
-import { ChangeEvent, FormEvent, useState } from "react";
+import { ChangeEvent, FormEvent, useState, useMemo } from "react";
 import { customToast } from "./CustomToast";
 import { FaPaperPlane } from "react-icons/fa";
 import { motion, Variants } from "framer-motion";
@@ -54,12 +54,12 @@ export default function AboutUs() {
   const { language } = useTranslation();
 
   // Get the current translation object based on language
-  const currentTranslations = language === 'en' ? en : fr;
+  const currentTranslations = useMemo(() => language === 'en' ? en : fr, [language]);
 
   // Get translated content
-  const formText = getFormText(currentTranslations);
-  const cardText = getCardText(currentTranslations);
-  const desktopTextBoxes = getDesktopTextBoxes(currentTranslations);
+  const formText = useMemo(() => getFormText(currentTranslations), [currentTranslations]);
+  const cardText = useMemo(() => getCardText(currentTranslations), [currentTranslations]);
+  const desktopTextBoxes = useMemo(() => getDesktopTextBoxes(currentTranslations), [currentTranslations]);
 
   const emailRegex = /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/;
 

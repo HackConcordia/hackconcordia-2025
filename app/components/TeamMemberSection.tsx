@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import { FaLinkedin, FaGithub, FaInstagram, FaGlobe } from "react-icons/fa";
 import { FaArrowRight } from 'react-icons/fa';
 import Link from 'next/link';
@@ -13,18 +13,23 @@ import fr from "../locales/fr";
 export default function TeamMemberSection() {
     // Get the section text based on current language
     const { t, language } = useTranslation();
-    const currentTranslations = language === 'en' ? en : fr;  
-    const teamMembers = getTeamMembers(currentTranslations);
+    const currentTranslations = useMemo(() => language === 'en' ? en : fr, [language]);
+    const teamMembers = useMemo(() => getTeamMembers(currentTranslations), [currentTranslations]);
 
     const [selectedId, setSelectedId] = useState<number>(1); // Store just the ID
     const [hovered, setHovered] = useState<TeamMember | null>(null);
 
     // Find the selected member from current teamMembers (always up-to-date)
-    const selected = teamMembers.find(member => member.id === selectedId) || teamMembers[0];
-
+    const selected = useMemo(() => 
+        teamMembers.find(member => member.id === selectedId) || teamMembers[0],
+        [teamMembers, selectedId]
+    );
 
     // Show hovered member if it's not the selected one
-    const displayMember = hovered && hovered.id !== selected.id ? hovered : selected;
+    const displayMember = useMemo(() => 
+        hovered && hovered.id !== selected.id ? hovered : selected,
+        [hovered, selected]
+    );
 
     return (
         <>

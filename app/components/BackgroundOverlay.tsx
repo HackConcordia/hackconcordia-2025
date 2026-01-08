@@ -1,20 +1,30 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useMemo } from 'react';
 
 export default function BackgroundOverlay() {
     const rafRef = useRef<number | null>(null);
+    const lastUpdateRef = useRef(0);
+    const overlayRef = useRef<HTMLDivElement | null>(null);
 
     useEffect(() => {
-        const overlay = document.getElementById('overlay');
+        const overlay = overlayRef.current || document.getElementById('overlay');
+        if (!overlay) return;
+
         let mouseX = 0;
         let mouseY = 0;
+        const THROTTLE_MS = 16; // ~60fps max
 
         const updateOverlay = () => {
-            if (overlay) {
-                overlay.style.maskImage = `radial-gradient(circle 100px at ${mouseX}px ${mouseY}px, transparent 0%, black 120px)`;
-                overlay.style.webkitMaskImage = `radial-gradient(circle 100px at ${mouseX}px ${mouseY}px, transparent 0%, black 120px)`;
+            const now = Date.now();
+            if (now - lastUpdateRef.current < THROTTLE_MS) {
+                rafRef.current = requestAnimationFrame(updateOverlay);
+                return;
             }
+            lastUpdateRef.current = now;
+
+            overlay.style.maskImage = `radial-gradient(circle 100px at ${mouseX}px ${mouseY}px, transparent 0%, black 120px)`;
+            overlay.style.webkitMaskImage = `radial-gradient(circle 100px at ${mouseX}px ${mouseY}px, transparent 0%, black 120px)`;
             rafRef.current = null;
         };
 
@@ -33,10 +43,8 @@ export default function BackgroundOverlay() {
                 cancelAnimationFrame(rafRef.current);
                 rafRef.current = null;
             }
-            if (overlay) {
-                overlay.style.maskImage = `radial-gradient(circle 0px at -200px -200px, transparent 0%, black 1px)`;
-                overlay.style.webkitMaskImage = `radial-gradient(circle 0px at -200px -200px, transparent 0%, black 1px)`;
-            }
+            overlay.style.maskImage = `radial-gradient(circle 0px at -200px -200px, transparent 0%, black 1px)`;
+            overlay.style.webkitMaskImage = `radial-gradient(circle 0px at -200px -200px, transparent 0%, black 1px)`;
         };
 
         document.addEventListener('mousemove', handleMouseMove, { passive: true });
@@ -51,24 +59,31 @@ export default function BackgroundOverlay() {
         };
     }, []);
 
+    const backgroundStyle = useMemo(() => ({
+        backgroundImage: "url('/imgs/honeycombs.png')"
+    }), []);
+
+    const overlayStyle = useMemo(() => ({
+        backgroundImage: "url('/imgs/honeycombs.png')",
+        WebkitMaskImage: "radial-gradient(circle 100px at 0 0, transparent 0%, black 120px)",
+        maskImage: "radial-gradient(circle 100px at 0 0, transparent 0%, black 120px)",
+        filter: 'grayscale(100%) brightness(0) opacity(1)',
+    }), []);
+
     return (
         <div className="fixed inset-0 z-0 w-screen h-screen overflow-hidden">
             {/* Color Background */}
             <div
                 className="absolute inset-0 bg-cover bg-center"
-                style={{ backgroundImage: "url('/imgs/honeycombs.png')" }}
+                style={backgroundStyle}
             />
 
             {/* Grayscale Overlay */}
             <div
+                ref={overlayRef}
                 id="overlay"
                 className="absolute inset-0 bg-cover bg-center pointer-events-none transition-all duration-100"
-                style={{
-                    backgroundImage: "url('/imgs/honeycombs.png')",
-                    WebkitMaskImage: "radial-gradient(circle 100px at 0 0, transparent 0%, black 120px)",
-                    maskImage: "radial-gradient(circle 100px at 0 0, transparent 0%, black 120px)",
-                    filter: 'grayscale(100%) brightness(0) opacity(1)',
-                }}
+                style={overlayStyle}
             />
         </div>
     );

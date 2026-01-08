@@ -1,23 +1,38 @@
 'use client';
 
 import { motion, Variants } from 'framer-motion';
-import AboutUs from './components/AboutUs';
-import ConuHacks from './components/ConuHacks';
-import FAQ from './components/Faq';
-import TeamMemberSection from './components/TeamMemberSection';
-import UpcomingEvents from './components/UpcomingEvents';
 import { useLayoutEffect, useEffect } from 'react';
+import dynamic from 'next/dynamic';
+
+// Lazy load heavy components
+const AboutUs = dynamic(() => import('./components/AboutUs'), {
+  loading: () => <div className="min-h-screen" />,
+});
+
+const ConuHacks = dynamic(() => import('./components/ConuHacks'), {
+  loading: () => <div className="min-h-screen" />,
+});
+
+const FAQ = dynamic(() => import('./components/Faq'), {
+  loading: () => <div className="min-h-[400px]" />,
+});
+
+const TeamMemberSection = dynamic(() => import('./components/TeamMemberSection'), {
+  loading: () => <div className="min-h-screen" />,
+});
+
+const UpcomingEvents = dynamic(() => import('./components/UpcomingEvents'), {
+  loading: () => <div className="min-h-[400px]" />,
+});
 
 export default function HomePage() {
   const fadeUp: Variants = {
-    hidden: { opacity: 0, y: 50, scale: 0.95 },
+    hidden: { opacity: 0, y: 30 },
     visible: {
       opacity: 1,
       y: 0,
-      scale: 1,
-      transition: { duration: 0.6, ease: 'easeOut' },
+      transition: { duration: 0.4, ease: 'easeOut' },
     },
-    exit: { opacity: 0, y: 50, scale: 0.95, transition: { duration: 0.4 } },
   };
 
   // Scroll to top before browser paints
@@ -38,7 +53,7 @@ export default function HomePage() {
       variants={fadeUp}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: false, amount: 0.2 }}
+      viewport={{ once: true, amount: 0.1 }}
     >
       {children}
     </motion.div>

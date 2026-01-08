@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, useMemo, useCallback } from 'react';
 import Image from 'next/image';
 import clsx from 'clsx';
 import { CircleChevronLeftIcon, CircleChevronRightIcon } from 'lucide-react';
@@ -19,10 +19,10 @@ export default function ConuHacks() {
     const hasMounted = useRef(false);
 
     const { t, language } = useTranslation();
-    const currentLanguage = language === 'en' ? en : fr;
-    const slides = getSlides(currentLanguage);
+    const currentLanguage = useMemo(() => language === 'en' ? en : fr, [language]);
+    const slides = useMemo(() => getSlides(currentLanguage), [currentLanguage]);
 
-    const activeSlide = slides[active];
+    const activeSlide = useMemo(() => slides[active], [slides, active]);
 
     useEffect(() => {
         if (!hasMounted.current) {
@@ -39,15 +39,15 @@ export default function ConuHacks() {
         }
     }, [active]);
 
-    const goToPrev = () => {
+    const goToPrev = useCallback(() => {
         setDirection(-1);
         setActive((prev) => (prev - 1 + slides.length) % slides.length);
-    };
+    }, [slides.length]);
 
-    const goToNext = () => {
+    const goToNext = useCallback(() => {
         setDirection(1);
         setActive((prev) => (prev + 1) % slides.length);
-    };
+    }, []);
 
     // Animation variants for sliding
     const variants = {
