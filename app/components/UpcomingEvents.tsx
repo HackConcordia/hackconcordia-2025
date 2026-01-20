@@ -6,6 +6,22 @@ import { useTranslation } from '../i18n/TranslationContext';
 import en from "../locales/en";
 import fr from "../locales/fr";
 
+// Month name mapping for consistent date parsing
+const monthMap: Record<string, number> = {
+    'January': 0, 'Janvier': 0,
+    'February': 1, 'Février': 1,
+    'March': 2, 'Mars': 2,
+    'April': 3, 'Avril': 3,
+    'May': 4, 'Mai': 4,
+    'June': 5, 'Juin': 5,
+    'July': 6, 'Juillet': 6,
+    'August': 7, 'Août': 7,
+    'September': 8, 'Septembre': 8,
+    'October': 9, 'Octobre': 9,
+    'November': 10, 'Novembre': 10,
+    'December': 11, 'Décembre': 11, 'écembre': 11, // Handle typo in fr.ts
+};
+
 function UpcomingEvents() {
     const { t, language } = useTranslation();
 
@@ -13,11 +29,27 @@ function UpcomingEvents() {
     const currentTranslations = useMemo(() => language === 'en' ? en : fr, [language]);
     const events: Event[] = useMemo(() => {
         const allEvents = getUpcomingEvents(currentTranslations);
+        // Get today's date in UTC for consistent comparison
+        const now = new Date();
+        const todayUTC = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate());
+        
         return allEvents.filter(event => {
-        // Filter out past events (simple date comparison)
-            const eventDate = new Date(`${event.month} ${event.date}, ${event.year}`);
-            const today = new Date();
-            return eventDate >= today;
+            // Parse event date using month mapping for consistency
+            const monthIndex = monthMap[event.month];
+            if (monthIndex === undefined) {
+                // Fallback to Date parsing if month not in map
+                const eventDate = new Date(`${event.month} ${event.date}, ${event.year}`);
+                const eventDateUTC = Date.UTC(eventDate.getUTCFullYear(), eventDate.getUTCMonth(), eventDate.getUTCDate());
+                return eventDateUTC >= todayUTC;
+            }
+            
+            const eventDateUTC = Date.UTC(
+                parseInt(event.year),
+                monthIndex,
+                parseInt(event.date)
+            );
+            
+            return eventDateUTC >= todayUTC;
         }).map((event, idx) => ({
             ...event,
             highlight: idx === 0

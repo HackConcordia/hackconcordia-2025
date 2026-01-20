@@ -378,7 +378,11 @@ export const fr = {
             terrace: "Reggie's Bar / Terrasse (Campus SGW)",
             threeB: "3 Brasseurs - Crescent",
             threeB_address: "1356 Saint-Catherine St W, Montreal, Quebec H3G 1P6",
-            tbd: "À déterminer"
+            tbd: "À déterminer",
+            ev3309: "EV3.309",
+            h1023: "H-1023",
+            h1032: "H-1032",
+            online: "En ligne"
         },
         events: {
             // AUTOMNE 2025
@@ -425,6 +429,26 @@ export const fr = {
             }, 
             11: {
                 title: "HackWeek",
+                type: "Atelier"
+            },
+            12: {
+                title: "Session d'information Squarepoint",
+                type: "Session d'information"
+            },
+            13: {
+                title: "Hackathon 101",
+                type: "Atelier"
+            },
+            14: {
+                title: "Networking 101",
+                type: "Atelier"
+            },
+            15: {
+                title: "Introduction à Devpost",
+                type: "Atelier"
+            },
+            16: {
+                title: "Présentation de projet 101",
                 type: "Atelier"
             }
         }
