@@ -97,6 +97,10 @@ export type TranslationObject = {
             threeB: string;
             threeB_address: string;
             tbd: string;
+            ev3309: string;
+            h1023: string;
+            h1032: string;
+            online: string;
         }; 
         events: {
             [key: number]: {
