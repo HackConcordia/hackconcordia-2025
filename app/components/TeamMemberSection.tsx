@@ -31,6 +31,13 @@ export default function TeamMemberSection() {
         [hovered, selected]
     );
 
+    const hasSocials = Boolean(
+        displayMember.socials?.linkedin ||
+        displayMember.socials?.github ||
+        displayMember.socials?.instagram ||
+        displayMember.socials?.website
+    );
+
     return (
         <>
             <section className="relative z-10 w-screen md:h-screen flex flex-col justify-center max-w-7xl mx-auto p-4 md:p-0">
@@ -57,31 +64,35 @@ export default function TeamMemberSection() {
                         <h3 className="text-2xl font-bold">{displayMember.name}</h3>
                         <p className="text-gray-400 mb-6 text-sm">{displayMember.position}</p>
 
-                        <div className="flex space-x-4 mb-6">
-                            {displayMember.socials?.linkedin && (
-                                <a href={displayMember.socials.linkedin} target="_blank" rel="noreferrer" title="LinkedIn">
-                                    <FaLinkedin className="w-5 h-5 hover:text-yellow-400" />
-                                </a>
-                            )}
-                            {displayMember.socials?.github && (
-                                <a href={displayMember.socials.github} target="_blank" rel="noreferrer" title="Github">
-                                    <FaGithub className="w-5 h-5 hover:text-yellow-400" />
-                                </a>
-                            )}
-                            {displayMember.socials?.instagram && (
-                                <a href={displayMember.socials.instagram} target="_blank" rel="noreferrer" title="Instagram">
-                                    <FaInstagram className="w-5 h-5 hover:text-yellow-400" />
-                                </a>
-                            )}
-                            {displayMember.socials?.website && (
-                                <a href={displayMember.socials.website} target="_blank" rel="noreferrer" title="Portfolio">
-                                    <FaGlobe className="w-5 h-5 hover:text-yellow-400" />
-                                </a>
-                            )}
-                        </div>
+                        {hasSocials && (
+                            <div className="flex space-x-4 mb-6">
+                                {displayMember.socials?.linkedin && (
+                                    <a href={displayMember.socials.linkedin} target="_blank" rel="noreferrer" title="LinkedIn">
+                                        <FaLinkedin className="w-5 h-5 hover:text-yellow-400" />
+                                    </a>
+                                )}
+                                {displayMember.socials?.github && (
+                                    <a href={displayMember.socials.github} target="_blank" rel="noreferrer" title="Github">
+                                        <FaGithub className="w-5 h-5 hover:text-yellow-400" />
+                                    </a>
+                                )}
+                                {displayMember.socials?.instagram && (
+                                    <a href={displayMember.socials.instagram} target="_blank" rel="noreferrer" title="Instagram">
+                                        <FaInstagram className="w-5 h-5 hover:text-yellow-400" />
+                                    </a>
+                                )}
+                                {displayMember.socials?.website && (
+                                    <a href={displayMember.socials.website} target="_blank" rel="noreferrer" title="Portfolio">
+                                        <FaGlobe className="w-5 h-5 hover:text-yellow-400" />
+                                    </a>
+                                )}
+                            </div>
+                        )}
 
 
-                        <p className="text-gray-300" dangerouslySetInnerHTML={{ __html: displayMember.intro }}></p>
+                        {displayMember.intro && (
+                            <p className="text-gray-300" dangerouslySetInnerHTML={{ __html: displayMember.intro }}></p>
+                        )}
                     </div>
 
                     {/* Right Panel: Scrollable Team Avatars */}

@@ -52,7 +52,7 @@ export default function ContactSection() {
               variants={itemVariants}
               className="max-w-2xl mx-auto text-sm md:text-sm text-gray-200"
             >
-              Have questions about HackConcordia or ConuHacks? Want to be a sponsor? Want to be a judge?
+              Have questions about HackConcordia or ConUHacks? Want to be a sponsor? Want to be a judge?
               <br />
               Reach out to us and we will get back to you.
             </motion.p>
@@ -107,7 +107,7 @@ export default function ContactSection() {
                     Interested in becoming a Sponsor?
                   </p>
                   <p className="text-sm text-gray-500">
-                    We are looking for sponsors to help make Conuhacks a success.
+                    We are looking for sponsors to help make ConUHacks a success.
                     If you are interested in sponsoring, please email us with{" "}
                     <strong>Sponsorship Interest</strong> in the subject line.
                   </p>

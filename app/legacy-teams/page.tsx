@@ -141,7 +141,7 @@ const Timeline: React.FC = () => {
               {/* Background Image */}
               <Image
                 src={bgImage}
-                alt={`Conuhacks ${displayNumber} Team Photo`}
+                alt={`ConUHacks ${displayNumber} Team Photo`}
                 fill
                 className={`absolute inset-0 object-cover transition duration-500 ease-in-out filter 
                   ${isActive ? 'grayscale-0' : 'grayscale'} 
@@ -162,8 +162,8 @@ const Timeline: React.FC = () => {
               >
                 <div className="w-full p-2 md:p-4 overflow-y-auto max-h-full text-left backdrop-blur-sm">
                   <div className="flex items-center justify-center gap-2">
-                    <h2 className="text-sm md:text-2xl font-bold uppercase text-yellow-400">
-                      Conuhacks {displayNumber}
+                    <h2 className="text-sm md:text-2xl font-bold text-yellow-400">
+                      ConUHacks {displayNumber}
                     </h2>
                     <p className="text-sm md:text-lg font-semibold">
                       ({year - 1} - {year})
