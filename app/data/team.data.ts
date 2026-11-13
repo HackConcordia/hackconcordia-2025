@@ -58,6 +58,7 @@ export const getTeamMembers = (t: TranslationObject): TeamMember[] => [
         socials: {
             linkedin: "https://linkedin.com/in/mohamad-addasi",
             github: "https://github.com/Moe1177",
+            website: "https://www.manifast-ai.io/",
         },
     },
     {
@@ -87,6 +88,9 @@ export const getTeamMembers = (t: TranslationObject): TeamMember[] => [
         position: t.TeamMember.members[9].position,
         intro: t.TeamMember.members[9].intro,
         imageSrc: "/imgs/team/noorjahan-kazi.webp",
+        socials: {
+            linkedin: "https://www.linkedin.com/in/noorjahan-kazi/",
+        },
     },
     {
         id: 10,
@@ -101,6 +105,11 @@ export const getTeamMembers = (t: TranslationObject): TeamMember[] => [
         position: t.TeamMember.members[11].position,
         intro: t.TeamMember.members[11].intro,
         imageSrc: "/imgs/team/goher-ali-syed.webp",
+        socials: {
+            linkedin: "https://www.linkedin.com/in/goher-ali-syed/",
+            github: "https://github.com/GohgoDude",
+            website: "https://goherali.com/",
+        },
     },
     {
         id: 12,
@@ -118,6 +127,9 @@ export const getTeamMembers = (t: TranslationObject): TeamMember[] => [
         position: t.TeamMember.members[13].position,
         intro: t.TeamMember.members[13].intro,
         imageSrc: "/imgs/team/seydina-gueye.webp",
+        socials: {
+            linkedin: "https://www.linkedin.com/in/seydina-mouhamed-gueye-710742226",
+        },
     },
     {
         id: 14,
@@ -125,6 +137,9 @@ export const getTeamMembers = (t: TranslationObject): TeamMember[] => [
         position: t.TeamMember.members[14].position,
         intro: t.TeamMember.members[14].intro,
         imageSrc: "/imgs/team/alexandra-siganos.webp",
+        socials: {
+            linkedin: "https://www.linkedin.com/in/alexandra-siganos-6b9018307",
+        },
     },
     {
         id: 15,
@@ -132,6 +147,9 @@ export const getTeamMembers = (t: TranslationObject): TeamMember[] => [
         position: t.TeamMember.members[15].position,
         intro: t.TeamMember.members[15].intro,
         imageSrc: "/imgs/team/arthur-huon-de-penanster.webp",
+        socials: {
+            linkedin: "https://www.linkedin.com/in/arthur-hdp/",
+        },
     },
     {
         id: 16,
@@ -139,6 +157,9 @@ export const getTeamMembers = (t: TranslationObject): TeamMember[] => [
         position: t.TeamMember.members[16].position,
         intro: t.TeamMember.members[16].intro,
         imageSrc: "/imgs/team/julien-halde.webp",
+        socials: {
+            linkedin: "https://www.linkedin.com/in/julien-halde",
+        },
     },
     {
         id: 17,
@@ -146,6 +167,10 @@ export const getTeamMembers = (t: TranslationObject): TeamMember[] => [
         position: t.TeamMember.members[17].position,
         intro: t.TeamMember.members[17].intro,
         imageSrc: "/imgs/team/abdou-maouda.webp",
+        socials: {
+            linkedin: "https://www.linkedin.com/in/abdou-maouda-90a8a9327/",
+            github: "https://github.com/AbdouMaouda/",
+        },
     },
     {
         id: 18,
@@ -153,6 +178,10 @@ export const getTeamMembers = (t: TranslationObject): TeamMember[] => [
         position: t.TeamMember.members[18].position,
         intro: t.TeamMember.members[18].intro,
         imageSrc: "/imgs/team/daniela-villamizar-useche.webp",
+        socials: {
+            linkedin: "https://www.linkedin.com/in/daniela-villamizar-useche/",
+            github: "https://github.com/DanielaVU",
+        },
     },
     {
         id: 19,
@@ -192,6 +221,9 @@ export const getTeamMembers = (t: TranslationObject): TeamMember[] => [
         position: t.TeamMember.members[23].position,
         intro: t.TeamMember.members[23].intro,
         imageSrc: "/imgs/team/shay-luan.webp",
+        socials: {
+            website: "https://www.shay.codes",
+        },
     },
     {
         id: 24,
@@ -199,6 +231,11 @@ export const getTeamMembers = (t: TranslationObject): TeamMember[] => [
         position: t.TeamMember.members[24].position,
         intro: t.TeamMember.members[24].intro,
         imageSrc: "/imgs/team/thomas-assalian.webp",
+        socials: {
+            linkedin: "https://www.linkedin.com/in/thomasassalian/",
+            github: "https://github.com/TAssalian",
+            website: "https://tassalian.com",
+        },
     },
     {
         id: 25,
@@ -213,6 +250,9 @@ export const getTeamMembers = (t: TranslationObject): TeamMember[] => [
         position: t.TeamMember.members[26].position,
         intro: t.TeamMember.members[26].intro,
         imageSrc: "/imgs/team/audrey-clara-tchantchou.webp",
+        socials: {
+            linkedin: "https://www.linkedin.com/in/audrey-clara-tchantchou-",
+        },
     },
     {
         id: 27,
@@ -227,6 +267,9 @@ export const getTeamMembers = (t: TranslationObject): TeamMember[] => [
         position: t.TeamMember.members[28].position,
         intro: t.TeamMember.members[28].intro,
         imageSrc: "/imgs/team/grace-ashley.webp",
+        socials: {
+            linkedin: "https://www.linkedin.com/in/graceashleymtrl",
+        },
     },
     {
         id: 29,
@@ -267,6 +310,9 @@ export const getTeamMembers = (t: TranslationObject): TeamMember[] => [
         position: t.TeamMember.members[33].position,
         intro: t.TeamMember.members[33].intro,
         imageSrc: "/imgs/team/ashley-samerev.webp",
+        socials: {
+            linkedin: "https://www.linkedin.com/in/ashleysamerev",
+        },
     },
     {
         id: 34,
@@ -274,6 +320,9 @@ export const getTeamMembers = (t: TranslationObject): TeamMember[] => [
         position: t.TeamMember.members[34].position,
         intro: t.TeamMember.members[34].intro,
         imageSrc: "/imgs/team/luella-mailloux-headshot.webp",
+        socials: {
+            linkedin: "https://www.linkedin.com/in/luellamailloux/",
+        },
     },
     {
         id: 35,
@@ -281,5 +330,8 @@ export const getTeamMembers = (t: TranslationObject): TeamMember[] => [
         position: t.TeamMember.members[35].position,
         intro: t.TeamMember.members[35].intro,
         imageSrc: "/imgs/team/ahmed-fakhir.webp",
+        socials: {
+            linkedin: "https://www.linkedin.com/in/ahmed-fakhir/",
+        },
     },
 ];

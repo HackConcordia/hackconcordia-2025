@@ -281,167 +281,172 @@ export const fr = {
   TeamMember: {
     title: "Les Gardiens de la Ruche",
     description:
-      "Découvrez l’équipe dévouée derrière ConUHacks, qui travaille sans relâche pour vous offrir la meilleure expérience de hackathon.",
+      "Découvrez l'équipe dévouée derrière ConUHacks, qui travaille sans relâche pour vous offrir la meilleure expérience de hackathon.",
     legacyButton: "Équipes précédentes",
     members: {
       1: {
         name: "Lucia Jimenez",
         position: "Co-présidence",
-        intro:
-          "Étudiante en informatique dédiée à la promotion des événements et à la création de liens communautaires dynamiques.",
+        intro: "Étudiante en informatique",
       },
       2: {
         name: "Toby Fischer",
         position: "Co-présidence",
-        intro: "Étudiant en informatique (BCompSc)",
+        intro: "Étudiant en informatique → droit",
       },
       3: {
         name: "Christina Alexandrakis",
         position: "Vice-présidence, Marketing",
         intro:
-          "Étudiante en SOEN passionnée par les campagnes marketing créatives et l'engagement communautaire.",
+          "Étudiante en génie logiciel passionnée par les campagnes marketing créatives, l'analyse de données et l'engagement communautaire.",
       },
       4: {
         name: "Ning Ye",
         position: "Vice-présidence, Logistique",
-        intro: "",
+        intro: "Étudiant en génie logiciel",
       },
       5: {
         name: "Mohamad Addasi",
         position: "Vice-présidence, Technologie",
         intro:
-          "Étudiant en génie logiciel passionné par les technologies émergentes et la science des données, avec une expérience chez Intact et fondateur de sa mini-startup:<a href='https://www.manifast-ai.io/' target='_blank' rel='noopener noreferrer' class='text-yellow-400 hover:text-yellow-300 underline'> ManiFast AI</a>.",
+          "Étudiant en génie logiciel passionné par les technologies émergentes et la science des données. Il a acquis une expérience pratique chez Intact et lancé une mini-startup : ManiFast AI.",
       },
       6: {
         name: "Amani Magra",
         position: "Vice-présidence, Finance",
-        intro: "",
+        intro: "Étudiante en génie informatique",
       },
       7: {
         name: "Sarah Tannous",
         position: "Vice-présidence, Partenariats",
-        intro: "",
+        intro: "Étudiante en génie logiciel",
       },
       8: {
         name: "Andrew Phillips",
         position: "Vice-présidence, Événements",
-        intro: "",
+        intro: "Étudiant en génie logiciel",
       },
       9: {
         name: "Noorjahan Kazi",
         position: "Vice-présidence, Interne",
-        intro: "",
+        intro:
+          "Étudiante en génie logiciel passionnée par la créativité et l'amélioration de l'expérience étudiante.",
       },
       10: {
         name: "Ellen Ung",
         position: "Direction, Marketing",
-        intro: "",
+        intro: "Étudiante en génie industriel",
       },
       11: {
         name: "Goher Ali Syed",
         position: "Direction, Marketing",
-        intro: "",
+        intro: "Étudiant en informatique",
       },
       12: {
         name: "Matthew Lucas Santiago",
         position: "Direction, Marketing",
-        intro:
-          "Étudiant en SOEN avec une passion pour le marketing numérique et la création de contenu engageant.",
+        intro: "Étudiant en génie logiciel",
       },
       13: {
         name: "Seydina Gueye",
         position: "Direction, Marketing",
-        intro: "",
+        intro:
+          "Étudiant en génie civil passionné par le développement durable et le marketing.",
       },
       14: {
         name: "Alexandra Siganos",
         position: "Direction, Logistique",
-        intro: "",
+        intro:
+          "Étudiante en génie industriel passionnée par le fait d'aider les organisations à résoudre des problèmes concrets grâce au conseil, à la logistique et aux opérations",
       },
       15: {
         name: "Arthur Huon de Penanster",
         position: "Direction, Logistique",
-        intro: "",
+        intro:
+          "Étudiant en gestion des technologies d'affaires, avec une mineure en informatique, intéressé par la gestion de projet et les systèmes d'information",
       },
       16: {
         name: "Julien Halde",
         position: "Direction, Logistique",
-        intro: "",
+        intro:
+          "Étudiant en informatique passionné par les technologies financières émergentes et les systèmes décentralisés.",
       },
       17: {
         name: "Abdou Maouda",
         position: "Direction, Technologie",
-        intro: "",
+        intro: "Étudiant en génie logiciel",
       },
       18: {
         name: "Daniela Villamizar Useche",
         position: "Direction, Technologie",
-        intro: "",
+        intro:
+          "Étudiante en génie logiciel qui adore les hackathons, créer des projets cool et transformer des idées en vrais produits. Intéressée par le développement full-stack et l'IA, et toujours à la recherche de quelque chose de nouveau à construire, apprendre ou expérimenter.",
       },
       19: {
         name: "Emily Ng",
         position: "Direction, Technologie",
-        intro: "",
+        intro: "Étudiante en génie logiciel",
       },
       20: {
         name: "Maria-Christine Catiche",
         position: "Direction, Technologie",
-        intro: "",
+        intro: "Étudiante en génie logiciel",
       },
       21: {
         name: "Mijan Ullah",
         position: "Direction, Technologie",
-        intro: "Étudiant en SOEN concentré sur le développement backend.",
+        intro: "Étudiant en génie logiciel",
       },
       22: {
         name: "Raouf Ouibrahim",
         position: "Direction, Technologie",
-        intro: "",
+        intro: "Étudiant en génie logiciel",
       },
       23: {
         name: "Shay Luan",
         position: "Direction, Technologie",
-        intro: "",
+        intro: "Étudiant en informatique",
       },
       24: {
         name: "Thomas Assalian",
         position: "Direction, Technologie",
-        intro: "",
+        intro: "Étudiant en informatique",
       },
       25: {
         name: "Antoine Dufour",
         position: "Direction, Partenariats",
-        intro: "",
+        intro: "Étudiant en finance",
       },
       26: {
         name: "Audrey Clara Tchantchou",
         position: "Direction, Partenariats",
-        intro: "",
+        intro:
+          "Étudiante en génie de la cybersécurité passionnée par la collaboration, l'innovation et la création d'occasions qui rassemblent les gens",
       },
       27: {
         name: "Benjamin Liu",
         position: "Direction, Partenariats",
-        intro: "",
+        intro: "Étudiant en génie logiciel",
       },
       28: {
         name: "Grace Ashley",
         position: "Direction, Partenariats",
-        intro: "",
+        intro: "Étudiante en génie chimique",
       },
       29: {
         name: "Jovan Gavranovic",
         position: "Direction, Partenariats",
-        intro: "",
+        intro: "Étudiant en génie logiciel",
       },
       30: {
         name: "Mamadou Camara",
         position: "Direction, Partenariats",
-        intro: "",
+        intro: "Étudiant en génie logiciel",
       },
       31: {
         name: "Salma Benlemlih",
         position: "Direction, Partenariats",
-        intro: "",
+        intro: "Étudiante en informatique",
       },
       32: {
         name: "Alisa Ignatina",
@@ -452,17 +457,18 @@ export const fr = {
       33: {
         name: "Ashley Samerev",
         position: "Direction, Événements",
-        intro: "",
+        intro: "Étudiante en génie aérospatial - avionique",
       },
       34: {
         name: "Luella Mailloux",
         position: "Direction, Événements",
-        intro: "",
+        intro: "Étudiante en arts numériques et en informatique",
       },
       35: {
         name: "Ahmed Fakhir",
         position: "Direction, Interne",
-        intro: "",
+        intro:
+          "Étudiant à la maîtrise en génie logiciel passionné par les technologies logicielles et toujours intéressé par l'organisation d'événements technologiques exceptionnels!",
       },
     },
   },
