@@ -26,6 +26,8 @@ export const en = {
   },
   ConuHacks: {
     winners: "Winners",
+    applicants: "Applicants",
+    projectSubmissions: "Project Submissions",
     participants: "Participants",
     projects: "Projects",
     sponsors: "Sponsors",
@@ -245,24 +247,30 @@ export const en = {
         tag: "Ninth Edition",
       },
       11: {
-        title: "ConUHacks X - A Decade of Innovation",
+        title: "ConUHacks X - Dream it, Hack it! (2026)",
+        stats: {
+          participants: "1,047",
+          projects: "262",
+          applicants: "3,068",
+          sponsors: "23",
+        },
         subtitle:
-          "Celebrating 10 years of ConUHacks, we look back at a decade of innovation, collaboration, and community building. From humble beginnings to becoming one of the largest student hackathons in Quebec, ConUHacks has consistently pushed the boundaries of what’s possible in tech.",
+          "ConUHacks X celebrated the event's 10th anniversary on Jan 24–25, 2026 at Concordia JMSB, bringing hackers together for 24 hours of building, learning, and connecting.",
         winners: {
           0: {
             position: "1st Place",
             description:
-              "An innovative solution that revolutionized the way we approach problem-solving in tech.",
+              "An automatic video editor that removes pauses and mistakes while recording, producing a video that is ready to post.",
           },
           1: {
             position: "2nd Place",
             description:
-              "A groundbreaking project that introduced new methodologies in software development.",
+              "An AI-powered Mac controller that uses gestures and voice to operate the computer hands-free, with presentation and accessibility features.",
           },
           2: {
             position: "3rd Place",
             description:
-              "A creative approach to enhancing user experience through innovative design.",
+              "A gamified finance-learning platform for children and teens, combining banking concepts, games, investing, and voice interaction.",
           },
         },
         tag: "Tenth Edition",

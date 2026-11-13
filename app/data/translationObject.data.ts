@@ -23,7 +23,9 @@ export type TranslationObject = {
 
     ConuHacks: {
         winners: string;
+        applicants: string;
         participants: string;
+        projectSubmissions: string;
         projects: string;
         sponsors: string;
         mentors: string;
@@ -31,6 +33,7 @@ export type TranslationObject = {
             [key: number]: {
                 title: string;
                 subtitle: string;
+                stats?: Record<string, string>;
                 others?: {
                     date: string;
                     location: string;

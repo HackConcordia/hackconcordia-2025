@@ -26,6 +26,8 @@ export const fr = {
   },
   ConuHacks: {
     winners: "Gagnants",
+    applicants: "Candidatures",
+    projectSubmissions: "Projets soumis",
     participants: "Participants",
     projects: "Projets",
     sponsors: "Sponsors",
@@ -246,24 +248,30 @@ export const fr = {
         tag: "Neuvième édition",
       },
       11: {
-        title: "ConUHacks X - Une décennie d’innovation",
+        title: "ConUHacks X - Rêve-le, hacke-le! (2026)",
+        stats: {
+          participants: "1\u00a0047",
+          projects: "262",
+          applicants: "3\u00a0068",
+          sponsors: "23",
+        },
         subtitle:
-          "Pour les 10 ans de ConUHacks, nous revenons sur une décennie d’innovation, de collaboration et de construction communautaire. De débuts modestes à l’un des plus grands hackathons étudiants du Québec, ConUHacks a toujours repoussé les limites du possible en tech.",
+          "ConUHacks X a célébré le 10e anniversaire de l’événement les 24 et 25 janvier 2026 au pavillon John-Molson de Concordia, réunissant des hackers pour 24 heures de création, d’apprentissage et de rencontres.",
         winners: {
           0: {
             position: "1ère place",
             description:
-              "Une solution innovante qui a révolutionné notre approche de la résolution de problèmes en technologie.",
+              "Un éditeur vidéo automatique qui retire les pauses et les erreurs pendant l’enregistrement afin de produire une vidéo prête à publier.",
           },
           1: {
             position: "2e place",
             description:
-              "Un projet novateur introduisant de nouvelles méthodologies en développement logiciel.",
+              "Un contrôleur pour Mac propulsé par l’IA qui utilise les gestes et la voix pour contrôler l’ordinateur mains libres, avec des fonctions de présentation et d’accessibilité.",
           },
           2: {
             position: "3e place",
             description:
-              "Une approche créative pour enrichir l’expérience utilisateur grâce à un design innovant.",
+              "Une plateforme ludique d’apprentissage de la finance pour les jeunes, combinant notions bancaires, jeux, investissement et interaction vocale.",
           },
         },
         tag: "Dixième édition",

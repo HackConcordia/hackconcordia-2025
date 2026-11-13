@@ -23,6 +23,13 @@ type TimelinePanel = {
 
 const timelineData: TimelinePanel[] = [
   {
+    number: 10,
+    displayNumber: 'X',
+    year: 2026,
+    bgImage: '/imgs/legacy-teams/conu10.jpg',
+    subteams: [],
+  },
+  {
     number: 9,
     displayNumber: 'IX',
     year: 2025,
@@ -105,7 +112,7 @@ const timelineData: TimelinePanel[] = [
 ];
 
 const Timeline: React.FC = () => {
-  const [activeCard, setActiveCard] = useState<number | null>(9);
+  const [activeCard, setActiveCard] = useState<number | null>(10);
 
   const handleCardClick = (number: number) => {
     setActiveCard((prev: number | null) => (prev === number ? null : number));

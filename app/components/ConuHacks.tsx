@@ -89,9 +89,9 @@ export default function ConuHacks() {
                         animate="center"
                         exit="exit"
                         transition={{ type: "spring", stiffness: 300, damping: 30 }}
-                        className="absolute inset-0"
+                        className={clsx('absolute inset-0', !activeSlide.image && 'bg-black')}
                     >
-                        <Image
+                        {activeSlide.image && <Image
                             src={activeSlide.image}
                             alt={activeSlide.title}
                             fill
@@ -100,7 +100,7 @@ export default function ConuHacks() {
                             priority={active === 0}
                             quality={95}
                             sizes="(max-width: 768px) 100vw, 1280px"
-                        />
+                        />}
                         {/* Overlay */}
                         <div className="absolute inset-0 bg-black/80" />
                     </motion.div>
@@ -236,7 +236,7 @@ export default function ConuHacks() {
                             )}
                             onClick={() => setActive(index)}
                         >
-                            <Image
+                            {slide.image ? <Image
                                 src={slide.image}
                                 alt={slide.title}
                                 width={160}
@@ -246,7 +246,7 @@ export default function ConuHacks() {
                                 loading="lazy"
                                 quality={85}
                                 sizes="160px"
-                            />
+                            /> : <div className="w-[160px] h-[160px] rounded-md bg-black" />}
                             <div className="text-white mt-2">
                                 <div className="text-sm font-semibold text-ellipsis overflow-hidden whitespace-nowrap">{slide.title}</div>
                                 <div className="text-xs text-gray-300 text-ellipsis overflow-hidden whitespace-nowrap">{slide.subtitle}</div>

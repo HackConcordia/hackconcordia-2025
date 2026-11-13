@@ -2,7 +2,7 @@ import { TranslationObject } from "./translationObject.data";
 
 type Slide = {
   id: number;
-  image: string;
+  image?: string;
   title: string;
   subtitle: string;
   stats?: Record<string, string>;
@@ -36,6 +36,46 @@ export const getSlides = (t: TranslationObject): Slide[] => [
       Registration: t.ConuHacks.slides[1].others?.registration ?? "",
       Website: "https://conuhacks.io",
     },
+  },
+
+  // ConUHacks X - Dream it, Hack it! (2026)
+  {
+    id: 11,
+    title: t.ConuHacks.slides[11].title,
+    subtitle: t.ConuHacks.slides[11].subtitle,
+    stats: {
+      [t.ConuHacks.participants]: t.ConuHacks.slides[11].stats?.participants || "1,047",
+      [t.ConuHacks.projects]: t.ConuHacks.slides[11].stats?.projects || "262",
+      [t.ConuHacks.applicants]: t.ConuHacks.slides[11].stats?.applicants || "3,068",
+      [t.ConuHacks.sponsors]: t.ConuHacks.slides[11].stats?.sponsors || "23",
+    },
+    winners: [
+      {
+        position: "1",
+        team: "ViniClip",
+        project: "ViniClip",
+        description: t.ConuHacks.slides[11].winners?.[0]?.description || "",
+        devpostlink: "https://devpost.com/software/viniclip",
+        youtube: "https://www.youtube.com/watch?v=qDyQIVBcPCs",
+      },
+      {
+        position: "2",
+        team: "Pinscher",
+        project: "Pinscher",
+        description: t.ConuHacks.slides[11].winners?.[1]?.description || "",
+        devpostlink: "https://devpost.com/software/pinscher",
+        youtube: "https://www.youtube.com/watch?v=BCIwQRLcgfg",
+      },
+      {
+        position: "3",
+        team: "JungleBank",
+        project: "JungleBank",
+        description: t.ConuHacks.slides[11].winners?.[2]?.description || "",
+        devpostlink: "https://devpost.com/software/junglebank",
+      },
+    ],
+    tag: t.ConuHacks.slides[11].tag || "Tenth Edition",
+    devpost: "https://conuhacks-x.devpost.com/",
   },
 
   // ConUHacks IX - The Next Frontier (2025)
