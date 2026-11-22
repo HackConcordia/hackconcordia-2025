@@ -41,6 +41,7 @@ export const getSlides = (t: TranslationObject): Slide[] => [
   // ConUHacks X - Dream it, Hack it! (2026)
   {
     id: 11,
+    image: "/imgs/conuhacks/conu10.png",
     title: t.ConuHacks.slides[11].title,
     subtitle: t.ConuHacks.slides[11].subtitle,
     stats: {
