@@ -23,6 +23,13 @@ type TimelinePanel = {
 
 const timelineData: TimelinePanel[] = [
   {
+    number: 10,
+    displayNumber: 'X',
+    year: 2026,
+    bgImage: '/imgs/legacy-teams/conu10.jpg',
+    subteams: [],
+  },
+  {
     number: 9,
     displayNumber: 'IX',
     year: 2025,
@@ -105,7 +112,7 @@ const timelineData: TimelinePanel[] = [
 ];
 
 const Timeline: React.FC = () => {
-  const [activeCard, setActiveCard] = useState<number | null>(9);
+  const [activeCard, setActiveCard] = useState<number | null>(10);
 
   const handleCardClick = (number: number) => {
     setActiveCard((prev: number | null) => (prev === number ? null : number));
@@ -141,7 +148,7 @@ const Timeline: React.FC = () => {
               {/* Background Image */}
               <Image
                 src={bgImage}
-                alt={`Conuhacks ${displayNumber} Team Photo`}
+                alt={`ConUHacks ${displayNumber} Team Photo`}
                 fill
                 className={`absolute inset-0 object-cover transition duration-500 ease-in-out filter 
                   ${isActive ? 'grayscale-0' : 'grayscale'} 
@@ -162,8 +169,8 @@ const Timeline: React.FC = () => {
               >
                 <div className="w-full p-2 md:p-4 overflow-y-auto max-h-full text-left backdrop-blur-sm">
                   <div className="flex items-center justify-center gap-2">
-                    <h2 className="text-sm md:text-2xl font-bold uppercase text-yellow-400">
-                      Conuhacks {displayNumber}
+                    <h2 className="text-sm md:text-2xl font-bold text-yellow-400">
+                      ConUHacks {displayNumber}
                     </h2>
                     <p className="text-sm md:text-lg font-semibold">
                       ({year - 1} - {year})

@@ -1,111 +1,149 @@
-'use client';
+"use client";
 
-import { memo, useMemo } from 'react';
-import { getUpcomingEvents, Event } from '../data/events.data';
-import { useTranslation } from '../i18n/TranslationContext';
+import { memo, useMemo } from "react";
+import { getUpcomingEvents, Event } from "../data/events.data";
+import { useTranslation } from "../i18n/TranslationContext";
 import en from "../locales/en";
 import fr from "../locales/fr";
 
 // Month name mapping for consistent date parsing
 const monthMap: Record<string, number> = {
-    'January': 0, 'Janvier': 0,
-    'February': 1, 'Février': 1,
-    'March': 2, 'Mars': 2,
-    'April': 3, 'Avril': 3,
-    'May': 4, 'Mai': 4,
-    'June': 5, 'Juin': 5,
-    'July': 6, 'Juillet': 6,
-    'August': 7, 'Août': 7,
-    'September': 8, 'Septembre': 8,
-    'October': 9, 'Octobre': 9,
-    'November': 10, 'Novembre': 10,
-    'December': 11, 'Décembre': 11, 'écembre': 11, // Handle typo in fr.ts
+  January: 0,
+  Janvier: 0,
+  February: 1,
+  Février: 1,
+  March: 2,
+  Mars: 2,
+  April: 3,
+  Avril: 3,
+  May: 4,
+  Mai: 4,
+  June: 5,
+  Juin: 5,
+  July: 6,
+  Juillet: 6,
+  August: 7,
+  Août: 7,
+  September: 8,
+  Septembre: 8,
+  October: 9,
+  Octobre: 9,
+  November: 10,
+  Novembre: 10,
+  December: 11,
+  Décembre: 11,
+  écembre: 11, // Handle typo in fr.ts
 };
 
 function UpcomingEvents() {
-    const { t, language } = useTranslation();
+  const { t, language } = useTranslation();
 
-    // Get the upcoming events based on current language
-    const currentTranslations = useMemo(() => language === 'en' ? en : fr, [language]);
-    const events: Event[] = useMemo(() => {
-        const allEvents = getUpcomingEvents(currentTranslations);
-        // Get today's date in UTC for consistent comparison
-        const now = new Date();
-        const todayUTC = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate());
-        
-        return allEvents.filter(event => {
-            // Parse event date using month mapping for consistency
-            const monthIndex = monthMap[event.month];
-            if (monthIndex === undefined) {
-                // Fallback to Date parsing if month not in map
-                const eventDate = new Date(`${event.month} ${event.date}, ${event.year}`);
-                const eventDateUTC = Date.UTC(eventDate.getUTCFullYear(), eventDate.getUTCMonth(), eventDate.getUTCDate());
-                return eventDateUTC >= todayUTC;
-            }
-            
-            const eventDateUTC = Date.UTC(
-                parseInt(event.year),
-                monthIndex,
-                parseInt(event.date)
-            );
-            
-            return eventDateUTC >= todayUTC;
-        }).map((event, idx) => ({
-            ...event,
-            highlight: idx === 0
-        }));
-    }, [currentTranslations]); 
-
-    const eventCard = (event: Event) => (<div
-        className={`rounded-md p-8 w-[330px] border-2 shrink-0 transition-colors duration-300 relative overflow-hidden backdrop-blur-xs bg-black/40
-${event.highlight
-                ? 'text-white border-yellow-500 pulse-scale'
-                : 'text-white border-zinc-900'
-            }`}
-        style={{ contain: 'layout style paint', willChange: event.highlight ? 'transform' : 'auto' }}
-    >
-        <div className="text-5xl font-extrabold leading-none text-yellow-500">
-            {event.date}
-        </div>
-        <div className="text-lg font-semibold mt-1">
-            {event.month}, {event.year}
-        </div>
-
-        <div className="mt-2 text-yellow-500">
-            <h3 className="text-xl font-bold">{event.title}</h3>
-            <p className="text-gray-400 font-medium text-sm">{event.type}</p>
-        </div>
-
-        <div className="mt-12 text-sm leading-relaxed">
-            <p className="font-semibold">{event.time}</p>
-            <p>{event.location}</p>
-            <p className="text-gray-400 text-xs">{event.address}</p>
-        </div>
-    </div>)
-
-    return (
-        <section className="relative z-10 w-screen flex flex-col justify-center max-w-7xl mx-auto p-4 md:p-0 mt-16">
-            <h2 className="text-2xl md:text-4xl font-bold text-yellow-400 mb-2 md:mt-20">
-                {t('UpcomingEvents.title')}
-            </h2>
-            <p className="text-gray-400 mb-4">
-                {t('UpcomingEvents.subtitle')}
-            </p>
-
-            <div className="group relative w-full overflow-hidden">
-                <div className="flex gap-6 overflow-x-auto scroll-smooth transition-all duration-300 group-hover:scrollbar-thin group-hover:scrollbar-thumb-gray-600 group-hover:scrollbar-track-transparent py-4 pl-2">
-                    {events.map((event) => (
-                        event.link ? 
-                        <a key={event.id} href={event.link} target="_blank" rel="noopener noreferrer">
-                            {eventCard(event)}
-                        </a>
-                        :
-                        <div key={event.id}>{eventCard(event)}</div>
-                    ))}
-                </div>
-            </div>
-        </section>
+  // Get the upcoming events based on current language
+  const currentTranslations = useMemo(
+    () => (language === "en" ? en : fr),
+    [language],
+  );
+  const events: Event[] = useMemo(() => {
+    const allEvents = getUpcomingEvents(currentTranslations);
+    // Get today's date in UTC for consistent comparison
+    const now = new Date();
+    const todayUTC = Date.UTC(
+      now.getUTCFullYear(),
+      now.getUTCMonth(),
+      now.getUTCDate(),
     );
+
+    return allEvents
+      .filter((event) => {
+        // Parse event date using month mapping for consistency
+        const monthIndex = monthMap[event.month];
+        if (monthIndex === undefined) {
+          // Fallback to Date parsing if month not in map
+          const eventDate = new Date(
+            `${event.month} ${event.date}, ${event.year}`,
+          );
+          const eventDateUTC = Date.UTC(
+            eventDate.getUTCFullYear(),
+            eventDate.getUTCMonth(),
+            eventDate.getUTCDate(),
+          );
+          return eventDateUTC >= todayUTC;
+        }
+
+        const eventDateUTC = Date.UTC(
+          parseInt(event.year),
+          monthIndex,
+          parseInt(event.date.split(/[--]/).pop() || event.date),
+        );
+
+        return eventDateUTC >= todayUTC;
+      })
+      .map((event, idx) => ({
+        ...event,
+        highlight: idx === 0,
+      }));
+  }, [currentTranslations]);
+
+  const eventCard = (event: Event) => (
+    <div
+      className={`rounded-md p-8 w-[330px] border-2 shrink-0 transition-colors duration-300 relative overflow-hidden backdrop-blur-xs bg-black/40
+${
+  event.highlight
+    ? "text-white border-yellow-500 pulse-scale"
+    : "text-white border-zinc-900"
+}`}
+      style={{
+        contain: "layout style paint",
+        willChange: event.highlight ? "transform" : "auto",
+      }}
+    >
+      <div className="text-5xl font-extrabold leading-none text-yellow-500">
+        {event.date}
+      </div>
+      <div className="text-lg font-semibold mt-1">
+        {event.month}, {event.year}
+      </div>
+
+      <div className="mt-2 text-yellow-500">
+        <h3 className="text-xl font-bold">{event.title}</h3>
+        <p className="text-gray-400 font-medium text-sm">{event.type}</p>
+      </div>
+
+      <div className="mt-12 text-sm leading-relaxed">
+        <p className="font-semibold">{event.time}</p>
+        <p>{event.location}</p>
+        <p className="text-gray-400 text-xs">{event.address}</p>
+      </div>
+    </div>
+  );
+
+  return (
+    <section className="relative z-10 w-screen flex flex-col justify-center max-w-7xl mx-auto p-4 md:p-0 mt-16">
+      <h2 className="text-2xl md:text-4xl font-bold text-yellow-400 mb-2 md:mt-20">
+        {t("UpcomingEvents.title")}
+      </h2>
+      <p className="text-gray-400 mb-4">{t("UpcomingEvents.subtitle")}</p>
+
+      <div className="group relative w-full overflow-hidden">
+        <div className="flex gap-6 overflow-x-auto scroll-smooth transition-all duration-300 group-hover:scrollbar-thin group-hover:scrollbar-thumb-gray-600 group-hover:scrollbar-track-transparent py-4 pl-2">
+          {events.map((event) =>
+            event.link ? (
+              <a
+                key={event.id}
+                href={event.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {eventCard(event)}
+              </a>
+            ) : (
+              <div key={event.id}>{eventCard(event)}</div>
+            ),
+          )}
+        </div>
+      </div>
+    </section>
+  );
 }
 
 export default memo(UpcomingEvents);
