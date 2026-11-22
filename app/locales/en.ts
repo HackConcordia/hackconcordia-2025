@@ -286,8 +286,7 @@ export const en = {
       1: {
         name: "Lucia Jimenez",
         position: "Co-President",
-        intro:
-          "Computer Science student",
+        intro: "Hi! I'm Lucia. From psychology to computer science, I guess I've always been curious about how things work, whether it's people or code ⭐️",
       },
       2: {
         name: "Toby Fischer",
@@ -297,24 +296,22 @@ export const en = {
       3: {
         name: "Christina Alexandrakis",
         position: "Vice President of Marketing",
-        intro:
-          "SOEN student passionate about creative marketing campaigns and all things data analysis and community engagement related.",
+        intro: "SOEN student passionate about creative marketing campaigns and all things data analysis and community engagement related.",
       },
       4: {
         name: "Ning Ye",
         position: "Vice President of Logistics",
-        intro: "Software Engineering student",
+        intro: "Software Engineering student passionate about hackathons, AI/ML, and applying frontier technologies to solve real-world problems.",
       },
       5: {
         name: "Mohamad Addasi",
         position: "Vice President of Technology",
-        intro:
-          "SOEN student driven by emerging tech and data science. Gained hands-on experience at Intact and launched a mini-startup: ManiFast AI.",
+        intro: "SOEN student driven by emerging tech and data science. Gained hands-on experience at Intact and launched a mini-startup: ManiFast AI.",
       },
       6: {
         name: "Amani Magra",
         position: "Vice President of Finance",
-        intro: "Computer Engineering student",
+        intro: "B.Eng Computer Engineering Student",
       },
       7: {
         name: "Sarah Tannous",
@@ -344,8 +341,7 @@ export const en = {
       12: {
         name: "Matthew Lucas Santiago",
         position: "Director of Marketing",
-        intro:
-          "Software Engineering student",
+        intro: "Software Engineering student",
       },
       13: {
         name: "Seydina Gueye",
@@ -385,7 +381,7 @@ export const en = {
       20: {
         name: "Maria-Christine Catiche",
         position: "Director of Technology",
-        intro: "Software Engineering student",
+        intro: "Director of Technology at HackConcordia and Software Engineering student at Concordia. I enjoy working on both ends of the stack, from building role-based React interfaces to designing API logic and backend services, which I’ve done in internships at FlightHub, CMHC and Intact.",
       },
       21: {
         name: "Mijan Ullah",
@@ -410,7 +406,7 @@ export const en = {
       25: {
         name: "Antoine Dufour",
         position: "Director of Sponsorship",
-        intro: "Finance student",
+        intro: "3rd year Finance and Accounting student at John Molson School of Business",
       },
       26: {
         name: "Audrey Clara Tchantchou",
@@ -420,7 +416,7 @@ export const en = {
       27: {
         name: "Benjamin Liu",
         position: "Director of Sponsorship",
-        intro: "Software Engineering student",
+        intro: "Software Engineering student who loves turning ideas into reality, tackling new challenges, and bringing people together. Driven by curiosity, always looking for something new to build, people to meet, or places to explore.",
       },
       28: {
         name: "Grace Ashley",

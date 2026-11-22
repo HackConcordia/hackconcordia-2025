@@ -22,7 +22,7 @@ export const getTeamMembers = (t: TranslationObject): TeamMember[] => [
         intro: t.TeamMember.members[1].intro,
         imageSrc: "/imgs/team/lucia-jimenez.webp",
         socials: {
-            linkedin: "https://www.linkedin.com/in/elba-lucia-jimenez-296b0b152/",
+            linkedin: "https://www.linkedin.com/in/lucia-jimenez-296b0b152",
         },
     },
     {
@@ -48,6 +48,11 @@ export const getTeamMembers = (t: TranslationObject): TeamMember[] => [
         position: t.TeamMember.members[4].position,
         intro: t.TeamMember.members[4].intro,
         imageSrc: "/imgs/team/ning-ye.webp",
+        socials: {
+            linkedin: "https://www.linkedin.com/in/ningye7",
+            github: "https://github.com/Atlearia",
+            website: "https://ningye.ca/",
+        },
     },
     {
         id: 5,
@@ -67,6 +72,10 @@ export const getTeamMembers = (t: TranslationObject): TeamMember[] => [
         position: t.TeamMember.members[6].position,
         intro: t.TeamMember.members[6].intro,
         imageSrc: "/imgs/team/amani-magra.webp",
+        socials: {
+            linkedin: "https://www.linkedin.com/in/amani-magra/",
+            github: "https://github.com/amani-magra",
+        },
     },
     {
         id: 7,
@@ -118,7 +127,7 @@ export const getTeamMembers = (t: TranslationObject): TeamMember[] => [
         intro: t.TeamMember.members[12].intro,
         imageSrc: "/imgs/team/matthew-lucas-santiago.webp",
         socials: {
-            linkedin: "https://www.linkedin.com/in/matthew-lucas-santiago",
+            linkedin: "https://www.linkedin.com/in/matthew-lucas-santiago/",
         },
     },
     {
@@ -189,6 +198,9 @@ export const getTeamMembers = (t: TranslationObject): TeamMember[] => [
         position: t.TeamMember.members[19].position,
         intro: t.TeamMember.members[19].intro,
         imageSrc: "/imgs/team/emily-ng.webp",
+        socials: {
+            linkedin: "https://www.linkedin.com/in/emilyngyounchen",
+        },
     },
     {
         id: 20,
@@ -196,6 +208,10 @@ export const getTeamMembers = (t: TranslationObject): TeamMember[] => [
         position: t.TeamMember.members[20].position,
         intro: t.TeamMember.members[20].intro,
         imageSrc: "/imgs/team/maria-christine-catiche.webp",
+        socials: {
+            linkedin: "https://www.linkedin.com/in/maria-christine-catiche-873b06282",
+            github: "https://github.com/katzmaria",
+        },
     },
     {
         id: 21,
@@ -243,6 +259,9 @@ export const getTeamMembers = (t: TranslationObject): TeamMember[] => [
         position: t.TeamMember.members[25].position,
         intro: t.TeamMember.members[25].intro,
         imageSrc: "/imgs/team/antoine-dufour.webp",
+        socials: {
+            linkedin: "https://www.linkedin.com/in/antoine-charles-dufour",
+        },
     },
     {
         id: 26,
@@ -260,6 +279,11 @@ export const getTeamMembers = (t: TranslationObject): TeamMember[] => [
         position: t.TeamMember.members[27].position,
         intro: t.TeamMember.members[27].intro,
         imageSrc: "/imgs/team/benjamin-liu.webp",
+        socials: {
+            linkedin: "https://www.linkedin.com/in/benjamin-sliu/",
+            github: "https://github.com/benjaminsunliu",
+            website: "https://bensliu.ca/",
+        },
     },
     {
         id: 28,
@@ -284,6 +308,10 @@ export const getTeamMembers = (t: TranslationObject): TeamMember[] => [
         position: t.TeamMember.members[30].position,
         intro: t.TeamMember.members[30].intro,
         imageSrc: "/imgs/team/mamadou-camara.webp",
+        socials: {
+            linkedin: "https://www.linkedin.com/in/mamadou-akira-camara/",
+            github: "https://github.com/LightMash",
+        },
     },
     {
         id: 31,
@@ -291,6 +319,9 @@ export const getTeamMembers = (t: TranslationObject): TeamMember[] => [
         position: t.TeamMember.members[31].position,
         intro: t.TeamMember.members[31].intro,
         imageSrc: "/imgs/team/salma-benlemlih.webp",
+        socials: {
+            linkedin: "https://www.linkedin.com/in/salma-benlemlih-71a812285/",
+        },
     },
     {
         id: 32,

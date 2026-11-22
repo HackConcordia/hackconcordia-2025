@@ -287,7 +287,7 @@ export const fr = {
       1: {
         name: "Lucia Jimenez",
         position: "Co-présidence",
-        intro: "Étudiante en informatique",
+        intro: "Salut! Moi, c’est Lucia. De la psychologie à l’informatique, je crois que j’ai toujours été curieuse de comprendre comment les choses fonctionnent, que ce soit les gens ou le code ⭐️",
       },
       2: {
         name: "Toby Fischer",
@@ -297,24 +297,22 @@ export const fr = {
       3: {
         name: "Christina Alexandrakis",
         position: "Vice-présidence, Marketing",
-        intro:
-          "Étudiante en génie logiciel passionnée par les campagnes marketing créatives, l'analyse de données et l'engagement communautaire.",
+        intro: "Étudiante en génie logiciel passionnée par les campagnes marketing créatives, l’analyse de données et l’engagement communautaire.",
       },
       4: {
         name: "Ning Ye",
         position: "Vice-présidence, Logistique",
-        intro: "Étudiant en génie logiciel",
+        intro: "Étudiant en génie logiciel passionné par les hackathons, l’IA/le ML et l’application de technologies de pointe pour résoudre des problèmes concrets.",
       },
       5: {
         name: "Mohamad Addasi",
         position: "Vice-présidence, Technologie",
-        intro:
-          "Étudiant en génie logiciel passionné par les technologies émergentes et la science des données. Il a acquis une expérience pratique chez Intact et lancé une mini-startup : ManiFast AI.",
+        intro: "Étudiant en génie logiciel passionné par les technologies émergentes et la science des données. Il a acquis une expérience pratique chez Intact et lancé une mini-startup : ManiFast AI.",
       },
       6: {
         name: "Amani Magra",
         position: "Vice-présidence, Finance",
-        intro: "Étudiante en génie informatique",
+        intro: "Étudiante au baccalauréat en génie informatique",
       },
       7: {
         name: "Sarah Tannous",
@@ -329,8 +327,7 @@ export const fr = {
       9: {
         name: "Noorjahan Kazi",
         position: "Vice-présidence, Interne",
-        intro:
-          "Étudiante en génie logiciel passionnée par la créativité et l'amélioration de l'expérience étudiante.",
+        intro: "Étudiante en génie logiciel passionnée par la créativité et l’amélioration de l’expérience étudiante.",
       },
       10: {
         name: "Ellen Ung",
@@ -350,26 +347,22 @@ export const fr = {
       13: {
         name: "Seydina Gueye",
         position: "Direction, Marketing",
-        intro:
-          "Étudiant en génie civil passionné par le développement durable et le marketing.",
+        intro: "Étudiant en génie civil passionné par le développement durable et le marketing.",
       },
       14: {
         name: "Alexandra Siganos",
         position: "Direction, Logistique",
-        intro:
-          "Étudiante en génie industriel passionnée par le fait d'aider les organisations à résoudre des problèmes concrets grâce au conseil, à la logistique et aux opérations",
+        intro: "Étudiante en génie industriel passionnée par le fait d’aider les organisations à résoudre des problèmes concrets grâce au conseil, à la logistique et aux opérations",
       },
       15: {
         name: "Arthur Huon de Penanster",
         position: "Direction, Logistique",
-        intro:
-          "Étudiant en gestion des technologies d'affaires, avec une mineure en informatique, intéressé par la gestion de projet et les systèmes d'information",
+        intro: "Étudiant en gestion des technologies d’affaires, avec une mineure en informatique, intéressé par la gestion de projet et les systèmes d’information",
       },
       16: {
         name: "Julien Halde",
         position: "Direction, Logistique",
-        intro:
-          "Étudiant en informatique passionné par les technologies financières émergentes et les systèmes décentralisés.",
+        intro: "Étudiant en informatique passionné par les technologies financières émergentes et les systèmes décentralisés.",
       },
       17: {
         name: "Abdou Maouda",
@@ -379,8 +372,7 @@ export const fr = {
       18: {
         name: "Daniela Villamizar Useche",
         position: "Direction, Technologie",
-        intro:
-          "Étudiante en génie logiciel qui adore les hackathons, créer des projets cool et transformer des idées en vrais produits. Intéressée par le développement full-stack et l'IA, et toujours à la recherche de quelque chose de nouveau à construire, apprendre ou expérimenter.",
+        intro: "Étudiante en génie logiciel qui adore les hackathons, créer des projets cool et transformer des idées en vrais produits. Intéressée par le développement full-stack et l’IA, et toujours à la recherche de quelque chose de nouveau à construire, apprendre ou expérimenter.",
       },
       19: {
         name: "Emily Ng",
@@ -390,7 +382,7 @@ export const fr = {
       20: {
         name: "Maria-Christine Catiche",
         position: "Direction, Technologie",
-        intro: "Étudiante en génie logiciel",
+        intro: "Directrice de la technologie chez HackConcordia et étudiante en génie logiciel à Concordia. J’aime travailler des deux côtés de la stack, de la création d’interfaces React basées sur les rôles à la conception de la logique des API et de services backend, ce que j’ai fait lors de stages chez FlightHub, CMHC et Intact.",
       },
       21: {
         name: "Mijan Ullah",
@@ -405,7 +397,7 @@ export const fr = {
       23: {
         name: "Shay Luan",
         position: "Direction, Technologie",
-        intro: "Étudiant en informatique",
+        intro: "Étudiante en informatique",
       },
       24: {
         name: "Thomas Assalian",
@@ -415,18 +407,17 @@ export const fr = {
       25: {
         name: "Antoine Dufour",
         position: "Direction, Partenariats",
-        intro: "Étudiant en finance",
+        intro: "Étudiant de 3e année en finance et comptabilité à l’École de gestion John-Molson",
       },
       26: {
         name: "Audrey Clara Tchantchou",
         position: "Direction, Partenariats",
-        intro:
-          "Étudiante en génie de la cybersécurité passionnée par la collaboration, l'innovation et la création d'occasions qui rassemblent les gens",
+        intro: "Étudiante en génie de la cybersécurité passionnée par la collaboration, l’innovation et la création d’occasions qui rassemblent les gens",
       },
       27: {
         name: "Benjamin Liu",
         position: "Direction, Partenariats",
-        intro: "Étudiant en génie logiciel",
+        intro: "Étudiant en génie logiciel qui aime transformer les idées en réalité, relever de nouveaux défis et rassembler les gens. Curieux et toujours à la recherche de quelque chose de nouveau à construire, de personnes à rencontrer ou d’endroits à découvrir.",
       },
       28: {
         name: "Grace Ashley",
@@ -457,7 +448,7 @@ export const fr = {
       33: {
         name: "Ashley Samerev",
         position: "Direction, Événements",
-        intro: "Étudiante en génie aérospatial - avionique",
+        intro: "Étudiante en génie aérospatial – avionique",
       },
       34: {
         name: "Luella Mailloux",
@@ -467,8 +458,7 @@ export const fr = {
       35: {
         name: "Ahmed Fakhir",
         position: "Direction, Interne",
-        intro:
-          "Étudiant à la maîtrise en génie logiciel passionné par les technologies logicielles et toujours intéressé par l'organisation d'événements technologiques exceptionnels!",
+        intro: "Étudiant à la maîtrise en génie logiciel passionné par les technologies logicielles et toujours intéressé par l’organisation d’événements technologiques exceptionnels !",
       },
     },
   },
