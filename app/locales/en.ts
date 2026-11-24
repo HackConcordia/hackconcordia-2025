@@ -27,6 +27,7 @@ export const en = {
   ConuHacks: {
     winners: "Winners",
     applicants: "Applicants",
+    
     projectSubmissions: "Project Submissions",
     participants: "Participants",
     projects: "Projects",
@@ -381,7 +382,7 @@ export const en = {
       20: {
         name: "Maria-Christine Catiche",
         position: "Director of Technology",
-        intro: "Director of Technology at HackConcordia and Software Engineering student at Concordia. I enjoy working on both ends of the stack, from building role-based React interfaces to designing API logic and backend services, which I’ve done in internships at FlightHub, CMHC and Intact.",
+        intro: "Software Engineering student",
       },
       21: {
         name: "Mijan Ullah",
